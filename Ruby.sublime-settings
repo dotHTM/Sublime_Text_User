@@ -1,0 +1,15 @@
+{
+	"extensions":
+	[
+		"rb",
+		"rbx",
+		"rjs",
+		"Rakefile",
+		"rake",
+		"fcgi",
+		"gemspec",
+		"irbrc",
+		"capfile",
+		"Gemfile"
+	]
+}

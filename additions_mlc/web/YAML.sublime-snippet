@@ -1,0 +1,16 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+title:"${1:Title}"
+date:"${2:Date}"
+${3:}
+---
+
+${4:# Body}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>:yf</tabTrigger>
+  <description>Yaml Frontmatter</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html.markdown</scope>
+</snippet>

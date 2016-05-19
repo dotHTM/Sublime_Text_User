@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+// $TM_FILENAME
+//   ${100:Description}
+//
+//   Written by ${200:Mike Cramer}
+//   Started on ${300:DATE}
+
+${999:// body...}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sb</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

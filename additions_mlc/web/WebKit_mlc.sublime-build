@@ -1,0 +1,6 @@
+{
+	// "cmd": [ "open", "-a", "/Applications/Safari.app", "$file"],
+	"cmd": [ "open", "-a", "/Applications/Safari Technology Preview.app", "$file"],
+	// "cmd": [ "open", "-a", "/Applications/WebKit.app", "$file"],
+	"selector": "text.html"
+}
