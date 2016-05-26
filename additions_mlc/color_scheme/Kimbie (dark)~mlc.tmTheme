@@ -10,6 +10,9 @@
     Base16 template for TextMate by Chris Kempson (https://github.com/chriskempson)
 
     ~mlc - add Knockdown support
+         - changed selection and highlight colors
+         - brightened punctuation
+         - red constant numerics
 -->
 <plist version="1.0">
 <dict>
@@ -26,13 +29,13 @@
 	<key>gutterSettings</key>
 	<dict>
 		<key>background</key>
-		<string>#5e452b</string>
+		<string>#293d3d</string>
 		<key>divider</key>
-		<string>#5e452b</string>
+		<string>#293d3d</string>
 		<key>foreground</key>
 		<string>#a57a4c</string>
 		<key>selectionBackground</key>
-		<string>#84613d</string>
+		<string>#293d3d</string>
 		<key>selectionForeground</key>
 		<string>#d6baad</string>
 	</dict>
@@ -41,6 +44,14 @@
 		<dict>
 			<key>settings</key>
 			<dict>
+<!-- 				<key>findHighlight</key> -->
+<!-- 				<string>#b9b9df</string> -->
+<!-- 				<key>findHighlightForeground</key> -->
+<!-- 				<string>#000000</string>  -->
+<!-- 				<key>highlightForeground</key> -->
+<!-- 				<string>#eee</string>  -->
+				<key>highlight</key>
+				<string>#b9b9df</string>
 				<key>background</key>
 				<string>#221a0f</string>
 				<key>caret</key>
@@ -50,9 +61,9 @@
 				<key>invisibles</key>
 				<string>#a57a4c</string>
 				<key>lineHighlight</key>
-				<string>#5e452b</string>
+				<string>#293d3d</string>
 				<key>selection</key>
-				<string>#84613d</string>
+				<string>#293d3d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -85,7 +96,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#d3af86</string>
+				<string>#e4ceb4</string>
 			</dict>
 		</dict>
 		<dict>
@@ -206,7 +217,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f79a32</string>
+				<string>#f62323</string>
 			</dict>
 		</dict>
 		<dict>
@@ -410,7 +421,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#84613d</string>
+				<string>#293d3d</string>
 				<key>foreground</key>
 				<string>#d3af86</string>
 			</dict>
