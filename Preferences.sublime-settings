@@ -7,6 +7,7 @@
 		"*.dds",
 		"*.eot",
 		"*.gif",
+		"*.gz",
 		"*.ico",
 		"*.jar",
 		"*.jpeg",
@@ -14,15 +15,14 @@
 		"*.pdf",
 		"*.png",
 		"*.swf",
+		"*.tar",
 		"*.tga",
 		"*.ttf",
-		"*.zip",
-		"*.gz",
-		"*.tar"
+		"*.zip"
 	],
 	"bold_folder_labels": true,
 	"color_inactive_tabs": true,
-	"color_scheme": "Packages/User/SublimeLinter/Kimbie (dark)~mlc (SL).tmTheme",
+	"color_scheme": "Packages/User/additions_mlc/color_scheme/Kimbie (dark)~mlc.tmTheme",
 	"draw_indent_guides": false,
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
@@ -58,9 +58,12 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"SideBarEnhancements",
+		"SublimeLinter",
 		"Vintage"
 	],
 	"indent_to_bracket": true,
+	"open_files_in_new_window": false,
 	"paths":
 	{
 		"linux":
