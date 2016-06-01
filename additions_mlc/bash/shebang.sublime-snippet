@@ -2,8 +2,11 @@
   <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
   <content><![CDATA[
 #!/bin/bash
+# $TM_FILENAME
+#   ${100:Description}
 #
-# 
+#   Written by ${200:Mike Cramer}
+#   Started on ${300:DATE}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>sb</tabTrigger>
