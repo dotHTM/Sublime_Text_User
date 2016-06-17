@@ -1,0 +1,11 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+baseDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>bd</tabTrigger>
+  <description>shebang</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.shell</scope>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+---
+title: ${1:"TITLE GOES HERE"}
+layout: ${2:LAYOUT}
+---
+
+${99:BODY}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>:jek</tabTrigger>
+  <description>Jekyll Yaml Frontmatter</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope></scope>
+</snippet>

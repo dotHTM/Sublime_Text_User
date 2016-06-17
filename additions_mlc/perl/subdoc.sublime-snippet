@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+#! ${100}
+# 	${900:Description of Function}
+${450:# Returns:
+# 	${400:\$Output}
+}# Usage:
+# 	${400/(..+)/my \1 = /}${100:functionName} ( ${200:\$PARAMETERS} ) ;
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sd</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.perl</scope>
+</snippet>
