@@ -524,7 +524,7 @@
 			<key>name</key>
 			<string>Raw Block</string>
 			<key>scope</key>
-			<string>markup.raw.block.fenced.markdown</string>
+			<string>markup.raw.block.fenced.markdown,markup.raw.block.markdown</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
