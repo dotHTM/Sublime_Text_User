@@ -1,9 +1,12 @@
 <snippet>
   <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
   <content><![CDATA[
+${30/(\d)\s*T.*/\1/}-${20/ /-/}.md
 ---
-title: ${1:"TITLE GOES HERE"}
-layout: ${2:LAYOUT}
+layout: ${10:post}
+title:  "${20:TITLE GOES HERE}"
+date:   ${30:DATE}
+categories: ${40:blog}
 ---
 
 ${99:BODY}

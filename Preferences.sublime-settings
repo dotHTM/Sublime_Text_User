@@ -60,6 +60,7 @@
 	"ignored_packages":
 	[
 		"Docker Based Build Systems",
+		"DoxyDoxygen",
 		"SideBarEnhancements",
 		"Vintage"
 	],
