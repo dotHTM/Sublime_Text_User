@@ -1,0 +1,26 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+#!/bin/bash
+# $TM_FILENAME
+#   ${100:Description}
+#
+#   Written by ${200:Mike Cramer}
+#   Started on ${300:DATE}
+
+${900:
+if [[ \$BASH_VERSINFO < ${910:4} ]]; then
+	echo -n "bash version is \"\$BASH_VERSINFO\" and I require ${910}"
+	exit
+fi
+
+${950: # body}
+}
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>sb4</tabTrigger>
+  <description>#! bash 4</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.shell</scope>
+</snippet>

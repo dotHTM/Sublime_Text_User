@@ -1,0 +1,4 @@
+{
+    "cmd"       : ["/usr/local/bin/bash", "$file"],
+    "selector"  : "source.shell",
+}
