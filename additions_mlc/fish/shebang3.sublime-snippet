@@ -1,0 +1,18 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+#!/usr/local/bin/fish
+# $TM_FILENAME
+#   ${100:Description}
+#
+#   Written by ${200:Mike Cramer}
+#   Started on ${300:DATE}
+
+#body
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>sb</tabTrigger>
+  <description>#! fish</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.fish</scope>
+</snippet>
