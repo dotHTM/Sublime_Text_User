@@ -62,7 +62,8 @@
 		"Docker Based Build Systems",
 		"DoxyDoxygen",
 		"SideBarEnhancements",
-		"Vintage"
+		"Vintage",
+		"SublimeLinter"
 	],
 	"indent_to_bracket": true,
 	"open_files_in_new_window": false,
