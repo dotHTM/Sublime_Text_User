@@ -1,0 +1,4 @@
+{
+	"cmd": ["/usr/local/bin/python", "$file"],
+	"selector"  : "source.python",
+}

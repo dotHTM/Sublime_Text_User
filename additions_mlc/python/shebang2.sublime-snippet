@@ -1,0 +1,18 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+#!/usr/local/bin/python
+# $TM_FILENAME
+#   ${100:Description}
+#
+#   Written by ${200:Mike Cramer}
+#   Started on ${300:DATE}
+
+${999:#body}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>sb2</tabTrigger>
+  <description>#! python 2</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.python</scope>
+</snippet>

@@ -1,0 +1,49 @@
+[
+	{
+		"args":
+		{
+			"characters": "asdf"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "\n\n\nasdf"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "\n\n\n"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "cut"
+	},
+	{
+		"args":
+		{
+			"characters": "\n\n"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "paste"
+	},
+	{
+		"args":
+		{
+			"characters": "\n"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "paste"
+	}
+]

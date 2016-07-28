@@ -1,0 +1,10 @@
+[
+	{
+		"command": "new_window",
+		"args": null
+	},
+	{
+		"command": "prompt_select_workspace",
+		"args": null
+	}
+]
