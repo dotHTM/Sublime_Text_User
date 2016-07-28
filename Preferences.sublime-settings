@@ -53,6 +53,7 @@
 	],
 	"folder_exclude_patterns":
 	[
+		".git"
 	],
 	"font_face": "SFMono-Regular",
 	"font_size": 13,
