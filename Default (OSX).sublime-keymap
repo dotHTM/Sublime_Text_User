@@ -1,5 +1,11 @@
 [
 
+{
+	"command": "refresh_folder_list",
+	"keys": [ "super+shift+r"]
+},
+
+
 	{
 		"command": "toggle_tabs",
 		"keys": [ "super+k", "super+n" ]

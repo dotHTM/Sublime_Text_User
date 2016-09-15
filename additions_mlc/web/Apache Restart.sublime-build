@@ -1,0 +1,4 @@
+	{
+		"cmd": [ "/usr/local/bin/docker", "exec", "auth24_httpd_1", "/usr/local/apache2/bin/apachectl", "restart" ],
+		"selector": "source.apacheconf",
+	}

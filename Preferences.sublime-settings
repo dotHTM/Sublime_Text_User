@@ -1,4 +1,8 @@
 {
+	"added_words":
+	[
+		"Nhan"
+	],
 	"always_show_minimap_viewport": true,
 	"auto_complete_cycle": true,
 	"auto_id_class": true,
@@ -62,7 +66,9 @@
 	[
 		"Docker Based Build Systems",
 		"DoxyDoxygen",
+		"InputArgs",
 		"SideBarEnhancements",
+		"sublime-text-2-buildview",
 		"Vintage"
 	],
 	"indent_to_bracket": true,
