@@ -26,7 +26,7 @@
 	],
 	"bold_folder_labels": true,
 	"color_inactive_tabs": true,
-	"color_scheme": "Packages/User/SublimeLinter/Kimbie (dark)~mlc (SL).tmTheme",
+	"color_scheme": "Packages/User/additions_mlc/color_scheme/Kimbie (dark)~mlc.tmTheme",
 	"draw_indent_guides": false,
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
@@ -64,11 +64,6 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Docker Based Build Systems",
-		"DoxyDoxygen",
-		"InputArgs",
-		"SideBarEnhancements",
-		"sublime-text-2-buildview",
 		"Vintage"
 	],
 	"indent_to_bracket": true,
