@@ -8,8 +8,8 @@
 				"*/.git*",
 			],
 			"file_exclude_patterns": [
-				".git*",
-				"*/.git*",
+				".git",
+				"*/.git",
 			]
 		},
 		{
