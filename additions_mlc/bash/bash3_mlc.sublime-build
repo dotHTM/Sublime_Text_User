@@ -1,4 +1,5 @@
 {
     "cmd"       : ["/bin/bash", "$file"],
     "selector"  : "source.shell",
+    "file_regex": "^[ ]*(.*): line ([0-9]*)(: )(.*)",
 }

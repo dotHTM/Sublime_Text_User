@@ -87,6 +87,7 @@
 	],
 	"rulers":
 	[
+		80
 	],
 	"scroll_past_end": true,
 	"show_open_files": true,
