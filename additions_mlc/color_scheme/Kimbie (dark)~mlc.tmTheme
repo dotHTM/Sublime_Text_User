@@ -60,7 +60,7 @@ MLC mods:
 					<key>caret</key>
 					<string>#d3af86</string>
 					<key>foreground</key>
-					<string>#664c2f</string> <!-- Gutter foreground -->
+					<string>#d3af86</string> <!-- Gutter foreground -->
 					<key>invisibles</key>
 					<string>#a57a4c</string>
 					<key>lineHighlight</key>
