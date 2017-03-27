@@ -3,63 +3,239 @@
 		color: white;
 	}
 	
-	.box{
+	td{
 		border: 10px black solid;
+		width: 60px;
+		text-align: center
 	}
 
+$someColorA: #a57a4c;
 
 
-.t01x00{  border: 10px darken(#a57a4c,0) solid;  }
-.t01x01{  border: 10px darken(#a57a4c,1) solid;  }
-.t01x02{  border: 10px darken(#a57a4c,2) solid;  }
-.t01x03{  border: 10px darken(#a57a4c,3) solid;  }
-.t01x04{  border: 10px darken(#a57a4c,4) solid;  }
-.t01x05{  border: 10px darken(#a57a4c,5) solid;  }
-.t01x06{  border: 10px darken(#a57a4c,6) solid;  }
-.t01x07{  border: 10px darken(#a57a4c,7) solid;  }
-.t01x08{  border: 10px darken(#a57a4c,8) solid;  }
-.t01x09{  border: 10px darken(#a57a4c,9) solid;  }
+.t01x00{  border: 10px darken($someColorA,0) solid;  }
+// .t01x01{  border: 10px darken($someColorA,1) solid;  }
+.t01x02{  border: 10px darken($someColorA,2) solid;  }
+// .t01x03{  border: 10px darken($someColorA,3) solid;  }
+.t01x04{  border: 10px darken($someColorA,4) solid;  }
+// .t01x05{  border: 10px darken($someColorA,5) solid;  }
+.t01x06{  border: 10px darken($someColorA,6) solid;  }
+// .t01x07{  border: 10px darken($someColorA,7) solid;  }
+.t01x08{  border: 10px darken($someColorA,8) solid;  }
+// .t01x09{  border: 10px darken($someColorA,9) solid;  }
 
-.t02x00{  border: 10px darken(#a57a4c,10) solid;  }
-.t02x01{  border: 10px darken(#a57a4c,11) solid;  }
-.t02x02{  border: 10px darken(#a57a4c,12) solid;  }
-.t02x03{  border: 10px darken(#a57a4c,13) solid;  }
-.t02x04{  border: 10px darken(#a57a4c,14) solid;  }
-.t02x05{  border: 10px darken(#a57a4c,15) solid;  }
-.t02x06{  border: 10px darken(#a57a4c,16) solid;  }
-.t02x07{  border: 10px darken(#a57a4c,17) solid;  }
-.t02x08{  border: 10px darken(#a57a4c,18) solid;  }
-.t02x09{  border: 10px darken(#a57a4c,19) solid;  }
+.t02x00{  border: 10px darken($someColorA,10) solid;  }
+// .t02x01{  border: 10px darken($someColorA,11) solid;  }
+.t02x02{  border: 10px darken($someColorA,12) solid;  }
+// .t02x03{  border: 10px darken($someColorA,13) solid;  }
+.t02x04{  border: 10px darken($someColorA,14) solid;  }
+// .t02x05{  border: 10px darken($someColorA,15) solid;  }
+.t02x06{  border: 10px darken($someColorA,16) solid;  }
+// .t02x07{  border: 10px darken($someColorA,17) solid;  }
+.t02x08{  border: 10px darken($someColorA,18) solid;  }
+// .t02x09{  border: 10px darken($someColorA,19) solid;  }
 
-.t03x00{  border: 10px darken(#a57a4c,20) solid;  }
-.t03x01{  border: 10px darken(#a57a4c,21) solid;  }
-.t03x02{  border: 10px darken(#a57a4c,22) solid;  }
-.t03x03{  border: 10px darken(#a57a4c,23) solid;  }
-.t03x04{  border: 10px darken(#a57a4c,24) solid;  }
-.t03x05{  border: 10px darken(#a57a4c,25) solid;  }
-.t03x06{  border: 10px darken(#a57a4c,26) solid;  }
-.t03x07{  border: 10px darken(#a57a4c,27) solid;  }
-.t03x08{  border: 10px darken(#a57a4c,28) solid;  }
-.t03x09{  border: 10px darken(#a57a4c,29) solid;  }
+.t03x00{  border: 10px darken($someColorA,20) solid;  }
+// .t03x01{  border: 10px darken($someColorA,21) solid;  }
+.t03x02{  border: 10px darken($someColorA,22) solid;  }
+// .t03x03{  border: 10px darken($someColorA,23) solid;  }
+.t03x04{  border: 10px darken($someColorA,24) solid;  }
+// .t03x05{  border: 10px darken($someColorA,25) solid;  }
+.t03x06{  border: 10px darken($someColorA,26) solid;  }
+// .t03x07{  border: 10px darken($someColorA,27) solid;  }
+.t03x08{  border: 10px darken($someColorA,28) solid;  }
+// .t03x09{  border: 10px darken($someColorA,29) solid;  }
 
-.t04x00{  border: 10px darken(#a57a4c,30) solid;  }
-.t04x01{  border: 10px darken(#a57a4c,31) solid;  }
-.t04x02{  border: 10px darken(#a57a4c,32) solid;  }
-.t04x03{  border: 10px darken(#a57a4c,33) solid;  }
-.t04x04{  border: 10px darken(#a57a4c,34) solid;  }
-.t04x05{  border: 10px darken(#a57a4c,35) solid;  }
-.t04x06{  border: 10px darken(#a57a4c,36) solid;  }
-.t04x07{  border: 10px darken(#a57a4c,37) solid;  }
-.t04x08{  border: 10px darken(#a57a4c,38) solid;  }
-.t04x09{  border: 10px darken(#a57a4c,39) solid;  }
+.t04x00{  border: 10px darken($someColorA,30) solid;  }
+// .t04x01{  border: 10px darken($someColorA,31) solid;  }
+.t04x02{  border: 10px darken($someColorA,32) solid;  }
+// .t04x03{  border: 10px darken($someColorA,33) solid;  }
+.t04x04{  border: 10px darken($someColorA,34) solid;  }
+// .t04x05{  border: 10px darken($someColorA,35) solid;  }
+.t04x06{  border: 10px darken($someColorA,36) solid;  }
+// .t04x07{  border: 10px darken($someColorA,37) solid;  }
+.t04x08{  border: 10px darken($someColorA,38) solid;  }
+// .t04x09{  border: 10px darken($someColorA,39) solid;  }
 
-.t05x00{  border: 10px darken(#a57a4c,40) solid;  }
-.t05x01{  border: 10px darken(#a57a4c,41) solid;  }
-.t05x02{  border: 10px darken(#a57a4c,42) solid;  }
-.t05x03{  border: 10px darken(#a57a4c,43) solid;  }
-.t05x04{  border: 10px darken(#a57a4c,44) solid;  }
-.t05x05{  border: 10px darken(#a57a4c,45) solid;  }
-.t05x06{  border: 10px darken(#a57a4c,46) solid;  }
-.t05x07{  border: 10px darken(#a57a4c,47) solid;  }
-.t05x08{  border: 10px darken(#a57a4c,48) solid;  }
-.t05x09{  border: 10px darken(#a57a4c,49) solid;  }
+.t05x00{  border: 10px darken($someColorA,40) solid;  }
+// .t05x01{  border: 10px darken($someColorA,41) solid;  }
+.t05x02{  border: 10px darken($someColorA,42) solid;  }
+// .t05x03{  border: 10px darken($someColorA,43) solid;  }
+.t05x04{  border: 10px darken($someColorA,44) solid;  }
+// .t05x05{  border: 10px darken($someColorA,45) solid;  }
+.t05x06{  border: 10px darken($someColorA,46) solid;  }
+// .t05x07{  border: 10px darken($someColorA,47) solid;  }
+.t05x08{  border: 10px darken($someColorA,48) solid;  }
+// .t05x09{  border: 10px darken($someColorA,49) solid;  }
+
+
+.lt01x00{  border: 10px lighten($someColorA,0) solid;  }
+// .lt01x01{  border: 10px lighten($someColorA,1) solid;  }
+.lt01x02{  border: 10px lighten($someColorA,2) solid;  }
+// .lt01x03{  border: 10px lighten($someColorA,3) solid;  }
+.lt01x04{  border: 10px lighten($someColorA,4) solid;  }
+// .lt01x05{  border: 10px lighten($someColorA,5) solid;  }
+.lt01x06{  border: 10px lighten($someColorA,6) solid;  }
+// .lt01x07{  border: 10px lighten($someColorA,7) solid;  }
+.lt01x08{  border: 10px lighten($someColorA,8) solid;  }
+// .lt01x09{  border: 10px lighten($someColorA,9) solid;  }
+
+.lt02x00{  border: 10px lighten($someColorA,10) solid;  }
+// .lt02x01{  border: 10px lighten($someColorA,11) solid;  }
+.lt02x02{  border: 10px lighten($someColorA,12) solid;  }
+// .lt02x03{  border: 10px lighten($someColorA,13) solid;  }
+.lt02x04{  border: 10px lighten($someColorA,14) solid;  }
+// .lt02x05{  border: 10px lighten($someColorA,15) solid;  }
+.lt02x06{  border: 10px lighten($someColorA,16) solid;  }
+// .lt02x07{  border: 10px lighten($someColorA,17) solid;  }
+.lt02x08{  border: 10px lighten($someColorA,18) solid;  }
+// .lt02x09{  border: 10px lighten($someColorA,19) solid;  }
+
+.lt03x00{  border: 10px lighten($someColorA,20) solid;  }
+// .lt03x01{  border: 10px lighten($someColorA,21) solid;  }
+.lt03x02{  border: 10px lighten($someColorA,22) solid;  }
+// .lt03x03{  border: 10px lighten($someColorA,23) solid;  }
+.lt03x04{  border: 10px lighten($someColorA,24) solid;  }
+// .lt03x05{  border: 10px lighten($someColorA,25) solid;  }
+.lt03x06{  border: 10px lighten($someColorA,26) solid;  }
+// .lt03x07{  border: 10px lighten($someColorA,27) solid;  }
+.lt03x08{  border: 10px lighten($someColorA,28) solid;  }
+// .lt03x09{  border: 10px lighten($someColorA,29) solid;  }
+
+.lt04x00{  border: 10px lighten($someColorA,30) solid;  }
+// .lt04x01{  border: 10px lighten($someColorA,31) solid;  }
+.lt04x02{  border: 10px lighten($someColorA,32) solid;  }
+// .lt04x03{  border: 10px lighten($someColorA,33) solid;  }
+.lt04x04{  border: 10px lighten($someColorA,34) solid;  }
+// .lt04x05{  border: 10px lighten($someColorA,35) solid;  }
+.lt04x06{  border: 10px lighten($someColorA,36) solid;  }
+// .lt04x07{  border: 10px lighten($someColorA,37) solid;  }
+.lt04x08{  border: 10px lighten($someColorA,38) solid;  }
+// .lt04x09{  border: 10px lighten($someColorA,39) solid;  }
+
+.lt05x00{  border: 10px lighten($someColorA,40) solid;  }
+// .lt05x01{  border: 10px lighten($someColorA,41) solid;  }
+.lt05x02{  border: 10px lighten($someColorA,42) solid;  }
+// .lt05x03{  border: 10px lighten($someColorA,43) solid;  }
+.lt05x04{  border: 10px lighten($someColorA,44) solid;  }
+// .lt05x05{  border: 10px lighten($someColorA,45) solid;  }
+.lt05x06{  border: 10px lighten($someColorA,46) solid;  }
+// .lt05x07{  border: 10px lighten($someColorA,47) solid;  }
+.lt05x08{  border: 10px lighten($someColorA,48) solid;  }
+// .lt05x09{  border: 10px lighten($someColorA,49) solid;  }
+
+
+
+$someColorB: #d3af86;
+
+.at01x00{  border: 10px darken($someColorB,0) solid;  }
+// .at01x01{  border: 10px darken($someColorB,1) solid;  }
+.at01x02{  border: 10px darken($someColorB,2) solid;  }
+// .at01x03{  border: 10px darken($someColorB,3) solid;  }
+.at01x04{  border: 10px darken($someColorB,4) solid;  }
+// .at01x05{  border: 10px darken($someColorB,5) solid;  }
+.at01x06{  border: 10px darken($someColorB,6) solid;  }
+// .at01x07{  border: 10px darken($someColorB,7) solid;  }
+.at01x08{  border: 10px darken($someColorB,8) solid;  }
+// .at01x09{  border: 10px darken($someColorB,9) solid;  }
+
+.at02x00{  border: 10px darken($someColorB,10) solid;  }
+// .at02x01{  border: 10px darken($someColorB,11) solid;  }
+.at02x02{  border: 10px darken($someColorB,12) solid;  }
+// .at02x03{  border: 10px darken($someColorB,13) solid;  }
+.at02x04{  border: 10px darken($someColorB,14) solid;  }
+// .at02x05{  border: 10px darken($someColorB,15) solid;  }
+.at02x06{  border: 10px darken($someColorB,16) solid;  }
+// .at02x07{  border: 10px darken($someColorB,17) solid;  }
+.at02x08{  border: 10px darken($someColorB,18) solid;  }
+// .at02x09{  border: 10px darken($someColorB,19) solid;  }
+
+.at03x00{  border: 10px darken($someColorB,20) solid;  }
+// .at03x01{  border: 10px darken($someColorB,21) solid;  }
+.at03x02{  border: 10px darken($someColorB,22) solid;  }
+// .at03x03{  border: 10px darken($someColorB,23) solid;  }
+.at03x04{  border: 10px darken($someColorB,24) solid;  }
+// .at03x05{  border: 10px darken($someColorB,25) solid;  }
+.at03x06{  border: 10px darken($someColorB,26) solid;  }
+// .at03x07{  border: 10px darken($someColorB,27) solid;  }
+.at03x08{  border: 10px darken($someColorB,28) solid;  }
+// .at03x09{  border: 10px darken($someColorB,29) solid;  }
+
+.at04x00{  border: 10px darken($someColorB,30) solid;  }
+// .at04x01{  border: 10px darken($someColorB,31) solid;  }
+.at04x02{  border: 10px darken($someColorB,32) solid;  }
+// .at04x03{  border: 10px darken($someColorB,33) solid;  }
+.at04x04{  border: 10px darken($someColorB,34) solid;  }
+// .at04x05{  border: 10px darken($someColorB,35) solid;  }
+.at04x06{  border: 10px darken($someColorB,36) solid;  }
+// .at04x07{  border: 10px darken($someColorB,37) solid;  }
+.at04x08{  border: 10px darken($someColorB,38) solid;  }
+// .at04x09{  border: 10px darken($someColorB,39) solid;  }
+
+.at05x00{  border: 10px darken($someColorB,40) solid;  }
+// .at05x01{  border: 10px darken($someColorB,41) solid;  }
+.at05x02{  border: 10px darken($someColorB,42) solid;  }
+// .at05x03{  border: 10px darken($someColorB,43) solid;  }
+.at05x04{  border: 10px darken($someColorB,44) solid;  }
+// .at05x05{  border: 10px darken($someColorB,45) solid;  }
+.at05x06{  border: 10px darken($someColorB,46) solid;  }
+// .at05x07{  border: 10px darken($someColorB,47) solid;  }
+.at05x08{  border: 10px darken($someColorB,48) solid;  }
+// .at05x09{  border: 10px darken($someColorB,49) solid;  }
+
+
+
+.lat01x00{  border: 10px lighten($someColorB,0) solid;  }
+// .lat01x01{  border: 10px lighten($someColorB,1) solid;  }
+.lat01x02{  border: 10px lighten($someColorB,2) solid;  }
+// .lat01x03{  border: 10px lighten($someColorB,3) solid;  }
+.lat01x04{  border: 10px lighten($someColorB,4) solid;  }
+// .lat01x05{  border: 10px lighten($someColorB,5) solid;  }
+.lat01x06{  border: 10px lighten($someColorB,6) solid;  }
+// .lat01x07{  border: 10px lighten($someColorB,7) solid;  }
+.lat01x08{  border: 10px lighten($someColorB,8) solid;  }
+// .lat01x09{  border: 10px lighten($someColorB,9) solid;  }
+
+.lat02x00{  border: 10px lighten($someColorB,10) solid;  }
+// .lat02x01{  border: 10px lighten($someColorB,11) solid;  }
+.lat02x02{  border: 10px lighten($someColorB,12) solid;  }
+// .lat02x03{  border: 10px lighten($someColorB,13) solid;  }
+.lat02x04{  border: 10px lighten($someColorB,14) solid;  }
+// .lat02x05{  border: 10px lighten($someColorB,15) solid;  }
+.lat02x06{  border: 10px lighten($someColorB,16) solid;  }
+// .lat02x07{  border: 10px lighten($someColorB,17) solid;  }
+.lat02x08{  border: 10px lighten($someColorB,18) solid;  }
+// .lat02x09{  border: 10px lighten($someColorB,19) solid;  }
+
+.lat03x00{  border: 10px lighten($someColorB,20) solid;  }
+// .lat03x01{  border: 10px lighten($someColorB,21) solid;  }
+.lat03x02{  border: 10px lighten($someColorB,22) solid;  }
+// .lat03x03{  border: 10px lighten($someColorB,23) solid;  }
+.lat03x04{  border: 10px lighten($someColorB,24) solid;  }
+// .lat03x05{  border: 10px lighten($someColorB,25) solid;  }
+.lat03x06{  border: 10px lighten($someColorB,26) solid;  }
+// .lat03x07{  border: 10px lighten($someColorB,27) solid;  }
+.lat03x08{  border: 10px lighten($someColorB,28) solid;  }
+// .lat03x09{  border: 10px lighten($someColorB,29) solid;  }
+
+.lat04x00{  border: 10px lighten($someColorB,30) solid;  }
+// .lat04x01{  border: 10px lighten($someColorB,31) solid;  }
+.lat04x02{  border: 10px lighten($someColorB,32) solid;  }
+// .lat04x03{  border: 10px lighten($someColorB,33) solid;  }
+.lat04x04{  border: 10px lighten($someColorB,34) solid;  }
+// .lat04x05{  border: 10px lighten($someColorB,35) solid;  }
+.lat04x06{  border: 10px lighten($someColorB,36) solid;  }
+// .lat04x07{  border: 10px lighten($someColorB,37) solid;  }
+.lat04x08{  border: 10px lighten($someColorB,38) solid;  }
+// .lat04x09{  border: 10px lighten($someColorB,39) solid;  }
+
+.lat05x00{  border: 10px lighten($someColorB,40) solid;  }
+// .lat05x01{  border: 10px lighten($someColorB,41) solid;  }
+.lat05x02{  border: 10px lighten($someColorB,42) solid;  }
+// .lat05x03{  border: 10px lighten($someColorB,43) solid;  }
+.lat05x04{  border: 10px lighten($someColorB,44) solid;  }
+// .lat05x05{  border: 10px lighten($someColorB,45) solid;  }
+.lat05x06{  border: 10px lighten($someColorB,46) solid;  }
+// .lat05x07{  border: 10px lighten($someColorB,47) solid;  }
+.lat05x08{  border: 10px lighten($someColorB,48) solid;  }
+// .lat05x09{  border: 10px lighten($someColorB,49) solid;  }
+

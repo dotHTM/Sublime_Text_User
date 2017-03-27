@@ -2,6 +2,7 @@
 	"added_words":
 	[
 		"Nhan"
+		"hostname"
 	],
 	"always_show_minimap_viewport": true,
 	"auto_complete_cycle": true,
@@ -57,19 +58,19 @@
 	],
 	"folder_exclude_patterns":
 	[
-		".git"
+		".git",
+		"CVS"
 	],
 	"font_face": "SFMono-Regular",
-	"font_size": 12,
+	"font_size": 15,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Color Highlighter",
+		"SideBarEnhancements",
 		"Vintage"
 	],
 	"indent_to_bracket": true,
 	"open_files_in_new_window": false,
-	"origami_auto_close_empty_panes": true,
 	"paths":
 	{
 		"linux":
@@ -87,12 +88,28 @@
 	[
 		"/usr/local/bin/perltidy"
 	],
+	"perltidy_options":
+	[
+		"-l=78",
+		"-i=2",
+		"-ci=4",
+		"-vt=2",
+		"-cti=0",
+		"-pt=1",
+		"-bt=1",
+		"-sbt=1",
+		"-bbt=1",
+		"-nsfs",
+		"-nolq",
+		"-wbb=\"% + - * / x != == >= <= =~ !~ < > | & = **= += *= &= <<= &&= -= /= |= >>= ||= //= .= %= ^= x=\"",
+		"-st",
+		"-se"
+	],
 	"scroll_past_end": true,
 	"show_open_files": true,
 	"status_bar_brighter": true,
 	"tab_completion": false,
 	"tab_size": 2,
 	"trim_automatic_white_space": false,
-	"word_wrap": true,
-	"wrap_width": 0
+	"word_wrap": true
 }
