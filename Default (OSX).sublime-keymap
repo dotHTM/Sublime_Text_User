@@ -1,22 +1,48 @@
 [
-	
-	
-	{ "keys": ["super+alt+/"], "command": "figlet_comment" },
-	
-	
 
-	{ "keys": ["ctrl+alt+n"], "command": "next_bookmark" },
-	{ "keys": ["ctrl+alt+p"], "command": "prev_bookmark" },
-	{ "keys": ["ctrl+alt+b"], "command": "toggle_bookmark" },
-	{ "keys": ["ctrl+alt+c"], "command": "clear_bookmarks" },
-	{ "keys": ["ctrl+alt+a"], "command": "select_all_bookmarks" },
+	// { "keys": ["super+alt+/"], "command": "figlet_comment" },
+	{
+		"args": { "file": "Packages/User/figletCommentLine.sublime-macro" },
+		"command": "run_macro_file",
+		"keys": ["super+alt+/"],
+	},
 
+
+	{
+		"args": { "file": "Packages/User/wrapComments.sublime-macro" },
+		"command": "run_macro_file",
+		"keys": ["super+alt+ctrl+/"],
+	},
+
+	{
+		"keys": ["ctrl+alt+n"],
+		"command": "next_bookmark"
+	},
+
+	{
+		"keys": ["ctrl+alt+p"],
+		"command": "prev_bookmark"
+	},
+
+	{
+		"keys": ["ctrl+alt+b"],
+		"command": "toggle_bookmark"
+	},
+
+	{
+		"keys": ["ctrl+alt+c"],
+		"command": "clear_bookmarks"
+	},
+
+	{
+		"keys": ["ctrl+alt+a"],
+		"command": "select_all_bookmarks"
+	},
 
 	{
 		"command": "refresh_folder_list",
 		"keys": ["super+shift+r"]
 	},
-
 
 	{
 		"command": "toggle_tabs",
@@ -33,7 +59,6 @@
 		"args": {
 			"dir": "${packages}/User/User.sublime-project"
 		},
-
 		"keys": ["super+alt+,"]
 	},
 
@@ -51,7 +76,6 @@
 		"command": "alignment"
 	},
 
-
 	{
 		"keys": ["super+f8"],
 		"command": "sort_lines",
@@ -59,7 +83,6 @@
 			"case_sensitive": false
 		}
 	},
-
 
 	{
 		"keys": ["super+ctrl+f8"],
@@ -79,7 +102,6 @@
 		"command": "find_under_expand"
 	},
 
-
 	{
 		"keys": ["control+d"],
 		"command": "plain_tasks_complete",
@@ -89,7 +111,6 @@
 			"operand": "text.todo"
 		}]
 	},
-
 
 	{
 		"keys": ["control+u"],
@@ -111,7 +132,6 @@
 		}]
 	},
 
-
 	{
 		"keys": ["super+shift+o"],
 		"command": "plain_tasks_archive_org",
@@ -121,9 +141,7 @@
 			"operand": "text.todo"
 		}]
 	},
-
 	// { "keys": ["super+shift+a"], "command": "dev-null"},
-
 	{
 		"keys": ["super+option+a"],
 		"command": "expand_selection",
@@ -146,8 +164,6 @@
 		}
 	},
 
-
-
 	{
 		"command": "set_layout",
 		"keys": ["control+shift+f3"],
@@ -163,26 +179,22 @@
 		}
 	},
 
-
-
 	{
 		"command": "set_layout",
 		"keys": ["control+shift+f4"],
-		"caption" : "2-3 Pane Third bottom",
+		"caption": "2-3 Pane Third bottom",
 		"args": {
 			"cols": [0.0, 0.33, 0.5, 0.67, 1.0],
 			"rows": [0.0, 0.67, 1.0],
 			"cells": [
-				[0, 0, 2, 1], 
-				[2, 0, 4, 1], 
-				[0, 1, 1, 2], 
-				[1, 1, 3, 2], 
-				[3, 1, 4, 2], 
+				[0, 0, 2, 1],
+				[2, 0, 4, 1],
+				[0, 1, 1, 2],
+				[1, 1, 3, 2],
+				[3, 1, 4, 2],
 			]
 		}
 	},
-
-
 
 	{
 		"command": "set_layout",
@@ -219,8 +231,5 @@
 		}
 	},
 
-
-
-
-
 ]
+

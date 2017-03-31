@@ -1,7 +1,7 @@
 {
 	"added_words":
 	[
-		"Nhan"
+		"Nhan",
 		"hostname"
 	],
 	"always_show_minimap_viewport": true,
@@ -27,7 +27,7 @@
 	],
 	"bold_folder_labels": true,
 	"color_inactive_tabs": true,
-	"color_scheme": "Packages/User/additions_mlc/color_scheme/Kimbie (dark)~mlc.tmTheme",
+	"color_scheme": "Packages/User/additions_mlc/color_scheme/Tomorrow-Night~mlc.tmTheme",
 	"draw_indent_guides": false,
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
@@ -66,6 +66,7 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Color Highlighter",
 		"SideBarEnhancements",
 		"Vintage"
 	],
@@ -110,6 +111,6 @@
 	"status_bar_brighter": true,
 	"tab_completion": false,
 	"tab_size": 2,
-	"trim_automatic_white_space": false,
-	"word_wrap": true
+	"word_wrap": false,
+	"wrap_width": 80
 }

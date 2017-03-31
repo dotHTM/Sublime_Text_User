@@ -9,7 +9,10 @@
 		text-align: center
 	}
 
-$someColorA: #a57a4c;
+$someColorA: #221a0f;
+
+$someColorB: #d3af86;
+
 
 
 .t01x00{  border: 10px darken($someColorA,0) solid;  }
@@ -125,7 +128,6 @@ $someColorA: #a57a4c;
 
 
 
-$someColorB: #d3af86;
 
 .at01x00{  border: 10px darken($someColorB,0) solid;  }
 // .at01x01{  border: 10px darken($someColorB,1) solid;  }

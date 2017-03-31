@@ -1,2 +1,310 @@
-body{background:black;color:white}td{border:10px black solid;width:60px;text-align:center}.t01x00{border:10px #a57a4c solid}.t01x02{border:10px #9e7549 solid}.t01x04{border:10px #977046 solid}.t01x06{border:10px #906b42 solid}.t01x08{border:10px #89653f solid}.t02x00{border:10px #82603c solid}.t02x02{border:10px #7b5b39 solid}.t02x04{border:10px #745635 solid}.t02x06{border:10px #6d5132 solid}.t02x08{border:10px #664c2f solid}.t03x00{border:10px #5f462c solid}.t03x02{border:10px #584129 solid}.t03x04{border:10px #513c25 solid}.t03x06{border:10px #4a3722 solid}.t03x08{border:10px #43321f solid}.t04x00{border:10px #3c2d1c solid}.t04x02{border:10px #352719 solid}.t04x04{border:10px #2e2215 solid}.t04x06{border:10px #271d12 solid}.t04x08{border:10px #20180f solid}.t05x00{border:10px #19130c solid}.t05x02{border:10px #120e08 solid}.t05x04{border:10px #0b0805 solid}.t05x06{border:10px #040302 solid}.t05x08{border:10px #000 solid}.lt01x00{border:10px #a57a4c solid}.lt01x02{border:10px #ac7f4f solid}.lt01x04{border:10px #b18455 solid}.lt01x06{border:10px #b4895c solid}.lt01x08{border:10px #b78e63 solid}.lt02x00{border:10px #ba936a solid}.lt02x02{border:10px #bd9871 solid}.lt02x04{border:10px #c19d78 solid}.lt02x06{border:10px #c4a27f solid}.lt02x08{border:10px #c7a886 solid}.lt03x00{border:10px #caad8d solid}.lt03x02{border:10px #ceb294 solid}.lt03x04{border:10px #d1b79b solid}.lt03x06{border:10px #d4bca2 solid}.lt03x08{border:10px #d7c1a9 solid}.lt04x00{border:10px #dac6b0 solid}.lt04x02{border:10px #decbb7 solid}.lt04x04{border:10px #e1d0be solid}.lt04x06{border:10px #e4d5c5 solid}.lt04x08{border:10px #e7dacc solid}.lt05x00{border:10px #ebdfd2 solid}.lt05x02{border:10px #eee4d9 solid}.lt05x04{border:10px #f1e9e0 solid}.lt05x06{border:10px #f4eee7 solid}.lt05x08{border:10px #f7f3ee solid}.at01x00{border:10px #d3af86 solid}.at01x02{border:10px #d0aa7f solid}.at01x04{border:10px #cea577 solid}.at01x06{border:10px #cba070 solid}.at01x08{border:10px #c89b68 solid}.at02x00{border:10px #c59661 solid}.at02x02{border:10px #c39159 solid}.at02x04{border:10px #c08c52 solid}.at02x06{border:10px #bd874a solid}.at02x08{border:10px #ba8244 solid}.at03x00{border:10px #b27d41 solid}.at03x02{border:10px #ab783e solid}.at03x04{border:10px #a3733b solid}.at03x06{border:10px #9c6d39 solid}.at03x08{border:10px #946836 solid}.at04x00{border:10px #8d6333 solid}.at04x02{border:10px #855e30 solid}.at04x04{border:10px #7e582e solid}.at04x06{border:10px #76532b solid}.at04x08{border:10px #6f4e28 solid}.at05x00{border:10px #674926 solid}.at05x02{border:10px #604323 solid}.at05x04{border:10px #583e20 solid}.at05x06{border:10px #51391d solid}.at05x08{border:10px #49341b solid}.lat01x00{border:10px #d3af86 solid}.lat01x02{border:10px #d6b48d solid}.lat01x04{border:10px #d8b995 solid}.lat01x06{border:10px #dbbe9c solid}.lat01x08{border:10px #dec3a4 solid}.lat02x00{border:10px #e1c8ab solid}.lat02x02{border:10px #e3cdb3 solid}.lat02x04{border:10px #e6d2ba solid}.lat02x06{border:10px #e9d7c2 solid}.lat02x08{border:10px #ebdcc9 solid}.lat03x00{border:10px #eee0d1 solid}.lat03x02{border:10px #f1e5d8 solid}.lat03x04{border:10px #f4eae0 solid}.lat03x06{border:10px #f6efe7 solid}.lat03x08{border:10px #f9f4ef solid}.lat04x00{border:10px #fcf9f6 solid}.lat04x02{border:10px #fffefe solid}.lat04x04{border:10px #fff solid}.lat04x06{border:10px #fff solid}.lat04x08{border:10px #fff solid}.lat05x00{border:10px #fff solid}.lat05x02{border:10px #fff solid}.lat05x04{border:10px #fff solid}.lat05x06{border:10px #fff solid}.lat05x08{border:10px #fff solid}
+body {
+  background: black;
+  color: white; }
+
+td {
+  border: 10px black solid;
+  width: 60px;
+  text-align: center; }
+
+.t01x00 {
+  border: 10px #221a0f solid; }
+
+.t01x02 {
+  border: 10px #1b150c solid; }
+
+.t01x04 {
+  border: 10px #140f09 solid; }
+
+.t01x06 {
+  border: 10px #0d0a06 solid; }
+
+.t01x08 {
+  border: 10px #060403 solid; }
+
+.t02x00 {
+  border: 10px black solid; }
+
+.t02x02 {
+  border: 10px black solid; }
+
+.t02x04 {
+  border: 10px black solid; }
+
+.t02x06 {
+  border: 10px black solid; }
+
+.t02x08 {
+  border: 10px black solid; }
+
+.t03x00 {
+  border: 10px black solid; }
+
+.t03x02 {
+  border: 10px black solid; }
+
+.t03x04 {
+  border: 10px black solid; }
+
+.t03x06 {
+  border: 10px black solid; }
+
+.t03x08 {
+  border: 10px black solid; }
+
+.t04x00 {
+  border: 10px black solid; }
+
+.t04x02 {
+  border: 10px black solid; }
+
+.t04x04 {
+  border: 10px black solid; }
+
+.t04x06 {
+  border: 10px black solid; }
+
+.t04x08 {
+  border: 10px black solid; }
+
+.t05x00 {
+  border: 10px black solid; }
+
+.t05x02 {
+  border: 10px black solid; }
+
+.t05x04 {
+  border: 10px black solid; }
+
+.t05x06 {
+  border: 10px black solid; }
+
+.t05x08 {
+  border: 10px black solid; }
+
+.lt01x00 {
+  border: 10px #221a0f solid; }
+
+.lt01x02 {
+  border: 10px #291f12 solid; }
+
+.lt01x04 {
+  border: 10px #302515 solid; }
+
+.lt01x06 {
+  border: 10px #372a18 solid; }
+
+.lt01x08 {
+  border: 10px #3e301b solid; }
+
+.lt02x00 {
+  border: 10px #45351f solid; }
+
+.lt02x02 {
+  border: 10px #4c3a22 solid; }
+
+.lt02x04 {
+  border: 10px #544025 solid; }
+
+.lt02x06 {
+  border: 10px #5b4528 solid; }
+
+.lt02x08 {
+  border: 10px #624b2b solid; }
+
+.lt03x00 {
+  border: 10px #69502e solid; }
+
+.lt03x02 {
+  border: 10px #705631 solid; }
+
+.lt03x04 {
+  border: 10px #775b34 solid; }
+
+.lt03x06 {
+  border: 10px #7e6038 solid; }
+
+.lt03x08 {
+  border: 10px #85663b solid; }
+
+.lt04x00 {
+  border: 10px #8c6b3e solid; }
+
+.lt04x02 {
+  border: 10px #937141 solid; }
+
+.lt04x04 {
+  border: 10px #9a7644 solid; }
+
+.lt04x06 {
+  border: 10px #a17b47 solid; }
+
+.lt04x08 {
+  border: 10px #a8814a solid; }
+
+.lt05x00 {
+  border: 10px #b0864d solid; }
+
+.lt05x02 {
+  border: 10px #b38b54 solid; }
+
+.lt05x04 {
+  border: 10px #b7905b solid; }
+
+.lt05x06 {
+  border: 10px #ba9562 solid; }
+
+.lt05x08 {
+  border: 10px #bd9a69 solid; }
+
+.at01x00 {
+  border: 10px #d3af86 solid; }
+
+.at01x02 {
+  border: 10px #d0aa7f solid; }
+
+.at01x04 {
+  border: 10px #cea577 solid; }
+
+.at01x06 {
+  border: 10px #cba070 solid; }
+
+.at01x08 {
+  border: 10px #c89b68 solid; }
+
+.at02x00 {
+  border: 10px #c59661 solid; }
+
+.at02x02 {
+  border: 10px #c39159 solid; }
+
+.at02x04 {
+  border: 10px #c08c52 solid; }
+
+.at02x06 {
+  border: 10px #bd874a solid; }
+
+.at02x08 {
+  border: 10px #ba8244 solid; }
+
+.at03x00 {
+  border: 10px #b27d41 solid; }
+
+.at03x02 {
+  border: 10px #ab783e solid; }
+
+.at03x04 {
+  border: 10px #a3733b solid; }
+
+.at03x06 {
+  border: 10px #9c6d39 solid; }
+
+.at03x08 {
+  border: 10px #946836 solid; }
+
+.at04x00 {
+  border: 10px #8d6333 solid; }
+
+.at04x02 {
+  border: 10px #855e30 solid; }
+
+.at04x04 {
+  border: 10px #7e582e solid; }
+
+.at04x06 {
+  border: 10px #76532b solid; }
+
+.at04x08 {
+  border: 10px #6f4e28 solid; }
+
+.at05x00 {
+  border: 10px #674926 solid; }
+
+.at05x02 {
+  border: 10px #604323 solid; }
+
+.at05x04 {
+  border: 10px #583e20 solid; }
+
+.at05x06 {
+  border: 10px #51391d solid; }
+
+.at05x08 {
+  border: 10px #49341b solid; }
+
+.lat01x00 {
+  border: 10px #d3af86 solid; }
+
+.lat01x02 {
+  border: 10px #d6b48d solid; }
+
+.lat01x04 {
+  border: 10px #d8b995 solid; }
+
+.lat01x06 {
+  border: 10px #dbbe9c solid; }
+
+.lat01x08 {
+  border: 10px #dec3a4 solid; }
+
+.lat02x00 {
+  border: 10px #e1c8ab solid; }
+
+.lat02x02 {
+  border: 10px #e3cdb3 solid; }
+
+.lat02x04 {
+  border: 10px #e6d2ba solid; }
+
+.lat02x06 {
+  border: 10px #e9d7c2 solid; }
+
+.lat02x08 {
+  border: 10px #ebdcc9 solid; }
+
+.lat03x00 {
+  border: 10px #eee0d1 solid; }
+
+.lat03x02 {
+  border: 10px #f1e5d8 solid; }
+
+.lat03x04 {
+  border: 10px #f4eae0 solid; }
+
+.lat03x06 {
+  border: 10px #f6efe7 solid; }
+
+.lat03x08 {
+  border: 10px #f9f4ef solid; }
+
+.lat04x00 {
+  border: 10px #fcf9f6 solid; }
+
+.lat04x02 {
+  border: 10px #fffefe solid; }
+
+.lat04x04 {
+  border: 10px white solid; }
+
+.lat04x06 {
+  border: 10px white solid; }
+
+.lat04x08 {
+  border: 10px white solid; }
+
+.lat05x00 {
+  border: 10px white solid; }
+
+.lat05x02 {
+  border: 10px white solid; }
+
+.lat05x04 {
+  border: 10px white solid; }
+
+.lat05x06 {
+  border: 10px white solid; }
+
+.lat05x08 {
+  border: 10px white solid; }
+
 /*# sourceMappingURL=sample.css.map */

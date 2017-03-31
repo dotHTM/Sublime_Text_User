@@ -29,7 +29,7 @@ MLC mods:
 		<string>theme.dark.kimbie</string>
 		<key>colorSpaceName</key>
 		<string>sRGB</string>
-		<key>gutterSettings</key>
+<!-- 		<key>gutterSettings</key>
 		<dict>
 			<key>background</key>
 			<string>#293d3d</string>
@@ -41,7 +41,7 @@ MLC mods:
 			<string>#293d3d</string>
 			<key>selectionForeground</key>
 			<string>#d6baad</string>
-		</dict>
+		</dict> -->
 		<key>settings</key>
 		<array>
 			<dict>
@@ -69,7 +69,7 @@ MLC mods:
 					<string>#293d3d</string>
 				</dict>
 			</dict>
-			
+
 			<dict>
 				<key>name</key>
 				<string>Text and Source Base Colors</string>
@@ -81,7 +81,7 @@ MLC mods:
 					<string>#d3af86</string>
 				</dict>
 			</dict>
-			
+
 			<dict>
 				<key>name</key>
 				<string>Text</string>
@@ -563,6 +563,21 @@ MLC mods:
 			</dict>
 			<!-- End knockdown support -->
 
+
+
+<dict>
+  <key>name</key>
+  <string>Custom highlight color</string> <!-- Set the name you want here -->
+  <key>scope</key>
+  <string>custom.highlight.color</string> <!-- Set the id you want here -->
+  <key>settings</key>
+  <dict>
+    <key>background</key>
+    <string>#19130B</string> <!-- color goes here -->
+    <key>foreground</key>
+    <string>#332716</string> <!-- color goes here -->
+  </dict>
+</dict>
 
 		</array>
 
