@@ -56,15 +56,17 @@ MLC mods:
 					<key>foreground</key>
 					<string>#C5C8C6</string>
 					<key>invisibles</key>
+					<!-- <string>#f00</string> -->
 					<string>#4B4E55</string>
 					<key>lineHighlight</key>
 					<string>#282A2E</string>
 					<key>selection</key>
+					<!-- <string>#fff1</string> -->
 					<string>#373B41</string>
 				</dict>
 			</dict>
 
-	<dict>
+<!-- 	<dict>
 			<key>name</key>
 			<string>Text base</string>
 			<key>scope</key>
@@ -76,7 +78,8 @@ MLC mods:
 				<key>foreground</key>
 				<string>#C5C8C6</string>
 			</dict>
-		</dict>
+
+		</dict> -->
 
 			<dict>
 				<key>name</key>
@@ -95,7 +98,7 @@ MLC mods:
 				<key>name</key>
 				<string>Variable, String Link, Regular Expression, Tag Name</string>
 				<key>scope</key>
-				<string>variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag</string>
+				<string>variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, variable.parameter, entity.other.attribute-name, meta.tag, declaration.tag</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -106,7 +109,7 @@ MLC mods:
 				<key>name</key>
 				<string>Number, Constant, Function Argument, Tag Attribute, Embedded</string>
 				<key>scope</key>
-				<string>constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit</string>
+				<string>constant.numeric, constant.language, support.constant, constant.character, punctuation.section.embedded, keyword.other.unit</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -397,21 +400,20 @@ MLC mods:
 				</dict>
 			</dict>
 			<!-- End markdown changes -->
+
+
+
 			<dict>
 				<key>name</key>
 				<string>Custom highlight color</string>
-				<!-- Set the name you want here -->
 				<key>scope</key>
 				<string>custom.highlight.color</string>
-				<!-- Set the id you want here -->
 				<key>settings</key>
 				<dict>
 					<key>background</key>
 					<string>#000</string>
-					<!-- color goes here -->
 					<key>foreground</key>
 					<string>#666</string>
-					<!-- color goes here -->
 				</dict>
 			</dict>
 
@@ -419,20 +421,141 @@ MLC mods:
 			<dict>
 				<key>name</key>
 				<string>hash keys</string>
-				<!-- Set the name you want here -->
 				<key>scope</key>
 				<string>constant.other.key</string>
-				<!-- Set the id you want here -->
 				<key>settings</key>
 				<dict>
-					<!-- <key>background</key> -->
-					<!-- <string>#000</string> -->
-					<!-- color goes here -->
 					<key>foreground</key>
 					<string>#DE935F</string>
-					<!-- color goes here -->
 				</dict>
 			</dict>
+
+
+			<dict>
+				<key>name</key>
+				<string>varaibles</string>
+				<key>scope</key>
+				<string>punctuation.definition.var</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<!-- <string>#e8b695</string> -->
+					<string>#DE935F</string>
+				</dict>
+			</dict>
+
+		<dict>
+				<key>name</key>
+				<string>hash keys</string>
+				<key>scope</key>
+				<string>punctuation.definition.bold</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#5fded5</string>
+				</dict>
+			</dict>
+
+		<dict>
+				<key>name</key>
+				<string>hash keys</string>
+				<key>scope</key>
+				<string>punctuation.definition.number</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#ded35f</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>name</key>
+				<string>hash keys</string>
+				<key>scope</key>
+				<string>markup.bold</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#22a69d</string>
+				</dict>
+			</dict>
+
+		<dict>
+				<key>name</key>
+				<string>hash keys</string>
+				<key>scope</key>
+				<string>punctuation.definition.string</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#ac8cb6</string>
+				</dict>
+			</dict>
+
+
+
+		<dict>
+				<key>name</key>
+				<string>hash keys</string>
+				<key>scope</key>
+				<string>punctuation.definition.list_item</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F92672</string>
+				</dict>
+			</dict>
+
+
+
+			<dict>
+				<key>name</key>
+				<string>hash keys</string>
+				<key>scope</key>
+				<string>meta.link</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#c9de5f</string>
+				</dict>
+			</dict>
+
+
+
+
+			<dict>
+				<key>name</key>
+				<string>hash keys</string>
+				<key>scope</key>
+				<string>string.other.link.title</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#DE935F</string>
+				</dict>
+			</dict>
+
+
+
+
+			<dict>
+				<key>name</key>
+				<string>hash keys</string>
+				<key>scope</key>
+				<string>markup.raw</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#000</string>
+					<key>foreground</key>
+					<string>#fff</string>
+				</dict>
+			</dict>
+
+
+
+
+
 
 		</array>
 		<key>uuid</key>
