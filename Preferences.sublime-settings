@@ -28,10 +28,10 @@
 	"bold_folder_labels": true,
 	"color_inactive_tabs": true,
 	"color_scheme": "Packages/User/additions_mlc/color_scheme/Tomorrow-Night~mlc.tmTheme",
-	"draw_indent_guides": false,
+	"draw_indent_guides": true,
 	"draw_minimap_border": true,
-	"draw_white_space": "all",
-	"figlet_font": "univers",
+	"draw_white_space": "selection",
+	"figlet_font": "clb6x10",
 	"file_exclude_patterns":
 	[
 		"*.pyc",
@@ -53,7 +53,7 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"*.sublime-workspace",
+		// "*.sublime-workspace",
 		"*.Ulysses-*"
 	],
 	"folder_exclude_patterns":
@@ -89,28 +89,20 @@
 	[
 		"/usr/local/bin/perltidy"
 	],
-	"perltidy_options":
+	"rulers":
 	[
-		"-l=78",
-		"-i=2",
-		"-ci=4",
-		"-vt=2",
-		"-cti=0",
-		"-pt=1",
-		"-bt=1",
-		"-sbt=1",
-		"-bbt=1",
-		"-nsfs",
-		"-nolq",
-		"-wbb=\"% + - * / x != == >= <= =~ !~ < > | & = **= += *= &= <<= &&= -= /= |= >>= ||= //= .= %= ^= x=\"",
-		"-st",
-		"-se"
+		0,
+		8,
+		80,
+		88
 	],
 	"scroll_past_end": true,
 	"show_open_files": true,
 	"status_bar_brighter": true,
 	"tab_completion": false,
 	"tab_size": 2,
-	"word_wrap": false,
-	"wrap_width": 80
+	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": false,
+	"word_wrap": true,
+	"wrap_width": 88
 }
