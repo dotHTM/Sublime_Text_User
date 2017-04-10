@@ -1,59 +1,46 @@
 [
-
-	// { "keys": ["super+alt+/"], "command": "figlet_comment" },
 	{
 		"args": { "file": "Packages/User/figletCommentLine.sublime-macro" },
 		"command": "run_macro_file",
 		"keys": ["super+alt+/"],
 	},
-
-
 	{
 		"args": { "file": "Packages/User/wrapComments.sublime-macro" },
 		"command": "run_macro_file",
 		"keys": ["super+alt+ctrl+/"],
 	},
-
 	{
 		"keys": ["ctrl+alt+n"],
 		"command": "next_bookmark"
 	},
-
 	{
 		"keys": ["ctrl+alt+p"],
 		"command": "prev_bookmark"
 	},
-
 	{
 		"keys": ["ctrl+alt+b"],
 		"command": "toggle_bookmark"
 	},
-
 	{
 		"keys": ["ctrl+alt+c"],
 		"command": "clear_bookmarks"
 	},
-
 	{
 		"keys": ["ctrl+alt+a"],
 		"command": "select_all_bookmarks"
 	},
-
 	{
 		"command": "refresh_folder_list",
 		"keys": ["super+shift+r"]
 	},
-
 	{
 		"command": "toggle_tabs",
 		"keys": ["super+k", "super+n"]
 	},
-
 	{
 		"command": "toggle_minimap",
 		"keys": ["super+k", "super+m"]
 	},
-
 	{
 		"command": "open_dir",
 		"args": {
@@ -61,7 +48,13 @@
 		},
 		"keys": ["super+alt+,"]
 	},
-
+	{
+		"command": "open_dir",
+		"args": {
+			"dir": "${packages}/../../../../Projects/github/bash_hacks/bash_hacks.sublime-project" // four /.. gets you to $HOME on macOS
+		},
+		"keys": ["ctrl+alt+,"]
+	},
 	{
 		//credit https://github.com/soffes/sublime
 		"keys": ["super+alt+w"],
@@ -70,12 +63,25 @@
 			"setting": "word_wrap"
 		}
 	},
-
+	{
+		"command": "set_setting",
+		"keys": ["super+alt+r"],
+		"args": {
+			"setting": "wrap_width",
+			"value": 0
+		},
+	},
+	{ "command": "set_setting",
+		"keys": ["super+ctrl+r"],
+		"args": {
+			"setting": "wrap_width",
+			"value": 88
+		},
+	},
 	{
 		"keys": ["super+shift+a"],
 		"command": "alignment"
 	},
-
 	{
 		"keys": ["super+f8"],
 		"command": "sort_lines",
@@ -83,7 +89,6 @@
 			"case_sensitive": false
 		}
 	},
-
 	{
 		"keys": ["super+ctrl+f8"],
 		"command": "sort_lines",
@@ -91,17 +96,14 @@
 			"case_sensitive": true
 		}
 	},
-
 	{
 		"keys": ["super+ctrl+a"],
 		"command": "alignment"
 	},
-
 	{
 		"keys": ["super+d"],
 		"command": "find_under_expand"
 	},
-
 	{
 		"keys": ["control+d"],
 		"command": "plain_tasks_complete",
@@ -111,7 +113,6 @@
 			"operand": "text.todo"
 		}]
 	},
-
 	{
 		"keys": ["control+u"],
 		"command": "plain_tasks_open_url",
@@ -121,7 +122,6 @@
 			"operand": "text.todo"
 		}]
 	},
-
 	{
 		"keys": ["super+shift+a"],
 		"command": "plain_tasks_archive",
@@ -131,7 +131,6 @@
 			"operand": "text.todo"
 		}]
 	},
-
 	{
 		"keys": ["super+shift+o"],
 		"command": "plain_tasks_archive_org",
@@ -141,95 +140,88 @@
 			"operand": "text.todo"
 		}]
 	},
-	// { "keys": ["super+shift+a"], "command": "dev-null"},
-	{
-		"keys": ["super+option+a"],
-		"command": "expand_selection",
-		"args": {
-			"to": "tag"
-		}
-	},
-
-	{
-		"command": "set_layout",
-		"keys": ["control+shift+f2"],
-		"caption": "3 Pane Third bottom",
-		"args": {
-			"cols": [0.0, 0.67, 1.0],
-			"rows": [0.0, 0.67, 1.0],
-			"cells": [
-				[0, 0, 2, 1],
-				[0, 1, 2, 2],
-			]
-		}
-	},
-
-	{
-		"command": "set_layout",
-		"keys": ["control+shift+f3"],
-		"caption": "3 Pane Third right",
-		"args": {
-			"cols": [0.0, 0.67, 1.0],
-			"rows": [0.0, 0.5, 1.0],
-			"cells": [
-				[0, 0, 1, 2],
-				[1, 0, 2, 1],
-				[1, 1, 2, 2]
-			]
-		}
-	},
-
-	{
-		"command": "set_layout",
-		"keys": ["control+shift+f4"],
-		"caption": "2-3 Pane Third bottom",
-		"args": {
-			"cols": [0.0, 0.33, 0.5, 0.67, 1.0],
-			"rows": [0.0, 0.67, 1.0],
-			"cells": [
-				[0, 0, 2, 1],
-				[2, 0, 4, 1],
-				[0, 1, 1, 2],
-				[1, 1, 3, 2],
-				[3, 1, 4, 2],
-			]
-		}
-	},
-
-	{
-		"command": "set_layout",
-		"keys": ["control+shift+f5"],
-		"caption": "5-pane",
-		"args": {
-			"cols": [0.0, 0.33, 0.5, 0.67, 1.0],
-			"rows": [0.0, 0.375, 0.5, 0.75, 1.0],
-			"cells": [
-				[0, 0, 3, 3],
-				[3, 0, 4, 1],
-				[3, 1, 4, 3],
-				[0, 3, 2, 4],
-				[2, 3, 4, 4],
-			]
-		}
-	},
-
-	{
-		"command": "set_layout",
-		"keys": ["control+shift+f6"],
-		"caption": "6-pane",
-		"args": {
-			"cols": [0.0, 0.40, 0.5, 0.80, 1.0],
-			"rows": [0.0, 0.40, 0.5, 0.80, 1.0],
-			"cells": [
-				[0, 0, 1, 3],
-				[1, 0, 3, 3],
-				[3, 0, 4, 1],
-				[3, 1, 4, 3],
-				[0, 3, 2, 4],
-				[2, 3, 4, 4],
-			]
-		}
-	},
-
-]
-
+		// { "keys": ["super+shift+a"], "command": "dev-null"},
+		{
+			"keys": ["super+option+a"],
+			"command": "expand_selection",
+			"args": {
+				"to": "tag"
+			}
+		},
+		{
+			"command": "set_layout",
+			"keys": ["control+shift+f2"],
+			"caption": "3 Pane Third bottom",
+			"args": {
+				"cols": [0.0, 0.67, 1.0],
+				"rows": [0.0, 0.67, 1.0],
+				"cells": [
+					[0, 0, 2, 1],
+					[0, 1, 2, 2],
+				]
+			}
+		},
+		{
+			"command": "set_layout",
+			"keys": ["control+shift+f3"],
+			"caption": "3 Pane Third right",
+			"args": {
+				"cols": [0.0, 0.67, 1.0],
+				"rows": [0.0, 0.5, 1.0],
+				"cells": [
+					[0, 0, 1, 2],
+					[1, 0, 2, 1],
+					[1, 1, 2, 2]
+				]
+			}
+		},
+		{
+			"command": "set_layout",
+			"keys": ["control+shift+f4"],
+			"caption": "2-3 Pane Third bottom",
+			"args": {
+				"cols": [0.0, 0.33, 0.5, 0.67, 1.0],
+				"rows": [0.0, 0.67, 1.0],
+				"cells": [
+					[0, 0, 2, 1],
+					[2, 0, 4, 1],
+					[0, 1, 1, 2],
+					[1, 1, 3, 2],
+					[3, 1, 4, 2],
+				]
+			}
+		},
+		{
+			"command": "set_layout",
+			"keys": ["control+shift+f5"],
+			"caption": "5-pane",
+			"args": {
+				"cols": [0.0, 0.33, 0.5, 0.67, 1.0],
+				"rows": [0.0, 0.375, 0.5, 0.75, 1.0],
+				"cells": [
+					[0, 0, 3, 3],
+					[3, 0, 4, 1],
+					[3, 1, 4, 3],
+					[0, 3, 2, 4],
+					[2, 3, 4, 4],
+				]
+			}
+		},
+		{
+			"command": "set_layout",
+			"keys": ["control+shift+f6"],
+			"caption": "6-pane",
+			"args": {
+				"cols": [0.0, 0.40, 0.5, 0.80, 1.0],
+				"rows": [0.0, 0.40, 0.5, 0.80, 1.0],
+				"cells": [
+					[0, 0, 1, 3],
+					[1, 0, 3, 3],
+					[3, 0, 4, 1],
+					[3, 1, 4, 3],
+					[0, 3, 2, 4],
+					[2, 3, 4, 4],
+				]
+			}
+		},
+	]
