@@ -61,8 +61,8 @@ MLC mods:
 					<key>lineHighlight</key>
 					<string>#282A2E</string>
 					<key>selection</key>
-					<!-- <string>#fff1</string> -->
-					<string>#373B41</string>
+					<!-- <string>#373B41</string> -->
+					<string>#7f3b41</string>
 				</dict>
 			</dict>
 

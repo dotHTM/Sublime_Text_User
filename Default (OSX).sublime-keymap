@@ -1,5 +1,9 @@
 [
 	{
+	 	"command": "toggle_show_open_files" ,
+		"keys": ["super+k", "super+o"]
+	},
+	{
 		"args": { "file": "Packages/User/figletCommentLine.sublime-macro" },
 		"command": "run_macro_file",
 		"keys": ["super+alt+/"],
