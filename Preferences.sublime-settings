@@ -21,9 +21,13 @@
 		"*.png",
 		"*.swf",
 		"*.tar",
+		"*.bak*",
+		"*bak",
 		"*.tga",
 		"*.ttf",
-		"*.zip"
+		"*.zip",
+		"*.csv",
+		"*,"
 	],
 	"bold_folder_labels": true,
 	"color_inactive_tabs": true,
@@ -53,7 +57,6 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		// "*.sublime-workspace",
 		"*.Ulysses-*"
 	],
 	"folder_exclude_patterns":
@@ -67,10 +70,11 @@
 	"ignored_packages":
 	[
 		"Color Highlighter",
-		"SideBarEnhancements",
+		"ColorSchemeSelector",
 		"Vintage"
 	],
 	"indent_to_bracket": true,
+	"index_files": false,
 	"open_files_in_new_window": false,
 	"paths":
 	{
@@ -101,9 +105,9 @@
 	"status_bar_brighter": true,
 	"tab_completion": false,
 	"tab_size": 2,
-	"theme": "Adaptive.sublime-theme",
+	"theme": "Adaptive-MLC dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": false,
 	"word_wrap": true,
-	"wrap_width": 88
+	"wrap_width": 0
 }
