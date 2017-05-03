@@ -355,7 +355,7 @@ MLC mods:
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>Fenced Code Block</string>
+				<string>blah</string>
 				<key>scope</key>
 				<string>punctuation.definition.heading.markdown</string>
 				<key>settings</key>
@@ -366,15 +366,36 @@ MLC mods:
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>Fenced Code Block</string>
+				<string>blah</string>
 				<key>scope</key>
-				<string>markup.heading.markdown</string>
+				<string>markup.heading.1.markdown</string>
 				<key>settings</key>
 				<dict>
 					<key>background</key>
 					<string>#484e3b</string>
 				</dict>
+			</dict>			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>markup.heading.2.markdown</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#33392b</string>
+				</dict>
 			</dict>
+<!-- 			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>markup.heading.markdown</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#20241b</string>
+				</dict>
+			</dict> -->
 			<dict>
 				<key>name</key>
 				<string>Fenced Code Block</string>
