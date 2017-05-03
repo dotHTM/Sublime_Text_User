@@ -3,14 +3,8 @@
 		{
 			"path": ".",
 			"name": "User Package",
-			"folder_exclude_patterns": [
-				".git",
-				"*/.git*",
-			],
-			"file_exclude_patterns": [
-				".git",
-				"*/.git",
-			]
+			"folder_exclude_patterns": [ ".git", "*/.git" ],
+			"file_exclude_patterns": [ ".git", "*/.git*" ],
 		},
 		{
 			"path": "~",
@@ -19,21 +13,16 @@
 			"folder_include_patterns": [ ".*", ".*/*" ],
 		},
 		{
-			"path": "../..",
+			"path": "..",
 			"name": "Browse Packages",
-			"folder_exclude_patterns": [
-				"Packages/User"
-			]
+			"folder_exclude_patterns": [ "User" ],
+		},
+		{
+			"path": "../../Installed Packages",
 		},
 		{
 			"path": "/Applications/Sublime Text.app/Contents/MacOS/Packages",
-			"name": "Default App Packages"
-		},
-		{
-			"path": "/private/etc",
-			"name": "/private/etc"
+			"name": "Default App Packages",
 		}
-
-	],
-
+	]
 }
