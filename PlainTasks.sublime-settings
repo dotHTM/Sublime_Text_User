@@ -12,5 +12,9 @@
   // "color_scheme": "Packages/PlainTasks/tasks-solarized-light.hidden-tmTheme",
 
     "color_scheme": "Packages/User/additions_mlc/color_scheme/Tomorrow-Night~mlc.tmTheme",
+// "color_scheme": "Packages/User/additions_mlc/color_scheme/Kimbie (dark)~mlc.tmTheme",
+
+    "line_numbers": true,
+
 
 }

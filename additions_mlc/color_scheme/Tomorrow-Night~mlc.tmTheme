@@ -683,6 +683,22 @@ MLC mods:
 					<string>#8e8</string>
 				</dict>
 			</dict>
+			
+	
+						<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>cyan</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#144</string>
+					<key>foreground</key>
+					<string>#8ee</string>
+				</dict>
+			</dict>
+				
 						<dict>
 				<key>name</key>
 				<string>blah</string>
@@ -697,8 +713,50 @@ MLC mods:
 				</dict>
 			</dict>
 			
-
-						<dict>
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>purple</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#414</string>
+					<key>foreground</key>
+					<string>#e8e</string>
+				</dict>
+			</dict>
+			
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>black</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#111</string>
+					<key>foreground</key>
+					<string>#888</string>
+				</dict>
+			</dict>
+			
+			
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>white</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#444</string>
+					<key>foreground</key>
+					<string>#eee</string>
+				</dict>
+			</dict>
+			
+			<dict>
 				<key>name</key>
 				<string>blah</string>
 				<key>scope</key>
@@ -706,9 +764,9 @@ MLC mods:
 				<key>settings</key>
 				<dict>
 					<key>background</key>
-					<string>#444</string>
+					<string>#000</string>
 					<key>foreground</key>
-					<string>#fff</string>
+					<string>#aaa</string>
 				</dict>
 			</dict>
 			
@@ -724,7 +782,7 @@ MLC mods:
 					<key>background</key>
 					<string>#000</string>
 					<key>foreground</key>
-					<string>#fff</string>
+					<string>#666</string>
 				</dict>
 			</dict>
 
