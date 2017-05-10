@@ -20,7 +20,7 @@ contexts:
       scope: white
     - match: '^ *\d+:'
       scope: light
-    - match: '^ *\d+ '
+    - match: '^ *\d+(?!=:).'
       scope: dark
     - match: \s
       pop: true
@@ -34,7 +34,7 @@ contexts:
     - match: '^ *\d+:'
       scope: light
       push: bash_lines
-    - match: '^ *\d+ '
+    - match: '^ *\d+(?!=:).'
       scope: dark
       push: bash_lines
     
@@ -57,7 +57,7 @@ contexts:
     - match: '^ *\d+:'
       scope: light
       push: perl_lines
-    - match: '^ *\d+ '
+    - match: '^ *\d+(?!=:).'
       scope: dark
       push: perl_lines
     
