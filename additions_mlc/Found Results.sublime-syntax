@@ -8,17 +8,60 @@ scope: text.found-in-files
 
 contexts:
   main:
-    - match: '^/.+:'
-      scope: yellow
-    # - match: '^/.+\.(pl|pm|cgi):'
-    - match: ' *\d+:'
-      scope: light
-      push: lines
-    - match: ' *\d+ '
-      scope: dark
-      push: lines
+    - match: '^/.+\.(pl|pm|cgi):'
+      scope: cyan
+      push: perl
+    - match: '^/.+\.(sh|bash):'
+      scope: purple
+      push: bash
     
-  lines:
+  # General case and Plain text:
+    - match: '^/.+:'
+      scope: white
+    - match: '^ *\d+:'
+      scope: light
+    - match: '^ *\d+ '
+      scope: dark
+    - match: \s
+      pop: true
+
+
+  bash:
+    - clear_scopes: true
+    - meta_scope: file.bash
+    - match: '^(?=/)'
+      pop: true
+    - match: '^ *\d+:'
+      scope: light
+      push: bash_lines
+    - match: '^ *\d+ '
+      scope: dark
+      push: bash_lines
+    
+  bash_lines:
+    - clear_scopes: true
+    - match: $
+      pop: true
+    - match: ''
+      push: Packages/ShellScript/Shell-Unix-Generic.sublime-syntax
+      with_prototype:
+        - match: '$'
+          pop: true
+
+
+  perl:
+    - clear_scopes: true
+    - meta_scope: file.perl
+    - match: '^(?=/)'
+      pop: true
+    - match: '^ *\d+:'
+      scope: light
+      push: perl_lines
+    - match: '^ *\d+ '
+      scope: dark
+      push: perl_lines
+    
+  perl_lines:
     - clear_scopes: true
     - match: $
       pop: true
