@@ -1,0 +1,29 @@
+%YAML 1.2
+---
+name: Found Results
+file_extensions:
+  - find
+  - found
+scope: text.found-in-files
+
+contexts:
+  main:
+    - match: '^/.+:'
+      scope: yellow
+    # - match: '^/.+\.(pl|pm|cgi):'
+    - match: ' *\d+:'
+      scope: light
+      push: lines
+    - match: ' *\d+ '
+      scope: dark
+      push: lines
+    
+  lines:
+    - clear_scopes: true
+    - match: $
+      pop: true
+    - match: ''
+      push: Packages/Perl/Perl.sublime-syntax
+      with_prototype:
+        - match: '$'
+          pop: true

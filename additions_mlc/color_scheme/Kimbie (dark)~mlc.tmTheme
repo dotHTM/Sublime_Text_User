@@ -563,21 +563,109 @@ MLC mods:
 			</dict>
 			<!-- End knockdown support -->
 
+			<!-- Watermellon headers -->
+
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>markup.heading.1.markdown,keyword.control.header</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#33392b</string>
+					<key>foreground</key>
+					<string>#c9d195</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>markup.heading.2.markdown</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#4e3b40</string>
+					<key>foreground</key>
+					<string>#ffb5d7</string>
+				</dict>
+			</dict>
 
 
-<dict>
-  <key>name</key>
-  <string>Custom highlight color</string> <!-- Set the name you want here -->
-  <key>scope</key>
-  <string>custom.highlight.color</string> <!-- Set the id you want here -->
-  <key>settings</key>
-  <dict>
-    <key>background</key>
-    <string>#19130B</string> <!-- color goes here -->
-    <key>foreground</key>
-    <string>#332716</string> <!-- color goes here -->
-  </dict>
-</dict>
+			<!-- Tasks -->
+
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>punctuation.definition.bullet.pending</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#4e3b40</string>
+					<key>foreground</key>
+					<string>#ffb5d7</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>meta.item.todo.pending</string>
+				<key>settings</key>
+				<dict>
+					<!-- <key>background</key> -->
+					<!-- <string>#4e3b40</string> -->
+					<key>foreground</key>
+					<string>#faffb5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>meta.tag.todo.completed</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#443b4e</string>
+					<key>foreground</key>
+					<string>#b8b5ff</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>punctuation.definition.bullet.completed</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#3e4e3b</string>
+					<key>foreground</key>
+					<string>#b5ffb9</string>
+				</dict>
+			</dict>
+
+			<!-- end Tasks -->
+
+
+
+			<dict>
+				<key>name</key>
+				<string>Custom highlight color</string> <!-- Set the name you want here -->
+				<key>scope</key>
+				<string>custom.highlight.color</string> <!-- Set the id you want here -->
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#19130B</string> <!-- color goes here -->
+					<key>foreground</key>
+					<string>#332716</string> <!-- color goes here -->
+				</dict>
+			</dict>
 
 		</array>
 

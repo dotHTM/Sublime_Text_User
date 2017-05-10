@@ -364,27 +364,8 @@ MLC mods:
 					<string>#c9d195</string>
 				</dict>
 			</dict>
-			<dict>
-				<key>name</key>
-				<string>blah</string>
-				<key>scope</key>
-				<string>markup.heading.1.markdown</string>
-				<key>settings</key>
-				<dict>
-					<key>background</key>
-					<string>#484e3b</string>
-				</dict>
-			</dict>			<dict>
-				<key>name</key>
-				<string>blah</string>
-				<key>scope</key>
-				<string>markup.heading.2.markdown</string>
-				<key>settings</key>
-				<dict>
-					<key>background</key>
-					<string>#33392b</string>
-				</dict>
-			</dict>
+
+
 <!-- 			<dict>
 				<key>name</key>
 				<string>blah</string>
@@ -574,8 +555,178 @@ MLC mods:
 			</dict>
 
 
+<!-- Watermellon headers -->
+
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>markup.heading.1.markdown,keyword.control.header</string>
+				<key>settings</key>
+					<dict>
+					<key>background</key>
+					<string>#33392b</string>
+					<key>foreground</key>
+					<string>#c9d195</string>
+				</dict>
+			</dict>			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>markup.heading.2.markdown</string>
+				<key>settings</key>
+		<dict>
+					<key>background</key>
+					<string>#4e3b40</string>
+					<key>foreground</key>
+					<string>#ffb5d7</string>
+				</dict>
+			</dict>
 
 
+
+
+			<!-- Tasks -->
+
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>punctuation.definition.bullet.pending</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#4e3b40</string>
+					<key>foreground</key>
+					<string>#ffb5d7</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>meta.item.todo.pending</string>
+				<key>settings</key>
+				<dict>
+					<!-- <key>background</key> -->
+					<!-- <string>#4e3b40</string> -->
+					<key>foreground</key>
+					<string>#faffb5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>meta.tag.todo.completed</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#443b4e</string>
+					<key>foreground</key>
+					<string>#b8b5ff</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>punctuation.definition.bullet.completed</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#3e4e3b</string>
+					<key>foreground</key>
+					<string>#b5ffb9</string>
+				</dict>
+			</dict>
+
+			<!-- end Tasks -->
+			
+			
+			<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>red</string>
+				<key>settings</key>
+				<dict>
+						<key>background</key>
+					<string>#411</string>
+					<key>foreground</key>
+					<string>#e88</string>
+				</dict>
+			</dict>
+						<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>yellow</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#440</string>
+					<key>foreground</key>
+					<string>#ee8</string>
+				</dict>
+			</dict>						<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>green</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#141</string>
+					<key>foreground</key>
+					<string>#8e8</string>
+				</dict>
+			</dict>
+						<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>blue</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#114</string>
+					<key>foreground</key>
+					<string>#88e</string>
+				</dict>
+			</dict>
+			
+
+						<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>light</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#444</string>
+					<key>foreground</key>
+					<string>#fff</string>
+				</dict>
+			</dict>
+			
+			
+
+						<dict>
+				<key>name</key>
+				<string>blah</string>
+				<key>scope</key>
+				<string>dark</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#000</string>
+					<key>foreground</key>
+					<string>#fff</string>
+				</dict>
+			</dict>
 
 
 		</array>
