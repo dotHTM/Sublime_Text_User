@@ -8,13 +8,15 @@ scope: text.found-in-files
 
 contexts:
   main:
+
     - match: '^/.+\.(pl|pm|cgi):'
       scope: cyan
       push: perl
+
     - match: '^/.+\.(sh|bash):'
       scope: purple
       push: bash
-    
+
   # General case and Plain text:
     - match: '^/.+:'
       scope: white
@@ -70,3 +72,4 @@ contexts:
       with_prototype:
         - match: '$'
           pop: true
+
