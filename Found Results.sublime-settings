@@ -1,0 +1,5 @@
+// These settings override both User and Default settings for the Found Results syntax
+{
+    "color_scheme": "Packages/User/additions_mlc/color_scheme/Tomorrow-Night-Vamp~mlc.tmTheme",
+
+}
