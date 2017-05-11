@@ -4,6 +4,11 @@
 		"keys": ["super+k", "super+o"]
 	},
 	{
+		"args": { "file": "Packages/User/foldEverything.sublime-macro" },
+		"command": "run_macro_file",
+		"keys": ["super+0"],
+	},
+		{
 		"args": { "file": "Packages/User/figletCommentLine.sublime-macro" },
 		"command": "run_macro_file",
 		"keys": ["super+alt+/"],
