@@ -9,6 +9,7 @@
 	"auto_id_class": true,
 	"binary_file_patterns":
 	[
+		"._*",
 		"*.dds",
 		"*.eot",
 		"*.gif",
@@ -31,7 +32,7 @@
 	],
 	"bold_folder_labels": true,
 	"color_inactive_tabs": true,
-	"color_scheme": "Packages/User/additions_mlc/color_scheme/Tomorrow-Night~mlc.tmTheme",
+	"color_scheme": "Packages/User/additions_mlc/color_scheme/Tomorrow-Night-Vamp~mlc.tmTheme",
 	"draw_indent_guides": true,
 	"draw_minimap_border": true,
 	"draw_white_space": "selection",
@@ -39,6 +40,7 @@
 	"figlet_font": "clb6x10",
 	"file_exclude_patterns":
 	[
+		"._*",
 		"*.pyc",
 		"*.pyo",
 		"*.exe",
