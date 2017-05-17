@@ -17,4 +17,9 @@
     "line_numbers": true,
 
 
+  "rulers":
+  [
+    0,
+  ],
+
 }

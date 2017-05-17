@@ -11,6 +11,10 @@
 	],
 	"wrap_width": 0,
 	"line_numbers": true,
+	  "rulers":
+  [
+    0,
+  ],
 }
 
 
