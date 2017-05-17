@@ -8,6 +8,8 @@ scope: text.found-in-files
 
 contexts:
   main:
+    - match: '^\s+(ERROR:|<binary>).*'
+      scope: invalid
 
     - match: '^/.+\.(pl|pm|cgi):'
       scope: cyan
