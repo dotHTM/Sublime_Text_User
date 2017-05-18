@@ -107,7 +107,7 @@
 	"show_open_files": true,
 	"status_bar_brighter": true,
 	"tab_completion": false,
-	"tab_size": 2,
+	// "tab_size": 2,
 	"theme": "Adaptive-MLC dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": false,
