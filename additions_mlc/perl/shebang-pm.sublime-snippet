@@ -18,7 +18,8 @@ ${999:# body...}
 1;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>sbpm</tabTrigger>
+	<tabTrigger>sbm</tabTrigger>
+        <description>#! perl-module</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.perl</scope>
 </snippet>
