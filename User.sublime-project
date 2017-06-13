@@ -1,28 +1,52 @@
 {
-	"folders": [
+	"folders":
+	[
 		{
-			"path": ".",
+			"file_exclude_patterns":
+			[
+				".git",
+				"*/.git*"
+			],
+			"folder_exclude_patterns":
+			[
+				".git",
+				"*/.git"
+			],
 			"name": "User Package",
-			"folder_exclude_patterns": [ ".git", "*/.git" ],
-			"file_exclude_patterns": [ ".git", "*/.git*" ],
+			"path": "."
 		},
 		{
-			"path": "~",
+			"file_include_patterns":
+			[
+				".*",
+				".*/*"
+			],
+			"folder_include_patterns":
+			[
+				".*",
+				".*/*"
+			],
+			"folder_exclude_patterns":
+			[
+				".Trash*",
+			],
 			"name": ".home",
-			"file_include_patterns": [ ".*", ".*/*" ],
-			"folder_include_patterns": [ ".*", ".*/*" ],
+			"path": "~"
 		},
 		{
-			"path": "..",
+			"folder_exclude_patterns":
+			[
+				"User"
+			],
 			"name": "Browse Packages",
-			"folder_exclude_patterns": [ "User" ],
+			"path": "~/Library/Application Support/Sublime Text 3/Packages"
 		},
 		{
-			"path": "../../Installed Packages",
+			"path": "~/Library/Application Support/Sublime Text 3/Installed Packages"
 		},
 		{
-			"path": "/Applications/Sublime Text.app/Contents/MacOS/Packages",
 			"name": "Default App Packages",
+			"path": "/Applications/Sublime Text.app/Contents/MacOS/Packages"
 		}
 	]
 }

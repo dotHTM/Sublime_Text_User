@@ -26,7 +26,6 @@
 		"Emmet",
 		"Figlet Big ASCII Text",
 		"FileDiffs",
-		"FileManager",
 		"fish-shell",
 		"Generic Config",
 		"HexViewer",
@@ -61,6 +60,7 @@
 		"SassBeautify",
 		"ScopeAlways",
 		"ScopeHunter",
+		"SideBarTools",
 		"SublimeGit",
 		"Swift for F*ing Sublime",
 		"Sync View Scroll",
@@ -68,6 +68,7 @@
 		"SysLog",
 		"Terminal",
 		"Tomorrow Color Schemes",
+		"Trimmer",
 		"URLEncode",
 		"Wrap Plus",
 		"Zip Browser"
