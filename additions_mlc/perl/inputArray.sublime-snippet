@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+my (${100:}) = @_;
+]]></content>
+    <description>input Array</description>
+    <tabTrigger>my (</tabTrigger>
+    <scope>source.perl</scope>
+</snippet>
