@@ -14,20 +14,20 @@ use strict;
 ${400:}
 
 sub new {
-    my $inv = shift;
-    my $class = ref($inv) || $inv;
+    my \$inv = shift;
+    my \$class = ref(\$inv) || \$inv;
 
-    my $self = {};
-    bless($self, $class);
+    my \$self = {};
+    bless(\$self, \$class);
 
-    $self->{number} = shift || 0;
-    return $self;
+    \$self->{number} = shift || 0;
+    return \$self;
 }
 
 sub number {
-    my $self = shift;
-    $self->{number} = shift if @_;
-    return $self->{number} || 0;
+    my \$self = shift;
+    \$self->{number} = shift if @_;
+    return \$self->{number} || 0;
 }
 
 ${999:# body...}
