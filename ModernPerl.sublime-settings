@@ -9,6 +9,8 @@
   "perltidy_options":
   [
     "-l=88",  // maximum-line-length
+  
+    "-vmll", // variable-maximum-line-length
 
     "-i=4",   // indent-columns
     "-ci=4",  // continuation-indentation

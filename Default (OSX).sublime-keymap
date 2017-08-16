@@ -6,7 +6,7 @@
 	{
 		"args": { "file": "Packages/User/foldEverything.sublime-macro" },
 		"command": "run_macro_file",
-		"keys": ["super+0"],
+		"keys": ["super+k, super+`"],
 	},
 
 
@@ -394,9 +394,49 @@
 				"operand": false, "match_all": true 
 			}
 		]
+	},	
+	
+	// * wrap, modified of above
+	
+	{
+		"keys": ["*"],
+		"command": "insert_snippet",
+		"args": {"contents": "*${0:$SELECTION}*"},
+		"context": [
+			{
+				"key": "setting.auto_match_enabled",
+				"operator": "equal",
+				"operand": true 
+			},
+			{
+				"key": "selection_empty",
+				"operator": "equal",
+				"operand": false, "match_all": true 
+			}
+		]
 	},
 	
+	// _ wrap, modified of above
 	
+	{
+		"keys": ["_"],
+		"command": "insert_snippet",
+		"args": {"contents": "_${0:$SELECTION}_"},
+		"context": [
+			{
+				"key": "setting.auto_match_enabled",
+				"operator": "equal",
+				"operand": true 
+			},
+			{
+				"key": "selection_empty",
+				"operator": "equal",
+				"operand": false, "match_all": true 
+			}
+		]
+	},
+	
+
 	
 	// I forget why some of these are set...  Some are re-assertions of the default keymap to re-override plugins that steal them.
 	{
