@@ -8,7 +8,7 @@
   ],
   "perltidy_options":
   [
-    "-l=88",  // maximum-line-length
+    "-l=80",  // maximum-line-length
   
     "-vmll", // variable-maximum-line-length
 
@@ -36,6 +36,9 @@
 
     "-st",    // standard-output
     "-se",    // standard-error-output
+    
+    "-boc"
+    
   ],
 }
 

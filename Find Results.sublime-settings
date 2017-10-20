@@ -1,8 +1,10 @@
 {
-	"color_scheme": "Packages/Monokai - Spacegray/Monokai - Spacegray.tmTheme",
+	"color_scheme": "Packages/User/additions_mlc/color_scheme/Monokai-sG-vamp~mlc.tmTheme",
   "rulers":
   [
     0,
   ],
   "word_wrap": false,
 }
+
+

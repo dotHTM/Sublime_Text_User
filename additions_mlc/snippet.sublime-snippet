@@ -4,9 +4,9 @@
 <!-- ${100}.sublime-snippet -->
 <snippet>
   <!-- Example: Hello, \${1:this} is a \${2:snippet}. -->
-  <content><!\[CDATA\[
+  <content><![CDATA[
 ?{300:body}
-\]\]></content>
+]]\></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>${200:::tabtrigger}</tabTrigger>
   <description>${100:Description}</description>
@@ -19,5 +19,5 @@
   <tabTrigger>::snip</tabTrigger>
   <description>Sublime Text Snippet</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.xml</scope>
+  <scope>text</scope>
 </snippet>
