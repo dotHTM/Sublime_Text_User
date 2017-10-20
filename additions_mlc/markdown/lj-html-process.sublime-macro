@@ -1,0 +1,13 @@
+[
+    {
+        "caption": "Reg Replace macro",
+        "command": "reg_replace",
+        "args": {
+            "replacements": [
+                "strip_html_top",
+                "strip_html_bottom",
+                "remove_all_line_breaks"
+            ]
+        }
+    }
+]
