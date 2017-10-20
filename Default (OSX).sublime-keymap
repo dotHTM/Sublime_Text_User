@@ -6,7 +6,7 @@
 	{
 		"args": { "file": "Packages/User/foldEverything.sublime-macro" },
 		"command": "run_macro_file",
-		"keys": ["super+k, super+`"],
+		"keys": ["super+k, super+shift+0"],
 	},
 
 

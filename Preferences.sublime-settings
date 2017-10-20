@@ -35,9 +35,9 @@
 	"color_scheme": "Packages/User/additions_mlc/color_scheme/Tomorrow-Night-Vamp~mlc.tmTheme",
 	"draw_indent_guides": true,
 	"draw_minimap_border": true,
-	"draw_white_space": "selection",
+	"draw_white_space": "all",
 	"fade_fold_buttons": false,
-	"figlet_font": "clb6x10",
+	"figlet_font": "univers",
 	"file_exclude_patterns":
 	[
 		"._*",
@@ -105,7 +105,6 @@
 		88
 	],
 	"scroll_past_end": true,
-	"show_open_files": true,
 	"status_bar_brighter": true,
 	"tab_completion": false,
 	"theme": "Adaptive.sublime-theme",
