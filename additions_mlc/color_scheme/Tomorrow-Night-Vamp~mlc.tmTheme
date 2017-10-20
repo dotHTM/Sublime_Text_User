@@ -805,7 +805,152 @@ MLC mods:
 					<string>#666</string>
 				</dict>
 			</dict>
+			
+			
+			
+			<!--  -->
+			
+			
+<dict>
+    <key>name</key>
+    <string>blah</string>
+    <key>scope</key>
+    <string>tx-red</string>
+    <key>settings</key>
+    <dict>
+            <!-- <key>background</key>
+        <string>#411</string> -->
+        <key>foreground</key>
+        <string>#e88</string>
+    </dict>
+</dict>
+            <dict>
+    <key>name</key>
+    <string>blah</string>
+    <key>scope</key>
+    <string>tx-yellow</string>
+    <key>settings</key>
+    <dict>
+        <!-- <key>background</key>
+        <string>#440</string> -->
+        <key>foreground</key>
+        <string>#ee8</string>
+    </dict>
+</dict>                     <dict>
+    <key>name</key>
+    <string>blah</string>
+    <key>scope</key>
+    <string>tx-green</string>
+    <key>settings</key>
+    <dict>
+        <!-- <key>background</key>
+        <string>#141</string> -->
+        <key>foreground</key>
+        <string>#8e8</string>
+    </dict>
+</dict>
 
+
+            <dict>
+    <key>name</key>
+    <string>blah</string>
+    <key>scope</key>
+    <string>tx-cyan</string>
+    <key>settings</key>
+    <dict>
+        <!-- <key>background</key>
+        <string>#144</string> -->
+        <key>foreground</key>
+        <string>#8ee</string>
+    </dict>
+</dict>
+    
+            <dict>
+    <key>name</key>
+    <string>blah</string>
+    <key>scope</key>
+    <string>tx-blue</string>
+    <key>settings</key>
+    <dict>
+        <!-- <key>background</key>
+        <string>#114</string> -->
+        <key>foreground</key>
+        <string>#88e</string>
+    </dict>
+</dict>
+
+<dict>
+    <key>name</key>
+    <string>blah</string>
+    <key>scope</key>
+    <string>tx-purple</string>
+    <key>settings</key>
+    <dict>
+        <!-- <key>background</key>
+        <string>#414</string> -->
+        <key>foreground</key>
+        <string>#e8e</string>
+    </dict>
+</dict>
+
+<dict>
+    <key>name</key>
+    <string>blah</string>
+    <key>scope</key>
+    <string>tx-black</string>
+    <key>settings</key>
+    <dict>
+        <!-- <key>background</key>
+        <string>#111</string> -->
+        <key>foreground</key>
+        <string>#888</string>
+    </dict>
+</dict>
+
+
+<dict>
+    <key>name</key>
+    <string>blah</string>
+    <key>scope</key>
+    <string>tx-white</string>
+    <key>settings</key>
+    <dict>
+        <!-- <key>background</key>
+        <string>#444</string> -->
+        <key>foreground</key>
+        <string>#eee</string>
+    </dict>
+</dict>
+
+<dict>
+    <key>name</key>
+    <string>blah</string>
+    <key>scope</key>
+    <string>tx-light</string>
+    <key>settings</key>
+    <dict>
+        <!-- <key>background</key>
+        <string>#000</string> -->
+        <key>foreground</key>
+        <string>#aaa</string>
+    </dict>
+</dict>
+
+<dict>
+    <key>name</key>
+    <string>blah</string>
+    <key>scope</key>
+    <string>tx-dark</string>
+    <key>settings</key>
+    <dict>
+        <!-- <key>background</key>
+        <string>#000</string> -->
+        <key>foreground</key>
+        <string>#666</string>
+    </dict>
+</dict>
+			
+			<!--  -->
 
 		</array>
 		<key>uuid</key>
