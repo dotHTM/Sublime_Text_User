@@ -6,39 +6,39 @@
     "pl",
     "pm"
   ],
-  "perltidy_options":
-  [
-    "-l=80",  // maximum-line-length
+  // "perltidy_options":
+  // [
+  //   "-l=80",  // maximum-line-length
   
-    "-vmll", // variable-maximum-line-length
+  //   "-vmll", // variable-maximum-line-length
 
-    "-i=4",   // indent-columns
-    "-ci=4",  // continuation-indentation
-    "-cti=0", // closing-token-indentation
+  //   "-i=4",   // indent-columns
+  //   "-ci=4",  // continuation-indentation
+  //   "-cti=0", // closing-token-indentation
 
-    // "-lp",    // line-up-parentheses
+  //   // "-lp",    // line-up-parentheses
 
-    "-vt=0",  // vertical-tightness
-    "-vtc=0", // vertical-tightness-closing
-    "-pt=0",  // paren-tightness
-    "-bt=0",  // brace-tightness
-    "-sbt=0", // square-bracket-tightness
-    "-bbt=0", // block-brace-tightness
+  //   "-vt=0",  // vertical-tightness
+  //   "-vtc=0", // vertical-tightness-closing
+  //   "-pt=0",  // paren-tightness
+  //   "-bt=0",  // brace-tightness
+  //   "-sbt=0", // square-bracket-tightness
+  //   "-bbt=0", // block-brace-tightness
 
-    "-sfp",   // space-function-paren
-    "-skp",   // space-keyword-paren
-    "-sts",   // space-terminal-semicolon
+  //   "-sfp",   // space-function-paren
+  //   "-skp",   // space-keyword-paren
+  //   "-sts",   // space-terminal-semicolon
 
-    "-noll",  // nooutdent-long-lines
-    "-nolq",  // nooutdent-long-quotes
-    "-nolc",  // nooutdent-long-comments
-    "-nola",  // nooutdent-labels
+  //   "-noll",  // nooutdent-long-lines
+  //   "-nolq",  // nooutdent-long-quotes
+  //   "-nolc",  // nooutdent-long-comments
+  //   "-nola",  // nooutdent-labels
 
-    "-st",    // standard-output
-    "-se",    // standard-error-output
+  //   "-st",    // standard-output
+  //   "-se",    // standard-error-output
     
-    "-boc"
+  //   "-boc"
     
-  ],
+  // ],
 }
 

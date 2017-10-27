@@ -6,6 +6,7 @@
 	],
 	"installed_packages":
 	[
+		"Advanced CSV",
 		"Alignment",
 		"ApacheConf.tmLanguage",
 		"BinaryPlist",
@@ -26,6 +27,7 @@
 		"Emmet",
 		"Figlet Big ASCII Text",
 		"FileDiffs",
+		"FilterPipes",
 		"fish-shell",
 		"Generic Config",
 		"HexViewer",
@@ -65,6 +67,9 @@
 		"ScopeHunter",
 		"SideBarTools",
 		"SublimeGit",
+		"SublimeLinter",
+		"SublimeLinter-contrib-perl",
+		"SublimeLinter-contrib-perlcritic",
 		"Swift for F*ing Sublime",
 		"Sync View Scroll",
 		"SyntaxHighlightTools",

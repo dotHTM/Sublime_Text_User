@@ -9,7 +9,8 @@
 
 package ${TM_FILENAME/\.pm//gi};
 
-# use 5.18.0;
+use feature ":5.16";
+
 use strict;
 ${400:}
 

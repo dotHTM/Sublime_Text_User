@@ -1,13 +1,14 @@
 <snippet>
 	<content><![CDATA[
-#!/usr/local/bin/perl
+#!/usr/bin/perl
 # $TM_FILENAME
 #   ${100:Description}
 #
 #   Written by ${200:Mike Cramer}
 #   Started on ${300:DATE}
 
-# use 5.18.0;
+use feature ":5.16";
+
 use strict;
 use warnings;
 ${400:}
