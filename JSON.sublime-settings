@@ -1,6 +1,3 @@
 {
-	"extensions":
-	[
-		"sublime-macro"
-	]
+  "extensions": ["sublime-macro"]
 }

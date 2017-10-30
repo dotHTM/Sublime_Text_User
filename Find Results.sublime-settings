@@ -1,10 +1,6 @@
 {
-	"color_scheme": "Packages/User/additions_mlc/color_scheme/Monokai-sG-vamp~mlc.tmTheme",
-  "rulers":
-  [
-    0,
-  ],
-  "word_wrap": false,
+  "color_scheme":
+    "Packages/User/additions_mlc/color_scheme/Monokai-sG-vamp~mlc.tmTheme",
+  "rulers": [0],
+  "word_wrap": false
 }
-
-

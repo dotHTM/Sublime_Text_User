@@ -1,45 +1,43 @@
 [
-  
-  
-   {
-    "command": "show_overlay", 
-    "args": {"overlay": "goto", "text": ":"},
-   },
-  
   {
-   "command": "fold_by_level",
-    "args": {"level": 1} 
+    "command": "show_overlay",
+    "args": { "overlay": "goto", "text": ":" }
+  },
+
+  {
+    "command": "fold_by_level",
+    "args": { "level": 1 }
   },
   {
     "command": "fold_by_level",
-     "args": {"level": 2} 
-   },
+    "args": { "level": 2 }
+  },
   {
     "command": "fold_by_level",
-     "args": {"level": 3} 
-   },
+    "args": { "level": 3 }
+  },
   {
     "command": "fold_by_level",
-     "args": {"level": 4} 
-   },
+    "args": { "level": 4 }
+  },
   {
     "command": "fold_by_level",
-     "args": {"level": 5} 
-   },
+    "args": { "level": 5 }
+  },
   {
     "command": "fold_by_level",
-     "args": {"level": 6} 
-   },
+    "args": { "level": 6 }
+  },
   {
     "command": "fold_by_level",
-     "args": {"level": 7} 
-   },
+    "args": { "level": 7 }
+  },
   {
     "command": "fold_by_level",
-     "args": {"level": 8} 
-   },
+    "args": { "level": 8 }
+  },
   {
     "command": "fold_by_level",
-     "args": {"level": 9} 
-   },
+    "args": { "level": 9 }
+  }
 ]

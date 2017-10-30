@@ -1,5 +1,5 @@
 {
-    "cmd"       : ["/usr/local/bin/sass --update -f -q --sourcemap=none -l $file"],
-    "selector"  : "source.scss",
-    "shell"     : "bash"
+  "cmd": ["/usr/local/bin/sass --update -f -q --sourcemap=none -l $file"],
+  "selector": "source.scss",
+  "shell": "bash"
 }

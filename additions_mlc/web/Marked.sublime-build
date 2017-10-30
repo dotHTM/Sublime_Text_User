@@ -1,6 +1,6 @@
 {
-	// "cmd": [ "open", "-a", "/Applications/Marked.app", "$file"],
-	"cmd": [ "open", "-a", "/Applications/Marked 2.app", "$file"],
+  // "cmd": [ "open", "-a", "/Applications/Marked.app", "$file"],
+  "cmd": ["open", "-a", "/Applications/Marked 2.app", "$file"],
 
-	"selector": "text.html.markdown"
+  "selector": "text.html.markdown"
 }

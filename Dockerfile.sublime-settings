@@ -1,7 +1,3 @@
 {
-	"extensions":
-	[
-        "docker",
-		"dockerfile"
-	]
+  "extensions": ["docker", "dockerfile"]
 }

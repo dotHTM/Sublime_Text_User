@@ -1,15 +1,10 @@
-// These settings override both User and Default settings for the ModernPerl syntax
 {
-  "extensions":
-  [
-    "cgi",
-    "pl",
-    "pm"
-  ],
+  // These settings override both User and Default settings for the ModernPerl syntax
+  "extensions": ["cgi", "pl", "pm"]
   // "perltidy_options":
   // [
   //   "-l=80",  // maximum-line-length
-  
+
   //   "-vmll", // variable-maximum-line-length
 
   //   "-i=4",   // indent-columns
@@ -36,9 +31,8 @@
 
   //   "-st",    // standard-output
   //   "-se",    // standard-error-output
-    
+
   //   "-boc"
-    
+
   // ],
 }
-

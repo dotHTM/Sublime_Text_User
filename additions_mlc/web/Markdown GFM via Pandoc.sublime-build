@@ -1,4 +1,12 @@
 {
-	"cmd": [ "/usr/local/bin/pandoc", "-f", "markdown_github", "-s", "$file", "-o", "$file.html" ],
-	"selector": "text.html.markdown"
+  "cmd": [
+    "/usr/local/bin/pandoc",
+    "-f",
+    "markdown_github",
+    "-s",
+    "$file",
+    "-o",
+    "$file.html"
+  ],
+  "selector": "text.html.markdown"
 }

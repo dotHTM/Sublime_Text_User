@@ -1,19 +1,18 @@
 [
-	{
-		"args": {"to": "bol"},
-		"command": "move_to"
-	},
-	{
-		"args": {"extend": true, "to": "eol" },
-		"command": "move_to"
-	},
-	{
-		"args": {"block": false},
-		"command": "toggle_comment"
-	},
-	{
-		"args": {"width": 60},
-		"command": "wrap_lines_plus",
-	},
+  {
+    "args": { "to": "bol" },
+    "command": "move_to"
+  },
+  {
+    "args": { "extend": true, "to": "eol" },
+    "command": "move_to"
+  },
+  {
+    "args": { "block": false },
+    "command": "toggle_comment"
+  },
+  {
+    "args": { "width": 60 },
+    "command": "wrap_lines_plus"
+  }
 ]
-

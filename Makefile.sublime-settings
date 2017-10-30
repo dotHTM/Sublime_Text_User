@@ -1,7 +1,6 @@
-// These settings override both User and Default settings for the Makefile syntax
 {
-        "tab_size": 4,
-    "translate_tabs_to_spaces": false,
-    "detect_indentation": false,
-
+  // These settings override both User and Default settings for the Makefile syntax
+  "tab_size": 4,
+  "translate_tabs_to_spaces": false,
+  "detect_indentation": false
 }
