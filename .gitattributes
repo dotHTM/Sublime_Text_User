@@ -1,1 +1,3 @@
-*.sublime-settings linguist-language=JSON
+sample.html linguist-documentation
+sample.css linguist-documentation
+sample.scss linguist-documentation
