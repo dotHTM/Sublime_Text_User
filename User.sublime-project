@@ -30,6 +30,11 @@
 			[
 				".Trash*",
 			],
+				"binary_file_patterns":
+				[	
+					".*/**", 
+],
+			
 			"name": ".home",
 			"path": "~"
 		},
