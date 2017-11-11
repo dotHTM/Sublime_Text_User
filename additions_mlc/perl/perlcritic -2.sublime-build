@@ -1,6 +1,6 @@
 {
   // "cmd": ["/usr/local/bin/perl", "$file"],
-  "cmd": ["perlProcess.sh", "$file"],
+  "cmd": ["perlProcess.sh", "2", "$file"],
   "file_regex": "^f:(.*) l:(.*) c:(.*) m:(.*)$",
   "selector": "source.perl"
 

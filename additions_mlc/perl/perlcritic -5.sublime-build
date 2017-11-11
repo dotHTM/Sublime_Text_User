@@ -1,0 +1,8 @@
+{
+  // "cmd": ["/usr/local/bin/perl", "$file"],
+  "cmd": ["perlProcess.sh", "5", "$file"],
+  "file_regex": "^f:(.*) l:(.*) c:(.*) m:(.*)$",
+  "selector": "source.perl"
+
+// This requires the perlProcess.sh script from the bash_hacks project on github: <git@github.com:dotHTM/bash_hacks.git>
+}
