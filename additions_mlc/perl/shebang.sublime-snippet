@@ -3,17 +3,18 @@
 #!/usr/bin/perl
 # $TM_FILENAME
 #   ${100:Description}
-#
-#   Written by ${200:Mike Cramer}
-#   Started on ${300:DATE}
 
-use feature ":5.16";
+
+use feature ':5.16';
 
 use strict;
 use warnings;
+use Readonly;
+
 ${400:}
 
 ${999:# body...}
+
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>sb</tabTrigger>

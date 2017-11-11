@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+Readonly my \$${100:scalar} => '${200:value}' ;
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>let</tabTrigger>
+    <description>constant</description>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.perl</scope>
+</snippet>
+
