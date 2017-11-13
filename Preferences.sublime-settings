@@ -61,7 +61,8 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"*.Ulysses-*"
+		"*.Ulysses-*",
+		".fuse_hidden*",
 	],
 	"folder_exclude_patterns":
 	[
