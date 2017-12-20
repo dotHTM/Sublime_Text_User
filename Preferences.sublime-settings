@@ -62,11 +62,13 @@
 		"*.psd",
 		"*.db",
 		"*.Ulysses-*",
-		".fuse_hidden*",
+		".fuse_hidden*"
 	],
 	"folder_exclude_patterns":
 	[
-		"CVS"
+		"CVS",
+		".git",
+		".vagrant*"
 	],
 	"font_face": "SFMono-Regular",
 	"font_size": 14,

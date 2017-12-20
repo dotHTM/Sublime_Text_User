@@ -1,0 +1,13 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+<!-- $TM_FILENAME -->
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>sb</tabTrigger>
+  <description>html shebang</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html,source.php,text.xml</scope>
+</snippet>
+
+

@@ -1,6 +1,9 @@
 {
   // These settings override both User and Default settings for the ModernPerl syntax
-  "extensions": ["cgi", "pl", "pm"]
+  "extensions": [
+    "cgi", "pl", "pm",
+    "cgi.*", "pl.*", "pm.*",
+     ]
   // "perltidy_options":
   // [
   //   "-l=80",  // maximum-line-length

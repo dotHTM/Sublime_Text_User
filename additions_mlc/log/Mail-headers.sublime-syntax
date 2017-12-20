@@ -1,0 +1,59 @@
+%YAML 1.2
+---
+name: "Mail Headers"
+# file_extensions:
+#   - log
+scope: text
+
+contexts:
+  main:
+    # field
+    - match: '^\S*:'
+      scope: dark
+      
+    # time 
+    - match: '\b\d+:\d\d(:\d\d)?( \+\d{2,4})?\b'
+      scope: tx-yellow
+
+    # IPv4 Address
+    - match: '\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b'
+      scope: tx-red
+
+    # IPv6 Address 
+    - match: '\b([a-f0-9]{1,4}:)+(:)?([a-f0-9]{1,4}:)*([a-f0-9]{1,4})\b'
+      scope: tx-cyan
+
+    # email
+    - match: '\b([\w\._-]+@[\w\._-]+)\b'
+      scope: tx-green
+      
+    # utexas.edu
+    - match: '\b([\w\._-]*utexas.edu)\b'
+      scope: tx-purple
+      
+
+
+    # - match: '\[.*?\]'
+    #   scope: tx-cyan
+
+  #   - match: '-'
+  #     scope: tx-yellow
+
+  #     # paths
+  #   - match: '[\s|\'']/[\w\/\-\\.?+%]*'
+  #     scope: tx-purple
+
+  #   - match: '\b[\w ]+:'
+  #     scope: tx-green
+
+  # # General case and Plain text:
+  #   - match: '^/.+:'
+  #     scope: white
+  #   - match: '^ *\d+:'
+  #     scope: light
+  #   - match: '^ *\d+(?!=:).'
+  #     scope: dark
+      
+  #   - match: \s
+  #     pop: true
+
