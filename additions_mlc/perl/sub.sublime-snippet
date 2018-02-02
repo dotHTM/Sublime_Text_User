@@ -1,7 +1,7 @@
 
 <snippet>
 	<content><![CDATA[
-sub ${100:function_name} (${200/[^$%@]//g}) {
+sub ${100:function_name} {
     my (${200:\$input, \$parameters}) = @_ ;
     ${300:## body...}
 }
