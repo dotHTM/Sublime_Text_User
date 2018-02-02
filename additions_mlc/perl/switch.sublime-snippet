@@ -1,0 +1,17 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+for (\$${100:testScalar}) {     # switch
+    if    (!\$${100}) { ${201:do_if_nil()     } }    # nil case
+    elsif (/^${300:regex}\$/) { ${301:do_something()} }    # case
+    elsif (/^${400:regex}\$/) { ${401:do_something_else()} }    # case
+    ${999:# ...}
+    else    { ${250:default_action()          } }    # default (not nil)
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>switch</tabTrigger>
+  <description>switch</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.perl</scope>
+</snippet>
