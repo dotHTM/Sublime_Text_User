@@ -71,7 +71,7 @@
 		".vagrant*"
 	],
 	"font_face": "SFMono-Regular",
-	"font_size": 14,
+	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -107,10 +107,11 @@
 		88
 	],
 	"status_bar_brighter": true,
-	"tab_completion": false,
+	"tab_completion": true,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": false,
+	"window.status_bar.label_control.font.size": 24,
 	"word_wrap": true,
 	"wrap_width": 0
 }
