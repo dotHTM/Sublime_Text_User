@@ -72,17 +72,6 @@
     "keys": ["super+alt+,"]
   },
 
-  // Open the bash_hacks.sublime-project
-
-  {
-    "command": "open_dir",
-    "args": {
-      "dir":
-        "${packages}/../../../../Projects/github/bash_hacks/bash_hacks.sublime-project"
-    },
-    "keys": ["ctrl+alt+,"]
-  },
-
   // Great suggestion to make word wrap a keyboard shortcut. credit https://github.com/soffes/sublime
 
   {
