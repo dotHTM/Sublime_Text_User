@@ -66,6 +66,7 @@
 		"ScopeAlways",
 		"ScopeHunter",
 		"SideBarTools",
+		"SublimeGit",
 		"SublimeLinter",
 		"SublimeLinter-contrib-perl",
 		"SublimeLinter-contrib-perlcritic",
@@ -78,7 +79,6 @@
 		"Trimmer",
 		"URLEncode",
 		"Wrap Plus",
-		"Zip Browser",
-		"ApacheConf"
+		"Zip Browser"
 	]
 }
