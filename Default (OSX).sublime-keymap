@@ -1,10 +1,16 @@
 [
 
+
+    { "command": "reindent",
+        "args": {"single_line": false},
+    "keys": ["ctrl+shift+y"],
+    },
+
+
+
     // plugin overrides
-
+    
     //case conversion
-
-
     {
         "keys": ["super+alt+k", "super+alt+u"],
         "command": "convert_to_snake"
