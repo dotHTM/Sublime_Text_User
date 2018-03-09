@@ -226,7 +226,7 @@ MLC mods:
 				<key>scope</key>                  <string>markup.raw.block.fenced.markdown,markup.raw.block.markdown</string>
 				<key>settings</key>
 				<dict>
-					<key>background</key>         <string>#210</string>
+					<key>background</key>         <string>#222</string>
 					<!-- <string>#221a0f</string>-->
 					<key>foreground</key>         <string>#ddd</string>
 				</dict>
