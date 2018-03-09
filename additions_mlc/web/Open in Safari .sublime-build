@@ -1,0 +1,4 @@
+{
+    "cmd": ["open", "-a", "/Applications/Safari.app", "$file"],
+    "selector": "text.html"
+}
