@@ -1,5 +1,7 @@
 {
-  "wrap_width": 0,
-  // "line_numbers": false,
-  "rulers": [0]
+    "extensions": [],
+    "rulers": [
+        0
+    ],
+    "wrap_width": 0
 }
