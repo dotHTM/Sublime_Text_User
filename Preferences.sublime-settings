@@ -75,6 +75,12 @@
 		".vagrant*",
 		"datadir"
 	],
+	// "font_face": "Andale Mono",
+	// "font_face": "Courier",
+	// "font_face": "Courier-New",
+	// "font_face": "Menlo",
+	// "font_face": "Monaco",
+	// "font_face": "PTMono-Regular",
 	"font_face": "SFMono-Regular",
 	"font_size": 13,
 	"highlight_modified_tabs": true,
