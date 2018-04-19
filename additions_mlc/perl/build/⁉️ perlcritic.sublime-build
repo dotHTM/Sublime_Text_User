@@ -1,31 +1,31 @@
 {
-    // "cmd": ["/usr/local/bin/perl", "\"$file\""],
+    // "cmd": ["/usr/local/bin/perl", "$file"],
     "selector": "source.perl",
-        // "cmd": ["perlProcess.sh", "5", "\"$file\""],
-        "shell_cmd": "perlProcess.sh 5 \"$file\"",
+        // "cmd": ["perlProcess.sh", "5", "$file\""],
+        // "shell_cmd": "perlProcess.sh 5 \"$file\"",
 
     "file_regex": "^f:(.*) l:(.*) c:(.*) m:(.*)$",
 
     "variants": [
     {
         "name": "1",
-        "cmd": ["perlProcess.sh", "1", "\"$file\""],
+        "cmd": ["perlProcess.sh", "1", "$file"],
     },
     {
         "name": "2",
-        "cmd": ["perlProcess.sh", "2", "\"$file\""],
+        "cmd": ["perlProcess.sh", "2", "$file"],
     },
     {
         "name": "3",
-        "cmd": ["perlProcess.sh", "3", "\"$file\""],
+        "cmd": ["perlProcess.sh", "3", "$file"],
     },
     {
         "name": "4",
-        "cmd": ["perlProcess.sh", "4", "\"$file\""],
+        "cmd": ["perlProcess.sh", "4", "$file"],
     },
     {
         "name": "5",
-        "cmd": ["perlProcess.sh", "5", "\"$file\""],
+        "cmd": ["perlProcess.sh", "5", "$file"],
     }, ]
     // This requires the perlProcess.sh script from the bash_hacks project on github: <git@github.com:dotHTM/bash_hacks.git>
 }
