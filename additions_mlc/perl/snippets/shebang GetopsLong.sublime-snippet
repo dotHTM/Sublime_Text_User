@@ -1,0 +1,147 @@
+<snippet>
+	<content><![CDATA[
+#!/usr${1:/local/}bin/perl
+# $TM_FILENAME
+#   ${100:Description}
+
+use feature ':5.16';
+
+use strict;
+use warnings;
+use Readonly;
+use English;
+use Data::Dumper::Concise;
+
+${2:#} use PadWalker qw(peek_my peek_our peek_sub closed_over);
+
+use Getopt::Long;
+
+## Package Variables
+our ( \$MODE_1, \$MODE_2 );
+our \$MODE_COUNT = 0;
+
+## MODE_1 sub options
+our ( \$MODE_1_SUB_1, \$MODE_1_SUB_2 );
+
+our \$VERBOSE = 0;
+our \$DEBUG   = 0;
+our \$QUIET   = 0;
+
+######################################################
+#                                                    #
+#                                  88                #
+#                                  ""                #
+#                                                    #
+#    88,dPYba,,adPYba,  ,adPPYYba, 88 8b,dPPYba,     #
+#    88P'   "88"    "8a ""     `Y8 88 88P'   `"8a    #
+#    88      88      88 ,adPPPPP88 88 88       88    #
+#    88      88      88 88,    ,88 88 88       88    #
+#    88      88      88 `"8bbdP"Y8 88 88       88    #
+#                                                    #
+#                                                    #
+######################################################
+
+sub main {
+    my (undef) = @_;
+
+    if (\$MODE_1) {
+        mode_1_process();
+    }
+
+    return 0;    #success
+}    ##    main
+
+##################################################
+#                                                #
+#                                                #
+#                             ,d                 #
+#                             88                 #
+#     ,adPPYba,  8b,dPPYba, MM88MMM ,adPPYba,    #
+#    a8"     "8a 88P'    "8a  88    I8[    ""    #
+#    8b       d8 88       d8  88     `"Y8ba,     #
+#    "8a,   ,a8" 88b,   ,a8"  88,   aa    ]8I    #
+#     `"YbbdP"'  88`YbbdP"'   "Y888 `"YbbdP"'    #
+#                88                              #
+#                88                              #
+##################################################
+
+sub process_opts {
+    my (undef) = @_;
+    GetOptions( "a|mode-1" => \\\$MODE_1, );
+
+    if (\$MODE_1) { \$MODE_COUNT++; }
+
+    say Dumper peek_our(1) if \$DEBUG;
+    return 1;    #success
+}    ##    process_opts
+
+sub validate_opts {
+    my (undef) = @_;
+
+    ## body...
+
+    return "validate_opts: wip, placeholder";
+}    ##    validate_opts
+
+sub usage {
+    my (\$message) = @_;
+    my \$usage_string = << 'EOF';
+Usage for this script:
+    -a  - Mode 1
+EOF
+
+    \$usage_string = '' if \$QUIET;
+    \$usage_string .= 'ARGUMENT ERROR: ' . \$message if \$message;
+    say join "\n", "\$PROGRAM_NAME:", "\$message", \$usage_string;
+
+    exit 5;    # failed: usage error
+}    ##    usage
+
+#####################################################
+#                                                   #
+#                          88                       #
+#                          88                       #
+#                          88                       #
+#    ,adPPYba, 88       88 88,dPPYba,  ,adPPYba,    #
+#    I8[    "" 88       88 88P'    "8a I8[    ""    #
+#     `"Y8ba,  88       88 88       d8  `"Y8ba,     #
+#    aa    ]8I "8a,   ,a88 88b,   ,a8" aa    ]8I    #
+#    `"YbbdP"'  `"YbbdP'Y8 8Y"Ybbd8"'  `"YbbdP"'    #
+#                                                   #
+#                                                   #
+#####################################################
+
+sub mode_1_process {
+    my ( \$input, \$parameters, @args ) = @_;
+    ## body...
+    return "mode_1_process: wip, placeholder";
+}    ##    mode_1_process
+
+#####################################################
+#                                                   #
+#                                                   #
+#                                                   #
+#                                                   #
+#     ,adPPYba, 8b,     ,d8 ,adPPYba,  ,adPPYba,    #
+#    a8P_____88  `Y8, ,8P' a8P_____88 a8"     ""    #
+#    8PP"""""""    )888(   8PP""""""" 8b            #
+#    "8b,   ,aa  ,d8" "8b, "8b,   ,aa "8a,   ,aa    #
+#     `"Ybbd8"' 8P'     `Y8 `"Ybbd8"'  `"Ybbd8"'    #
+#                                                   #
+#                                                   #
+#####################################################
+{
+    # if ( not @ARGV ) { usage('No Arguments Were Given') }
+    process_opts();
+    validate_opts();
+    exit main();
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sbl</tabTrigger>
+    <description>#! perl Getops::Long</description>
+
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.perl</scope>
+</snippet>
