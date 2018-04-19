@@ -1,0 +1,22 @@
+{
+  "cmd": ["md5","-r","$file"],
+  
+      "variants": [
+    {
+        "name": "MD5",
+        "cmd": ["md5","-r","$file"],
+    }, 
+    {
+        "name": "SHA-1",
+        "cmd": ["shasum","$file"],
+    },     {
+        "name": "SHA-256",
+        "cmd": ["shasum","-a","256","$file"],
+    },     {
+        "name": "SHA-512",
+        "cmd": ["shasum","-a","512","$file"],
+    }, 
+
+]
+  
+}
