@@ -1,22 +1,50 @@
 [
+    
+    // Open the Sublime Text User.sublime-project
 
-
-    { "command": "reindent",
-        "args": {"single_line": false},
-    "keys": ["ctrl+shift+y"],
+    {
+        "command": "open_dir",
+        "args":
+        {
+            "dir": "${packages}/User/User.sublime-project"
+        },
+        "keys": ["super+alt+,"]
+    },
+    
+    {
+        "command": "open_dir",
+        "args":
+        {
+            "dir": "${packages}/User/User.sublime-project"
+        },
+        "keys": ["super+alt+,"]
     },
 
-
+    // Reindent
+    //
+    // perltidy is ctrl+shift+t
+    {
+        "command": "reindent",
+        "args":
+        {
+            "single_line": false
+        },
+        "keys": ["ctrl+shift+r"],
+    },
+    {
+        "keys": ["ctrl+shift+h"],
+        "command": "htmlprettify"
+    },
 
     // plugin overrides
-    
+
     //case conversion
     {
-        "keys": ["super+alt+k", "super+alt+u"],
+        "keys": ["super+alt+k", "super+alt+l"],
         "command": "convert_to_snake"
     },
     {
-        "keys": ["super+alt+k", "super+alt+l"],
+        "keys": ["super+alt+k", "super+alt+u"],
         "command": "convert_to_screaming_snake"
     },
     {
@@ -105,16 +133,7 @@
         "command": "select_all_bookmarks"
     },
 
-    // Open the Sublime Text User.sublime-project
 
-    {
-        "command": "open_dir",
-        "args":
-        {
-            "dir": "${packages}/User/User.sublime-project"
-        },
-        "keys": ["super+alt+,"]
-    },
 
     // Great suggestion to make word wrap a keyboard shortcut. credit https://github.com/soffes/sublime
 
@@ -424,6 +443,52 @@
         "args":
         {
             "contents": "<${0:$SELECTION}>"
+        },
+        "context": [
+        {
+            "key": "setting.auto_match_enabled",
+            "operator": "equal",
+            "operand": true
+        },
+        {
+            "key": "selection_empty",
+            "operator": "equal",
+            "operand": false,
+            "match_all": true
+        }]
+    },
+
+    // space wrap, modified of above
+
+    {
+        "keys": [" "],
+        "command": "insert_snippet",
+        "args":
+        {
+            "contents": " ${0:$SELECTION} "
+        },
+        "context": [
+        {
+            "key": "setting.auto_match_enabled",
+            "operator": "equal",
+            "operand": true
+        },
+        {
+            "key": "selection_empty",
+            "operator": "equal",
+            "operand": false,
+            "match_all": true
+        }]
+    },
+
+    // bash variable wrap, modified of above
+
+    {
+        "keys": ["$"],
+        "command": "insert_snippet",
+        "args":
+        {
+            "contents": "\\$\\{${0:$SELECTION}\\}"
         },
         "context": [
         {
