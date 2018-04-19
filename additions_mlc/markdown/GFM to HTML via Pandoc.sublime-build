@@ -1,10 +1,12 @@
 {
   "cmd": [
     "/usr/local/bin/pandoc",
-    "-f",
-    "markdown_github",
+    "--from",
+    "markdown_mmd+yaml_metadata_block",
     "-s",
     "$file",
+    "--to",
+    "html4",
     "-o",
     "$file.html"
   ],
