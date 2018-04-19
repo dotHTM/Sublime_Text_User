@@ -1,14 +1,13 @@
 {
     "selector": "source.perl",
 
-    // "cmd": ["/usr/bin/perl", "$file"],
-    "shell_cmd": "/usr/bin/perl $file | perl -pe 's/\\s+<DATA>\\s+line 755\\.//gmi'", //fix for the DATA line 755 nonsense induced from Net::LDAP
-    "file_regex": " at (.*) line ([0-9]+)[.,]",
+    "cmd": ["/usr/bin/perl", "$file"],
+    "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]",
 
     "variants": [
     {
         "name": "Check Syntax",
-        "shell_cmd": "/usr/bin/perl -c $file 2>&1 | perl -pe 's/\\s+<DATA>\\s+line 755\\.//gmi'",
-        "file_regex": " at (.*) line ([0-9]+)[.,]",
+        "cmd": ["/usr/bin/perl", "-c", "$file"],
+    "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]",
     }, ],
 }
