@@ -2,8 +2,7 @@
 <snippet>
 	<content><![CDATA[
 sub ${100:function_name} {
-    my \$self = shift ;
-    my ( ${200:@args} ) = @_ ;
+    my ( \$self, ${200:\$new_value, }${250:@args} ) = @_ ;
     ${300:## body...}
     return ${400:\$self->\{ ${100} \}} ;
 }
