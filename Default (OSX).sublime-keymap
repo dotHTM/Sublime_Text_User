@@ -20,6 +20,14 @@
         "keys": ["super+alt+,"]
     },
 
+    {
+        "keys": ["ctrl+alt+/"],
+        "command": "insert_snippet",
+        "args":
+        {
+            "contents": " ### ⁄⁄⁄ ${0:$SELECTION} ⁄⁄⁄ ### "
+        },
+    },
     // Reindent
     //
     // perltidy is ctrl+shift+t
