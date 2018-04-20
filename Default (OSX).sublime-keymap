@@ -28,6 +28,15 @@
             "contents": " ### ⁄⁄⁄ ${0:$SELECTION} ⁄⁄⁄ ### "
         },
     },
+    {
+        "keys": ["super+ctrl+/"],
+        "command": "toggle_comment",
+        "args":
+        {
+            "block": true
+        },
+        "caption": "Toggle Block Comment"
+    },
     // Reindent
     //
     // perltidy is ctrl+shift+t
