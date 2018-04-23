@@ -1,5 +1,5 @@
 [
-    
+
     // Open the Sublime Text User.sublime-project
 
     {
@@ -10,7 +10,7 @@
         },
         "keys": ["super+alt+,"]
     },
-    
+
     {
         "command": "open_dir",
         "args":
@@ -26,6 +26,15 @@
         "args":
         {
             "contents": " ### ⁄⁄⁄ ${0:$SELECTION} ⁄⁄⁄ ### "
+        },
+    },
+    
+    {
+        "keys": ["ctrl+shift+/"],
+        "command": "insert_snippet",
+        "args":
+        {
+            "contents": " ### ››› ${0:$SELECTION} ‹‹‹ ### "
         },
     },
     {

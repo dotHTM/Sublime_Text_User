@@ -30,11 +30,11 @@
 		"*.ttf",
 		"*.zip",
 		"*.csv",
-		"*,",
+		"*,"
 	],
 	"bold_folder_labels": true,
 	"color_inactive_tabs": true,
-	"color_scheme": "Packages/User/additions_mlc/color_scheme/Tomorrow-Night-Vamp~mlc.tmTheme",
+	"color_scheme": "Packages/User/additions_mlc/asthetics/color_scheme/Tomorrow-Vamp.sublime-color-scheme",
 	"draw_indent_guides": true,
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
@@ -69,7 +69,7 @@
 		".fuse_hidden*",
 		"*.2[0-9][0-9][0-9]*",
 		"*.old*",
-		"*~",
+		"*~"
 	],
 	"folder_exclude_patterns":
 	[
@@ -78,12 +78,6 @@
 		".vagrant*",
 		"datadir"
 	],
-	// "font_face": "Andale Mono",
-	// "font_face": "Courier",
-	// "font_face": "Courier-New",
-	// "font_face": "Menlo",
-	// "font_face": "Monaco",
-	// "font_face": "PTMono-Regular",
 	"font_face": "SFMono-Regular",
 	"font_size": 13,
 	"highlight_line": true,
@@ -92,7 +86,7 @@
 	[
 		"Color Highlighter",
 		"ColorSchemeSelector",
-		"Vintage",
+		"Vintage"
 	],
 	"indent_to_bracket": true,
 	"index_files": true,
@@ -122,8 +116,9 @@
 		88,
 		160,
 		240,
-		320,
+		320
 	],
+	"scroll_past_end": true,
 	"status_bar_brighter": true,
 	"tab_completion": true,
 	"theme": "Adaptive.sublime-theme",
