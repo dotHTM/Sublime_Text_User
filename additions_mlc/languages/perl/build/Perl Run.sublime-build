@@ -1,13 +1,25 @@
 {
-    "selector": "source.perl",
+  "selector": "source.perl",
 
-    "cmd": ["perl", "$file"],
-    "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]",
+  "cmd": ["perl", "$file"],
+  "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]",
 
-    "variants": [
+  "variants": [
     {
-        "name": "Check Syntax",
-        "cmd": ["perl", "-c", "$file"],
-    "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]",
-    }, ],
+      "name": "Check Syntax",
+      "cmd": ["perl", "-c", "$file"],
+      "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]"
+    },
+
+    // {
+    //   "name": "System - Run",
+    //   "cmd": ["/usr/bin/perl", "$file"],
+    //   "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]"
+    // },
+    // {
+    //   "name": "System - Check Syntax",
+    //   "cmd": ["/usr/bin/perl", "-c", "$file"],
+    //   "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]"
+    // }
+  ]
 }

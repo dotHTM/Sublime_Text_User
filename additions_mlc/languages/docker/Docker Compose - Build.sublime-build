@@ -1,4 +1,0 @@
-{
-  "cmd": ["/usr/local/bin/docker-compose", "build"],
-  "selector": "source.yaml"
-}

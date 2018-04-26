@@ -1,4 +1,18 @@
 {
-  "cmd": ["/usr/local/bin/python", "$file"],
-  "selector": "source.python"
+  "cmd": ["python", "$file"],
+  "selector": "source.python",
+
+  "variants": [
+    {
+      "name": "v3",
+      "cmd": ["/usr/local/bin/python3", "$file"],
+      "selector": "source.python"
+    },
+    {
+      "name": "probably 2",
+      "cmd": ["/usr/local/bin/python", "$file"],
+      "selector": "source.python"
+    }
+  ]
 }
+

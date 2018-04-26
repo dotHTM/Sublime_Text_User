@@ -1,4 +1,0 @@
-{
-  "cmd": ["/usr/local/bin/docker", "build", ".", "-t", "testbuild"],
-  "selector": "source.dockerfile"
-}

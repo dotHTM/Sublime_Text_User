@@ -1,0 +1,27 @@
+{
+  "cmd": ["open", "-a", "/Applications/Marked 2.app", "$file"],
+  "selector": "text.html.markdown",
+
+  "variants": [
+    {
+      "name": "GFM to HTML via Pandoc",
+      "cmd": [
+        "/usr/local/bin/pandoc",
+        "--from",
+        "markdown_mmd+yaml_metadata_block",
+        "-s",
+        "$file",
+        "--to",
+        "html4",
+        "-o",
+        "$file.html"
+      ],
+      "selector": "text.html.markdown"
+    }
+    // {
+    //   "name": "Marked App",
+    //   "cmd": ["open", "-a", "/Applications/Marked 2.app", "$file"],
+    //   "selector": "text.html.markdown"
+    // },
+  ]
+}

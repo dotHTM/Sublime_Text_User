@@ -1,4 +1,4 @@
 {
-  "cmd": ["/usr/local/bin/fish", "$file"],
+  "cmd": ["fish", "$file"],
   "selector": "source.fish"
 }

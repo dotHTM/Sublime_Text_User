@@ -1,4 +1,0 @@
-{
-    "cmd": ["open", "-a", "/Applications/WebKit.app", "$file"],
-    "selector": "text.html"
-}

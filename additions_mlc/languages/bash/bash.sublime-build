@@ -1,0 +1,23 @@
+{
+  "cmd": ["bash", "$file"],
+    "selector": "source.shell",
+
+  "variants": [
+  {
+    "name":"/bin/bash, probably v3",
+    "cmd": ["/bin/bash", "$file"],
+  // "selector": "source.shell",
+  "file_regex": "^[ ]*(.*): line ([0-9]*)(: )(.*)",
+  },
+  
+  {
+    "name": "/usr/local/bin/bash, probably v4",
+  "cmd": ["/usr/local/bin/bash", "$file"],
+  // "selector": "source.shell"
+}
+],
+  
+  
+  
+  
+}

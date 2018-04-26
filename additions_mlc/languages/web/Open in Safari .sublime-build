@@ -1,4 +1,22 @@
 {
-    "cmd": ["open", "-a", "/Applications/Safari.app", "$file"],
-    "selector": "text.html"
+  "cmd": ["open", "-a", "/Applications/Safari.app", "$file"],
+  "selector": "text.html",
+
+  "variants": [
+    {
+      "name": "Technology Preview",
+      "cmd": [
+        "open",
+        "-a",
+        "/Applications/Safari Technology Preview.app",
+        "$file"
+      ],
+      "selector": "text.html"
+    },
+    {
+      "name": "WebKit",
+      "cmd": ["open", "-a", "/Applications/WebKit.app", "$file"],
+      "selector": "text.html"
+    }
+  ]
 }

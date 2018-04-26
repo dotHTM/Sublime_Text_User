@@ -1,4 +1,0 @@
-{
-    "cmd": ["open", "-a", "/Applications/Safari Technology Preview.app", "$file"],
-    "selector": "text.html"
-}
