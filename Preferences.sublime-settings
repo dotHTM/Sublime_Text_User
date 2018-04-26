@@ -113,6 +113,7 @@
 	// "font_face": "PTMono-Regular",
 	// "font_face": "SF Mono",
 	// "font_face": "SFMono-Regular",
+	"font_face": "SFMono-Semibold",
 	// "font_face": "Source Han Code JP",
 	// "font_face": "Ubuntu Mono",
 
@@ -152,7 +153,6 @@
 		0,
 		8,
 		80,
-		// 88,
 		160,
 		240,
 		320
