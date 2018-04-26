@@ -1,0 +1,112 @@
+[
+  // Open the Sublime Text User.sublime-project
+
+  {
+    "command": "open_dir",
+    "args": {
+      "dir": "${packages}/User/User.sublime-project"
+    },
+    "keys": ["super+alt+,"]
+  },
+
+  // Reindent
+  //
+  // perltidy is ctrl+shift+t
+  {
+    "command": "reindent",
+    "args": {
+      "single_line": false
+    },
+    "keys": ["ctrl+shift+r"]
+  },
+  {
+    "keys": ["ctrl+shift+h"],
+    "command": "htmlprettify"
+  },
+
+  // Macros
+
+  {
+    "args": {
+      "file": "Packages/User/foldEverything.sublime-macro"
+    },
+    "command": "run_macro_file",
+    "keys": ["super+k, super+shift+0"]
+  },
+
+  // Great suggestion to make word wrap a keyboard shortcut. credit https://github.com/soffes/sublime
+
+  {
+    "keys": ["super+alt+w"],
+    "command": "toggle_setting",
+    "args": {
+      "setting": "word_wrap"
+    }
+  },
+
+  {
+    "command": "set_setting",
+    "keys": ["super+alt+r"],
+    "args": {
+      "setting": "wrap_width",
+      "value": 0
+    }
+  },
+
+  {
+    "command": "set_setting",
+    "keys": ["super+ctrl+r"],
+    "args": {
+      "setting": "wrap_width",
+      "value": 88
+    }
+  },
+
+  // View options on the editor
+
+  {
+    "command": "toggle_tabs",
+    "keys": ["super+k", "super+n"]
+  },
+
+  {
+    "command": "toggle_minimap",
+    "keys": ["super+k", "super+m"]
+  },
+
+  {
+    "command": "toggle_show_open_files",
+    "keys": ["super+k", "super+o"]
+  },
+
+  // Refresh the sidebar folders, when you connect or disconnect from a mounted server
+
+  {
+    "command": "refresh_folder_list",
+    "keys": ["super+shift+r"]
+  },
+
+  // Re-Assert things that are overridden by a plugin
+
+  {
+    "keys": ["super+ctrl+a"],
+    "command": "alignment"
+  },
+  {
+    "keys": ["super+shift+a"],
+    "command": "alignment"
+  },
+
+  {
+    "keys": ["super+d"],
+    "command": "find_under_expand"
+  },
+
+  {
+    "keys": ["super+option+a"],
+    "command": "expand_selection",
+    "args": {
+      "to": "tag"
+    }
+  }
+]

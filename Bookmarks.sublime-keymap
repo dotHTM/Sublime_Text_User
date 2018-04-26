@@ -1,0 +1,56 @@
+[
+  // Bookmarks
+  {
+    "keys": ["ctrl+alt+x"],
+    "command": "next_bookmark"
+  },
+  {
+    "keys": ["ctrl+alt+z"],
+    "command": "prev_bookmark"
+  },
+  {
+    "keys": ["ctrl+alt+b"],
+    "command": "toggle_bookmark"
+  },
+  {
+    "keys": ["ctrl+alt+w"],
+    "command": "clear_bookmarks"
+  },
+  {
+    "keys": ["ctrl+alt+a"],
+    "command": "select_all_bookmarks"
+  },
+  //
+  {
+    "keys": ["ctrl+alt+shift+w"],
+    "command": "clear_bookmarks"
+  },
+  //
+
+  // Bookmarks
+
+  {
+    "keys": ["ctrl+alt+n"],
+    "command": "next_bookmark"
+  },
+
+  {
+    "keys": ["ctrl+alt+p"],
+    "command": "prev_bookmark"
+  },
+
+  {
+    "keys": ["ctrl+alt+b"],
+    "command": "toggle_bookmark"
+  },
+
+  {
+    "keys": ["ctrl+alt+c"],
+    "command": "clear_bookmarks"
+  },
+
+  {
+    "keys": ["ctrl+alt+a"],
+    "command": "select_all_bookmarks"
+  }
+]
