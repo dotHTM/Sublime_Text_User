@@ -1,9 +1,7 @@
 
 <snippet>
 	<content><![CDATA[
-################################################################
 ## ${100}
-#
 sub ${100:function_name} {
     my ( \$self, ${200:\$input}, ${250:@args} ) = @_ ;
     ${300:## body...}
@@ -11,7 +9,7 @@ sub ${100:function_name} {
 }   ##  ${100}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>func</tabTrigger>
+	<tabTrigger>method</tabTrigger>
     <description>Object Method</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.perl</scope>

@@ -2,7 +2,7 @@
   "selector": "source.perl",
 
   "cmd": ["perl", "$file"],
-  "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]",
+  "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)",
 
   "variants": [
     {

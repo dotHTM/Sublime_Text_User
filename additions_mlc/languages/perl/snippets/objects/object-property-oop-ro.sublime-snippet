@@ -1,0 +1,18 @@
+
+<snippet>
+	<content><![CDATA[
+## ${0}
+sub ${0:$SELECTION} {
+    my ( \$self ) = @_ ;
+    return \$self->{${0}};   # succeed
+}   ##  ${0}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>read-only property</tabTrigger>
+    <description>Property GET Method</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.perl</scope>
+</snippet>
+
+
