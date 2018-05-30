@@ -5,53 +5,53 @@
     {
         // These colors are part of the hashed range
         // and should only be used in non-source
-        "my_yellow":     "#F0C674", // "foreground":   "var(my_yellow)",
-        "my_salmon":     "#DF5F5F", // "foreground":   "var(my_salmon)",
+        "my_yellow": "#F0C674", // "foreground":   "var(my_yellow)",
+        "my_salmon": "#DF5F5F", // "foreground":   "var(my_salmon)",
         // End of hashed range colors
-        "my_purple":     "#8e649d", // "foreground":   "var(my_purple)",
-        "my_violet":     "#967EFB", // "foreground":   "var(my_violet)",
-        "my_cloudy":     "#81A2BE", // "foreground":   "var(my_cloudy)",
-        "my_blue":       "#4271ae", // "foreground":   "var(my_blue)",
-        "my_aqua":       "#22a69d", // "foreground":   "var(my_aqua)",
-        "my_cyan":       "#5fded5", // "foreground":   "var(my_cyan)",
-        "my_mint":       "#b5ffb9", // "foreground":   "var(my_mint)",
-        "my_green":      "#A6E22E", // "foreground":   "var(my_green)",
-        "my_seaweed":    "#718c00", // "foreground":   "var(my_seaweed)",
-        "my_orange":     "#DE935F", // "foreground":   "var(my_orange)",
-        "my_fushia":     "#F92672", // "foreground":   "var(my_fushia)",
-        "my_pink":       "#ffb5d7", // "foreground":   "var(my_pink)",
+        "my_purple": "#8e649d", // "foreground":   "var(my_purple)",
+        "my_violet": "#967EFB", // "foreground":   "var(my_violet)",
+        "my_cloudy": "#81A2BE", // "foreground":   "var(my_cloudy)",
+        "my_blue": "#4271ae", // "foreground":   "var(my_blue)",
+        "my_aqua": "#22a69d", // "foreground":   "var(my_aqua)",
+        "my_cyan": "#5fded5", // "foreground":   "var(my_cyan)",
+        "my_mint": "#b5ffb9", // "foreground":   "var(my_mint)",
+        "my_green": "#A6E22E", // "foreground":   "var(my_green)",
+        "my_seaweed": "#718c00", // "foreground":   "var(my_seaweed)",
+        "my_orange": "#DE935F", // "foreground":   "var(my_orange)",
+        "my_fushia": "#F92672", // "foreground":   "var(my_fushia)",
+        "my_pink": "#ffb5d7", // "foreground":   "var(my_pink)",
         //
 
         // Editor
-        "back":          "#111213",
-        "fore":          "#C5C8C6",
+        "back": "#111213",
+        "fore": "#C5C8C6",
 
         // VAMP
-        "ether":         "#3d3d3d",
-        "ghost":         "#666",
-        "spectre":       "#777",
-        "fresh_blood":   "#f00",
-        "dried_blood":   "#a20b0b",
+        "ether": "#3d3d3d",
+        "ghost": "#666",
+        "spectre": "#777",
+        "fresh_blood": "#f00",
+        "dried_blood": "#a20b0b",
 
     },
     "globals":
     {
-        "foreground":                "var(fore)", 
-        "background":                "var(back)",
-        "caret":                     "var(fresh_blood)",
-        "selection":                 "var(dried_blood)",
-        "selection_border":          "var(selection_border)",
-        "inactive_selection":        "color(var(dried_blood) a(0.5))",
-        "line_highlight":            "color(var(fresh_blood) a(0.2))",
-        "highlight":                 "var(dried_blood)",
-        "find_highlight":            "var(dried_blood)",
+        "foreground": "var(fore)",
+        "background": "var(back)",
+        "caret": "var(fresh_blood)",
+        "selection": "var(dried_blood)",
+        "selection_border": "var(selection_border)",
+        "inactive_selection": "color(var(dried_blood) a(0.5))",
+        "line_highlight": "color(var(fresh_blood) a(0.2))",
+        "highlight": "var(dried_blood)",
+        "find_highlight": "var(dried_blood)",
         "find_highlight_foreground": "var(my_yellow)",
-        "active_guide":              "var(fresh_blood)",
-        "stack_guide":               "var(my_orange)",
-        "accent":                    "var(my_orange)",
-        "misspelling":               "var(dark_my_orange)",
-        "fold_marker":               "var(my_yellow)",
-        "invisibles":                "var(ether)",
+        "active_guide": "var(fresh_blood)",
+        "stack_guide": "var(my_orange)",
+        "accent": "var(my_orange)",
+        "misspelling": "var(dark_my_orange)",
+        "fold_marker": "var(my_yellow)",
+        "invisibles": "var(ether)",
     },
 
     "rules": [
@@ -61,7 +61,7 @@
             "scope": "comment - punctuation.definition.comment",
             "foreground": "var(spectre)",
             "background": "black",
-            "font_style": "italic"
+            "font_style": "italic",
         },
 
         {
@@ -74,12 +74,18 @@
 
         {
             "scope": "variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, variable.parameter, entity.other.attribute-name, meta.tag, declaration.tag",
-            "foreground": ["#973333","#CC6666","#e1a9a9",]
+            "background":"hsla(130, 50%, 40%, .25)",
+            "foreground": [
+                "hsla(130, 50%, 40%, 1)",
+                "hsla(130, 50%, 60%, 1)",
+                "hsla(130, 50%, 80%, 1)",
+            ]
         },
 
         {
             "scope": "constant.numeric, constant.language, support.constant, constant.character, punctuation.section.embedded, keyword.other.unit",
-            "foreground":  ["#a45222","#DE935F", "#eecbb3"]
+            "foreground": ["#a45222", "#DE935F", "#eecbb3"],
+            // "background": ["#a45222", "#DE935F", "#eecbb3"],
         },
 
         {
@@ -99,12 +105,13 @@
 
         {
             "scope": "entity.name.function, meta.function-call, support.function, keyword.other.special-method, meta.block-level",
-            "foreground": ["#4b7193","#81A2BE","#c1d2de",]
+            "foreground": ["#4b7193", "#81A2BE", "#c1d2de", ]
         },
 
         {
             "scope": "keyword, storage, storage.type, entity.name.tag.css",
             "foreground": "#B294BB",
+            "background": ["#660", "#aa0"], // cannary for this feature
         },
 
         {
@@ -216,12 +223,16 @@
 
         {
             "scope": "punctuation.definition.var",
-            "foreground":    "#DE935F",
+            "foreground": "#DE935F",
         },
-        
-                {
+
+        {
             "scope": "punctuation.definition.var.perl",
-            "foreground":    ["#a45222","#DE935F", "#eecbb3"]
+            "background": "hsla(30, 100%, 50%, 0.25)",
+            "foreground": [
+                "hsla(   0, 70%, 66%, 0.85)",
+                "hsla( 180, 70%, 66%, 0.85)",
+            ],
         },
 
         {
