@@ -1,7 +1,6 @@
 {
-  // These settings override both User and Default settings for the Found Results syntax
-  "color_scheme":
-    "Packages/User/additions_mlc/color_scheme/Tomorrow-Night-Vamp~mlc.tmTheme",
-  "word_wrap": false,
-  "rulers": [0]
+    // These settings override both User and Default settings for the Found Results syntax
+    "color_scheme": "Packages/User/additions_mlc/asthetics/color_scheme/Monokai-sG-vamp~mlc.tmTheme",
+    "word_wrap": false,
+    "rulers": [0]
 }

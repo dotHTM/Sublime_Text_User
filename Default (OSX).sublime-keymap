@@ -1,7 +1,8 @@
 [
-
+    
+    { "keys": ["super+k", "super+k"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+    
     // Open the Sublime Text User.sublime-project
-
     {
         "command": "open_dir",
         "args":
@@ -10,7 +11,6 @@
         },
         "keys": ["super+alt+,"]
     },
-
     {
         "command": "open_dir",
         "args":
@@ -19,7 +19,6 @@
         },
         "keys": ["super+alt+,"]
     },
-
     {
         "keys": ["ctrl+alt+/"],
         "command": "insert_snippet",
@@ -28,7 +27,6 @@
             "contents": " ### ⁄⁄⁄ ${0:$SELECTION} ⁄⁄⁄ ### "
         },
     },
-    
     {
         "keys": ["ctrl+shift+/"],
         "command": "insert_snippet",
@@ -46,7 +44,6 @@
         },
         "caption": "Toggle Block Comment"
     },
-
     // Bookmarks
     {
         "keys": ["ctrl+alt+x"],
@@ -74,7 +71,6 @@
         "command": "clear_bookmarks",
     },
     //
-
     // Reindent
     //
     // perltidy is ctrl+shift+t
@@ -90,9 +86,17 @@
         "keys": ["ctrl+shift+h"],
         "command": "htmlprettify"
     },
-
     // plugin overrides
-
+    // Origami
+    {
+        "keys": ["super+shift+alt+w"],
+        "command": "destroy_pane",
+        "args":
+        {
+            "direction": "self"
+        },
+        "caption": "Current Pane"
+    },
     //case conversion
     {
         "keys": ["super+alt+k", "super+alt+l"],
@@ -130,10 +134,7 @@
         "keys": ["super+alt+k", "super+alt+b"],
         "command": "convert_to_back_slash"
     },
-
-
     // Macros
-
     {
         "args":
         {
@@ -142,7 +143,6 @@
         "command": "run_macro_file",
         "keys": ["super+k, super+shift+0"]
     },
-
     {
         "args":
         {
@@ -151,7 +151,6 @@
         "command": "run_macro_file",
         "keys": ["super+alt+/"]
     },
-
     {
         "args":
         {
@@ -160,38 +159,28 @@
         "command": "run_macro_file",
         "keys": ["super+alt+ctrl+/"]
     },
-
     // Bookmarks
-
     {
         "keys": ["ctrl+alt+n"],
         "command": "next_bookmark"
     },
-
     {
         "keys": ["ctrl+alt+p"],
         "command": "prev_bookmark"
     },
-
     {
         "keys": ["ctrl+alt+b"],
         "command": "toggle_bookmark"
     },
-
     {
         "keys": ["ctrl+alt+c"],
         "command": "clear_bookmarks"
     },
-
     {
         "keys": ["ctrl+alt+a"],
         "command": "select_all_bookmarks"
     },
-
-
-
     // Great suggestion to make word wrap a keyboard shortcut. credit https://github.com/soffes/sublime
-
     {
         "keys": ["super+alt+w"],
         "command": "toggle_setting",
@@ -200,7 +189,6 @@
             "setting": "word_wrap"
         }
     },
-
     {
         "command": "set_setting",
         "keys": ["super+alt+r"],
@@ -210,7 +198,6 @@
             "value": 0
         }
     },
-
     {
         "command": "set_setting",
         "keys": ["super+ctrl+r"],
@@ -220,33 +207,25 @@
             "value": 88
         }
     },
-
     // View options on the editor
-
     {
         "command": "toggle_tabs",
         "keys": ["super+k", "super+n"]
     },
-
     {
         "command": "toggle_minimap",
         "keys": ["super+k", "super+m"]
     },
-
     {
         "command": "toggle_show_open_files",
         "keys": ["super+k", "super+o"]
     },
-
     // Refresh the sidebar folders, when you connect or disconnect from a mounted server
-
     {
         "command": "refresh_folder_list",
         "keys": ["super+shift+r"]
     },
-
     // PlainTasks
-
     {
         "keys": ["control+d"],
         "command": "plain_tasks_complete",
@@ -257,7 +236,6 @@
             "operand": "text.todo"
         }]
     },
-
     {
         "keys": ["control+u"],
         "command": "plain_tasks_open_url",
@@ -268,7 +246,6 @@
             "operand": "text.todo"
         }]
     },
-
     {
         "keys": ["super+shift+a"],
         "command": "plain_tasks_archive",
@@ -279,7 +256,6 @@
             "operand": "text.todo"
         }]
     },
-
     {
         "keys": ["super+shift+o"],
         "command": "plain_tasks_archive_org",
@@ -290,9 +266,7 @@
             "operand": "text.todo"
         }]
     },
-
     // Some handy Layouts
-
     {
         "command": "set_layout",
         "keys": ["control+shift+f2"],
@@ -307,7 +281,6 @@
             ]
         }
     },
-
     {
         "command": "set_layout",
         "keys": ["control+shift+f3"],
@@ -323,7 +296,6 @@
             ]
         }
     },
-
     {
         "command": "set_layout",
         "keys": ["control+shift+f4"],
@@ -341,7 +313,6 @@
             ]
         }
     },
-
     {
         "command": "set_layout",
         "keys": ["control+shift+f5"],
@@ -359,7 +330,6 @@
             ]
         }
     },
-
     {
         "command": "set_layout",
         "keys": ["control+shift+f6"],
@@ -378,9 +348,7 @@
             ]
         }
     },
-
     // Backtick as a quotation charaacter. Credit: https://forum.sublimetext.com/t/recognize-the-character-as-a-type-of-a-quotation/15097/3
-
     {
         "keys": ["`"],
         "command": "insert_snippet",
@@ -407,7 +375,6 @@
             "match_all": true
         }]
     },
-
     {
         "keys": ["`"],
         "command": "insert_snippet",
@@ -428,7 +395,6 @@
             "match_all": true
         }]
     },
-
     {
         "keys": ["`"],
         "command": "move",
@@ -456,7 +422,6 @@
             "match_all": true
         }]
     },
-
     {
         "keys": ["backspace"],
         "command": "run_macro_file",
@@ -489,9 +454,7 @@
             "match_all": true
         }]
     },
-
     // lt-gt wrap, modified of above
-
     {
         "keys": ["<"],
         "command": "insert_snippet",
@@ -512,9 +475,8 @@
             "match_all": true
         }]
     },
-
+    
     // space wrap, modified of above
-
     {
         "keys": [" "],
         "command": "insert_snippet",
@@ -535,8 +497,51 @@
             "match_all": true
         }]
     },
-    // dot wrap, modified of above
 
+    // tab shift
+    {
+        "keys": ["tab"],
+        "command": "insert_snippet",
+        "args":
+        {
+            "contents": "\t${0:$SELECTION}"
+        },
+        "context": [
+        {
+            "key": "setting.auto_match_enabled",
+            "operator": "equal",
+            "operand": true
+        },
+        {
+            "key": "selection_empty",
+            "operator": "equal",
+            "operand": false,
+            "match_all": true
+        }]
+    },
+
+    // return wrap, modified of above
+    {
+        "keys": ["enter"],
+        "command": "insert_snippet",
+        "args":
+        {
+            "contents": "\n${0:$SELECTION}\n"
+        },
+        "context": [
+        {
+            "key": "setting.auto_match_enabled",
+            "operator": "equal",
+            "operand": true
+        },
+        {
+            "key": "selection_empty",
+            "operator": "equal",
+            "operand": false,
+            "match_all": true
+        }]
+    },
+    // dot wrap, modified of above
     {
         "keys": ["."],
         "command": "insert_snippet",
@@ -557,9 +562,7 @@
             "match_all": true
         }]
     },
-
     // bash variable wrap, modified of above
-
     {
         "keys": ["$"],
         "command": "insert_snippet",
@@ -580,9 +583,51 @@
             "match_all": true
         }]
     },
-
+    // perl hash wrap, modified of above
+    {
+        "keys": ["%"],
+        "command": "insert_snippet",
+        "scope": "source.perl",
+        "args":
+        {
+            "contents": "%\\{${0:$SELECTION}\\}"
+        },
+        "context": [
+        {
+            "key": "setting.auto_match_enabled",
+            "operator": "equal",
+            "operand": true
+        },
+        {
+            "key": "selection_empty",
+            "operator": "equal",
+            "operand": false,
+            "match_all": true
+        }]
+    },
+    // perl array wrap, modified of above
+    {
+        "keys": ["@"],
+        "command": "insert_snippet",
+        "scope": "source.perl",
+        "args":
+        {
+            "contents": "@\\{${0:$SELECTION}\\}"
+        },
+        "context": [
+        {
+            "key": "setting.auto_match_enabled",
+            "operator": "equal",
+            "operand": true
+        },
+        {
+            "key": "selection_empty",
+            "operator": "equal",
+            "operand": false,
+            "match_all": true
+        }]
+    },
     // slash wrap, modified of above
-
     {
         "keys": ["/"],
         "command": "insert_snippet",
@@ -603,9 +648,7 @@
             "match_all": true
         }]
     },
-
     // * wrap, modified of above
-
     {
         "keys": ["*"],
         "command": "insert_snippet",
@@ -626,9 +669,7 @@
             "match_all": true
         }]
     },
-
     // _ wrap, modified of above
-
     {
         "keys": ["_"],
         "command": "insert_snippet",
@@ -649,7 +690,6 @@
             "match_all": true
         }]
     },
-
     // Change quotes
     {
         "keys": ["'"],
@@ -714,23 +754,19 @@
             "match_all": true
         }]
     },
-
     // I forget why some of these are set...  Some are re-assertions of the default keymap to re-override plugins that steal them.
     {
         "keys": ["super+ctrl+a"],
         "command": "alignment"
     },
-
     {
         "keys": ["super+d"],
         "command": "find_under_expand"
     },
-
     {
         "keys": ["super+shift+a"],
         "command": "alignment"
     },
-
     {
         "keys": ["super+option+a"],
         "command": "expand_selection",
