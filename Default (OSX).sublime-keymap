@@ -1,5 +1,9 @@
 [
     
+    // command": "new_window
+    
+        { "keys": ["super+alt+shift+n"], "command": "new_window" },
+    
     { "keys": ["super+k", "super+k"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
     
     // Open the Sublime Text User.sublime-project
