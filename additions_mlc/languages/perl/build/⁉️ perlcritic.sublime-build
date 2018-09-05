@@ -10,21 +10,23 @@
     //     "cmd": ["perlProcess.sh", "5", "$file"],
     // },
     {
-      "name": "4",
+      "name": "level four",
       "cmd": ["perlProcess.sh", "4", "$file"]
     },
     {
-      "name": "3",
+      "name": "level three",
       "cmd": ["perlProcess.sh", "3", "$file"]
     },
     {
-      "name": "2",
+      "name": "level two",
       "cmd": ["perlProcess.sh", "2", "$file"]
     },
     {
-      "name": "1",
+      "name": "level one",
       "cmd": ["perlProcess.sh", "1", "$file"]
     }
   ]
-  // This requires the perlProcess.sh script from the bash_hacks project on github: <git@github.com:dotHTM/bash_hacks.git>
+  // This requires the perlProcess.sh script from
+  // the bash_hacks project on github:
+  //       <git@github.com:dotHTM/bash_hacks.git>
 }

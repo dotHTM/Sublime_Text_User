@@ -1,5 +1,8 @@
 [
     
+    { "keys": ["super+ctrl+shift+alt+f"], "command": "toggle_full_screen" },
+    { "keys": ["super+ctrl+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    
     // command": "new_window
     
         { "keys": ["super+alt+shift+n"], "command": "new_window" },

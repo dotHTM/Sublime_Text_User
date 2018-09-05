@@ -11,6 +11,18 @@
       "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]"
     },
 
+  {
+      "name": "CGI to file",
+      "shell_cmd": "perl $file > $file.output.html",
+      "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]"
+    },
+
+  {
+      "name": "CGI to file, open in Safari",
+      "shell_cmd": "perl $file > $file.output.html; open -a /Applications/Safari.app $file.output.html",
+      "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]"
+    },
+
     // {
     //   "name": "System - Run",
     //   "cmd": ["/usr/bin/perl", "$file"],
