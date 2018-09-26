@@ -75,7 +75,6 @@
 	"folder_exclude_patterns":
 	[
 		"CVS",
-		".git",
 		".vagrant*",
 		"datadir"
 	],
@@ -87,7 +86,6 @@
 		"Color Highlighter",
 		"ColorSchemeSelector",
 		"Quick File Move",
-		"SublimeGit",
 		"URLEncode",
 		"Vintage"
 	],

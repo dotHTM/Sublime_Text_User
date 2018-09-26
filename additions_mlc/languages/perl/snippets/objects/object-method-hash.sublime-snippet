@@ -1,0 +1,20 @@
+
+<snippet>
+	<content><![CDATA[
+## ${100}
+sub ${100:function_name} {
+    my ( \$self, %args ) = @_ ;
+    if ( \$args{${250:param}} ){
+        ## body...
+    return "WIP: ${100}, Replace this return value!";
+    }
+    croak "ERROR ${100}, Required key(s) not set in argument hash.";
+}   ##  ${100}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>method - Hash input</tabTrigger>
+    <description>Object Method</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.perl</scope>
+</snippet>
+

@@ -10,7 +10,6 @@ use feature ':5.16';
 
 use strict;
 use warnings;
-# use Readonly;
 ${400:}
 
 our \$VERSION = 1.0;
