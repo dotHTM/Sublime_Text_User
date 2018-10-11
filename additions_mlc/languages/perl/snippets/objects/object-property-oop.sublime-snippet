@@ -1,7 +1,6 @@
 
 <snippet>
 	<content><![CDATA[
-# \$self->{${100}} = shift || 0;
 sub ${100:property} {
     my ( \$self, \$new_value, \$unset ) = @_;
     if    (\$new_value) { \$self->{${100}} = \$new_value }

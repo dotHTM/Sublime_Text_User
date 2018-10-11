@@ -9,9 +9,10 @@ use feature ':5.16';
 use strict;
 use warnings;
 use English;
-use Data::Dumper::Concise;
 
-${2:#} use PadWalker qw(peek_my peek_our peek_sub closed_over);
+use Carp qw{croak};
+use Data::Dumper::Concise;
+\$Data::Dumper::Sortkeys = 1;
 
 use Getopt::Long;
 
