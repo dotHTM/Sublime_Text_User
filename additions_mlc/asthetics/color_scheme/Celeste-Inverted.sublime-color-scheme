@@ -5,40 +5,42 @@
     {
         // These colors are part of the hashed range
         // and should only be used in non-source
-        "purple":      "hsla( 260,  50%,  60%, 1)",
-        "blue":        "hsla( 200,  70%,  45%, 1)",
-        "teal":        "hsla( 170,  70%,  45%, 1)",
-        "green":       "hsla( 130,  70%,  45%, 1)",
+        "purple": "hsla(260, 50%, 60%, 1)",
+        "blue": "hsla(200, 70%, 45%, 1)",
+        "teal": "hsla(170, 70%, 45%, 1)",
+        "green": "hsla(130, 70%, 45%, 1)",
         // End of hashed range colors
-        "red":         "hsla(   0,  70%,  65%, 1)",
-        "orange":      "hsla(  25,  90%,  60%, 1)",
-        "dark_orange": "hsla(  10,  90%,  60%, 1)",
-        "yellow":      "hsla(  50, 100%,  60%, 1)",
-        "brown":       "hsla(  30,  30%,  45%, 1)",
-        "dark_brown":  "hsla(  30,  30%,  30%, 1)",
-        "magenta":     "hsla( 335, 100%,  65%, 1)",
-        "light_gray":  "#333",
-        "dark_gray":   "#f6f6f6",
-        "gray":        "#888",
-        "shadow_gray": "#bbb",
-        "black":       "#fff",
-        "white":       "#000",
+        "red": "hsla(0, 70%, 65%, 1)",
+        "orange": "hsla(25, 90%, 60%, 1)",
+        "dark_orange": "hsla(10, 90%, 60%, 1)",
+        "yellow": "hsla(50, 100%, 60%, 1)",
+        "brown": "hsla(30, 30%, 45%, 1)",
+        "dark_brown": "hsla(30, 30%, 30%, 1)",
+        "magenta": "hsla(335, 100%, 65%, 1)",
+        "white": "hsl(0, 0%, 0%)",
+        "barely-white": "hsl(0, 0%, 10%)",
+        "light_gray": "hsl(0, 0%, 24%)",
+        "mid_grey": "hsl(0, 0%, 53%)",
+        "grey": "hsl(0, 0%, 73%)",
+        "dark_gray": "hsl(0, 0%, 80%)",
+        "black": "hsl(0, 0%, 100%)",
+
     },
     "globals":
     {
         "foreground": "var(black)",
-        "background": "#111",
+        "background": "var(white)",
         "caret": "var(magenta)",
-        "selection": "color(var(dark_gray) a(0.08))",
+        "selection": "color(var(dark_gray) a(0.12))",
         "selection_border": "var(teal)",
         "inactive_selection": "color(var(dark_gray) a(0.08))",
-        "line_highlight": "#222",
+        "line_highlight": "var(barely-white)",
         "highlight": "var(magenta)",
         "find_highlight": "var(yellow)",
         "find_highlight_foreground": "var(dark_brown)",
         "active_guide": "var(red)",
         "stack_guide": "var(orange)",
-        "shadow": "#bbb",
+        "shadow": "var(dark_gray)",
         "accent": "var(orange)",
         "misspelling": "var(dark_orange)",
         "fold_marker": "var(yellow)",
@@ -47,7 +49,7 @@
     [
         {
             "scope": "text",
-            "foreground": "var(shadow)"
+            "foreground": "var(dark_gray)"
         },
         {
             "scope": "source - comment - string - keyword - punctuation - storage - entity - source.css",
@@ -55,8 +57,7 @@
         },
         {
             "scope": "comment",
-            "foreground": "var(gray)",
-            "background": "var(white)",
+            "foreground": "var(mid_grey)",
             "font_style": "italic"
         },
         {
@@ -76,8 +77,8 @@
         },
         {
             "scope": "keyword.operator",
-            "foreground": "var(shadow_gray)",
-            "background": "var(white)"
+            "foreground": "var(grey)",
+            "background": "#fff"
         },
         {
             "scope": "keyword, constant.language",
@@ -95,7 +96,7 @@
         {
             "scope": "storage, support.type.sys-types",
             "foreground": "var(black)",
-            "background": "var(light_gray)",
+            "background": "#f3f3f3",
             "font_style": "italic"
         },
         {
@@ -108,7 +109,7 @@
         },
         {
             "scope": "punctuation",
-            "foreground": "var(shadow_gray)"
+            "foreground": "#666"
         },
         {
             "scope": "meta.function-call variable.parameter",

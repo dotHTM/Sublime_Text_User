@@ -1,87 +1,89 @@
 {
-	"folders":
-	[
-		{
-			"file_include_patterns":[
-				"Preferences.sublime-settings",
-				"*.sublime-keymap",
-				"User.sublime-project",
-			],
-			// "file_exclude_patterns":["*"],
-			"folder_exclude_patterns":["*"],
-			"name": "Quick Prefs",
-			"path": "~/.subl_prefs"
-		},
-	{
-			"file_exclude_patterns":
-			[
-				"Preferences.sublime-settings",
-				"*.sublime-keymap",
-				".git",
-				"*/.git*"
-			],
-			"folder_exclude_patterns":
-			[
-				".git",
-				"*/.git"
-			],
-			"name": "MLC, langs, etc",
-			"path": "./additions_mlc"
-		},
-		{
-			"file_exclude_patterns":
-			[
-				"Preferences.sublime-settings",
-				"*.sublime-keymap",
-				".git",
-				"*/.git*"
-			],
-			"folder_exclude_patterns":
-			[
-				".git",
-				"additions_mlc",
-				"*/.git"
-			],
-			"name": "User Package",
-			"path": "."
-		},
-		{
-			"file_include_patterns":
-			[
-				".*",
-				".*/*"
-			],
-			"folder_include_patterns":
-			[
-				".*",
-				".*/*"
-			],
-			"folder_exclude_patterns":
-			[
-				".Trash*",
-			],
-				"binary_file_patterns":
-				[	
-					".*/**", 
-],
-			
-			"name": ".home",
-			"path": "~"
-		},
-		{
-			"folder_exclude_patterns":
-			[
-				"User"
-			],
-			"name": "Browse Packages",
-			"path": "~/Library/Application Support/Sublime Text 3/Packages"
-		},
-		{
-			"path": "~/Library/Application Support/Sublime Text 3/Installed Packages"
-		},
-		{
-			"name": "Default App Packages",
-			"path": "/Applications/Sublime Text.app/Contents/MacOS/Packages"
-		}
-	]
+  "folders": [
+    {
+      "file_include_patterns": [
+        "Preferences.sublime-settings",
+        "*.sublime-keymap",
+        "User.sublime-project",
+      ],
+      // "file_exclude_patterns":["*"],
+      "folder_exclude_patterns": ["*"],
+      "name": "Quick Prefs",
+      "path": "~/.subl_prefs"
+    },
+
+    {
+      "file_exclude_patterns": [
+        "Preferences.sublime-settings",
+        "*.sublime-keymap",
+        ".git",
+        "*/.git*"
+      ],
+      "folder_exclude_patterns": [
+        ".git",
+        "*/.git"
+      ],
+      "name": "MLC, langs, etc",
+      "path": "./additions_mlc"
+    },
+    {
+      "file_exclude_patterns": [
+        "Preferences.sublime-settings",
+        "*.sublime-keymap",
+        ".git",
+        "*/.git*"
+      ],
+      "folder_exclude_patterns": [
+        ".git",
+        "additions_mlc",
+        "*/.git"
+      ],
+      "name": "User Package",
+      "path": "."
+    },
+    {
+      "file_include_patterns": [
+        ".*",
+        ".*/*"
+      ],
+      "folder_include_patterns": [
+        ".*",
+        ".*/*"
+      ],
+      "folder_exclude_patterns": [
+        ".Trash*",
+      ],
+      "binary_file_patterns": [
+        ".*/**",
+      ],
+
+      "name": ".home",
+      "path": "~"
+    },
+    {
+      "folder_exclude_patterns": [
+        "User"
+      ],
+      "name": "Browse Packages",
+      "path": "~/Library/Application Support/Sublime Text 3/Packages"
+    },
+    {
+      "path": "~/Library/Application Support/Sublime Text 3/Installed Packages"
+    },
+    {
+      "name": "Default App Packages",
+      "path": "/Applications/Sublime Text.app/Contents/MacOS/Packages"
+    },
+
+    {
+      "path": "~/Library/Application Support/Sublime Merge/Packages/User/",
+      "name": "merge",
+    },
+    {
+      "path": "/Applications/Sublime Merge.app/Contents/MacOS/Packages",
+      "name": "merge - Defaults",
+    },
+
+
+  ]
 }
