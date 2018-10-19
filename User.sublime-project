@@ -16,12 +16,11 @@
       "file_exclude_patterns": [
         "Preferences.sublime-settings",
         "*.sublime-keymap",
-        ".git",
-        "*/.git*"
+
+
       ],
       "folder_exclude_patterns": [
-        ".git",
-        "*/.git"
+
       ],
       "name": "MLC, langs, etc",
       "path": "./additions_mlc"
@@ -30,8 +29,8 @@
       "file_exclude_patterns": [
         "Preferences.sublime-settings",
         "*.sublime-keymap",
-        ".git",
-        "*/.git*"
+
+
       ],
       "folder_exclude_patterns": [
         ".git",
