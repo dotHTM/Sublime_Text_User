@@ -93,6 +93,22 @@
 	"indent_to_bracket": true,
 	"index_files": true,
 	"line_padding_top": 2,
+	"linters":
+	{
+		"perl":
+		{
+			"@disable": false,
+			"args":
+			[
+			],
+			"excludes":
+			[
+			],
+			"include_dirs":
+			[
+			]
+		}
+	},
 	"paths":
 	{
 		"linux":

@@ -70,6 +70,8 @@
 		"SCSS Compiler",
 		"Selection Evaluator",
 		"SideBarTools",
+		"SublimeLinter",
+		"SublimeLinter-contrib-perl",
 		"Swift for F*ing Sublime",
 		"Sync View Scroll",
 		"SyntaxHighlightTools",
