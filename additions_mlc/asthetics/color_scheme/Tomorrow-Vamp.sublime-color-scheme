@@ -5,21 +5,21 @@
     {
         // These colors are part of the hashed range
         // and should only be used in non-source
-        "my_yellow": "#F0C674", // "foreground":   "var(my_yellow)",
-        "my_salmon": "#DF5F5F", // "foreground":   "var(my_salmon)",
+        "my_yellow": "#F0C674",       // "foreground":   "var(my_yellow)",
+        "my_salmon": "#DF5F5F",       // "foreground":   "var(my_salmon)",
         // End of hashed range colors
-        "my_purple": "#8e649d", // "foreground":   "var(my_purple)",
-        "my_violet": "#967EFB", // "foreground":   "var(my_violet)",
-        "my_cloudy": "#81A2BE", // "foreground":   "var(my_cloudy)",
-        "my_blue": "#4271ae", // "foreground":   "var(my_blue)",
-        "my_aqua": "#22a69d", // "foreground":   "var(my_aqua)",
-        "my_cyan": "#5fded5", // "foreground":   "var(my_cyan)",
-        "my_mint": "#b5ffb9", // "foreground":   "var(my_mint)",
-        "my_green": "#A6E22E", // "foreground":   "var(my_green)",
-        "my_seaweed": "#718c00", // "foreground":   "var(my_seaweed)",
-        "my_orange": "#DE935F", // "foreground":   "var(my_orange)",
-        "my_fushia": "#F92672", // "foreground":   "var(my_fushia)",
-        "my_pink": "#ffb5d7", // "foreground":   "var(my_pink)",
+        "my_purple": "#8e649d",       // "foreground":   "var(my_purple)",
+        "my_violet": "#967EFB",       // "foreground":   "var(my_violet)",
+        "my_cloudy": "#81A2BE",       // "foreground":   "var(my_cloudy)",
+        "my_blue": "#4271ae",         // "foreground":   "var(my_blue)",
+        "my_aqua": "#22a69d",         // "foreground":   "var(my_aqua)",
+        "my_cyan": "#5fded5",         // "foreground":   "var(my_cyan)",
+        "my_mint": "#b5ffb9",         // "foreground":   "var(my_mint)",
+        "my_green": "#A6E22E",        // "foreground":   "var(my_green)",
+        "my_seaweed": "#718c00",      // "foreground":   "var(my_seaweed)",
+        "my_orange": "#DE935F",       // "foreground":   "var(my_orange)",
+        "my_fushia": "#F92672",       // "foreground":   "var(my_fushia)",
+        "my_pink": "#ffb5d7",         // "foreground":   "var(my_pink)",
         //
 
         // Editor
@@ -33,25 +33,34 @@
         "fresh_blood": "#f00",
         "dried_blood": "#a20b0b",
 
+
     },
     "globals":
     {
-        "foreground": "var(fore)",
-        "background": "var(back)",
-        "caret": "var(fresh_blood)",
-        "selection": "var(dried_blood)",
-        "selection_border": "var(selection_border)",
-        "inactive_selection": "color(var(dried_blood) a(0.5))",
-        "line_highlight": "color(var(fresh_blood) a(0.2))",
-        "highlight": "var(dried_blood)",
-        "find_highlight": "var(dried_blood)",
-        "find_highlight_foreground": "var(my_yellow)",
-        "active_guide": "var(fresh_blood)",
-        "stack_guide": "var(my_orange)",
-        "accent": "var(my_orange)",
-        "misspelling": "var(dark_my_orange)",
-        "fold_marker": "var(my_yellow)",
-        "invisibles": "var(ether)",
+
+        "foreground":                   "var(fore)",
+        "background":                   "var(back)",
+        "caret":                        "var(fresh_blood)",
+        "selection":                    "var(dried_blood)",
+        "selection_border":             "var(fresh_blood)",
+        "inactive_selection":           "color(var(dried_blood) a(0.5))",
+        "line_highlight":               "color(var(fresh_blood) a(0.2))",
+        "highlight":                    "var(dried_blood)",
+        "find_highlight":               "var(dried_blood)",
+        "find_highlight_foreground":    "var(my_yellow)",
+        "active_guide":                 "var(fresh_blood)",
+        "stack_guide":                  "var(my_orange)",
+        "accent":                       "var(my_orange)",
+        "misspelling":                  "var(my_fushia)",
+        "fold_marker":                  "var(my_yellow)",
+        "invisibles":                   "var(ether)",
+
+        "brackets_options":             "underline",
+        "brackets_foreground":          "color(var(white3) alpha(0.65))",
+        "bracket_contents_options":     "underline",
+        "bracket_contents_foreground":  "color(var(white3) alpha(0.65))",
+        "tags_options":                 "stippled_underline",
+
     },
 
     "rules": [
@@ -451,6 +460,8 @@
             "background": "#000",
             "foreground": "#666",
         },
+
+
 
 
 
