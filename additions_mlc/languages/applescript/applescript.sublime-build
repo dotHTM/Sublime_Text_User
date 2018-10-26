@@ -1,5 +1,18 @@
 {
   "cmd": ["osascript", "$file"],
-    "selector": "source.applescript",
+  "selector": "source.applescript",
+
+  "variants": [
+  {
+    "name": "inline phantoms",
+    "cmd": ["$packages/User/additions_mlc/languages/applescript/run_osascript.sh", "$file"],
+    "file_regex": "^f:(.*) l:(.*) c:(.*) m:(.*)$",
+  },
+  {
+    "name": "compile",
+    "cmd": ["osacompile", "-o", "${file_base_name}.scpt", "$file"],
+    "file_regex": "^f:(.*) l:(.*) c:(.*) m:(.*)$",
+  },
+],
 
 }

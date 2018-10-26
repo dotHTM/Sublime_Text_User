@@ -1,29 +1,29 @@
 {
   "selector": "source.perl",
-  "cmd": ["perlProcess.sh", "5", "$file"],
+  "cmd": ["$packages/User/additions_mlc/languages/perl/build/perlProcess.sh", "5", "$file"],
 
   "file_regex": "^f:(.*) l:(.*) c:(.*) m:(.*)$",
 
   "variants": [
     // {
     //     "name": "5",
-    //     "cmd": ["perlProcess.sh", "5", "$file"],
+    //     "cmd": ["$packages/User/additions_mlc/languages/perl/build/perlProcess.sh", "5", "$file"],
     // },
     {
       "name": "level four",
-      "cmd": ["perlProcess.sh", "4", "$file"]
+      "cmd": ["$packages/User/additions_mlc/languages/perl/build/perlProcess.sh", "4", "$file"]
     },
     {
       "name": "level three",
-      "cmd": ["perlProcess.sh", "3", "$file"]
+      "cmd": ["$packages/User/additions_mlc/languages/perl/build/perlProcess.sh", "3", "$file"]
     },
     {
       "name": "level two",
-      "cmd": ["perlProcess.sh", "2", "$file"]
+      "cmd": ["$packages/User/additions_mlc/languages/perl/build/perlProcess.sh", "2", "$file"]
     },
     {
       "name": "level one",
-      "cmd": ["perlProcess.sh", "1", "$file"]
+      "cmd": ["$packages/User/additions_mlc/languages/perl/build/perlProcess.sh", "1", "$file"]
     }
   ]
   // This requires the perlProcess.sh script from
