@@ -87,6 +87,7 @@
 		"Color Highlighter",
 		"ColorSchemeSelector",
 		"Quick File Move",
+		"SublimeLinter",
 		"URLEncode",
 		"Vintage"
 	],
@@ -106,8 +107,6 @@
 			],
 			"include_dirs":
 			[
-        "~/.lib/",
-        "~/.lib/*",
 			]
 		}
 	},
