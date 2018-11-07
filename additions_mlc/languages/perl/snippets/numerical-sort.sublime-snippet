@@ -1,0 +1,12 @@
+<!-- Description.sublime-snippet -->
+<snippet>
+  <!-- Example: Hello, ${100:this} is a ${200:snippet}. -->
+  <content><![CDATA[
+sort { \$a <=> \$b } ${100:@someArray}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>sort</tabTrigger>
+  <description>Numerical Sort</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.perl</scope>
+</snippet>

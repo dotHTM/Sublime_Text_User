@@ -8,24 +8,26 @@ use feature ':5.16';
 
 use strict;
 use warnings;
-use English;
+use English '-no_match_vars';
 
 use Carp qw{croak};
 use Data::Dumper::Concise;
 \$Data::Dumper::Sortkeys = 1;
+use Time::Piece;
 
 use Getopt::Long;
 
 ## Package Variables
-our ( \$MODE_1, \$MODE_2 );
-our \$MODE_COUNT = 0;
+our \$VERSION = 0.01;
 
-## MODE_1 sub options
-our ( \$MODE_1_SUB_1, \$MODE_1_SUB_2 );
+our \$HELP = 0;
 
 our \$VERBOSE = 0;
 our \$DEBUG   = 0;
-our \$QUIET   = 0;
+our \$DRY_RUN = 0;
+
+### ⁄⁄⁄ Your Package variables ⁄⁄⁄ ###
+# our \$SOME_VARIABLE = 0;
 
 ######################################################
 #                                                    #
@@ -44,9 +46,8 @@ our \$QUIET   = 0;
 sub main {
     my (undef) = @_;
 
-    if (\$MODE_1) {
-        mode_1_process();
-    }
+    say some_process();
+    debug_msg( 'hello world', 'how are you?', 'foo bar' );
 
     return 0;    #success
 }    ##    main
@@ -67,34 +68,40 @@ sub main {
 
 sub process_opts {
     my (undef) = @_;
-    GetOptions( "a|mode-1" => \\\$MODE_1, );
+    GetOptions(
+        'help' => \$HELP,
 
-    if (\$MODE_1) { \$MODE_COUNT++; }
+        'debug'     => \$DEBUG,
+        'verbose=i' => \$VERBOSE,
 
-    say Dumper peek_our(1) if \$DEBUG;
+    );
     return 1;    #success
 }    ##    process_opts
 
 sub validate_opts {
     my (undef) = @_;
 
+    usage() if \$HELP;
     ## body...
 
-    return "validate_opts: wip, placeholder";
+    return 'validate_opts: wip, placeholder';
 }    ##    validate_opts
 
 sub usage {
     my (\$message) = @_;
     my \$usage_string = << 'EOF';
 Usage for this script:
-    -a  - Mode 1
+    --help             print this help
+    --debug            debug
+    --verbose          increase verbosity of debug messages
+
+   --YOUR_OPTIONS
 EOF
 
-    \$usage_string = '' if \$QUIET;
     \$usage_string .= 'ARGUMENT ERROR: ' . \$message if \$message;
     say join "\n", "\$PROGRAM_NAME:", "\$message", \$usage_string;
 
-    exit 5;    # failed: usage error
+    exit 2;    # failed: usage error
 }    ##    usage
 
 #####################################################
@@ -111,11 +118,44 @@ EOF
 #                                                   #
 #####################################################
 
-sub mode_1_process {
+### ⁄⁄⁄ Basics ⁄⁄⁄ ###
+
+sub debug_msg {
+    my (@input_messages) = @_;
+    if (\$DEBUG) {
+        my \$timestamp = localtime->datetime;
+        my \$message   = q{};
+        foreach my \$sub_message (@input_messages) {
+            foreach my \$line ( split "\n", \$sub_message ) {
+                \$message .= '[' . \$timestamp . '] ' . \$line . "\n";
+            }
+        }
+        say \$message;
+    }
+    return 1;
+}    ##    debug_msg
+
+sub verbose_msg{
+    my (\$level, @input_messages) = @_;
+    if (\$VERBOSE >= \$level) {
+        my \$message   = q{};
+        foreach my \$sub_message (@input_messages) {
+            foreach my \$line ( split "\n", \$sub_message ) {
+                \$message .= \$line . "\n";
+            }
+        }
+        say \$message;
+    }
+    return 1;
+}    ##    verbose_msg
+
+### ⁄⁄⁄ Your Subs ⁄⁄⁄ ###
+
+sub some_process {
     my ( \$input, \$parameters, @args ) = @_;
     ## body...
-    return "mode_1_process: wip, placeholder";
-}    ##    mode_1_process
+    return 'some_process: wip, placeholder';
+}    ##    some_process
 
 #####################################################
 #                                                   #
@@ -136,6 +176,8 @@ sub mode_1_process {
     validate_opts();
     exit main();
 }
+
+
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
