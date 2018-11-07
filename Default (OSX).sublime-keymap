@@ -1,5 +1,16 @@
 [
 
+  { // Open in Sublime Merge
+    "keys": ["super+alt+z"],
+    "command": "exec",
+    "args": {"cmd":  ["smerge", "$project"]}
+  },
+
+  { // Match the shortcut in Sublime Merge
+    "keys": ["super+shift+o"],
+    "command": "prompt_select_workspace"
+  },
+
   {
     "keys": ["super+ctrl+shift+alt+f"],
     "command": "toggle_full_screen"

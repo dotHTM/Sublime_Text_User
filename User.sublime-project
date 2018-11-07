@@ -81,10 +81,9 @@
 
 
     {
-      "path":"~/Documents/config",
-      "name":"private"
+      "path": "~/Documents/config",
+      "name": "private"
     }
+  ],
 
-
-  ]
 }
