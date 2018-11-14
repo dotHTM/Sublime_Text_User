@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+let ${100:variableName}${200/^.+$/ : /}${200:DefaultType} = ${900://some value...}
+]]></content>
+  <tabTrigger>let</tabTrigger>
+  <description>let</description>
+  <scope>source.swift</scope>
+</snippet>

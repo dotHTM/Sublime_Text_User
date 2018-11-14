@@ -1,4 +1,14 @@
 {
   "cmd": ["swift", "$file"],
-  "selector": "source.swift"
+  "selector": "source.swift",
+  "file_regex": "^(.+?):([0-9]+):([0-9]+): (.*)$",
+
+
+  "variants": [
+  {
+    "name": "Clean Format",
+    "cmd": ["swiftformat", "$file"],
+    "file_regex": " in (.+)",
+    "line_regex": " at ([0-9]+):([0-9]+)",
+  }, ],
 }

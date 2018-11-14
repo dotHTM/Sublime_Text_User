@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+typealias ${100:TypeName} = ${900:OriginType}
+]]></content>
+  <tabTrigger>typealias</tabTrigger>
+  <description>typealias</description>
+  <scope>source.swift</scope>
+</snippet>
