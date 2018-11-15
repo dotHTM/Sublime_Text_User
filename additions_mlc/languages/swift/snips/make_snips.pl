@@ -8,9 +8,6 @@ use strict;
 use warnings;
 
 use Carp qw{croak};
-use Data::Dumper::Concise;
-$Data::Dumper::Sortkeys = 1;
-
 use Template::Liquid;
 
 sub liquid_parse_template {
@@ -68,6 +65,14 @@ my $type_definition = <<EOL
 EOL
     ;
 
+my $function_template = <<EOL
+{% if object %}{{object}} {% endif %}{{ name }}(\${800:{{inputs}}}){% if returnType %}\${850/^.+\$/->/}\${850:{{returnType}}}{% endif %}{
+    \${900:{{body}}}{% if returnType %}\${850/^.+\$/
+    return \\/\\/type.../}{% endif %}
+} // {{ name }}
+EOL
+    ;
+
 # assignment
 foreach my $someObject ( "let", "var" ) {
     write_to_files(
@@ -105,8 +110,6 @@ foreach my $someObject ( "typealias", ) {
     );
 }
 
-
-
 # Bracketed objects
 foreach my $someObject ( "struct", "class", "enum" ) {
     write_to_files(
@@ -125,3 +128,60 @@ foreach my $someObject ( "struct", "class", "enum" ) {
     );
 }
 
+
+write_to_files(
+    ["func.sublime-snippet"],
+    render(
+        template => $snip_template,
+        body     => render(
+            template => $function_template,
+            object   => 'func',
+            name => '${100:functionName}',
+            body => "//body...",
+            inputs => "_ someInput : Type",
+            returnType => "ReturnType",
+        ),
+        trigger => 'func',
+        desc    => 'func',
+    )
+);
+
+
+
+write_to_files(
+    ["switch.sublime-snippet"],
+    render(
+        template => $snip_template,
+        body     => render(
+            template => $function_template,
+            # object   => $someObject,
+            name => "switch",
+            body => "case .scenario:
+        //body...
+    case .scenario:
+        //body...
+    default:
+        //body...",
+            inputs => "someInput",
+
+        ),
+        trigger => 'switch',
+        desc    => 'switch',
+    )
+);
+
+write_to_files(
+    ["init.sublime-snippet"],
+    render(
+        template => $snip_template,
+        body     => render(
+            template => $function_template,
+            # object   => $someObject,
+            name => "init",
+            body => "//body...",
+            inputs => "_ someInput : Type",
+        ),
+        trigger => 'init',
+        desc    => 'init',
+    )
+);

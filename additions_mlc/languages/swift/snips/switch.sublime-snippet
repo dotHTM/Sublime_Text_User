@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+switch(${800:someInput}){
+    ${900:case .scenario:
+        //body...
+    case .scenario:
+        //body...
+    default:
+        //body...}
+} // switch
+]]></content>
+  <tabTrigger>switch</tabTrigger>
+  <description>switch</description>
+  <scope>source.swift</scope>
+</snippet>

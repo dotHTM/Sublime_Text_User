@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+func ${100:functionName}(${800:_ someInput : Type})${850/^.+$/->/}${850:ReturnType}{
+    ${900://body...}${850/^.+$/
+    return \/\/type.../}
+} // ${100:functionName}
+]]></content>
+  <tabTrigger>func</tabTrigger>
+  <description>func</description>
+  <scope>source.swift</scope>
+</snippet>
