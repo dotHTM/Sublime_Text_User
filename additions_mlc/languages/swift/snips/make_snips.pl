@@ -124,46 +124,7 @@ EOL
 
 my %snippetHash = (
 
-    "init" => {
-        template     => $function_invocation,
-        closureinput => "\n\t//body...\n",
-        inputs       => "_ someInput : Type",
-    },
-    "switch" => {
-        template => $function_invocation,
-        closureinput =>
-            "\n\tcase .\${800:scenario}:\n\t\t\${801://code...}\n\tcase .\${802:scenario}:\n\t\t\${803://code...}\n\tdefault:\n\t\t\${804://code...}\n",
-        inputs => "someInput",
-    },
-
-    "case" => {
-        template => $trivial,
-        suffix   => " .\${900:scenario} :\n\t\${999://code...}",
-    },
-    "default" => {
-        template => $trivial,
-        suffix   => " :\n\t\${999://code...}",
-    },
-
-    "func" => {
-        template   => $function_declaration,
-        name       => '${100:functionName}',
-        body       => "//body...",
-        inputs     => "_ someInput : Type",
-        returnType => "ReturnType",
-    },
-    "struct" => {
-        template => $bracketed_general,
-        name     => "SomeStructName",
-    },
-    "class" => {
-        template => $bracketed_general,
-        name     => "SomeClassName",
-    },
-    "enum" => {
-        template => $bracketed_general,
-        name     => "SomeEnumName",
-    },
+    ## Basics
     "typealias" => {
         template => $type_assignment,
         name     => "TypeName",
@@ -182,6 +143,48 @@ my %snippetHash = (
         explicitType => "DefaultType",
         value        => "//some value...",
         ,
+    },
+    "func" => {
+        template   => $function_declaration,
+        name       => '${100:functionName}',
+        body       => "//body...",
+        inputs     => "_ someInput : Type",
+        returnType => "ReturnType",
+    },
+
+    ## Objects
+    "struct" => {
+        template => $bracketed_general,
+        name     => "SomeStructName",
+    },
+    "class" => {
+        template => $bracketed_general,
+        name     => "SomeClassName",
+    },
+    "init" => {
+        template     => $function_invocation,
+        closureinput => "\n\t//body...\n",
+        inputs       => "_ someInput : Type",
+    },
+
+    ## Enums
+    "enum" => {
+        template => $bracketed_general,
+        name     => "SomeEnumName",
+    },
+    "switch" => {
+        template => $function_invocation,
+        closureinput =>
+            "\n\tcase .\${800:scenario}:\n\t\t\${801://code...}\n\tcase .\${802:scenario}:\n\t\t\${803://code...}\n\tdefault:\n\t\t\${804://code...}\n",
+        inputs => "someInput",
+    },
+    "case" => {
+        template => $trivial,
+        suffix   => " .\${900:scenario} :\n\t\${999://code...}",
+    },
+    "default" => {
+        template => $trivial,
+        suffix   => " :\n\t\${999://code...}",
     },
 
     # "XXX" => {
