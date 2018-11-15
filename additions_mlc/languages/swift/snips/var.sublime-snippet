@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-var ${100:variableName}${200/^.+$/ : /}${200:DefaultType} = ${900://some value...}
+var ${100:variableName}${200/^.+$/ : /}${200:DefaultType}${900/^.+$/ = /}${900://some value...}
 ]]></content>
   <tabTrigger>var</tabTrigger>
   <description>var</description>

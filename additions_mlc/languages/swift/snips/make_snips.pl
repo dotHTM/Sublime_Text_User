@@ -58,44 +58,48 @@ sub make_snip {
 </snippet>
 EOL
             ,
-            body    => render(%args),
+            body    => render(object=>$someObject,
+                              %args),
             trigger => $someObject,
             desc    => $someObject,
         )
     );
 }    ##    make_snip
 
-my $bracketed = <<EOL
+my $bracketed_general = <<EOL
 {{object}} \${100:{{name}}} {
     \${900:// body ...}
 } // \${100}
 EOL
     ;
 
-my $type_definition = <<EOL
-{{object}} \${100:{{name}}}{% if explicitType %}\${200/^.+\$/ : /}\${200:{{explicitType}}}{% endif %} = \${900:{{value}}}
+my $type_assignment = <<EOL
+{{object}} \${100:{{name}}}{% if explicitType %}\${200/^.+\$/ : /}\${200:{{explicitType}}}{% endif %}\${900/^.+\$/ = /}\${900:{{value}}}
 EOL
     ;
 
-my $function_template = <<EOL
-{% if object %}{{object}} {% endif %}{{ name }}(\${800:{{inputs}}}){% if returnType %}\${850/^.+\$/->/}\${850:{{returnType}}}{% endif %}{
+my $function_declaration = <<EOL
+{{object}} {{ name }}(\${800:{{inputs}}}){% if returnType %}\${850/^.+\$/->/}\${850:{{returnType}}}{% endif %}{
     \${900:{{body}}}{% if returnType %}\${850/^.+\$/
     return \\/\\/type.../}{% endif %}
 } // {{ name }}
 EOL
     ;
 
+my $function_invocation = <<EOL
+{{object}}(\${900:{{inputs}}}){% if closureinput %}\${999/^.+\$/\{/}\${999:{{ closureinput }}}\${999/^.+\$/\}/}{% endif %}
+EOL
+;
+
 my %snippetHash = (
     "init" => {
-        template => $function_template,
-        name     => "init",
-        body     => "//body...",
+        template => $function_invocation,
+        closureinput     => "\n    //body...\n",
         inputs   => "_ someInput : Type",
     },
     "switch" => {
-        template => $function_template,
-        name     => "switch",
-        body     => 'case .scenario:
+        template => $function_invocation,
+        closureinput     => 'case .scenario:
         //body...
     case .scenario:
         //body...
@@ -105,37 +109,36 @@ my %snippetHash = (
         inputs => "someInput",
     },
     "func" => {
-        template   => $function_template,
-        object     => 'func',
+        template   => $function_declaration,
         name       => '${100:functionName}',
         body       => "//body...",
         inputs     => "_ someInput : Type",
         returnType => "ReturnType",
     },
     "struct" => {
-        template => $bracketed,
-        object   => "struct",
+        template => $bracketed_general,
+
         name     => "SomeStructName",
     },
     "class" => {
-        template => $bracketed,
-        object   => "class",
+        template => $bracketed_general,
+
         name     => "SomeClassName",
     },
     "enum" => {
-        template => $bracketed,
-        object   => "enum",
+        template => $bracketed_general,
+
         name     => "SomeEnumName",
     },
     "typealias" => {
-        template => $type_definition,
-        object   => "typealias",
+        template => $type_assignment,
+
         name     => "TypeName",
         value    => "OriginType",
     },
     "let" => {
-        template     => $type_definition,
-        object       => "let",
+        template     => $type_assignment,
+
         name         => "variableName",
         explicitType => "DefaultType",
         value        => "//some value...",
@@ -143,8 +146,8 @@ my %snippetHash = (
 
     },
     "var" => {
-        template     => $type_definition,
-        object       => "var",
+        template     => $type_assignment,
+
         name         => "variableName",
         explicitType => "DefaultType",
         value        => "//some value...",

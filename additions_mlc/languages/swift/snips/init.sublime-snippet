@@ -1,8 +1,8 @@
 <snippet>
   <content><![CDATA[
-init(${800:_ someInput : Type}){
-    ${900://body...}
-} // init
+init(${900:_ someInput : Type})${999/^.+$/{/}${999:
+    //body...
+}${999/^.+$/}/}
 ]]></content>
   <tabTrigger>init</tabTrigger>
   <description>init</description>

@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-typealias ${100:TypeName} = ${900:OriginType}
+typealias ${100:TypeName}${900/^.+$/ = /}${900:OriginType}
 ]]></content>
   <tabTrigger>typealias</tabTrigger>
   <description>typealias</description>
