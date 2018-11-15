@@ -42,7 +42,13 @@ sub write_to_files {
     return 1;    ## success
 }    ##    write_to_files
 
-my $snip_template = <<EOL
+sub make_snip {
+    my ( $someObject, %args ) = @_;
+
+    write_to_files(
+        ["$someObject.sublime-snippet"],
+        render(
+            template => <<EOL
 <snippet>
   <content><![CDATA[
 {{ body }}]]></content>
@@ -51,7 +57,13 @@ my $snip_template = <<EOL
   <scope>source.swift</scope>
 </snippet>
 EOL
-    ;
+            ,
+            body    => render(%args),
+            trigger => $someObject,
+            desc    => $someObject,
+        )
+    );
+}    ##    make_snip
 
 my $bracketed = <<EOL
 {{object}} \${100:{{name}}} {
@@ -73,115 +85,102 @@ my $function_template = <<EOL
 EOL
     ;
 
-# assignment
-foreach my $someObject ( "let", "var" ) {
-    write_to_files(
-        ["$someObject.sublime-snippet"],
-        render(
-            template => $snip_template,
-            body     => render(
-                template     => $type_definition,
-                object       => $someObject,
-                name         => "variableName",
-                explicitType => "DefaultType",
-                value        => "//some value...",
-            ),
-            trigger => $someObject,
-            desc    => $someObject,
-        )
-    );
-}
-
-foreach my $someObject ( "typealias", ) {
-    write_to_files(
-        ["$someObject.sublime-snippet"],
-        render(
-            template => $snip_template,
-            body     => render(
-                template => $type_definition,
-                object   => $someObject,
-                name     => "TypeName",
-                value    => "OriginType",
-
-            ),
-            trigger => $someObject,
-            desc    => $someObject,
-        )
-    );
-}
-
-# Bracketed objects
-foreach my $someObject ( "struct", "class", "enum" ) {
-    write_to_files(
-        ["$someObject.sublime-snippet"],
-        render(
-            template => $snip_template,
-            body     => render(
-                template => $bracketed,
-                object   => $someObject,
-                name     => "TypeName",
-
-            ),
-            trigger => $someObject,
-            desc    => $someObject,
-        )
-    );
-}
-
-
-write_to_files(
-    ["func.sublime-snippet"],
-    render(
-        template => $snip_template,
-        body     => render(
-            template => $function_template,
-            object   => 'func',
-            name => '${100:functionName}',
-            body => "//body...",
-            inputs => "_ someInput : Type",
-            returnType => "ReturnType",
-        ),
-        trigger => 'func',
-        desc    => 'func',
-    )
-);
-
-
-
-write_to_files(
-    ["switch.sublime-snippet"],
-    render(
-        template => $snip_template,
-        body     => render(
-            template => $function_template,
-            # object   => $someObject,
-            name => "switch",
-            body => "case .scenario:
+my %snippetHash = (
+    "init" => {
+        template => $function_template,
+        name     => "init",
+        body     => "//body...",
+        inputs   => "_ someInput : Type",
+    },
+    "switch" => {
+        template => $function_template,
+        name     => "switch",
+        body     => 'case .scenario:
         //body...
     case .scenario:
         //body...
     default:
-        //body...",
-            inputs => "someInput",
+        //body...'
+        ,
+        inputs => "someInput",
+    },
+    "func" => {
+        template   => $function_template,
+        object     => 'func',
+        name       => '${100:functionName}',
+        body       => "//body...",
+        inputs     => "_ someInput : Type",
+        returnType => "ReturnType",
+    },
+    "struct" => {
+        template => $bracketed,
+        object   => "struct",
+        name     => "SomeStructName",
+    },
+    "class" => {
+        template => $bracketed,
+        object   => "class",
+        name     => "SomeClassName",
+    },
+    "enum" => {
+        template => $bracketed,
+        object   => "enum",
+        name     => "SomeEnumName",
+    },
+    "typealias" => {
+        template => $type_definition,
+        object   => "typealias",
+        name     => "TypeName",
+        value    => "OriginType",
+    },
+    "let" => {
+        template     => $type_definition,
+        object       => "let",
+        name         => "variableName",
+        explicitType => "DefaultType",
+        value        => "//some value...",
+        ,
 
-        ),
-        trigger => 'switch',
-        desc    => 'switch',
-    )
+    },
+    "var" => {
+        template     => $type_definition,
+        object       => "var",
+        name         => "variableName",
+        explicitType => "DefaultType",
+        value        => "//some value...",
+        ,
+
+    },
+
+    # "XXX" => {
+    #     template => $YYYY,
+
+    # },
+    # "XXX" => {
+    #     template => $YYYY,
+
+    # },
+    # "XXX" => {
+    #     template => $YYYY,
+
+    # },
+    # "XXX" => {
+    #     template => $YYYY,
+
+    # },
+    # "XXX" => {
+    #     template => $YYYY,
+
+    # },
+    # "XXX" => {
+    #     template => $YYYY,
+
+    # },
+
 );
 
-write_to_files(
-    ["init.sublime-snippet"],
-    render(
-        template => $snip_template,
-        body     => render(
-            template => $function_template,
-            # object   => $someObject,
-            name => "init",
-            body => "//body...",
-            inputs => "_ someInput : Type",
-        ),
-        trigger => 'init',
-        desc    => 'init',
-    )
-);
+foreach my $keyObject ( keys %snippetHash ) {
+    if ( my %snippetDetails = %{$snippetHash{$keyObject}} ) {
+        make_snip( $keyObject, %snippetDetails );
+    }
+}

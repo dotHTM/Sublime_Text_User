@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-enum ${100:TypeName} {
+enum ${100:SomeEnumName} {
     ${900:// body ...}
 } // ${100}
 ]]></content>

@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-struct ${100:TypeName} {
+struct ${100:SomeStructName} {
     ${900:// body ...}
 } // ${100}
 ]]></content>
