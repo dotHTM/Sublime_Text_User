@@ -6,7 +6,8 @@ switch(${900:someInput})${999/^.+$/{/}${999:
 	case .scenario:
 		//body...
 	default:
-		//body...}${999/^.+$/}/}
+		//body...
+}${999/^.+$/}/}
 ]]></content>
   <tabTrigger>switch</tabTrigger>
   <description>switch</description>

@@ -129,7 +129,7 @@ my %snippetHash = (
     "switch" => {
         template => $function_invocation,
         closureinput =>
-            "\n\tcase .scenario:\n\t\t//body...\n\tcase .scenario:\n\t\t//body...\n\tdefault:\n\t\t//body...",
+            "\n\tcase .scenario:\n\t\t//body...\n\tcase .scenario:\n\t\t//body...\n\tdefault:\n\t\t//body...\n",
         inputs => "someInput",
     },
     "func" => {
