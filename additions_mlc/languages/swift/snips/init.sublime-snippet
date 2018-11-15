@@ -5,6 +5,6 @@ init(${900:_ someInput : Type})${999/^.+$/{/}${999:
 }${999/^.+$/}/}
 ]]></content>
   <tabTrigger>init</tabTrigger>
-  <description>init</description>
+  <description>Object Initializer</description>
   <scope>source.swift</scope>
 </snippet>

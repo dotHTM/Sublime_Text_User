@@ -3,6 +3,6 @@
 var ${100:variableName}${200/^.+$/ : /}${200:DefaultType}${900/^.+$/ = /}${900://some value...}
 ]]></content>
   <tabTrigger>var</tabTrigger>
-  <description>var</description>
+  <description>Mutable Variable</description>
   <scope>source.swift</scope>
 </snippet>

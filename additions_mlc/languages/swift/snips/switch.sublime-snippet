@@ -1,15 +1,13 @@
 <snippet>
   <content><![CDATA[
-switch(${900:someInput})${999/^.+$/{/}${999:
-	case .${800:scenario}:
-		${801://code...}
-	case .${802:scenario}:
-		${803://code...}
-	default:
-		${804://code...}
+switch (${900:someInput})${999/^.+$/{/}${999:
+case .${802:scenario}:
+	${803://code...}
+default:
+	${804://code...}
 }${999/^.+$/}/}
 ]]></content>
   <tabTrigger>switch</tabTrigger>
-  <description>switch</description>
+  <description>Switch Statement</description>
   <scope>source.swift</scope>
 </snippet>

@@ -6,6 +6,6 @@ func ${100:functionName}(${800:_ someInput : Type})${850/^.+$/->/}${850:ReturnTy
 } // ${100:functionName}
 ]]></content>
   <tabTrigger>func</tabTrigger>
-  <description>func</description>
+  <description>Subroutine</description>
   <scope>source.swift</scope>
 </snippet>

@@ -3,6 +3,6 @@
 case .${900:scenario} :
 	${999://code...}]]></content>
   <tabTrigger>case</tabTrigger>
-  <description>case</description>
+  <description>Switch Case</description>
   <scope>source.swift</scope>
 </snippet>

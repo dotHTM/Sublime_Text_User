@@ -72,7 +72,7 @@ sub make_snip {
 EOL
             ,
             body => render(
-                object => $someObject,
+                object => $args{object} ? $args{object}: $someObject,
                 %args
             ),
             trigger => $args{trigger} ? $args{trigger} : $someObject,
@@ -126,11 +126,13 @@ my %snippetHash = (
 
     ## Basics
     "typealias" => {
+        desc     => "Type Alias",
         template => $type_assignment,
         name     => "TypeName",
         value    => "OriginType",
     },
     "let" => {
+        desc         => "Constant Variable",
         template     => $type_assignment,
         name         => "constantName",
         explicitType => "DefaultType",
@@ -138,6 +140,7 @@ my %snippetHash = (
         ,
     },
     "var" => {
+        desc         => "Mutable Variable",
         template     => $type_assignment,
         name         => "variableName",
         explicitType => "DefaultType",
@@ -145,6 +148,7 @@ my %snippetHash = (
         ,
     },
     "func" => {
+        desc       => "Subroutine",
         template   => $function_declaration,
         name       => '${100:functionName}',
         body       => "//body...",
@@ -154,14 +158,17 @@ my %snippetHash = (
 
     ## Objects
     "struct" => {
+        desc     => "Value Type",
         template => $bracketed_general,
         name     => "SomeStructName",
     },
     "class" => {
+        desc     => "Reference Type",
         template => $bracketed_general,
         name     => "SomeClassName",
     },
     "init" => {
+        desc         => "Object Initializer",
         template     => $function_invocation,
         closureinput => "\n\t//body...\n",
         inputs       => "_ someInput : Type",
@@ -169,20 +176,25 @@ my %snippetHash = (
 
     ## Enums
     "enum" => {
+        desc     => "Enumerator",
         template => $bracketed_general,
         name     => "SomeEnumName",
     },
     "switch" => {
+      object => "switch ",
+        desc     => "Switch Statement",
         template => $function_invocation,
         closureinput =>
-            "\ncase .\${800:scenario}:\n\t\${801://code...}\ncase .\${802:scenario}:\n\t\${803://code...}\ndefault:\n\t\${804://code...}\n",
+            "\ncase .\${802:scenario}:\n\t\${803://code...}\ndefault:\n\t\${804://code...}\n",
         inputs => "someInput",
     },
     "case" => {
+        desc     => "Switch Case",
         template => $trivial,
         suffix   => " .\${900:scenario} :\n\t\${999://code...}",
     },
     "default" => {
+        desc     => "Switch Case Default",
         template => $trivial,
         suffix   => " :\n\t\${999://code...}",
     },

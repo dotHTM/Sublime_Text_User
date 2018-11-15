@@ -3,6 +3,6 @@
 typealias ${100:TypeName}${900/^.+$/ = /}${900:OriginType}
 ]]></content>
   <tabTrigger>typealias</tabTrigger>
-  <description>typealias</description>
+  <description>Type Alias</description>
   <scope>source.swift</scope>
 </snippet>

@@ -3,6 +3,6 @@
 let ${100:constantName}${200/^.+$/ : /}${200:DefaultType}${900/^.+$/ = /}${900://some value...}
 ]]></content>
   <tabTrigger>let</tabTrigger>
-  <description>let</description>
+  <description>Constant Variable</description>
   <scope>source.swift</scope>
 </snippet>

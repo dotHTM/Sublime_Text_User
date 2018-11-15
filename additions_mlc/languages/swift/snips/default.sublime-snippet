@@ -3,6 +3,6 @@
 default :
 	${999://code...}]]></content>
   <tabTrigger>default</tabTrigger>
-  <description>default</description>
+  <description>Switch Case Default</description>
   <scope>source.swift</scope>
 </snippet>
