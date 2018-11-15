@@ -95,17 +95,19 @@ EOL
 #                                                   #
 #####################################################
 
+my $trivial = "{{prefix}}{{object}}{{suffix}}";
+
 my $bracketed_general = <<EOL
 {{object}} \${100:{{name}}} {
 \t\${900:// body ...}
 } // \${100}
 EOL
-;
+    ;
 
 my $type_assignment = <<EOL
 {{object}} \${100:{{name}}}{% if explicitType %}\${200/^.+\$/ : /}\${200:{{explicitType}}}{% endif %}\${900/^.+\$/ = /}\${900:{{value}}}
 EOL
-;
+    ;
 
 my $function_declaration = <<EOL
 {{object}} {{ name }}(\${800:{{inputs}}}){% if returnType %}\${850/^.+\$/->/}\${850:{{returnType}}}{% endif %}{
@@ -113,14 +115,15 @@ my $function_declaration = <<EOL
 \treturn \\/\\/type.../}{% endif %}
 } // {{ name }}
 EOL
-;
+    ;
 
 my $function_invocation = <<EOL
 {{object}}(\${900:{{inputs}}}){% if closureinput %}\${999/^.+\$/\{/}\${999:{{ closureinput }}}\${999/^.+\$/\}/}{% endif %}
 EOL
-;
+    ;
 
 my %snippetHash = (
+
     "init" => {
         template     => $function_invocation,
         closureinput => "\n\t//body...\n",
@@ -129,9 +132,19 @@ my %snippetHash = (
     "switch" => {
         template => $function_invocation,
         closureinput =>
-            "\n\tcase .scenario:\n\t\t//body...\n\tcase .scenario:\n\t\t//body...\n\tdefault:\n\t\t//body...\n",
+            "\n\tcase .\${800:scenario}:\n\t\t\${801://code...}\n\tcase .\${802:scenario}:\n\t\t\${803://code...}\n\tdefault:\n\t\t\${804://code...}\n",
         inputs => "someInput",
     },
+
+    "case" => {
+        template => $trivial,
+        suffix   => " .\${900:scenario} :\n\t\${999://code...}",
+    },
+    "default" => {
+        template => $trivial,
+        suffix   => " :\n\t\${999://code...}",
+    },
+
     "func" => {
         template   => $function_declaration,
         name       => '${100:functionName}',
@@ -158,7 +171,7 @@ my %snippetHash = (
     },
     "let" => {
         template     => $type_assignment,
-        name         => "variableName",
+        name         => "constantName",
         explicitType => "DefaultType",
         value        => "//some value...",
         ,
