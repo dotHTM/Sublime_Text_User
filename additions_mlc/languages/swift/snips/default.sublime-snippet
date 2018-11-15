@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+default :
+	${999://code...}]]></content>
+  <tabTrigger>default</tabTrigger>
+  <description>default</description>
+  <scope>source.swift</scope>
+</snippet>

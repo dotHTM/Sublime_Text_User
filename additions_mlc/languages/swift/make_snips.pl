@@ -59,7 +59,7 @@ sub write_to_files {
 sub make_snip {
     my ( $someObject, %args ) = @_;
     write_to_files(
-        ["$someObject.sublime-snippet"],
+        ["snips/$someObject.sublime-snippet"],
         render(
             template => <<EOL
 <snippet>
@@ -75,8 +75,8 @@ EOL
                 object => $someObject,
                 %args
             ),
-            trigger => $someObject,
-            desc    => $someObject,
+            trigger => $args{trigger} ? $args{trigger} : $someObject,
+            desc    => $args{desc}    ? $args{desc}    : $someObject,
         )
     );
 }    ##    make_snip
@@ -175,7 +175,7 @@ my %snippetHash = (
     "switch" => {
         template => $function_invocation,
         closureinput =>
-            "\n\tcase .\${800:scenario}:\n\t\t\${801://code...}\n\tcase .\${802:scenario}:\n\t\t\${803://code...}\n\tdefault:\n\t\t\${804://code...}\n",
+            "\ncase .\${800:scenario}:\n\t\${801://code...}\ncase .\${802:scenario}:\n\t\${803://code...}\ndefault:\n\t\${804://code...}\n",
         inputs => "someInput",
     },
     "case" => {
