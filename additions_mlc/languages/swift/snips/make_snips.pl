@@ -10,6 +10,20 @@ use warnings;
 use Carp qw{croak};
 use Template::Liquid;
 
+#######################################################
+#                                                     #
+#     ad88888ba              88                       #
+#    d8"     "8b             88                       #
+#    Y8,                     88                       #
+#    `Y8aaaaa,   88       88 88,dPPYba,  ,adPPYba,    #
+#      `"""""8b, 88       88 88P'    "8a I8[    ""    #
+#            `8b 88       88 88       d8  `"Y8ba,     #
+#    Y8a     a8P "8a,   ,a88 88b,   ,a8" aa    ]8I    #
+#     "Y88888P"   `"YbbdP'Y8 8Y"Ybbd8"'  `"YbbdP"'    #
+#                                                     #
+#                                                     #
+#######################################################
+
 sub liquid_parse_template {
     my (@args) = @_;
     return Template::Liquid->parse(@args);
@@ -44,7 +58,6 @@ sub write_to_files {
 
 sub make_snip {
     my ( $someObject, %args ) = @_;
-
     write_to_files(
         ["$someObject.sublime-snippet"],
         render(
@@ -58,33 +71,49 @@ sub make_snip {
 </snippet>
 EOL
             ,
-            body    => render(object=>$someObject,
-                              %args),
+            body => render(
+                object => $someObject,
+                %args
+            ),
             trigger => $someObject,
             desc    => $someObject,
         )
     );
 }    ##    make_snip
 
+#####################################################
+#                                                   #
+#    88b           d88            88                #
+#    888b         d888            ""                #
+#    88`8b       d8'88                              #
+#    88 `8b     d8' 88 ,adPPYYba, 88 8b,dPPYba,     #
+#    88  `8b   d8'  88 ""     `Y8 88 88P'   `"8a    #
+#    88   `8b d8'   88 ,adPPPPP88 88 88       88    #
+#    88    `888'    88 88,    ,88 88 88       88    #
+#    88     `8'     88 `"8bbdP"Y8 88 88       88    #
+#                                                   #
+#                                                   #
+#####################################################
+
 my $bracketed_general = <<EOL
 {{object}} \${100:{{name}}} {
-    \${900:// body ...}
+\t\${900:// body ...}
 } // \${100}
 EOL
-    ;
+;
 
 my $type_assignment = <<EOL
 {{object}} \${100:{{name}}}{% if explicitType %}\${200/^.+\$/ : /}\${200:{{explicitType}}}{% endif %}\${900/^.+\$/ = /}\${900:{{value}}}
 EOL
-    ;
+;
 
 my $function_declaration = <<EOL
 {{object}} {{ name }}(\${800:{{inputs}}}){% if returnType %}\${850/^.+\$/->/}\${850:{{returnType}}}{% endif %}{
-    \${900:{{body}}}{% if returnType %}\${850/^.+\$/
-    return \\/\\/type.../}{% endif %}
+\t\${900:{{body}}}{% if returnType %}\${850/^.+\$/
+\treturn \\/\\/type.../}{% endif %}
 } // {{ name }}
 EOL
-    ;
+;
 
 my $function_invocation = <<EOL
 {{object}}(\${900:{{inputs}}}){% if closureinput %}\${999/^.+\$/\{/}\${999:{{ closureinput }}}\${999/^.+\$/\}/}{% endif %}
@@ -93,19 +122,14 @@ EOL
 
 my %snippetHash = (
     "init" => {
-        template => $function_invocation,
-        closureinput     => "\n    //body...\n",
-        inputs   => "_ someInput : Type",
+        template     => $function_invocation,
+        closureinput => "\n\t//body...\n",
+        inputs       => "_ someInput : Type",
     },
     "switch" => {
         template => $function_invocation,
-        closureinput     => 'case .scenario:
-        //body...
-    case .scenario:
-        //body...
-    default:
-        //body...'
-        ,
+        closureinput =>
+            "\n\tcase .scenario:\n\t\t//body...\n\tcase .scenario:\n\t\t//body...\n\tdefault:\n\t\t//body...",
         inputs => "someInput",
     },
     "func" => {
@@ -117,73 +141,43 @@ my %snippetHash = (
     },
     "struct" => {
         template => $bracketed_general,
-
         name     => "SomeStructName",
     },
     "class" => {
         template => $bracketed_general,
-
         name     => "SomeClassName",
     },
     "enum" => {
         template => $bracketed_general,
-
         name     => "SomeEnumName",
     },
     "typealias" => {
         template => $type_assignment,
-
         name     => "TypeName",
         value    => "OriginType",
     },
     "let" => {
         template     => $type_assignment,
-
         name         => "variableName",
         explicitType => "DefaultType",
         value        => "//some value...",
         ,
-
     },
     "var" => {
         template     => $type_assignment,
-
         name         => "variableName",
         explicitType => "DefaultType",
         value        => "//some value...",
         ,
-
     },
 
     # "XXX" => {
     #     template => $YYYY,
-
     # },
-    # "XXX" => {
-    #     template => $YYYY,
-
-    # },
-    # "XXX" => {
-    #     template => $YYYY,
-
-    # },
-    # "XXX" => {
-    #     template => $YYYY,
-
-    # },
-    # "XXX" => {
-    #     template => $YYYY,
-
-    # },
-    # "XXX" => {
-    #     template => $YYYY,
-
-    # },
-
 );
 
 foreach my $keyObject ( keys %snippetHash ) {
-    if ( my %snippetDetails = %{$snippetHash{$keyObject}} ) {
+    if ( my %snippetDetails = %{ $snippetHash{$keyObject} } ) {
         make_snip( $keyObject, %snippetDetails );
     }
 }
