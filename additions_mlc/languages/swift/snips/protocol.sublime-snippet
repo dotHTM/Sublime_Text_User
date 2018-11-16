@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+protocol ${100:SomeProtocolName}${200/^.+$/ : /}${200:SomeOtherProtocol} {
+	${900:// body ...}
+} // ${100}
+]]></content>
+  <tabTrigger>protocol</tabTrigger>
+  <description>Protocol Declaration</description>
+  <scope>source.swift</scope>
+</snippet>

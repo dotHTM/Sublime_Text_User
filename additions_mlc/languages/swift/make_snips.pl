@@ -98,7 +98,7 @@ EOL
 my $trivial = "{{prefix}}{{object}}{{suffix}}";
 
 my $bracketed_general = <<EOL
-{{object}} \${100:{{name}}}{% if protocol_adherance %}\${200/^.+\$/ : /}\${200:SomeProtocol}{% endif %} {
+{{object}} \${100:{{name}}}{% if protocol_adherance %}\${200/^.+\$/ : /}\${200:{{protocol_adherance}}}{% endif %} {
 \t\${900:// body ...}
 } // \${100}
 EOL
@@ -157,14 +157,20 @@ my %snippetHash = (
     },
 
     ## Objects
+    "protocol" => {
+        protocol_adherance => "SomeOtherProtocol",
+        desc               => "Protocol Declaration",
+        template           => $bracketed_general,
+        name               => "SomeProtocolName",
+    },
     "struct" => {
-        protocol_adherance => 1,
+        protocol_adherance => "SomeProtocol",
         desc               => "Value Type",
         template           => $bracketed_general,
         name               => "SomeStructName",
     },
     "class" => {
-        protocol_adherance => 1,
+        protocol_adherance => "SomeProtocol",
         desc               => "Reference Type",
         template           => $bracketed_general,
         name               => "SomeClassName",
@@ -178,7 +184,7 @@ my %snippetHash = (
 
     ## Enums
     "enum" => {
-        protocol_adherance => 1,
+        protocol_adherance => "SomeProtocol",
         desc               => "Enumerator",
         template           => $bracketed_general,
         name               => "SomeEnumName",
