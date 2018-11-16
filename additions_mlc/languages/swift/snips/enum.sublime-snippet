@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-enum ${100:SomeEnumName} {
+enum ${100:SomeEnumName}${200/^.+$/ : /}${200:SomeProtocol} {
 	${900:// body ...}
 } // ${100}
 ]]></content>

@@ -98,7 +98,7 @@ EOL
 my $trivial = "{{prefix}}{{object}}{{suffix}}";
 
 my $bracketed_general = <<EOL
-{{object}} \${100:{{name}}} {
+{{object}} \${100:{{name}}}{% if protocol_adherance %}\${200/^.+\$/ : /}\${200:SomeProtocol}{% endif %} {
 \t\${900:// body ...}
 } // \${100}
 EOL
@@ -158,14 +158,16 @@ my %snippetHash = (
 
     ## Objects
     "struct" => {
-        desc     => "Value Type",
-        template => $bracketed_general,
-        name     => "SomeStructName",
+        protocol_adherance => 1,
+        desc               => "Value Type",
+        template           => $bracketed_general,
+        name               => "SomeStructName",
     },
     "class" => {
-        desc     => "Reference Type",
-        template => $bracketed_general,
-        name     => "SomeClassName",
+        protocol_adherance => 1,
+        desc               => "Reference Type",
+        template           => $bracketed_general,
+        name               => "SomeClassName",
     },
     "init" => {
         desc         => "Object Initializer",
@@ -176,15 +178,16 @@ my %snippetHash = (
 
     ## Enums
     "enum" => {
-        desc     => "Enumerator",
-        template => $bracketed_general,
-        name     => "SomeEnumName",
+        protocol_adherance => 1,
+        desc               => "Enumerator",
+        template           => $bracketed_general,
+        name               => "SomeEnumName",
     },
     "switch" => {
-        object     => "switch ",
+        object      => "switch ",
         loose_input => 1,
-        desc       => "Switch Statement",
-        template   => $function_invocation,
+        desc        => "Switch Statement",
+        template    => $function_invocation,
         closureinput =>
             "\ncase .\${802:scenario}:\n\t\${803://code...}\ndefault:\n\t\${804://code...}\n",
         inputs => "someInput",

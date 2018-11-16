@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-class ${100:SomeClassName} {
+class ${100:SomeClassName}${200/^.+$/ : /}${200:SomeProtocol} {
 	${900:// body ...}
 } // ${100}
 ]]></content>
