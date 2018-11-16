@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-switch (${900:someInput})${999/^.+$/{/}${999:
+switch ${100:someInput}${999/^.+$/{/}${999:
 case .${802:scenario}:
 	${803://code...}
 default:

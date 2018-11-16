@@ -72,7 +72,7 @@ sub make_snip {
 EOL
             ,
             body => render(
-                object => $args{object} ? $args{object}: $someObject,
+                object => $args{object} ? $args{object} : $someObject,
                 %args
             ),
             trigger => $args{trigger} ? $args{trigger} : $someObject,
@@ -118,7 +118,7 @@ EOL
     ;
 
 my $function_invocation = <<EOL
-{{object}}(\${900:{{inputs}}}){% if closureinput %}\${999/^.+\$/\{/}\${999:{{ closureinput }}}\${999/^.+\$/\}/}{% endif %}
+{{object}}{% if loose_input != 1 %}({% endif %}\${100:{{inputs}}}{% if loose_input != 1 %}){% endif %}{% if closureinput %}\${999/^.+\$/\{/}\${999:{{ closureinput }}}\${999/^.+\$/\}/}{% endif %}
 EOL
     ;
 
@@ -181,9 +181,10 @@ my %snippetHash = (
         name     => "SomeEnumName",
     },
     "switch" => {
-      object => "switch ",
-        desc     => "Switch Statement",
-        template => $function_invocation,
+        object     => "switch ",
+        loose_input => 1,
+        desc       => "Switch Statement",
+        template   => $function_invocation,
         closureinput =>
             "\ncase .\${802:scenario}:\n\t\${803://code...}\ndefault:\n\t\${804://code...}\n",
         inputs => "someInput",

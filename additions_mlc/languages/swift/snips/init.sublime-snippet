@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-init(${900:_ someInput : Type})${999/^.+$/{/}${999:
+init(${100:_ someInput : Type})${999/^.+$/{/}${999:
 	//body...
 }${999/^.+$/}/}
 ]]></content>
