@@ -69,10 +69,9 @@ sub main {
 sub process_opts {
     my (undef) = @_;
     GetOptions(
-        'help' => \$HELP,
-
-        'debug'     => \$DEBUG,
-        'verbose=i' => \$VERBOSE,
+        'help'      => \\\$HELP,
+        'debug'     => \\\$DEBUG,
+        'verbose=i' => \\\$VERBOSE,
 
     );
     return 1;    #success
@@ -124,13 +123,11 @@ sub debug_msg {
     my (@input_messages) = @_;
     if (\$DEBUG) {
         my \$timestamp = localtime->datetime;
-        my \$message   = q{};
         foreach my \$sub_message (@input_messages) {
             foreach my \$line ( split "\n", \$sub_message ) {
-                \$message .= '[' . \$timestamp . '] ' . \$line . "\n";
+              say '[' . \$timestamp . '] ' . \$line;
             }
         }
-        say \$message;
     }
     return 1;
 }    ##    debug_msg
