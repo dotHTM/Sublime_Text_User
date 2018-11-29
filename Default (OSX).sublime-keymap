@@ -2,8 +2,7 @@
 
   { // Open in Sublime Merge
     "keys": ["super+alt+z"],
-    "command": "exec",
-    "args": {"cmd":  ["smerge", "$project"]}
+    "command": "sublime_merge_open_repo"
   },
 
   { // Match the shortcut in Sublime Merge
