@@ -4,7 +4,7 @@
     "name": "Quick Prefs",
     "path": "~/.subl_prefs",
     // // // // // // // // // //
-    "file_include_patterns": [,
+    "file_include_patterns": [
       "Preferences.sublime-settings",
       "*.sublime-keymap",
       "User.sublime-project",
@@ -16,21 +16,21 @@
     "name": "MLC, langs, etc",
     "path": "./additions_mlc",
     // // // // // // // // // //
-    "file_exclude_patterns": [,
+    "file_exclude_patterns": [
       "Preferences.sublime-settings",
       "*.sublime-keymap",
     ],
-    "folder_exclude_patterns": [, ],
+    "folder_exclude_patterns": [ ],
   },
   {
     "name": "User Package",
     "path": ".",
     // // // // // // // // // //
-    "file_exclude_patterns": [,
+    "file_exclude_patterns": [
       "Preferences.sublime-settings",
       "*.sublime-keymap",
     ],
-    "folder_exclude_patterns": [,
+    "folder_exclude_patterns": [
       "additions_mlc",
     ],
   },
@@ -38,18 +38,18 @@
     "name": ".home",
     "path": "~",
     // // // // // // // // // //
-    "file_include_patterns": [,
+    "file_include_patterns": [
       ".*",
       ".*/*",
     ],
-    "folder_include_patterns": [,
+    "folder_include_patterns": [
       ".*",
       ".*/*",
     ],
-    "folder_exclude_patterns": [,
+    "folder_exclude_patterns": [
       ".Trash*",
     ],
-    "binary_file_patterns": [,
+    "binary_file_patterns": [
       ".*/**",
     ],
   },
@@ -57,7 +57,7 @@
     "name": "Browse Packages",
     "path": "~/Library/Application Support/Sublime Text 3/Packages",
     // // // // // // // // // //
-    "folder_exclude_patterns": [,
+    "folder_exclude_patterns": [
       "User",
     ],
   },
