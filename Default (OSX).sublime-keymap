@@ -172,19 +172,20 @@
     "command": "convert_to_back_slash"
   },
   // Macros
-  {
+  { // perltidy
     "args":
-    {
-
-
-      "file": "Packages/User/additions_mlc/macros/foldEverything.sublime-macro"
-    },
+    { "file": "Packages/User/additions_mlc/macros/perltidy.sublime-macro"},
+    "command": "run_macro_file",
+    "keys": ["shift+ctrl+t"],
+    "scope": "source.perl"
+  },
+   { // foldEverything
+    "args":
+    { "file": "Packages/User/additions_mlc/macros/foldEverything.sublime-macro"},
     "command": "run_macro_file",
     "keys": ["super+k, super+shift+0"]
-
-
   },
-  {
+  { //figletCommentLine
     "args":
     {
       "file": "Packages/User/additions_mlc/macros/figletCommentLine.sublime-macro"
