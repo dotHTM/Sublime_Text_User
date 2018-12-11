@@ -1,0 +1,6 @@
+{
+  "selector": "source.perl",
+  "cmd": [ "$packages//User/additions_mlc/languages/perl/build/perltidy.sh","$file"],
+  "file_regex": "^(/.*)",
+  "line_regex": "^([0-9]+):() (.*)",
+}
