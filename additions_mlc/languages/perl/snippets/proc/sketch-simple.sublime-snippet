@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # $TM_FILENAME
 #   ${100:Description}
 

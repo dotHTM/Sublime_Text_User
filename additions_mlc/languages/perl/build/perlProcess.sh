@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/usr/bin/env bash
 # perlProcess.sh
 
 criticSeverity=$1 && shift
@@ -11,13 +11,13 @@ main(){
     someOutputFilePath="${someFile}_critic.md"
 
     if [[ -n $someFile ]]; then
-        check_syntax 
+        check_syntax
         do_tidy
-        critic_returnValue=`critic_step` 
+        critic_returnValue=`critic_step`
         echo "$critic_returnValue"
         overlined_echo "Critic Severity => $criticSeverity" "-"
-        
-        # if [[  "$critic_returnValue" == *"source OK"* ]]  ; then 
+
+        # if [[  "$critic_returnValue" == *"source OK"* ]]  ; then
             # run_script
         # fi
     fi
@@ -39,7 +39,7 @@ underlined_echo(){
 
 check_syntax(){
     echo "checking SYNTAX"
-    perl -c "$someFile" 2>/tmp/Error 
+    perl -c "$someFile" 2>/tmp/Error
     cat /tmp/Error | perl -pe 's|, <DATA> line 755.||gmi' | syntax_error_formatted "SYNTAX: "
 }
 
@@ -47,7 +47,7 @@ run_script(){
     underlined_echo "> Running script - \"$someFile\"" '-'
     perl "$someFile" 2>/tmp/Error
     cat /tmp/Error | syntax_error_formatted "RUN: "
-    # subl /tmp/Error 
+    # subl /tmp/Error
 }
 
 syntax_error_formatted(){
@@ -65,7 +65,7 @@ critic_step(){
     # critic_KIS
     critic_brief > "$someOutputFilePath"
     cat "$someOutputFilePath"
-    
+
     if [[ `cat "$someOutputFilePath"` == *" source OK"* ]]; then
         echo
     else
@@ -82,15 +82,15 @@ critic_brief(){
 }
 
 critic_markdown(){
-    
+
     perlcritic -$criticSeverity --verbose "$criticVerboseFormat" "$someFile" \
     | perl -pe "s/^(    )//gi" \
     | perl -pe "s/^  (\w.*;)/    \1/gi" \
     | perl -pe "s/\\\`(.*?)(\S)'/\\\`\1\2\\\`/gmi" \
     > "$someOutputFilePath"
-    
+
     open -g -a "/Applications/Marked 2.app" "$someOutputFilePath"
-    
+
 }
 
 main $*

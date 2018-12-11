@@ -1,7 +1,7 @@
 <snippet>
   <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
   <content><![CDATA[
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # $TM_FILENAME
 #   ${100:Description}
 #
