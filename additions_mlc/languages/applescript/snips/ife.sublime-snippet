@@ -1,0 +1,18 @@
+<!-- Description.sublime-snippet -->
+<snippet>
+  <!-- Example: Hello, ${100:this} is a ${200:snippet}. -->
+  <content><![CDATA[
+if ( ${100:condition} ) then
+    ${500:--body}
+else if ( ${101:condition} )
+    ${501:--body}
+else
+    ${502:--body}
+end if
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ifee</tabTrigger>
+  <description>if, else if, else</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.applescript</scope>
+</snippet>

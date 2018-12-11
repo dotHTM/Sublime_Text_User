@@ -1,0 +1,12 @@
+<!-- Description.sublime-snippet -->
+<snippet>
+  <!-- Example: Hello, ${100:this} is a ${200:snippet}. -->
+  <content><![CDATA[
+items ( ${100:start} ) thru ( ${200:end} ) of ${300:source}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>items</tabTrigger>
+  <description>items</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.applescript</scope>
+</snippet>
