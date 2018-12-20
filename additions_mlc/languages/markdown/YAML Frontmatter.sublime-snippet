@@ -1,9 +1,12 @@
 <snippet>
   <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
   <content><![CDATA[
-title:"${1:Title}"
-date:"${2:Date}"
-${3:}
+${2/[^\-a-z0-9]/_/gi}--${1/[^a-z0-9]/_/gi}.md
+---
+title: "${1:Title}"
+date: "${2:Date}"
+${3:layout: post
+categories: blog}
 ---
 
 ${4:# Body}
@@ -12,5 +15,5 @@ ${4:# Body}
   <tabTrigger>:yf</tabTrigger>
   <description>Yaml Frontmatter</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>text.html.markdown</scope>
+  <scope>text</scope>
 </snippet>
