@@ -209,6 +209,14 @@ my %snippetHash = (
         suffix   => " :\n\t\${999://code...}",
     },
 
+    "extension" => {
+        template           => $bracketed_general,
+        desc               => "Object Extension",
+        name               => "SomeObjectName",
+        protocol_adherance => "SomeProtocol",
+
+    },
+
     # "XXX" => {
     #     template => $YYYY,
     # },
