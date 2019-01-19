@@ -1,0 +1,20 @@
+<snippet>
+  <!-- Example: Hello, ${100:this} is a ${200:snippet}. -->
+  <content><![CDATA[
+-- class_${100}
+local class_${100:name} = {}
+class_${100}.__index = class_${100}
+
+function class_${100}:new( ${200:init_properties} )
+ return setmetatable({ ${200/(\w+) *(,? *)/\1 = \1 \2/gmi} }, class_${100})
+end -- new
+
+-- class_${100}
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>class</tabTrigger>
+  <description>class</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.p8</scope>
+</snippet>

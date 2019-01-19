@@ -1,0 +1,28 @@
+<snippet>
+  <!-- Example: Hello, ${100:this} is a ${200:snippet}. -->
+  <content><![CDATA[
+pico-8 cartridge // http://www.pico-8.com
+version 4
+__lua__
+
+-- ${100:Title}.p8
+-- by ${101:Author}
+
+${500:-- code}
+
+__gfx__
+
+__gff__
+
+__map__
+
+__sfx__
+
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>sb</tabTrigger>
+  <description>shebang</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.p8</scope>
+</snippet>

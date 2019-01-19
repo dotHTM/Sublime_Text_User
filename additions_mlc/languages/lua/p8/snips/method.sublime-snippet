@@ -1,0 +1,14 @@
+<snippet>
+  <!-- Example: Hello, ${100:this} is a ${200:snippet}. -->
+  <content><![CDATA[
+function class_${100}:${300:method}()
+ ${999:-- body}
+end -- ${300}
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>method</tabTrigger>
+  <description>method</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.p8</scope>
+</snippet>

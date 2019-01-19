@@ -1,0 +1,16 @@
+{
+  "color_scheme": "Packages/User/additions_mlc/asthetics/color_scheme/Tomorrow-Vamp.sublime-color-scheme",
+
+  "tab_size": 1,
+  "translate_tabs_to_spaces": true,
+  "detect_indentation": false,
+
+  "font_face": "SF Mono",
+  "font_size": 14,
+
+  "font_options": [ "no_antialias" ],
+  "line_padding_bottom": 0,
+  "line_padding_top": 0,
+  "highlight_line": true,
+  "pico-8_path": "/Applications/PICO-8.app/Contents/MacOS/pico8"
+}
