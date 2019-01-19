@@ -1,0 +1,4 @@
+{
+  "cmd": ["phantomjs", "$file"],
+  "selector": "source.js",
+} 
