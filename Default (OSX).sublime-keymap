@@ -179,6 +179,13 @@
     "keys": ["shift+ctrl+t"],
     "scope": "source.perl"
   },
+  { // perltidy & fold
+    "args":
+    { "file": "Packages/User/additions_mlc/macros/perltidy_fold.sublime-macro"},
+    "command": "run_macro_file",
+    "keys": ["alt+ctrl+t"],
+    "scope": "source.perl"
+  },
    { // foldEverything
     "args":
     { "file": "Packages/User/additions_mlc/macros/foldEverything.sublime-macro"},
