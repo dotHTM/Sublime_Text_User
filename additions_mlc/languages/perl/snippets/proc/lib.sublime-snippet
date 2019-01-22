@@ -14,6 +14,11 @@ ${400:}
 
 our \$VERSION = 1.0;
 
+require Exporter;
+our @ISA    = qw(Exporter);
+our @EXPORT = qw(
+);
+
 ${999:# body...}
 
 1;
