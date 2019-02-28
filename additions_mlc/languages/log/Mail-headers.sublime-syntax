@@ -10,8 +10,8 @@ contexts:
     # field
     - match: '^\S*:'
       scope: dark
-      
-    # time 
+
+    # time
     - match: '\b\d+:\d\d(:\d\d)?( \+\d{2,4})?\b'
       scope: tx-yellow
 
@@ -19,18 +19,18 @@ contexts:
     - match: '\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b'
       scope: tx-red
 
-    # IPv6 Address 
+    # IPv6 Address
     - match: '\b([a-f0-9]{1,4}:)+(:)?([a-f0-9]{1,4}:)*([a-f0-9]{1,4})\b'
       scope: tx-cyan
 
     # email
     - match: '\b([\w\._-]+@[\w\._-]+)\b'
       scope: tx-green
-      
+
     # utexas.edu
     - match: '\b([\w\._-]*utexas.edu)\b'
       scope: tx-purple
-      
+
 
 
     # - match: '\[.*?\]'
@@ -53,7 +53,7 @@ contexts:
   #     scope: light
   #   - match: '^ *\d+(?!=:).'
   #     scope: dark
-      
+
   #   - match: \s
   #     pop: true
 

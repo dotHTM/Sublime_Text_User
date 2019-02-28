@@ -3,5 +3,15 @@
         "md",
         "mdown",
         "markdown",
-    ]
+    ],
+        "line_numbers": false,
+
+"rulers":[],
+    "gutter": false,
+
+    "word_wrap": true,
+
+    "wrap_width": 60,
+    "draw_centered": true,
+
 }

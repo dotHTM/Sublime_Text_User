@@ -31,6 +31,10 @@
 		"*,"
 	],
 	"bold_folder_labels": true,
+	"build_env":
+	{
+		"SUBL_EXEC": "YES"
+	},
 	"color_inactive_tabs": true,
 	"color_scheme": "Packages/User/additions_mlc/asthetics/color_scheme/Tomorrow-Vamp.sublime-color-scheme",
 	"draw_indent_guides": true,
@@ -76,7 +80,7 @@
 		"datadir"
 	],
 	"font_face": "SF Mono",
-	"font_size": 14,
+	"font_size": 13,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
