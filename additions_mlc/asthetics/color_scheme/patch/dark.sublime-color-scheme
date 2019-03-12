@@ -1,0 +1,38 @@
+{
+  "variables":
+  {
+    // Editor
+    "back": "#111213",
+    "fore": "#C5C8C6",
+  },
+
+  "globals":
+  {
+
+    "foreground": "var(fore)",
+    "background": "var(back)",
+    // "caret": "",
+    // "selection": "",
+    // "selection_border": "",
+    // "inactive_selection": "",
+    // "line_highlight": "",
+    // "highlight": "",
+    // "find_highlight": "",
+    // "find_highlight_foreground": "",
+    // "active_guide": "",
+    // "stack_guide": "",
+    // "accent": "",
+    // "misspelling": "",
+    // "fold_marker": "",
+    // "invisibles": "",
+
+    // "brackets_options": "",
+    // "brackets_foreground": "",
+    // "bracket_contents_options": "",
+    // "bracket_contents_foreground": "",
+    // "tags_options": "",
+
+  },
+}
+
+

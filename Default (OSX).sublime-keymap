@@ -1,5 +1,13 @@
 [
 
+{
+  "command": "noop",
+     "keys": ["super+t"],
+},
+
+
+
+
   { // Open in Sublime Merge
     "keys": ["super+alt+z"],
     "command": "sublime_merge_open_repo"

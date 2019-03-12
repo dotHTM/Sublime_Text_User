@@ -1,0 +1,32 @@
+{
+  "variables":
+  {
+    // VAMP
+    "ether": "#3d3d3d",
+    "ghost": "#666",
+    "spectre": "#777",
+    "fresh_blood": "#f00",
+    "dried_blood": "#a20b0b",
+  },
+
+  "globals":
+  {
+    "caret": "var(fresh_blood)",
+    "selection": "var(dried_blood)",
+    "selection_border": "var(fresh_blood)",
+    "inactive_selection": "color(var(dried_blood) a(0.5))",
+    "line_highlight": "color(var(fresh_blood) a(0.2))",
+    "highlight": "var(dried_blood)",
+    "find_highlight": "var(dried_blood)",
+    "active_guide": "var(fresh_blood)",
+    "invisibles": "var(ether)",
+    "brackets_options": "underline",
+    "bracket_contents_options": "underline",
+    "tags_options": "stippled_underline",
+  },
+
+
+
+
+
+}

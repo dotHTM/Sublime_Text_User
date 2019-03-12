@@ -1,0 +1,274 @@
+{
+  "author": "Jan T. Sott",
+  "name": "Kimbie (dark)",
+  "comment": "https://github.com/idleberg/Kimbie.tmTheme",
+  "variables":
+  {
+  },
+  // "gutterSettings":
+  // {
+  //   "background": "#5e452b",
+  //   "divider": "#5e452b",
+  //   "foreground": "#a57a4c",
+  //   "selectionBackground": "#84613d",
+  //   "selectionForeground": "#d6baad",
+  // },
+
+  "globals":
+  {
+    "background": "#221a0f",
+    "caret": "#d3af86",
+    "foreground": "#d3af86",
+    "invisibles": "hsla(31, 37%, 47%, 0.35)",
+    "line_highlight": "hsl(31, 37%, 17%)",
+    "lineHighlight": "#5e452b",
+    "selection": "#84613d",
+  },
+  "rules": [
+    {
+      // "name": "Text",
+      "scope": "variable.parameter.function",
+      "foreground": "#d3af86",
+    },
+    {
+      // "name": "Comments",
+      "scope": "comment, punctuation.definition.comment",
+      "foreground": "#a57a4c",
+    },
+    {
+      // "name": "Punctuation",
+      "scope": "punctuation.definition.string, punctuation.definition.variable, punctuation.definition.string, punctuation.definition.parameters, punctuation.definition.string, punctuation.definition.array",
+      "foreground": "#d3af86",
+    },
+
+
+    {
+      // "name": "Delimiters",
+      "scope": "none",
+      "foreground": "#d3af86",
+    },
+    {
+      // "name": "Operators",
+      "scope": "keyword.operator",
+      "foreground": "#d3af86",
+    },
+    {
+      // "name": "Keywords",
+      "scope": "keyword, keyword.control",
+      "foreground": "#98676a",
+    },
+    {
+      // "name": "Variables",
+      "scope": "variable",
+      "foreground": "#dc3958",
+    },
+
+
+    {
+      "scope": "constant.numeric, constant.language, support.constant, constant.character, punctuation.section.embedded, keyword.other.unit",
+      "foreground": [
+        "#f79a32",
+        "hsl(32, 82%, 75%)",
+        "hsl(18, 82%, 75%)",
+        "hsl(18, 92%, 58%)",
+      ],
+      "background": "hsla(22, 65%, 49%, 0.2)",
+    },
+
+       {
+      "scope": "punctuation.definition.var.perl",
+      "background": "hsla(198, 20%, 62%, 0.15)",
+      "foreground": [
+        "hsl(151, 89%, 38%)",
+        "hsl(191, 89%, 38%)",
+        // "hsla(   0, 70%, 66%, 1)",
+        // "hsla( 180, 70%, 66%, 1)",
+      ],
+    },
+
+    {
+      // "name": "Functions",
+      "scope": "entity.name.function, meta.require, support.function.any-method",
+      "foreground": "#8ab1b0",
+    },
+
+
+        {
+      "scope": "entity.name.function, meta.function-call, support.function, keyword.other.special-method, meta.block-level",
+      "foreground": [
+        "#8ab1b0",
+        "hsl(178, 30%, 52%)",
+        "hsl(218, 30%, 52%)",
+        "hsl(218, 20%, 62%)",
+      ]
+    },
+
+    {
+      // "name": "Classes",
+      "scope": "meta.class, support.class, entity.name.class, entity.name.type.class",
+      "foreground": "#f06431",
+    },
+    {
+      // "name": "Methods",
+      "scope": "keyword.other.special-method",
+      "foreground": "#8ab1b0",
+    },
+    {
+      // "name": "Storage",
+      "scope": "storage",
+      "foreground": "#98676a",
+    },
+    {
+      // "name": "Support",
+      "scope": "support.function",
+      "foreground": "#7e602c",
+    },
+    {
+      // "name": "Strings, Inherited Class",
+      "scope": "string, constant.other.symbol, entity.other.inherited-class",
+      "foreground": "#889b4a",
+    },
+    {
+      // "name": "Integers",
+      "scope": "constant.numeric",
+      "foreground": "#f79a32",
+    },
+    {
+      // "name": "Floats",
+      "scope": "none",
+      "foreground": "#f79a32",
+    },
+    {
+      // "name": "Boolean",
+      "scope": "none",
+      "foreground": "#f79a32",
+    },
+    {
+      // "name": "Constants",
+      "scope": "constant",
+      "foreground": "#f79a32",
+    },
+    {
+      // "name": "Tags",
+      "scope": "entity.name.tag",
+      "foreground": "#dc3958",
+    },
+    {
+      // "name": "Attributes",
+      "scope": "entity.other.attribute-name",
+      "foreground": "#f79a32",
+    },
+    {
+      // "name": "Attribute IDs",
+      "scope": "entity.other.attribute-name.id, punctuation.definition.entity",
+      "foreground": "#8ab1b0",
+    },
+    {
+      // "name": "Selector",
+      "scope": "meta.selector",
+      "foreground": "#98676a",
+    },
+    {
+      // "name": "Values",
+      "scope": "none",
+      "foreground": "#f79a32",
+    },
+    {
+      // "name": "Headings",
+      "scope": "markup.heading punctuation.definition.heading, entity.name.section",
+      "fontStyle": "",
+      "foreground": "#8ab1b0",
+    },
+    {
+      // "name": "Units",
+      "scope": "keyword.other.unit",
+      "foreground": "#f79a32",
+    },
+    {
+      // "name": "Bold",
+      "scope": "markup.bold, punctuation.definition.bold",
+      "fontStyle": "bold",
+      "foreground": "#f06431",
+    },
+    {
+      // "name": "Italic",
+      "scope": "markup.italic, punctuation.definition.italic",
+      "fontStyle": "italic",
+      "foreground": "#98676a",
+    },
+    {
+      // "name": "Code",
+      "scope": "markup.raw.inline",
+      "foreground": "#889b4a",
+    },
+    {
+      // "name": "Link Text",
+      "scope": "string.other.link",
+      "foreground": "#dc3958",
+    },
+    {
+      // "name": "Link Url",
+      "scope": "meta.link",
+      "foreground": "#f79a32",
+    },
+    {
+      // "name": "Lists",
+      "scope": "markup.list",
+      "foreground": "#dc3958",
+    },
+    {
+      // "name": "Quotes",
+      "scope": "markup.quote",
+      "foreground": "#f79a32",
+    },
+    {
+      // "name": "Separator",
+      "scope": "meta.separator",
+      "background": "#84613d",
+      "foreground": "#d3af86",
+    },
+    {
+      // "name": "Inserted",
+      "scope": "markup.inserted",
+      "foreground": "#889b4a",
+    },
+    {
+      // "name": "Deleted",
+      "scope": "markup.deleted",
+      "foreground": "#dc3958",
+    },
+    {
+      // "name": "Changed",
+      "scope": "markup.changed",
+      "foreground": "#98676a",
+    },
+    {
+      // "name": "Colors",
+      "scope": "constant.other.color",
+      "foreground": "#7e602c",
+    },
+    {
+      // "name": "Regular Expressions",
+      "scope": "string.regexp",
+      "foreground": "#7e602c",
+    },
+    {
+      // "name": "Escape Characters",
+      "scope": "constant.character.escape",
+      "foreground": "#7e602c",
+    },
+    {
+      // "name": "Embedded",
+      "scope": "punctuation.section.embedded, variable.interpolation",
+      "foreground": "#088649",
+    },
+    {
+      // "name": "Invalid",
+      "scope": "invalid.illegal",
+      "background": "#dc3958",
+      "foreground": "#221a0f",
+    },
+  ],
+}
+
+

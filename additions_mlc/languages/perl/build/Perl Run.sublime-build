@@ -13,18 +13,18 @@
 
   {
       "name": "🚰 pipe to file",
-      "shell_cmd": "perl $file | tee build.output.txt",
+      "shell_cmd": "perl $file > build.output.txt",
       "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]"
     },
       {
       "name": "📄 CGI to file",
-      "shell_cmd": "perl $file | tee $file.output.html",
+      "shell_cmd": "perl $file > $file.output.html",
       "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]"
     },
 
   {
       "name": "🕸 CGI to file, open in Safari",
-      "shell_cmd": "perl $file | tee $file.output.html; open -a /Applications/Safari.app $file.output.html",
+      "shell_cmd": "perl $file > $file.output.html; open -a /Applications/Safari.app $file.output.html",
       "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]"
     },
 

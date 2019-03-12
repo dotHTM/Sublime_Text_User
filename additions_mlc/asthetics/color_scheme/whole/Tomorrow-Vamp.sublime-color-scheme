@@ -109,6 +109,10 @@
     {
       "scope": "string, constant.other.symbol, entity.other.inherited-class, markup.heading",
       "foreground": "#B5BD68",
+         "background": [
+        "#606",
+        "#a0a"
+      ], // cannary for this feature
     },
 
     {
@@ -133,10 +137,7 @@
     {
       "scope": "keyword, storage, storage.type, entity.name.tag.css",
       "foreground": "#B294BB",
-      "background": [
-        "#660",
-        "#aa0"
-      ], // cannary for this feature
+
     },
 
     {
