@@ -19,7 +19,7 @@
   },
 
   {
-    "keys": ["super+ctrl+shift+alt+f"],
+    "keys": ["ctrl+shift+f"],
     "command": "toggle_full_screen"
   },
   {
