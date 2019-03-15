@@ -30,15 +30,15 @@
 		"*.csv",
 		"*,"
 	],
-  "bold_folder_labels": true,
-  "build_env":
-  {
-    "TERM_PROGRAM": "subl"
-  },
-  "color_inactive_tabs": true,
-  "color_scheme": "Packages/User/additions_mlc/asthetics/color_scheme/whole/Tomorrow-Vamp.sublime-color-scheme",
-  "draw_indent_guides": true,
-  "draw_minimap_border": true,
+	"bold_folder_labels": true,
+	"build_env":
+	{
+		"TERM_PROGRAM": "subl"
+	},
+	"color_inactive_tabs": true,
+	"color_scheme": "Packages/User/additions_mlc/asthetics/color_scheme/whole/Tomorrow-Vamp.sublime-color-scheme",
+	"draw_indent_guides": true,
+	"draw_minimap_border": true,
 	"draw_white_space": "all",
 	"fade_fold_buttons": false,
 	"figlet_font": "univers",
@@ -68,12 +68,12 @@
 		"*.psd",
 		"*.db",
 		"*.Ulysses-*",
-    ".fuse_hidden*",
-    "*.2[0-9][0-9][0-9]*",
-    "*.old*",
-    "*.sublime-workspace",
-    "*~"
-  ],
+		".fuse_hidden*",
+		"*.2[0-9][0-9][0-9]*",
+		"*.old*",
+		"*.sublime-workspace",
+		"*~"
+	],
 	"folder_exclude_patterns":
 	[
 		"CVS",
@@ -90,11 +90,11 @@
 		"ColorSchemeSelector",
 		"Quick File Move",
 		"SublimeLinter",
-    "URLEncode",
-    "Vintage"
-  ],
-  "index_files": true,
-  "line_padding_top": 2,
+		"URLEncode",
+		"Vintage"
+	],
+	"index_files": true,
+	"line_padding_top": 2,
 	"linters":
 	{
 		"perl":
