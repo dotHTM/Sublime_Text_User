@@ -1,9 +1,9 @@
 [
 
-{
-  "command": "noop",
-     "keys": ["super+t"],
-},
+  {
+    "command": "noop",
+    "keys": ["super+t"],
+  },
 
 
 
@@ -851,10 +851,6 @@
   },
   {
     "keys": ["super+shift+a"],
-    "command": "alignment"
-  },
-  {
-    "keys": ["super+option+a"],
     "command": "expand_selection",
     "args":
     {
