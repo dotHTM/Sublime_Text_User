@@ -17,8 +17,8 @@
     "path": "./additions_mlc",
     // // // // // // // // // //
     "file_exclude_patterns": [
-      "Preferences.sublime-settings",
-      "*.sublime-keymap",
+      "./Preferences.sublime-settings",
+      "./*.sublime-keymap",
     ],
     "folder_exclude_patterns": [ ],
   },
@@ -27,11 +27,11 @@
     "path": ".",
     // // // // // // // // // //
     "file_exclude_patterns": [
-      "Preferences.sublime-settings",
-      "*.sublime-keymap",
+      "./Preferences.sublime-settings",
+      "./*.sublime-keymap",
     ],
     "folder_exclude_patterns": [
-      "additions_mlc",
+      "./additions_mlc",
     ],
   },
   {
