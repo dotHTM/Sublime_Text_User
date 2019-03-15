@@ -19,5 +19,5 @@ ${300:body}
   <tabTrigger>::snip</tabTrigger>
   <description>Sublime Text Snippet</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>text</scope>
+  <scope>text,source</scope>
 </snippet>

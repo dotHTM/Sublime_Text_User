@@ -7,7 +7,7 @@ use feature ':5.16';
 use strict;
 use warnings;
 
-use Carp qw{croak};
+use Carp;
 use Template::Liquid;
 
 #######################################################

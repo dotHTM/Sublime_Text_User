@@ -5,15 +5,16 @@
 
 package ${TM_FILENAME/\.pm//gi};
 
-use feature ':5.16';
+use feature ':5.22';
 
 use strict;
 use warnings;
+use English;
 
-use Carp qw{croak};
+use Carp;
 use Data::Dumper::Concise;
 
-our \$VERSION = 1.0;
+our \$VERSION = 0.001001;
 
 our \$COUNT = 0;
 

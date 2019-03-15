@@ -1,0 +1,23 @@
+
+<snippet>
+	<content><![CDATA[
+sub ${100:function_name} {
+    my ( \$self, %input_args ) = @_;
+    \$self->basic_sanity_check(
+        args => \%input_args,
+        keys => [qw{${{200:some_key another_key}}]
+    );
+    ${300:## other sanity checks}
+
+    ${500:## body...}
+
+    return "WIP: ${100}, Replace this return value!";
+}    ##  ${100}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>method-sanity</tabTrigger>
+    <description>Object Method - Sanity Hash</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.perl</scope>
+</snippet>
+

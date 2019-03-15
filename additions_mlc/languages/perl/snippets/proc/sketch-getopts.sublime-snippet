@@ -4,13 +4,13 @@
 # $TM_FILENAME
 #   ${100:Description}
 
-use feature ':5.16';
+use feature ':5.22';
 
 use strict;
 use warnings;
-use English '-no_match_vars';
+use English;
 
-use Carp qw{croak};
+use Carp;
 use Data::Dumper::Concise;
 use Time::Piece;
 

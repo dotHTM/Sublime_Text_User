@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+has '${100:property_name}' => ( # var, mutable
+    is => 'rw',
+    isa => '${500:Str}',
+    default => sub { ${501:""} },
+);
+]]></content>
+  <tabTrigger>var</tabTrigger>
+  <description>mutable property</description>
+  <scope>source.perl</scope>
+</snippet>

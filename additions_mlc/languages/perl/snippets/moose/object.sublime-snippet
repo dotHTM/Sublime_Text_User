@@ -1,0 +1,67 @@
+<!-- Moose Object.sublime-snippet -->
+<snippet>
+  <!-- Example: Hello, ${100:this} is a ${200:snippet}. -->
+  <content><![CDATA[
+# $TM_FILENAME
+#   ${100:Description}
+
+package ${TM_FILENAME/\.pm//gi};
+
+use feature ':5.22';
+
+use strict;
+use warnings;
+use English;
+
+use Carp;
+use Data::Dumper::Concise;
+
+use Moose; # https://metacpan.org/pod/Moose
+${110/^.+$/use parent '/}${110:ParentClass}${110/^.+$/';/}
+
+
+our \$VERSION = 0.001001;
+
+# Storage
+
+# Static Methods
+
+## Constructors
+
+## Utility
+
+${110/^.+$/# inherits Sanity Check from /}${110/^$/### Sanity Check ###
+
+sub basic_sanity_check {  # (args => \%input_args, keys=> [qw{some key here}])
+    my ( \$self, %input_args ) = @_;
+    confess("BASE SANITY ERROR")
+        unless ( \$input_args{args} && \$input_args{keys} );
+    my %args     = %{ \$input_args{args} };
+    my @key_list = @{ \$input_args{keys} };
+    foreach my \$key (@key_list) {
+        croak(
+            "INSTANCE ERROR: function_name() Required key '\$key' not set in method parameters"
+        ) unless \$args{\$key};
+    }
+    return "basic_sanity_check: wip, placeholder";
+}    ##    sanity_check
+##  ##  ##  ######  ######  ######  ##  ##  ##
+/}
+
+# Methods
+
+${110/^.+$/# inherits isa from/}${110/^$/sub isa { # what type am i?
+    my (\$self) = @_;
+    return ref(\$self);    # succeed
+}    ##  isa/}
+
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>sbmoose</tabTrigger>
+  <description>#! Moose Base Object</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.perl</scope>
+</snippet>

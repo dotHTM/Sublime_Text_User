@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+require Exporter;
+our @ISA    = qw(Exporter);
+our @EXPORT = qw(
+);
+]]></content>
+  <tabTrigger>exports</tabTrigger>
+  <description>exports</description>
+  <scope>source.perl</scope>
+</snippet>

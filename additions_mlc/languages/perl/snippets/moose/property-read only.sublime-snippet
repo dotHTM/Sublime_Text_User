@@ -1,0 +1,16 @@
+<!-- read only.sublime-snippet -->
+<snippet>
+  <!-- Example: Hello, ${100:this} is a ${200:snippet}. -->
+  <content><![CDATA[
+has '${100:property_name}' => ( # let, read-only
+    is => 'ro',
+    isa => '${500:Str}',
+    default => sub { ${501:""} },
+);
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>let</tabTrigger>
+  <description>read only property</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.perl</scope>
+</snippet>

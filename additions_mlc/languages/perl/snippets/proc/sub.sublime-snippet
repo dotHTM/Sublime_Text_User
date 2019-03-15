@@ -2,13 +2,13 @@
 <snippet>
 	<content><![CDATA[
 sub ${100:function_name} {
-    my (${200:\$input, \$parameters,} ${250:@args}) = @_ ;
+    my (${200:\$input, \$parameters}${200/^.+$/,/} ${250:@tail_list}) = @_ ;
     ${300:## body...}
     return ${399:"${100}: wip, placeholder"};
 } ##    ${100}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>sub</tabTrigger>
+	<tabTrigger>func</tabTrigger>
     <description>Subroutine</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.perl</scope>
