@@ -182,21 +182,27 @@
   // Macros
   { // perltidy
     "args":
-    { "file": "Packages/User/additions_mlc/macros/perltidy.sublime-macro"},
+    {
+      "file": "Packages/User/additions_mlc/macros/perltidy.sublime-macro"
+    },
     "command": "run_macro_file",
     "keys": ["shift+ctrl+t"],
     "scope": "source.perl"
   },
   { // perltidy & fold
     "args":
-    { "file": "Packages/User/additions_mlc/macros/perltidy_fold.sublime-macro"},
+    {
+      "file": "Packages/User/additions_mlc/macros/perltidy_fold.sublime-macro"
+    },
     "command": "run_macro_file",
     "keys": ["alt+ctrl+t"],
     "scope": "source.perl"
   },
-   { // foldEverything
+  { // foldEverything
     "args":
-    { "file": "Packages/User/additions_mlc/macros/foldEverything.sublime-macro"},
+    {
+      "file": "Packages/User/additions_mlc/macros/foldEverything.sublime-macro"
+    },
     "command": "run_macro_file",
     "keys": ["super+k, super+shift+0"]
   },
