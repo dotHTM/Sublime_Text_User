@@ -36,7 +36,7 @@
 		"TERM_PROGRAM": "subl"
 	},
 	"color_inactive_tabs": true,
-	"color_scheme": "Packages/User/additions_mlc/asthetics/color_scheme/whole/Tomorrow-Vamp.sublime-color-scheme",
+	"color_scheme": "Packages/User/additions_mlc/asthetics/color_scheme/whole/Teenage_Eng_dark.sublime-color-scheme",
 	"draw_indent_guides": true,
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
@@ -88,6 +88,7 @@
 	[
 		"Color Highlighter",
 		"ColorSchemeSelector",
+		"ModernPerl",
 		"Quick File Move",
 		"SublimeLinter",
 		"URLEncode",

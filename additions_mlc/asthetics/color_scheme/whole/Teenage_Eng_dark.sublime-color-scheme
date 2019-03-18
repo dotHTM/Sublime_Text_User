@@ -1,0 +1,248 @@
+{
+  "name": "Tomorrow Vamp",
+  "author": "Michael Cramer",
+  "variables":
+  {
+    /*  "var(my_yellow)", */
+    /*  "var(my_salmon)", */
+    /*  "var(my_purple)", */
+    /*  "var(my_violet)", */
+    /*  "var(my_cloudy)", */
+    /*  "var(my_blue)", */
+    /*  "var(my_aqua)", */
+    /*  "var(my_cyan)", */
+    /*  "var(my_mint)", */
+    /*  "var(my_green)", */
+    /*  "var(my_seaweed)", */
+    /*  "var(my_orange)", */
+    /*  "var(my_fushia)", */
+    /*  "var(my_pink)", */
+
+    "r":"lime",
+
+    "gold_hi": "hsl(  36,  85%, 74%)",
+    "gold_lo": "hsl(  37,  60%, 64%)",
+    "po12": "hsl( 162,  71%, 34%)",
+    "po12_shadow": "hsl( 164,  75%, 24%)",
+    "po14": "hsl( 191,  91%, 41%)",
+    "po14_shadow": "hsl( 190, 100%, 28%)",
+    "po16": "hsl(  16,  92%, 64%)",
+    "po16_shadow": "hsl(  15,  57%, 40%)",
+    "po20": "color(hsl( 267,  55%, 49%) l(+ 15%))",
+    "po20_shadow": "hsl( 267,  54%, 35%)",
+    "po24": "hsl(  43,  94%, 57%)",
+    "po24_shadow": "hsl(  43,  59%, 50%)",
+    "po28": "hsl(   0,  89%, 53%)",
+    "po28_shadow": "hsl(   4,  70%, 39%)",
+    "po32": "hsl(   0,   0%, 96%)",
+    "po32_button": "hsl( 180,   1%, 24%)",
+    "po33": "hsl(  10,  90%, 55%)",
+    "po33_knob": "hsl( 150,   1%, 49%)",
+    "po35": "hsl( 182,  77%, 32%)",
+    "po35_case": "hsl(  90,   2%, 79%)",
+    "screen_white_hi": "hsl( 204,  10%, 90%)",
+    "screen_white_lo": "hsl( 200,   9%, 80%)",
+    "screen_grey": "hsl( 195,   5%, 69%)",
+    "screen_black_hi": "hsl( 210,   1%, 31%)",
+    "screen_black_lo": "hsl( 180,   2%,  8%)",
+    "board": "hsl(   0,   0%, 14%)",
+
+    /* Editor */
+    /* "back":            "", */
+    /* "fore":            "", */
+
+    /* VAMP */
+    /* "ether":           "", */
+    /* "ghost":           "", */
+    /* "spectre":         "", */
+    "fresh_blood": "#f00",
+    "dried_blood": "#a20b0b",
+
+  },
+  "globals":
+  {
+
+    "foreground": "var(screen_white_lo)",
+    "background": "var(screen_black_lo)",
+    "caret": "var(screen_white_hi)",
+    "selection": "var(board)",
+    "selection_border": "var(screen_black_hi)",
+    "inactive_selection": "var(screen_black_lo)",
+    "line_highlight": "var(board)",
+    "highlight": "var(screen_black_hi)",
+    "find_highlight": "var(screen_black_hi)",
+    "find_highlight_foreground": "var(my_yellow)",
+    "active_guide": "var(screen_black_hi)",
+    "stack_guide": "var(my_orange)",
+    "accent": "var(my_orange)",
+    "misspelling": "var(my_fushia)",
+    "fold_marker": "var(my_yellow)",
+    "invisibles": "var(ether)",
+
+    "brackets_options": "underline",
+    "brackets_foreground": "var(gold_hi)",
+    "bracket_contents_options": "underline",
+    "bracket_contents_foreground": "var(gold_hi)",
+    "tags_options": "stippled_underline",
+
+  },
+
+  "rules": [
+
+    {
+      "scope": "comment",
+      "foreground": "var(gold_hi)",
+      "background": "var(board)",
+      "font_style": "italic",
+    },
+
+    {
+      "scope": "punctuation",
+      "foreground": "var(gold_hi)",
+    },
+
+    {
+      "scope": "entity.name",
+      "foreground": "var(po28_shadow)",
+      "background": "var()",
+
+    },
+    {
+      "scope": "entity.other.inherited-class",
+      "foreground": "var()",
+      "background": "var()",
+
+    },
+    {
+      "scope": "entity.name.section",
+      "foreground": "var()",
+      "background": "var()",
+
+    },
+    {
+      "scope": "entity.name.tag",
+      "foreground": "var()",
+      "background": "var()",
+
+    },
+    {
+      "scope": "entity.other.attribute-name",
+      "foreground": "var()",
+      "background": "var()",
+
+    },
+    {
+      "scope": "variable",
+      "foreground": [
+        "color(var(po12) l(+ 40%))",
+        "var(po12)",
+      ],
+      "background": "var(board)",
+
+    },
+    {
+      "scope": "variable.language",
+      "foreground": "var()",
+      "background": "var()",
+
+    },
+    {
+      "scope": "variable.parameter",
+      "foreground": "var()",
+      "background": "var()",
+
+    },
+    {
+      "scope": "variable.function",
+      "foreground": "var(po14)",
+      "background": "var(board)",
+
+    },
+    {
+      "scope": "constant",
+      "foreground": "var(po33)",
+      "background": "var()",
+
+    },
+    {
+      "scope": "constant.numeric",
+      "foreground": "var()",
+      "background": "var()",
+
+    },
+    {
+      "scope": "constant.language",
+      "foreground": "var(po35)",
+      "background": "var()",
+
+    },
+    {
+      "scope": "constant.character.escape",
+      "foreground": "var(po35)",
+      "background": "var()",
+
+    },
+    {
+      "scope": "storage.type",
+      "foreground": "var(po14_shadow)",
+      "background": "var()",
+
+    },
+    {
+      "scope": "storage.modifier - meta",
+      "foreground": "var(po35)",
+      "background": "var()",
+
+    },
+    {
+      "scope": "support - variable,  meta.use - keyword, punctuation.accessor",
+      "foreground": [
+      // "var(po16)",
+      "color(var(po16) l(+ 20%))",
+      "color(var(po16_shadow) l(- 10%))",
+    ],
+      "background": "var(board)",
+
+    },
+    {
+      "scope": "keyword, meta storage ",
+      "foreground": "var(po20)",
+      "background": "var()",
+
+    },
+    {
+      "scope": "keyword.control",
+      "foreground": "var(po35)",
+      "background": "var()",
+
+    },
+    {
+      "scope": "keyword.operator",
+      "foreground": "var()",
+      "background": "var()",
+
+    },
+    {
+      "scope": "keyword.declaration",
+      "foreground": "var()",
+      "background": "var()",
+
+    },
+    {
+      "scope": "string",
+      "foreground": "var(po35)",
+      "background": "var()",
+    },
+
+    {
+      "scope": "invalid",
+      "foreground": "white",
+      "background": "#f3c",
+    },
+    {
+      "scope": "invalid.deprecated",
+      "foreground": "color(white l(- 20%))",
+      "background": "color(#f3c l(- 20%))",
+    },
+  ],
+}
