@@ -1,4 +1,6 @@
 {
+  "block_caret": true,
+
 	"added_words":
 	[
 		"Nhan",
@@ -36,7 +38,7 @@
 		"TERM_PROGRAM": "subl"
 	},
 	"color_inactive_tabs": true,
-	"color_scheme": "Packages/User/additions_mlc/asthetics/color_scheme/whole/Teenage_Eng_dark.sublime-color-scheme",
+	"color_scheme": "Packages/User/additions_mlc/asthetics/color_scheme/whole/Teenage Screen - Light.sublime-color-scheme",
 	"draw_indent_guides": true,
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
@@ -80,12 +82,14 @@
 		".vagrant*",
 		"datadir"
 	],
-	"font_face": "SF Mono",
+	// "font_face": "SF Mono",
+  "font_face": "SFMono-Heavy",
 	"font_size": 13,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"BracketHighlighter",
 		"Color Highlighter",
 		"ColorSchemeSelector",
 		"ModernPerl",
@@ -94,8 +98,14 @@
 		"URLEncode",
 		"Vintage"
 	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
 	"index_files": true,
-	"line_padding_top": 2,
+	"line_padding_top":    2,
+  "line_padding_bottom": 2,
 	"linters":
 	{
 		"perl":

@@ -1,27 +1,12 @@
 {
-  "name": "Tomorrow Vamp",
+  "name": "Teenage Board (Dark)",
   "author": "Michael Cramer",
+  "desc": "Inspired by the Teenage Engineering Pocket Operator series of musical instruments/toys",
+
   "variables":
   {
-    /*  "var(my_yellow)", */
-    /*  "var(my_salmon)", */
-    /*  "var(my_purple)", */
-    /*  "var(my_violet)", */
-    /*  "var(my_cloudy)", */
-    /*  "var(my_blue)", */
-    /*  "var(my_aqua)", */
-    /*  "var(my_cyan)", */
-    /*  "var(my_mint)", */
-    /*  "var(my_green)", */
-    /*  "var(my_seaweed)", */
-    /*  "var(my_orange)", */
-    /*  "var(my_fushia)", */
-    /*  "var(my_pink)", */
+    // "r": "lime",
 
-    "r":"lime",
-
-    "gold_hi": "hsl(  36,  85%, 74%)",
-    "gold_lo": "hsl(  37,  60%, 64%)",
     "po12": "hsl( 162,  71%, 34%)",
     "po12_shadow": "hsl( 164,  75%, 24%)",
     "po14": "hsl( 191,  91%, 41%)",
@@ -40,23 +25,17 @@
     "po33_knob": "hsl( 150,   1%, 49%)",
     "po35": "hsl( 182,  77%, 32%)",
     "po35_case": "hsl(  90,   2%, 79%)",
+
     "screen_white_hi": "hsl( 204,  10%, 90%)",
     "screen_white_lo": "hsl( 200,   9%, 80%)",
     "screen_grey": "hsl( 195,   5%, 69%)",
     "screen_black_hi": "hsl( 210,   1%, 31%)",
     "screen_black_lo": "hsl( 180,   2%,  8%)",
+
     "board": "hsl(   0,   0%, 14%)",
 
-    /* Editor */
-    /* "back":            "", */
-    /* "fore":            "", */
-
-    /* VAMP */
-    /* "ether":           "", */
-    /* "ghost":           "", */
-    /* "spectre":         "", */
-    "fresh_blood": "#f00",
-    "dried_blood": "#a20b0b",
+    "gold_hi": "hsl(  36,  85%, 74%)",
+    "gold_lo": "hsl(  37,  60%, 64%)",
 
   },
   "globals":
@@ -64,27 +43,49 @@
 
     "foreground": "var(screen_white_lo)",
     "background": "var(screen_black_lo)",
+    "invisibles": "color(var(gold_lo) a(50%)",
+
     "caret": "var(screen_white_hi)",
-    "selection": "var(board)",
+    "block_caret": "color(var(gold_hi) a(25%))",
+
+    "selection": "color(var(screen_white_hi) a(10%))",
     "selection_border": "var(screen_black_hi)",
-    "inactive_selection": "var(screen_black_lo)",
-    "line_highlight": "var(board)",
+    "inactive_selection": "color(var(screen_white_hi) a(5%))",
+    "selection_border_width": "4",
+    "selection_corner_style": "cut", //round (the default), cut or square
+
+    "line_highlight": "color(var(screen_white_hi) a(10%))",
     "highlight": "var(screen_black_hi)",
-    "find_highlight": "var(screen_black_hi)",
-    "find_highlight_foreground": "var(my_yellow)",
-    "active_guide": "var(screen_black_hi)",
-    "stack_guide": "var(my_orange)",
-    "accent": "var(my_orange)",
-    "misspelling": "var(my_fushia)",
-    "fold_marker": "var(my_yellow)",
-    "invisibles": "var(ether)",
 
-    "brackets_options": "underline",
-    "brackets_foreground": "var(gold_hi)",
-    "bracket_contents_options": "underline",
-    "bracket_contents_foreground": "var(gold_hi)",
-    "tags_options": "stippled_underline",
+    "find_highlight": "var(board)",
+    "find_highlight_foreground": "var(gold_hi)",
 
+    "guide": "var(board)",
+    "active_guide": "var(gold_hi)",
+    "stack_guide": "color(var(gold_lo) a(33%))",
+
+    "misspelling": "var(po28)",
+    "fold_marker": "var(gold_hi)",
+    "minimap_border": "var(po35_case)",
+    "accent": "var(gold_lo)",
+
+
+
+    "brackets_options": "squiggly_underline bold",
+    "brackets_foreground": "var(po14)",
+    "bracket_contents_foreground": "var(po20)",
+    "bracket_contents_options": "underline bold",
+
+    "tags_options": "squiggly_underline bold",
+    "tags_foreground": "var(po14)",
+
+    "line_diff_added": "var(po12_shadow)",
+    "line_diff_modified": "var(po20_shadow)",
+    "line_diff_deleted": "var(po28_shadow)",
+    "line_diff_width": "8",
+
+    "shadow": "color(var(gold_lo) a(25%))",
+    "shadow_width": "24",
   },
 
   "rules": [
@@ -197,10 +198,10 @@
     {
       "scope": "support - variable,  meta.use - keyword, punctuation.accessor",
       "foreground": [
-      // "var(po16)",
-      "color(var(po16) l(+ 20%))",
-      "color(var(po16_shadow) l(- 10%))",
-    ],
+        // "var(po16)",
+        "color(var(po16) l(+ 20%))",
+        "color(var(po16_shadow) l(- 10%))",
+      ],
       "background": "var(board)",
 
     },
@@ -230,19 +231,19 @@
     },
     {
       "scope": "string",
-      "foreground": "var(po35)",
+      "foreground": "color(var(po35) l(+ 10%))",
       "background": "var()",
     },
 
     {
       "scope": "invalid",
-      "foreground": "white",
-      "background": "#f3c",
+      "foreground": "var(po24)",
+      "background": "var(po28_shadow)",
     },
     {
       "scope": "invalid.deprecated",
-      "foreground": "color(white l(- 20%))",
-      "background": "color(#f3c l(- 20%))",
+      "foreground": "color(var(po24) l(- 20%))",
+      "background": "color(var(po28_shadow) l(- 20%))",
     },
   ],
 }
