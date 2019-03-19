@@ -27,28 +27,37 @@
     "gold_hi": "hsl(  36,  85%, 74%)",
     "gold_lo": "hsl(  37,  60%, 64%)",
 
-    "po12_hi": "color(hsl( 162,  71%, 34%) l(+ 30%))",
-    "po12_lo": "hsl( 162,  71%, 34%)",
+
     "po12_shadow": "hsl( 164,  75%, 24%)",
-    "po14_hi": "color(hsl( 191,  91%, 41%) l(+ 30%))",
-    "po14_lo": "hsl( 191,  91%, 41%)",
+    "po12_lo": "hsl( 162,  71%, 34%)",
+    "po12_hi": "color(var(po12_lo) l(+ 30%))",
+
     "po14_shadow": "hsl( 190, 100%, 28%)",
-    "po16_hi": "color(hsl(  16,  92%, 64%) l(+ 30%))",
-    "po16_lo": "hsl(  16,  92%, 64%)",
+    "po14_lo": "hsl( 191,  91%, 41%)",
+    "po14_hi": "color(var(po14_lo) l(+ 30%))",
+
     "po16_shadow": "hsl(  15,  57%, 40%)",
-    "po20_hi": "color(hsl( 267,  55%, 49%) l(+ 20%))",
-    "po20_lo": "hsl( 267,  55%, 49%)",
+    "po16_lo": "hsl(  16,  92%, 64%)",
+    "po16_hi": "color(var(po16_lo) l(+ 30%))",
+
     "po20_shadow": "hsl( 267,  54%, 35%)",
-    "po24_hi": "color(hsl(  43,  94%, 57%) l(+ 30%))",
-    "po24_lo": "hsl(  43,  94%, 57%)",
+    "po20_lo": "hsl( 267,  55%, 49%)",
+    "po20_hi": "color(var(po20_lo) l(+ 20%))",
+
     "po24_shadow": "hsl(  43,  59%, 50%)",
-    "po28_hi": "color(hsl(   0,  89%, 53%) l(+ 30%))",
-    "po28_lo": "hsl(   0,  89%, 53%)",
+    "po24_lo": "hsl(  43,  94%, 57%)",
+    "po24_hi": "color(var(po24_lo) l(+ 30%))",
+
     "po28_shadow": "hsl(   4,  70%, 39%)",
+    "po28_lo": "hsl(   0,  89%, 53%)",
+    "po28_hi": "color(var(po28_lo) l(+ 30%))",
+
     "po32_hi": "hsl(   0,   0%, 96%)",
     "po32_button": "hsl( 180,   1%, 24%)",
+
     "po33_hi": "hsl(  10,  90%, 55%)",
     "po33_knob": "hsl( 150,   1%, 49%)",
+
     "po35_hi": "hsl( 182,  77%, 32%)",
     "po35_case": "hsl(  90,   2%, 79%)",
 
