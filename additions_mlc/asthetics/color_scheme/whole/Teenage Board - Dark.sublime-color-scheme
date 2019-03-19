@@ -93,10 +93,8 @@
     "minimap_border": "var(po35_case)",
     "accent": "var(gold_lo)",
 
-
-
     "brackets_options": "squiggly_underline bold",
-    "brackets_foreground": "var(po14_lo)",
+    "brackets_foreground": "var(po28_lo)",
     "bracket_contents_foreground": "var(po20_lo)",
     "bracket_contents_options": "underline bold",
 

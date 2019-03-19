@@ -10,11 +10,9 @@
     "font_face": "SFMono-Heavy",
   },
 
-
   "variables":
   {
     // "r": "lime",
-
 
     "screen_white_hi": "hsl( 204,  10%, 90%)",
     "screen_white_lo": "hsl( 200,   9%, 80%)",
@@ -61,11 +59,9 @@
     "po35_hi": "hsl( 182,  77%, 32%)",
     "po35_case": "hsl(  90,   2%, 79%)",
 
-
   },
   "globals":
   {
-
     "foreground": "var(screen_black_lo)",
     "background": "var(screen_white_hi)",
     "invisibles": "var(screen_grey)",
@@ -96,7 +92,7 @@
 
     "brackets_options": "squiggly_underline bold",
     "brackets_foreground": "var(po28_lo)",
-    "bracket_contents_foreground": "var(po14_lo)",
+    "bracket_contents_foreground": "var()",
     "bracket_contents_options": "underline bold",
 
     "tags_options": "squiggly_underline bold",
