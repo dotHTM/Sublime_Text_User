@@ -6,7 +6,7 @@
   <!-- Example: Hello, \${100:this} is a \${200:snippet}. -->
   <content><![CDATA[
 ${300:body}
-]]${10:## DELETE THIS ##}></content>
+]]${1:}></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>${200:::tabtrigger}</tabTrigger>
   <description>${100:Description}</description>
