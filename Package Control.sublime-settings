@@ -12,6 +12,7 @@
 		"BinaryPlist",
 		"BracketHighlighter",
 		"Case Conversion",
+		"ChannelRepositoryTools",
 		"Chmod",
 		"CodePresenter",
 		"Color Highlighter",
@@ -86,5 +87,8 @@
 		"Wrap Plus",
 		"xml2json",
 		"Zip Browser"
+	],
+	"repositories":
+	[
 	]
 }

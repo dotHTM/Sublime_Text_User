@@ -1,85 +1,128 @@
-[
+// [
 
 
 
-  { //Perl dot to -> expansion
-    "keys": ["."],
-    "command": "insert_snippet",
-    "args":
-    {
-      "contents": "->"
-    },
-    "context": [
-    {
-      "key": "selection_empty",
-      "operator": "equal",
-      "operand": true,
-      "match_all": true
-    },
-    {
-      "key": "selector",
-      "operator": "equal",
-      "operand": "source.perl",
-      "match_all": true
-    },
-    {
-      "key": "selector",
-      "operator": "not_equal",
-      "operand": "comment",
-      "match_all": true
-    }, {
-      "key": "selector",
-      "operator": "not_equal",
-      "operand": "meta.string",
-      "match_all": true
-    },
-    {
-      "key": "preceding_text",
-      "operator": "regex_contains",
-      "operand": "[a-zA-Z\\{\\}\\(\\)] ?$",
-      "match_all": true
-    }, ]
-  },
+//   { //Perl dot to -> expansion
+//     "keys": ["."],
+//     "command": "insert_snippet",
+//     "args":
+//     {
+//       "contents": "->"
+//     },
+//     "context": [
+//     {
+//       "key": "selection_empty",
+//       "operator": "equal",
+//       "operand": true,
+//       "match_all": true
+//     },
+//     {
+//       "key": "selector",
+//       "operator": "equal",
+//       "operand": "source.perl",
+//       "match_all": true
+//     },
+//     {
+//       "key": "selector",
+//       "operator": "not_equal",
+//       "operand": "comment",
+//       "match_all": true
+//     }, {
+//       "key": "selector",
+//       "operator": "not_equal",
+//       "operand": "meta.string",
+//       "match_all": true
+//     },
+//     {
+//       "key": "preceding_text",
+//       "operator": "regex_contains",
+//       "operand": "[a-zA-Z][a-zA-Z0-9\\}\\)\\]]? ?$",
+//       "match_all": true
+//     }, ]
+//   },
 
 
-  { //Perl colon to => expansion
-    "keys": [":"],
-    "command": "insert_snippet",
-    "args":
-    {
-      "contents": "=>"
-    },
-    "context": [
-    {
-      "key": "selection_empty",
-      "operator": "equal",
-      "operand": true,
-      "match_all": true
-    },
-    {
-      "key": "selector",
-      "operator": "equal",
-      "operand": "source.perl",
-      "match_all": true
-    },
-    {
-      "key": "selector",
-      "operator": "not_equal",
-      "operand": "comment",
-      "match_all": true
-    }, {
-      "key": "selector",
-      "operator": "not_equal",
-      "operand": "meta.string",
-      "match_all": true
-    },
-    {
-      "key": "preceding_text",
-      "operator": "regex_contains",
-      "operand": "[a-zA-Z\"'] ?$",
-      "match_all": true
-    }, ]
-  },
+//   { //Perl colon to => expansion
+//     "keys": [":"],
+//     "command": "insert_snippet",
+//     "args":
+//     {
+//       "contents": "=>"
+//     },
+//     "context": [
+//     {
+//       "key": "selection_empty",
+//       "operator": "equal",
+//       "operand": true,
+//       "match_all": true
+//     },
+//     {
+//       "key": "selector",
+//       "operator": "equal",
+//       "operand": "source.perl",
+//       "match_all": true
+//     },
+//     {
+//       "key": "selector",
+//       "operator": "not_equal",
+//       "operand": "comment",
+//       "match_all": true
+//     }, {
+//       "key": "selector",
+//       "operator": "not_equal",
+//       "operand": "meta.string",
+//       "match_all": true
+//     },
+//     {
+//       "key": "preceding_text",
+//       "operator": "regex_contains",
+//       "operand": "[a-zA-Z\"'] $",
+//       "match_all": true
+//     }, ]
+//   },
+
+//  { //Perl colon to :: expansion
+//     "keys": [":"],
+//     "command": "insert_snippet",
+//     "args":
+//     {
+//       "contents": "::"
+//     },
+//     "context": [
+//     {
+//       "key": "selection_empty",
+//       "operator": "equal",
+//       "operand": true,
+//       "match_all": true
+//     },
+//     {
+//       "key": "selector",
+//       "operator": "equal",
+//       "operand": "source.perl",
+//       "match_all": true
+//     },
+//     {
+//       "key": "selector",
+//       "operator": "not_equal",
+//       "operand": "comment",
+//       "match_all": true
+//     }, {
+//       "key": "selector",
+//       "operator": "not_equal",
+//       "operand": "meta.string",
+//       "match_all": true
+//     },
+//     {
+//       "key": "preceding_text",
+//       "operator": "regex_contains",
+//       "operand": "[a-zA-Z\"']$",
+//       "match_all": true
+//     }, ]
+//   },
 
 
-]
+
+
+
+
+// ]

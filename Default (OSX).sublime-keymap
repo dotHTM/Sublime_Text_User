@@ -1,23 +1,20 @@
 [
-
   {
     "command": "noop",
     "keys": ["super+t"],
   },
-
-
-
-
+  {
+    "command": "toggle_selection_scope",
+    "keys": ["shift+ctrl+o"],
+  },
   { // Open in Sublime Merge
     "keys": ["super+alt+z"],
     "command": "sublime_merge_open_repo"
   },
-
   { // Match the shortcut in Sublime Merge
     "keys": ["super+shift+o"],
     "command": "prompt_select_workspace"
   },
-
   {
     "keys": ["ctrl+shift+f"],
     "command": "toggle_full_screen"
@@ -30,14 +27,11 @@
       "panel": "find_in_files"
     }
   },
-
   // command": "new_window
-
   {
     "keys": ["super+alt+shift+n"],
     "command": "new_window"
   },
-
   {
     "keys": ["super+k", "super+k"],
     "command": "show_overlay",
@@ -46,7 +40,6 @@
       "overlay": "command_palette"
     }
   },
-
   // Open the Sublime Text User.sublime-project
   {
     "command": "open_dir",
@@ -213,7 +206,6 @@
     },
     "command": "run_macro_file",
     "keys": ["super+alt+/"]
-
     /**************************************************************************/
     /*                                                                        */
     /*       ad88                        88                                   */
@@ -227,23 +219,19 @@
     /*                                                                        */
     /*                                                                        */
     /**************************************************************************/
-
   },
   {
-
     "args":
     {
       "file": "Packages/User/additions_mlc/macros/wrapComments.sublime-macro"
     },
     "command": "run_macro_file",
     "keys": ["super+alt+ctrl+/"]
-
     // Eiusmod mollit proident incididunt fugiat
     // exercitation occaecat sunt quis minim magna
     // voluptate sint occaecat aliqua tempor eu minim
     // aliquip ut mollit anim laboris elit ullamco non
     // minim quis laborum quis nulla.
-
   },
   // Bookmarks
   {
@@ -561,7 +549,6 @@
       "match_all": true
     }]
   },
-
   // space wrap, modified of above
   {
     "keys": [" "],
@@ -583,7 +570,6 @@
       "match_all": true
     }]
   },
-
   // tab shift
   {
     "keys": ["tab"],
@@ -605,7 +591,6 @@
       "match_all": true
     }]
   },
-
   // return wrap, modified of above
   {
     "keys": ["enter"],
