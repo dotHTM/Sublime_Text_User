@@ -1,8 +1,20 @@
 [
+
+  /************************************************************/
+  /* Disable default or plugin keys                           */
+  /************************************************************/
   {
     "command": "noop",
     "keys": ["super+t"],
   },
+  {
+   "keys": ["super+alt+o"],
+   "command": "noop",
+  },
+
+  /************************************************************/
+  /* New or override keys                                     */
+  /************************************************************/
   {
     "command": "toggle_selection_scope",
     "keys": ["shift+ctrl+o"],
@@ -205,7 +217,7 @@
       "file": "Packages/User/additions_mlc/macros/figletCommentLine.sublime-macro"
     },
     "command": "run_macro_file",
-    "keys": ["super+alt+/"]
+    "keys": ["super+alt+/"],
     /**************************************************************************/
     /*                                                                        */
     /*       ad88                        88                                   */
@@ -226,7 +238,7 @@
       "file": "Packages/User/additions_mlc/macros/wrapComments.sublime-macro"
     },
     "command": "run_macro_file",
-    "keys": ["super+alt+ctrl+/"]
+    "keys": ["super+alt+ctrl+/"],
     // Eiusmod mollit proident incididunt fugiat
     // exercitation occaecat sunt quis minim magna
     // voluptate sint occaecat aliqua tempor eu minim
