@@ -1,17 +1,18 @@
 {
-    "extensions": [
-        "md",
-        "mdown",
-        "markdown",
-    ],
-        "line_numbers": false,
+  "extensions": [
+    "md",
+    "mdown",
+    "markdown",
+  ],
 
-"rulers":[],
-    "gutter": false,
+  "line_numbers": false,
 
-    "word_wrap": true,
+  "rulers": [],
+  // "gutter": false,
 
-    "wrap_width": 60,
-    "draw_centered": true,
+  "word_wrap": true,
+
+  "wrap_width": 60,
+  // "draw_centered": true,
 
 }
