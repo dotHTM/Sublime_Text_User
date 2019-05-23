@@ -1,0 +1,14 @@
+%YAML 1.2
+---
+name: Synthesia
+file_extensions:
+  - synth
+scope: text.synth
+
+contexts:
+  main:
+    - match: \b\d+\b
+      scope: synthesia.number
+    - match: \b[\w-\d]\S*
+      scope: synthesia.word
+

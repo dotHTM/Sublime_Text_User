@@ -12,9 +12,7 @@
     {
         "name": "compressed",
         "cmd": ["sass",
-            "--no-cache",
             "--style=compressed",
-            "--sourcemap=none",
             "$file",
             "$file_base_name.css",
         ],
@@ -24,7 +22,6 @@
     {
         "name": "source map",
         "cmd": ["sass",
-            "--no-cache",
             "--style=expanded",
             "$file",
             "$file_base_name.css",
@@ -35,7 +32,6 @@
     {
         "name": "watch",
         "cmd": ["sass",
-            "--no-cache",
             "--style=expanded",
             "--watch",
             "$file",
