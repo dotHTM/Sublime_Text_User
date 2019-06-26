@@ -9,6 +9,6 @@ contexts:
   main:
     - match: \b\d+\b
       scope: synthesia.number
-    - match: \b[\w-\d]\S*
+    - match: \b\w+
       scope: synthesia.word
 
