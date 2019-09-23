@@ -6,7 +6,7 @@
 
 package ${TM_FILENAME/\.pm//gi};
 
-use feature ':5.22';
+use feature ':5.16';
 
 use strict;
 use warnings;
