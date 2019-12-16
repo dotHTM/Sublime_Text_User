@@ -3,7 +3,7 @@
 	<content><![CDATA[
 sub ${100:property} {
     my ( \$self, \$new_value, \$unset ) = @_;
-    if    (\$new_value) { \$self->{${100}} = \$new_value }
+    if    (defined \$new_value) { \$self->{${100}} = \$new_value }
     elsif (\$unset)     { \$self->{${100}} = q{} }
     return \$self->{${100}};
 }   ##  ${100}

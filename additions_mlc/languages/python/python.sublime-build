@@ -9,8 +9,8 @@
       "selector": "source.python"
     },
     {
-      "name": "probably 2",
-      "cmd": ["/usr/local/bin/python", "$file"],
+      "name": "v2",
+      "cmd": ["/usr/local/bin/python2", "$file"],
       "selector": "source.python"
     }
   ]

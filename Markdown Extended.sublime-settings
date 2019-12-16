@@ -5,14 +5,14 @@
     "markdown",
   ],
 
-  "line_numbers": false,
+  "line_numbers": true,
 
   "rulers": [],
   // "gutter": false,
 
   "word_wrap": true,
 
-  "wrap_width": 60,
+  "wrap_width": 0,
   // "draw_centered": true,
 
 }
