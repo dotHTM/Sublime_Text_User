@@ -1,0 +1,8 @@
+[
+  {
+    "command": "csv_format_compact",
+  },
+  {
+   "command": "csv_format_expand",
+  },
+]
