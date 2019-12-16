@@ -1,0 +1,4 @@
+[
+   {"command": "yapf_selection"},
+   {"command": "htmlprettify"}
+]

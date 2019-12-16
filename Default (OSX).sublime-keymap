@@ -8,8 +8,8 @@
     "keys": ["super+t"],
   },
   {
-   "keys": ["super+alt+o"],
-   "command": "noop",
+    "keys": ["super+alt+o"],
+    "command": "noop",
   },
 
   /************************************************************/
@@ -124,18 +124,6 @@
   // Reindent
   //
 
-  // python formatting via yapf
-    { "keys": ["ctrl+shift+f"], "command": "yapf_selection" },
-
-  // perltidy is ctrl+shift+t
-  {
-    "command": "reindent",
-    "args":
-    {
-      "single_line": false
-    },
-    "keys": ["ctrl+shift+r"],
-  },
   {
     "keys": ["ctrl+shift+h"],
     "command": "htmlprettify"
@@ -189,6 +177,16 @@
     "command": "convert_to_back_slash"
   },
   // Macros
+
+  { // Kind Formatters, those that don't complain when attempted on other types
+    "args":
+    {
+      "file": "Packages/User/additions_mlc/macros/kindFormatters.sublime-macro"
+    },
+    "command": "run_macro_file",
+    "keys": ["shift+ctrl+r"],
+  },
+
   { // perltidy
     "args":
     {
@@ -199,14 +197,14 @@
   },
 
 
-   { // csvtidy
-          "args":
-          {
-            "file": "Packages/User/additions_mlc/macros/csv_tidy.sublime-macro"
-          },
-          "command": "run_macro_file",
-          "keys": ["shift+ctrl+e"],
-        },
+  { // csvtidy
+    "args":
+    {
+      "file": "Packages/User/additions_mlc/macros/csv_tidy.sublime-macro"
+    },
+    "command": "run_macro_file",
+    "keys": ["shift+ctrl+e"],
+  },
 
 
 

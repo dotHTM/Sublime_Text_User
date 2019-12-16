@@ -1,3 +1,4 @@
 {
-	"yapf_command": "/usr/local/bin/yapf"
+  "yapf_command": "/usr/local/bin/yapf",
+        "on_save": true,
 }
