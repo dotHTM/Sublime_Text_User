@@ -123,6 +123,10 @@
   //
   // Reindent
   //
+
+  // python formatting via yapf
+    { "keys": ["ctrl+shift+f"], "command": "yapf_selection" },
+
   // perltidy is ctrl+shift+t
   {
     "command": "reindent",
@@ -192,8 +196,20 @@
     },
     "command": "run_macro_file",
     "keys": ["shift+ctrl+t"],
-    "scope": "source.perl"
   },
+
+
+   { // csvtidy
+          "args":
+          {
+            "file": "Packages/User/additions_mlc/macros/csv_tidy.sublime-macro"
+          },
+          "command": "run_macro_file",
+          "keys": ["shift+ctrl+e"],
+        },
+
+
+
   { // perltidy & fold
     "args":
     {
@@ -201,7 +217,6 @@
     },
     "command": "run_macro_file",
     "keys": ["alt+ctrl+t"],
-    "scope": "source.perl"
   },
   { // foldEverything
     "args":
@@ -670,7 +685,6 @@
   {
     "keys": ["%"],
     "command": "insert_snippet",
-    "scope": "source.perl",
     "args":
     {
       "contents": "%\\{${0:$SELECTION}\\}"
@@ -692,7 +706,6 @@
   {
     "keys": ["@"],
     "command": "insert_snippet",
-    "scope": "source.perl",
     "args":
     {
       "contents": "@\\{${0:$SELECTION}\\}"
