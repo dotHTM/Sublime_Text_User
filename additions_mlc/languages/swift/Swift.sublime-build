@@ -25,7 +25,7 @@
     },
     {
       "name": "Clean Format",
-      "cmd": ["swiftformat", "$file"],
+      "cmd": ["swiftformat", "--swiftversion","5.1", "$file"],
       "file_regex": " in (.+)",
       // "line_regex": " at ([0-9]+):([0-9]+)",
     },

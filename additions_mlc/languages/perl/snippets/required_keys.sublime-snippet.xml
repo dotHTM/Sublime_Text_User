@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+sub required_keys {
+    my (\$input_args, @required_keys) = @_;
+    foreach my \$key (@required_keys) {
+        croak( "Required key '\$key' not set in method parameters" ) unless \$input_args->{\$key};
+    }
+}
+]]></content>
+  <tabTrigger>required_keys</tabTrigger>
+  <description>Function: Required Keys</description>
+  <scope>source.perl</scope>
+</snippet>
