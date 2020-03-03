@@ -1,0 +1,79 @@
+[
+  {
+    "args": null,
+    "command": "find_under_expand"
+  },
+  {
+    "args":
+    {
+      "contents": "\n${0:$SELECTION}\n"
+    },
+    "command": "insert_snippet"
+  },
+  {
+    "args":
+    {
+      "to": "eol"
+    },
+    "command": "move_to"
+  },
+  {
+    "args":
+    {
+      "file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"
+    },
+    "command": "run_macro_file"
+  },
+  {
+    "args":
+    {
+      "characters": "SQL"
+    },
+    "command": "insert"
+  },
+  {
+    "args": null,
+    "command": "single_selection"
+  },
+  {
+    "args":
+    {
+      "to": "bol"
+    },
+    "command": "move_to"
+  },
+  {
+    "args":
+    {
+      "characters": "<<"
+    },
+    "command": "insert"
+  },
+  {
+    "args":
+    {
+      "to": "bol"
+    },
+    "command": "move_to"
+  },
+  {
+    "args":
+    {
+      "by": "lines",
+      "forward": true
+    },
+    "command": "move"
+  },
+  {
+    "args":
+    {
+      "extend": true,
+      "to": "eol"
+    },
+    "command": "move_to"
+  },
+  {
+    "args": null,
+    "command": "sql_beautifier"
+  }
+]

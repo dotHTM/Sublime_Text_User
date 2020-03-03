@@ -1,4 +1,5 @@
 {
+	"auto_show_diagnostics_panel_level": 4,
 	"clients":
 	{
 		"SourceKit-LSP":
@@ -72,6 +73,10 @@
 				}
 			]
 		},
+		"jdtls":
+		{
+			"enabled": true
+		},
 		"jdtls-daniel":
 		{
 			"command":
@@ -97,9 +102,9 @@
 		{
 			"command":
 			[
-				"/usr/local/bin/pyls",
+				"/usr/local/bin/pyls"
 			],
-			"enabled": true,
+			"enabled": false,
 			"languageId": "python",
 			"scopes":
 			[
@@ -109,8 +114,12 @@
 			"syntaxes":
 			[
 				"Packages/Python/Python.sublime-syntax",
-        "Packages/Python 3/Python3.tmLanguage",
-			],
+				"Packages/Python 3/Python3.tmLanguage"
+			]
+		},
+		"rls":
+		{
+			"enabled": true
 		}
 	}
 }

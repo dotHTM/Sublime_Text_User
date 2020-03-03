@@ -1,5 +1,17 @@
 [
 
+
+{
+  "keys": ["ctrl+shift+w"],
+  "command": "wrap_lines",
+  "args":
+  {
+    "width": 80
+  },
+  "caption": "Wrap paragraph at 80 characters"
+},
+
+
   /************************************************************/
   /* Disable default or plugin keys                           */
   /************************************************************/
@@ -193,7 +205,15 @@
       "file": "Packages/User/additions_mlc/macros/perltidy.sublime-macro"
     },
     "command": "run_macro_file",
-    "keys": ["shift+ctrl+t"],
+    "keys": ["command+t"],
+  },
+  { // SQLperltidy
+    "args":
+    {
+      "file": "Packages/User/additions_mlc/macros/SQLperlTidy.sublime-macro"
+    },
+    "command": "run_macro_file",
+    "keys": ["ctrl+s"],
   },
 
 
@@ -279,7 +299,8 @@
     "keys": ["ctrl+alt+a"],
     "command": "select_all_bookmarks"
   },
-  // Great suggestion to make word wrap a keyboard shortcut. credit https://github.com/soffes/sublime
+  // Great suggestion to make word wrap a keyboard shortcut. credit
+  // https://github.com/soffes/sublime
   {
     "keys": ["super+alt+w"],
     "command": "toggle_setting",
@@ -319,7 +340,8 @@
     "command": "toggle_show_open_files",
     "keys": ["super+k", "super+o"]
   },
-  // Refresh the sidebar folders, when you connect or disconnect from a mounted server
+  // Refresh the sidebar folders, when you connect or disconnect from a mounted
+  // server
   {
     "command": "refresh_folder_list",
     "keys": ["super+shift+r"]
@@ -447,7 +469,8 @@
       ]
     }
   },
-  // Backtick as a quotation charaacter. Credit: https://forum.sublimetext.com/t/recognize-the-character-as-a-type-of-a-quotation/15097/3
+  // Backtick as a quotation charaacter. Credit:
+  // https://forum.sublimetext.com/t/recognize-the-character-as-a-type-of-a-quotation/15097/3
   {
     "keys": ["`"],
     "command": "insert_snippet",
@@ -784,6 +807,33 @@
       "match_all": true
     }]
   },
+
+  // full-line-regex wrap, modified of above
+  {
+    "keys": ["^"],
+    "command": "insert_snippet",
+    "args":
+    {
+      "contents": "^${0:$SELECTION}\\$"
+    },
+    "context": [
+    {
+      "key": "setting.auto_match_enabled",
+      "operator": "equal",
+      "operand": true
+    },
+    {
+      "key": "selection_empty",
+      "operator": "equal",
+      "operand": false,
+      "match_all": true
+    }]
+  },
+
+
+
+
+
   // Change quotes
   {
     "keys": ["'"],
@@ -848,7 +898,8 @@
       "match_all": true
     }]
   },
-  // I forget why some of these are set...  Some are re-assertions of the default keymap to re-override plugins that steal them.
+  // I forget why some of these are set...  Some are re-assertions of the
+  // default keymap to re-override plugins that steal them.
   {
     "keys": ["super+ctrl+a"],
     "command": "alignment"
