@@ -1,13 +1,13 @@
 {
   "selector": "source.perl",
 
-  "cmd": ["perl", "$file"],
+  "cmd": ["/usr/local/bin/perl", "$file"],
   "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)",
 
   "variants": [
     {
       "name": "🔍 Check Syntax",
-      "cmd": ["perl", "-c", "$file"],
+      "cmd": ["/usr/local/bin/perl", "-c", "$file"],
       "file_regex": " at (.*[.][a-z0-9]+) line ([0-9]+)[.,]"
     },
 

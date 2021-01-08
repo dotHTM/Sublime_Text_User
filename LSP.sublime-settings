@@ -1,125 +1,99 @@
 {
-	"auto_show_diagnostics_panel_level": 4,
-	"clients":
-	{
-		"SourceKit-LSP":
-		{
-			"command":
-			[
-				"/Users/cramerm/Developer/support/sourcekit-lsp/.build/x86_64-apple-macosx/debug/sourcekit-lsp"
-			],
-			"enabled": true,
-			"env":
-			{
-				"SOURCEKIT_TOOLCHAIN_PATH": "/Library/Developer/Toolchains/swift-latest.xctoolchain"
-			},
-			"languages":
-			[
-				{
-					"languageId": "swift",
-					"scopes":
-					[
-						"source.swift"
-					],
-					"syntaxes":
-					[
-						"Packages/Swift/Syntaxes/Swift.tmLanguage",
-						"Packages/Decent Swift Syntax/Swift.sublime-syntax"
-					]
-				},
-				{
-					"languageId": "c",
-					"scopes":
-					[
-						"source.c"
-					],
-					"syntaxes":
-					[
-						"Packages/C++/C.sublime-syntax"
-					]
-				},
-				{
-					"languageId": "cpp",
-					"scopes":
-					[
-						"source.c++"
-					],
-					"syntaxes":
-					[
-						"Packages/C++/C++.sublime-syntax"
-					]
-				},
-				{
-					"languageId": "objective-c",
-					"scopes":
-					[
-						"source.objc"
-					],
-					"syntaxes":
-					[
-						"Packages/Objective-C/Objective-C.sublime-syntax"
-					]
-				},
-				{
-					"languageId": "objective-cpp",
-					"scopes":
-					[
-						"source.objc++"
-					],
-					"syntaxes":
-					[
-						"Packages/Objective-C/Objective-C++.sublime-syntax"
-					]
-				}
-			]
-		},
-		"jdtls":
-		{
-			"enabled": true
-		},
-		"jdtls-daniel":
-		{
-			"command":
-			[
-				"java",
-				"-jar",
-				"/Users/cramerm/Developer/support/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/plugins/org.eclipse.equinox.launcher_1.5.600.v20191014-2022.jar",
-				"-configuration",
-				"/Users/cramerm/Developer/support/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/config_mac"
-			],
-			"enabled": false,
-			"languageId": "java",
-			"scopes":
-			[
-				"source.java"
-			],
-			"syntaxes":
-			[
-				"Packages/Java/Java.sublime-syntax"
-			]
-		},
-		"pyls":
-		{
-			"command":
-			[
-				"/usr/local/bin/pyls"
-			],
-			"enabled": false,
-			"languageId": "python",
-			"scopes":
-			[
-				"source.python",
-				"source.python.3"
-			],
-			"syntaxes":
-			[
-				"Packages/Python/Python.sublime-syntax",
-				"Packages/Python 3/Python3.tmLanguage"
-			]
-		},
-		"rls":
-		{
-			"enabled": true
-		}
-	}
+  "auto_show_diagnostics_panel_level": 4,
+  "clients":
+  {
+
+
+    "SourceKit-LSP":
+    {
+      "enabled": true,
+      "command": ["/usr/bin/xcrun", "sourcekit-lsp"],
+      "env":
+      {
+        // To override the toolchain, uncomment the following:
+        // "SOURCEKIT_TOOLCHAIN_PATH": "<path to toolchain>",
+      },
+      "languages": [
+      {
+        "scopes": ["source.swift"],
+        "syntaxes": [
+          "Packages/Swift/Syntaxes/Swift.tmLanguage",
+          "Packages/Decent Swift Syntax/Swift.sublime-syntax",
+        ],
+        "languageId": "swift"
+      },
+      {
+        "scopes": ["source.c"],
+        "syntaxes": ["Packages/C++/C.sublime-syntax"],
+        "languageId": "c"
+      },
+      {
+        "scopes": ["source.c++"],
+        "syntaxes": ["Packages/C++/C++.sublime-syntax"],
+        "languageId": "cpp"
+      },
+      {
+        "scopes": ["source.objc"],
+        "syntaxes": ["Packages/Objective-C/Objective-C.sublime-syntax"],
+        "languageId": "objective-c"
+      },
+      {
+        "scopes": ["source.objc++"],
+        "syntaxes": ["Packages/Objective-C/Objective-C++.sublime-syntax"],
+        "languageId": "objective-cpp"
+      }, ]
+    },
+
+
+    "jdtls":
+    {
+      "enabled": true
+    },
+
+
+    "jdtls-daniel":
+    {
+      "command": [
+        "java",
+        "-jar",
+        "/Users/cramerm/Developer/support/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/plugins/org.eclipse.equinox.launcher_1.5.600.v20191014-2022.jar",
+        "-configuration",
+        "/Users/cramerm/Developer/support/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/config_mac"
+      ],
+      "enabled": false,
+      "languageId": "java",
+      "scopes": [
+        "source.java"
+      ],
+      "syntaxes": [
+        "Packages/Java/Java.sublime-syntax"
+      ]
+    },
+
+
+    "pyls":
+    {
+      "command": [
+        "/usr/local/bin/pyls"
+      ],
+      "enabled": false,
+      "languageId": "python",
+      "scopes": [
+        "source.python",
+        "source.python.3"
+      ],
+      "syntaxes": [
+        "Packages/Python/Python.sublime-syntax",
+        "Packages/Python 3/Python3.tmLanguage"
+      ]
+    },
+
+
+    "rls":
+    {
+      "enabled": true
+    }
+
+
+  }
 }

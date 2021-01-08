@@ -9,7 +9,6 @@
 		"Advanced CSV",
 		"Alignment",
 		"ApacheConf",
-		"BinaryPlist",
 		"BracketHighlighter",
 		"Case Conversion",
 		"ChannelRepositoryTools",
@@ -17,8 +16,6 @@
 		"Color Highlighter",
 		"ColorHelper",
 		"ColorPicker",
-		"ColorSchemeEditor",
-		"ColorSchemeSelector",
 		"Compressor",
 		"Crontab",
 		"Decent Swift Syntax",
@@ -63,7 +60,6 @@
 		"PerlTidy",
 		"PICO-8",
 		"PlainTasks",
-		"Plist Binary",
 		"Python 3",
 		"PyYapf Python Formatter",
 		"Quick File Move",
@@ -78,6 +74,7 @@
 		"Selection Evaluator",
 		"SideBarTools",
 		"SqlBeautifier",
+		"sublime-auto-dark",
 		"SublimeLinter",
 		"SublimeLinter-contrib-perl",
 		"Sync View Scroll",
@@ -90,9 +87,12 @@
 		"TypeScript",
 		"URLEncode",
 		"Wrap Plus",
-		"xml2json"
+		"xml2json",
+		"ZipContents"
 	],
 	"repositories":
 	[
+		"https://github.com/mawelborn/ZipContents.git",
+		"https://github.com/jrappen/sublime-auto-dark.git"
 	]
 }
