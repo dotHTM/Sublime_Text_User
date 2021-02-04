@@ -1,15 +1,42 @@
 [
+  // Emmet actions
 
-
-{
-  "keys": ["ctrl+shift+w"],
-  "command": "wrap_lines",
-  "args":
+  // Expand abbreviation anywhere
   {
-    "width": 80
+    "keys": ["ctrl+e"],
+    "command": "emmet_expand_abbreviation"
   },
-  "caption": "Wrap paragraph at 80 characters"
-},
+
+  // Enter abbreviation mode: explicitly enter abbreviation anywhere
+  // with interactive preview
+  {
+    "keys": ["ctrl+."],
+    "command": "emmet_enter_abbreviation"
+  },
+
+  // Wrap with Abbreviation
+  {
+    "keys": ["ctrl+w"],
+    "command": "emmet_wrap_with_abbreviation",
+    "context": [
+    {
+      "key": "setting.is_widget",
+      "operand": false
+    }]
+  },
+
+
+  //  //  //  //  //  //
+
+  {
+    "keys": ["ctrl+shift+w"],
+    "command": "wrap_lines",
+    "args":
+    {
+      "width": 80
+    },
+    "caption": "Wrap paragraph at 80 characters"
+  },
 
 
   /************************************************************/

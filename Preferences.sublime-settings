@@ -1,196 +1,136 @@
 {
-	"added_words":
-	[
-		"Nhan",
-		"hostname",
-		"Cisco",
-		"Refactored"
-	],
-	"always_show_minimap_viewport": true,
-	"auto_complete_cycle": true,
-	"auto_id_class": true,
-	"binary_file_patterns":
-	[
-		"._*",
-		"*+([0-9]).+([0-9])",
-		"*.test",
-		"*.dds",
-		"*.eot",
-		"*.gif",
-		"*.gz",
-		"*.ico",
-		"*.jar",
-		"*.jpeg",
-		"*.jpg",
-		"*.pdf",
-		"*.png",
-		"*.swf",
-		"*.tar",
-		"*.tga",
-		"*.ttf",
-		"*.zip",
-		"*.csv",
-		"*,"
-	],
-	"bold_folder_labels": true,
-	"build_env":
-	{
-		"TERM_PROGRAM": "subl"
-	},
-	"color_inactive_tabs": true,
-	"color_scheme.dark": "Teenage Board - Dark.sublime-color-scheme",
-	"color_scheme.light": "Teenage Screen - Light.sublime-color-scheme",
-	"draw_indent_guides": true,
-	"draw_minimap_border": true,
-	"draw_white_space": "all",
-	"fade_fold_buttons": false,
-	"figlet_font": "univers",
-	"file_exclude_patterns":
-	[
-		"._*",
-		"*+([0-9]).+([0-9])",
-		"_*.pm",
-		"*.pyc",
-		"*.pyo",
-		"*.test",
-		"*.exe",
-		"*.dll",
-		"*.obj",
-		"*.o",
-		"*.a",
-		"*.lib",
-		"*.dylib",
-		"*.ncb",
-		"*.sdf",
-		"*.so",
-		"*.suo",
-		"*.pdb",
-		"*.idb",
-		".DS_Store",
-		"*.class",
-		"*.psd",
-		"*.db",
-		"*.Ulysses-*",
-		".fuse_hidden*",
-		"*.2[0-9][0-9][0-9]*",
-		"*.old*",
-		"*.sublime-workspace",
-		"*~"
-	],
-	"folder_exclude_patterns":
-	[
-		"CVS",
-		".vagrant*",
-		"datadir"
-	],
-	"font_face": "SFMono-Regular",
-	"font_size": 14,
-	"highlight_line": true,
-	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"ActionScript",
-		"Advanced CSV",
-		"BracketHighlighter",
-		"ChannelRepositoryTools",
-		"Color Highlighter",
-		"ColorPicker",
-		"Compressor",
-		"FilterPipes",
-		"GitGutter",
-		"HTMLBeautify",
-		"Indent XML",
-		"JSON Reindent",
-		"JSON Stringify",
-		"Kimbie Color Scheme",
-		"LangDocs",
-		"Macroptimize",
-		"Material Color Scheme",
-		"Merge Windows",
-		"ModernPerl",
-		"Monokai - Spacegray",
-		"More Layouts",
-		"orgmode",
-		"Origami",
-		"Path Tools",
-		"PerlSubs",
-		"Plist Binary",
-		"Preferences Editor",
-		"Python 3",
-		"Quick File Move",
-		"RegReplace",
-		"Rust",
-		"SassBeautify",
-		"SCSS Compiler",
-		"Selection Evaluator",
-		"SublimeLinter",
-		"SublimeLinter-contrib-perl",
-		"Sync View Scroll",
-		"SyntaxHighlightTools",
-		"SysLog",
-		"Table Editor",
-		"Tomorrow Color Schemes",
+  "added_words": [
+    "Nhan",
+    "hostname",
+    "Cisco",
+    "Refactored"
+  ],
+  "always_show_minimap_viewport": true,
+  "auto_complete_cycle": true,
+  "auto_id_class": true,
+  "binary_file_patterns": [
+    "._*",
+    "*+([0-9]).+([0-9])",
+    "*.test",
+    "*.dds",
+    "*.eot",
+    "*.gif",
+    "*.gz",
+    "*.ico",
+    "*.jar",
+    "*.jpeg",
+    "*.jpg",
+    "*.pdf",
+    "*.png",
+    "*.swf",
+    "*.tar",
+    "*.tga",
+    "*.ttf",
+    "*.zip",
+    "*.csv",
+    "*,"
+  ],
+  "bold_folder_labels": true,
+  "build_env":
+  {
+    "TERM_PROGRAM": "subl",
+  },
+
+
+
+"file_tab_style": "angled",
+
+
+
+  "color_scheme": "auto",
+
+  "light_color_scheme": "Packages/Teenage Color Scheme/Teenage Screen - Light.sublime-color-scheme",
+  "dark_color_scheme": "Packages/Teenage Color Scheme/Teenage Board - Dark.sublime-color-scheme",
+
+  "draw_indent_guides": true,
+  "draw_minimap_border": true,
+  "draw_white_space": ["selection", "leading", "isolated"],
+  "fade_fold_buttons": false,
+  "figlet_font": "univers",
+  "file_exclude_patterns": [
+    "._*",
+    "*+([0-9]).+([0-9])",
+    "_*.pm",
+    "*.pyc",
+    "*.pyo",
+    "*.test",
+    "*.exe",
+    "*.dll",
+    "*.obj",
+    "*.o",
+    "*.a",
+    "*.lib",
+    "*.dylib",
+    "*.ncb",
+    "*.sdf",
+    "*.so",
+    "*.suo",
+    "*.pdb",
+    "*.idb",
+    ".DS_Store",
+    "*.class",
+    "*.psd",
+    "*.db",
+    "*.Ulysses-*",
+    ".fuse_hidden*",
+    "*.2[0-9][0-9][0-9]*",
+    "*.old*",
+    "*.sublime-workspace",
+    "*~"
+  ],
+  "folder_exclude_patterns": [
+    "CVS",
+    ".vagrant*",
+    "datadir"
+  ],
+  "font_face": "SFMono-Regular",
+  "font_size": 14,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "indent_guide_options": [
+    "draw_normal",
+    "draw_active"
+  ],
+  "index_files": true,
+  "line_padding_bottom": 2,
+  "line_padding_top": 2,
+  "paths":
+  {
+    "linux": [],
+    "osx": [
+      "/usr/local/bin/"
+    ],
+    "windows": [],
+  },
+  "perltidy_cmd": [
+    "/usr/local/bin/perltidy"
+  ],
+  "rulers": [
+    0,
+    8,
+    80,
+    160,
+    240,
+    320
+  ],
+  "scroll_past_end": true,
+  "status_bar_brighter": true,
+  "tab_completion": true,
+  "translate_tabs_to_spaces": true,
+  "trim_automatic_white_space": false,
+  "window.status_bar.label_control.font.size": 24,
+  "word_wrap": true,
+  "wrap_width": 0,
+  "ignored_packages":
+  [
 		"Vintage",
-		"Wrap Plus",
-		"xml2json"
-	],
-	"indent_guide_options":
-	[
-		"draw_normal",
-		"draw_active"
-	],
-	"index_files": true,
-	"line_padding_bottom": 2,
-	"line_padding_top": 2,
-	"linters":
-	{
-		"perl":
-		{
-			"@disable": false,
-			"args":
-			[
-			],
-			"excludes":
-			[
-			],
-			"include_dirs":
-			[
-			]
-		}
-	},
-	"paths":
-	{
-		"linux":
-		[
-		],
-		"osx":
-		[
-			"/usr/local/bin/"
-		],
-		"windows":
-		[
-		]
-	},
-	"perltidy_cmd":
-	[
-		"/usr/local/bin/perltidy"
-	],
-	"rulers":
-	[
-		0,
-		8,
-		80,
-		160,
-		240,
-		320
-	],
-	"scroll_past_end": true,
-	"status_bar_brighter": true,
-	"tab_completion": true,
-	"theme": "Adaptive.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"trim_automatic_white_space": false,
-	"window.status_bar.label_control.font.size": 24,
-	"word_wrap": true,
-	"wrap_width": 0
+  ],
+  "theme": "auto",
+  "disable.dark_color_scheme": "Teenage Screen - Dark.sublime-color-scheme",
+  "disable.light_color_scheme": "Teenage Screen - Light.sublime-color-scheme",
 }
