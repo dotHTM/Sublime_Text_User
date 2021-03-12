@@ -18,10 +18,10 @@
       ],
       "selector": "text.html.markdown"
     }
-    // {
-    //   "name": "Marked App",
-    //   "cmd": ["open", "-a", "/Applications/Marked 2.app", "$file"],
-    //   "selector": "text.html.markdown"
-    // },
+    {
+      "name": "Marked App",
+      "cmd": ["open", "-a", "/Applications/Marked 2.app", "$file"],
+      "selector": "text.html"
+    },
   ]
 }
