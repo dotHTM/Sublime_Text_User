@@ -38,7 +38,6 @@
 
 
 
-"file_tab_style": "angled",
 
 
 
@@ -83,6 +82,9 @@
     "*.sublime-workspace",
     "*~"
   ],
+
+"inactive_sheet_dimming": true,
+
   "folder_exclude_patterns": [
     "CVS",
     ".vagrant*",

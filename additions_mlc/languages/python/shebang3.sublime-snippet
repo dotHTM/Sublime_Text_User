@@ -9,6 +9,12 @@
 #   Started on ${300:DATE}
 
 ${999:#body}
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>sb3</tabTrigger>
