@@ -1,16 +1,16 @@
 {
   "folders": [
     {
-      "name": "Quick Prefs",
+      "name": "Prefs",
       "path": "./",
       // // // // // // // // // //
-      "file_include_patterns": [
-        "Preferences.sublime-settings",
-        "*.sublime-keymap",
-        "User.sublime-project",
-      ],
+      // "file_include_patterns": [
+      //   "Preferences.sublime-settings",
+      //   "*.sublime-keymap",
+      //   "User.sublime-project",
+      // ],
       // "file_exclude_patterns":["*"],
-      "folder_exclude_patterns": ["*"],
+      // "folder_exclude_patterns": ["*"],
     },
     {
       "name": "MLC, langs, etc",
