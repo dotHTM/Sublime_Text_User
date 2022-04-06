@@ -1,0 +1,50 @@
+{
+
+
+    "global_file_rules":
+    {
+        // Be sure to include all of the `html`, `css`, `js` and `json` keys in your user settings
+        // if you want to be able to prettify the default files as well.
+        "html":
+        {
+            "allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg", "vue"],
+            "allowed_file_syntaxes": ["html", "xml", "vue"],
+            "disallowed_file_patterns": []
+        },
+        // Be sure to include all of the `html`, `css`, `js` and `json` keys in your user settings
+        // if you want to be able to prettify the default files as well.
+        "css":
+        {
+            "allowed_file_extensions": ["css", "scss", "sass", "less"],
+            "allowed_file_syntaxes": ["css", "sass", "less"],
+            "disallowed_file_patterns": []
+        },
+        // Be sure to include all of the `html`, `css`, `js` and `json` keys in your user settings
+        // if you want to be able to prettify the default files as well.
+        "js":
+        {
+            "allowed_file_extensions": ["js", "jsx"],
+            "allowed_file_syntaxes": ["javascript", "ecma", "react", "babel"],
+            "disallowed_file_patterns": []
+        },
+        // Be sure to include all of the `html`, `css`, `js` and `json` keys in your user settings
+        // if you want to be able to prettify the default files as well.
+        "json":
+        {
+            "allowed_file_extensions": [
+                "1pif",
+                "json",
+                "babelrc",
+                "eslintrc",
+                "jshintrc",
+                "jsbeautifyrc",
+                "sublime-settings",
+                "sublime-keymap",
+                "sublime-commands",
+                "sublime-menu"
+            ],
+            "allowed_file_syntaxes": ["json"],
+            "disallowed_file_patterns": []
+        }
+    },
+}

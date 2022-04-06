@@ -1,4 +1,97 @@
 [
+
+  // //// ////// ////// ////// ////// ////// ////// //////
+  // Tidy
+
+  { // python black
+    "command": "black",
+    "keys": ["ctrl+t"],
+    "context": [
+    {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.python"
+    }]
+  },
+  { // perltidy
+    "command": "run_macro_file",
+    "args":
+    {
+      "file": "Packages/User/additions_mlc/macros/perltidy.sublime-macro"
+    },
+    "keys": ["ctrl+t"],
+    "context": [
+    {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.perl"
+    }]
+  },
+
+    { // SQLperltidy
+    "args":
+    {
+      "file": "Packages/User/additions_mlc/macros/SQLperlTidy.sublime-macro"
+    },
+    "command": "run_macro_file",
+    "keys": ["ctrl+t"],
+    "context": [
+
+    { "key": "selector", "operator": "equal", "operand": "source.SQL" }
+
+     ]
+  },
+
+
+
+
+  { // csvtidy
+    "args":
+    {
+      "file": "Packages/User/additions_mlc/macros/csv_tidy.sublime-macro"
+    },
+    "command": "run_macro_file",
+    "keys": ["ctrl+t"],
+    "context": [
+    {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.csv"
+    }]
+  },
+  {
+    "command": "htmlprettify",
+    "keys": ["ctrl+t"],
+    "context": [
+    {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "source.json,source.html,source.css,source.javascript"
+    }]
+  },
+
+
+  // //// ////// ////// ////// ////// ////// ////// //////
+
+
+  {
+    "command": "lsp_show_diagnostics_panel",
+    "keys": [
+      "ctrl+alt+m"
+    ],
+    "context": [
+    {
+      "key": "setting.lsp_active"
+    }]
+  },
+
+  {
+    "keys": ["primary+alt+m"],
+    "command": "noop"
+
+  },
+
+
   // Emmet actions
 
   // Expand abbreviation anywhere
@@ -163,10 +256,7 @@
   // Reindent
   //
 
-  {
-    "keys": ["ctrl+shift+h"],
-    "command": "htmlprettify"
-  },
+
   // plugin overrides
   // Origami
   {
@@ -225,34 +315,6 @@
     "command": "run_macro_file",
     "keys": ["shift+ctrl+r"],
   },
-
-  { // perltidy
-    "args":
-    {
-      "file": "Packages/User/additions_mlc/macros/perltidy.sublime-macro"
-    },
-    "command": "run_macro_file",
-    "keys": ["command+t"],
-  },
-  { // SQLperltidy
-    "args":
-    {
-      "file": "Packages/User/additions_mlc/macros/SQLperlTidy.sublime-macro"
-    },
-    "command": "run_macro_file",
-    "keys": ["ctrl+s"],
-  },
-
-
-  { // csvtidy
-    "args":
-    {
-      "file": "Packages/User/additions_mlc/macros/csv_tidy.sublime-macro"
-    },
-    "command": "run_macro_file",
-    "keys": ["shift+ctrl+e"],
-  },
-
 
 
   { // perltidy & fold

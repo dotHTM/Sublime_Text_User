@@ -8,7 +8,16 @@
 		"meeple",
 		"Gameplay",
 		"Programatic",
-		"Moulding"
+		"Moulding",
+		"",
+		"repo",
+		"",
+		"Samn",
+		"utexas",
+		"iot",
+		"nbsp",
+		"Cramer",
+		"Stache",
 	],
 	"always_show_minimap_viewport": true,
 	"auto_complete_cycle": true,
@@ -42,7 +51,7 @@
 		"TERM_PROGRAM": "subl",
 	},
 	"color_scheme": "auto",
-	"dark_color_scheme": "Packages/Teenage Color Scheme/Teenage Board - Dark.sublime-color-scheme",
+	"dark_color_scheme": "Teenage Board - Dark.sublime-color-scheme",
 	"dark_theme": "Default Dark.sublime-theme",
 	"disable.dark_color_scheme": "Teenage Screen - Dark.sublime-color-scheme",
 	"disable.light_color_scheme": "Teenage Screen - Light.sublime-color-scheme",
@@ -90,16 +99,21 @@
 		"datadir"
 	],
 	"font_face": "SFMono-Regular",
-	"font_size": 15,
+	"font_size": 16,
 	"highlight_line": true,
-	"highlight_modified_tabs": false,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage",
 	],
 	"ignored_words":
 	[
-		"Papercraft"
+		"1pif",
+		"O'Reilly",
+		"Papercraft",
+		"iname",
+		"pbcopy",
+		"stache",
 	],
 	"inactive_sheet_dimming": true,
 	"indent_guide_options":
@@ -108,7 +122,7 @@
 		"draw_active"
 	],
 	"index_files": true,
-	"light_color_scheme": "Packages/Teenage Color Scheme/Teenage Screen - Light.sublime-color-scheme",
+	"light_color_scheme": "Teenage Screen - Light.sublime-color-scheme",
 	"light_theme": "Default.sublime-theme",
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
@@ -143,6 +157,7 @@
 	"tab_completion": true,
 	"theme": "auto",
 	"translate_tabs_to_spaces": true,
+
 	"trim_automatic_white_space": false,
 	"window.status_bar.label_control.font.size": 24,
 	"word_wrap": true,

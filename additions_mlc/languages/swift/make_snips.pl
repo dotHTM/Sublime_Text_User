@@ -63,11 +63,11 @@ sub make_snip {
         render(
             template => <<EOL
 <snippet>
-  <content><![CDATA[
+<content><![CDATA[
 {{ body }}]]></content>
-  <tabTrigger>{{ trigger }}</tabTrigger>
-  <description>{{ desc }}</description>
-  <scope>source.swift</scope>
+<tabTrigger>{{ trigger }}</tabTrigger>
+<description>{{ desc }}</description>
+<scope>source.swift</scope>
 </snippet>
 EOL
             ,
@@ -124,7 +124,7 @@ EOL
 
 my %snippetHash = (
 
-    ## Basics
+## Basics
     "typealias" => {
         desc     => "Type Alias",
         template => $type_assignment,
@@ -156,7 +156,7 @@ my %snippetHash = (
         returnType => "ReturnType",
     },
 
-    ## Objects
+## Objects
     "protocol" => {
         protocol_adherance => "SomeOtherProtocol",
         desc               => "Protocol Declaration",
@@ -182,7 +182,7 @@ my %snippetHash = (
         inputs       => "_ someInput : Type",
     },
 
-    ## Enums
+## Enums
     "enum" => {
         protocol_adherance => "SomeProtocol",
         desc               => "Enumerator",
@@ -190,10 +190,10 @@ my %snippetHash = (
         name               => "SomeEnumName",
     },
     "switch" => {
-        object      => "switch ",
-        loose_input => 1,
-        desc        => "Switch Statement",
-        template    => $function_invocation,
+        object       => "switch ",
+        loose_input  => 1,
+        desc         => "Switch Statement",
+        template     => $function_invocation,
         closureinput =>
             "\ncase .\${802:scenario}:\n\t\${803://code...}\ndefault:\n\t\${804://code...}\n",
         inputs => "someInput",
@@ -227,3 +227,15 @@ foreach my $keyObject ( keys %snippetHash ) {
         make_snip( $keyObject, %snippetDetails );
     }
 }
+
+exit();
+
+my $test = <<SQL;
+
+
+select hello from world where foo == bar group by fizz order by buzz desc
+
+
+
+SQL
+

@@ -3,6 +3,6 @@
 my (${100:}) = @_;
 ]]></content>
     <description>input Array</description>
-    <tabTrigger>my (</tabTrigger>
+    <tabTrigger>my ( input</tabTrigger>
     <scope>source.perl</scope>
 </snippet>

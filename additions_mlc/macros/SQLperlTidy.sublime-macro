@@ -1,6 +1,5 @@
 [
   {
-    "args": null,
     "command": "find_under_expand"
   },
   {
@@ -32,7 +31,7 @@
     "command": "insert"
   },
   {
-    "args": null,
+
     "command": "single_selection"
   },
   {
@@ -73,7 +72,6 @@
     "command": "move_to"
   },
   {
-    "args": null,
     "command": "sql_beautifier"
   }
 ]

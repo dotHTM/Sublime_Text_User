@@ -2,8 +2,13 @@
   <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
   <content><![CDATA[
 
+${999:#body}
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    # parser.add_argument()
+    args = parser.parse_args()
     pass
 
 if __name__ == '__main__':
