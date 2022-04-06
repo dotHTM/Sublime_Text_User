@@ -84,14 +84,15 @@
 	],
 	"folder_exclude_patterns":
 	[
+    "__pycache__",
 		"CVS",
 		".vagrant*",
 		"datadir"
 	],
 	"font_face": "SFMono-Regular",
-	"font_size": 17,
+	"font_size": 15,
 	"highlight_line": true,
-	"highlight_modified_tabs": true,
+	"highlight_modified_tabs": false,
 	"ignored_packages":
 	[
 		"Vintage",
@@ -145,5 +146,45 @@
 	"trim_automatic_white_space": false,
 	"window.status_bar.label_control.font.size": 24,
 	"word_wrap": true,
-	"wrap_width": 0,
+	 "draw_white_space": ["all"],
+"wrap_width": 0,
+
+	"extra_file_exclude_patterns":
+	[
+		"._*",
+		"*+([0-9]).+([0-9])",
+		"_*.pm",
+		"*.pyc",
+		"*.pyo",
+		"*.test",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.so",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.Ulysses-*",
+		".fuse_hidden*",
+		"*.2[0-9][0-9][0-9]*",
+		"*.old*",
+		"*.sublime-workspace",
+		"*~"
+	],
+	"extra_folder_exclude_patterns":
+	[
+		"CVS",
+		".vagrant*",
+		"datadir"
+	],
 }

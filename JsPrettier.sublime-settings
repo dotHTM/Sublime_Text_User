@@ -70,7 +70,7 @@
   // Windows.......: "node_path": "C:/path/to/node.exe"
   // ----------------------------------------------------------------------
 
-  "node_path": "/usr/local/bin/node",
+  "node_path": "/opt/homebrew/bin/node",
 
   // ----------------------------------------------------------------------
   // Auto Format on Save
