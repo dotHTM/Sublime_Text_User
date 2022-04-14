@@ -1,18 +1,23 @@
 <snippet>
   <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
-  <content><![CDATA[
+  <content><![CDATA[from __future__ import annotations
 
-${999:#body}
+from typing import Optional, Sequence
 
-def main():
+
+def main(argv: Optional[Sequence[str]] = None) -> int:
     import argparse
+
     parser = argparse.ArgumentParser()
     # parser.add_argument()
-    args = parser.parse_args()
-    pass
+    args = parser.parse_args(argv)
 
-if __name__ == '__main__':
+    return 0
+
+
+if __name__ == "__main__":
     raise SystemExit(main())
+
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>sb3</tabTrigger>
