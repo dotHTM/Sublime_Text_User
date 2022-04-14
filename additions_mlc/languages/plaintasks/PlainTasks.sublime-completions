@@ -1,0 +1,22 @@
+{
+ "scope": "text.todo",
+ "completions": [
+  { "trigger": "low\t@low", "contents": "@low"},
+  { "trigger": "high\t@high", "contents": "@high"},
+  { "trigger": "critical\t@critical", "contents": "@critical"},
+  { "trigger": "today\t@today", "contents": "@today" },
+  { "trigger": "started\t@started", "contents": "@started" },
+  { "trigger": "toggle\t@toggle", "contents": "@toggle"},
+  { "trigger": "due\t@due()", "contents": "@due( $0)"},
+  { "trigger": "created\t@created", "contents": "@created"},
+
+  { "trigger": "xl\t@low", "contents": "@low"},
+  { "trigger": "xh\t@high", "contents": "@high"},
+  { "trigger": "xc\t@critical", "contents": "@critical"},
+  { "trigger": "xt\t@today", "contents": "@today" },
+  { "trigger": "xs\t@started", "contents": "@started" },
+  { "trigger": "xtg\t@toggle", "contents": "@toggle"},
+  { "trigger": "xd\t@due()", "contents": "@due( $0)"},
+  { "trigger": "xcr\t@created", "contents": "@created"}
+ ]
+}
