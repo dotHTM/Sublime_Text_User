@@ -13,9 +13,9 @@
 
   "color_scheme": "Packages/User/additions_mlc/asthetics/color_scheme/Tomorrow-Vamp.sublime-color-scheme",
 
+// "color_scheme":"Teenage Board - Dark.sublime-color-scheme",
+
   "line_numbers": true,
-"translate_tabs_to_spaces": false,
-    "tab_size": 4,
 
   "rulers": [0]
 }
