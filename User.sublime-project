@@ -54,6 +54,10 @@
       ],
     },
     {
+      "name": "Merge Prefs",
+      "path": "~/Library/Application Support/Sublime Merge"
+    },
+    {
       "name": "Browse Packages",
       "path": "~/Library/Application Support/Sublime Text/Packages",
       // // // // // // // // // //

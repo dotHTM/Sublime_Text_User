@@ -18,6 +18,9 @@
 		"nbsp",
 		"Cramer",
 		"Stache",
+		"xmp",
+		"api",
+		"Nessus",
 	],
 	"always_show_minimap_viewport": true,
 	"auto_complete_cycle": true,
@@ -99,7 +102,7 @@
 		"datadir"
 	],
 	"font_face": "SFMono-Regular",
-	"font_size": 16,
+	"font_size": 15,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
