@@ -1,8 +1,3 @@
 {
-  "cmd": [
-    "pre-commit",
-    "run",
-    "--file",
-    "$file"
-  ]
+  "shell_cmd": "pre-commit run --file $file"
 }

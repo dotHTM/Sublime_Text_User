@@ -1,5 +1,23 @@
 [
 
+  {
+    "keys": ["ctrl+f"],
+
+    "command": "lsp_format_document",
+
+  },
+
+
+
+  {
+    "keys": ["ctrl+alt+super+up"],
+    "command": "swap_line_up"
+  },
+  {
+    "keys": ["ctrl+alt+super+down"],
+    "command": "swap_line_down"
+  },
+
   // //// ////// ////// ////// ////// ////// ////// //////
   // Tidy
 
@@ -28,7 +46,7 @@
     }]
   },
 
-    { // SQLperltidy
+  { // SQLperltidy
     "args":
     {
       "file": "Packages/User/additions_mlc/macros/SQLperlTidy.sublime-macro"
@@ -37,9 +55,13 @@
     "keys": ["ctrl+t"],
     "context": [
 
-    { "key": "selector", "operator": "equal", "operand": "source.SQL" }
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "source.SQL"
+      }
 
-     ]
+    ]
   },
 
 
@@ -436,6 +458,18 @@
     "keys": ["super+shift+r"]
   },
   // PlainTasks
+
+  {
+    "keys": ["super+/"],
+    "command": "plain_tasks_complete",
+    "context": [
+    {
+      "key": "selector",
+      "operator": "equal",
+      "operand": "text.todo"
+    }]
+  },
+
   {
     "keys": ["control+d"],
     "command": "plain_tasks_complete",
