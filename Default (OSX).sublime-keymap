@@ -7,6 +7,8 @@
 
   },
 
+  { "keys": ["super+shift+t"], "command": "open_terminal" },
+  { "keys": ["super+shift+alt+t"], "command": "open_terminal_project_folder" },
 
 
   {
@@ -593,6 +595,9 @@
     }
   },
 
+
+
+
 //  Python triple double-quotes.
 
   {
@@ -757,7 +762,7 @@
       "match_all": true
     }]
   },
-  // lt-gt wrap, modified of above
+  // lt-gt wrap
   {
     "keys": ["<"],
     "command": "insert_snippet",
@@ -778,7 +783,34 @@
       "match_all": true
     }]
   },
-  // space wrap, modified of above
+
+
+    // python f-strings
+  {
+    "keys": ["f"],
+    "command": "insert_snippet",
+    "args":
+    {
+      "contents": "f\"${0:$SELECTION}\""
+    },
+    "context": [
+    {
+      "key": "setting.auto_match_enabled",
+      "operator": "equal",
+      "operand": true
+    },
+    {
+      "key": "selection_empty",
+      "operator": "equal",
+      "operand": false,
+      "match_all": true
+    }]
+  },
+
+
+
+
+  // space wrap
   {
     "keys": [" "],
     "command": "insert_snippet",
@@ -820,7 +852,7 @@
       "match_all": true
     }]
   },
-  // return wrap, modified of above
+  // return wrap
   {
     "keys": ["enter"],
     "command": "insert_snippet",
@@ -841,7 +873,7 @@
       "match_all": true
     }]
   },
-  // dot wrap, modified of above
+  // dot wrap
   {
     "keys": ["."],
     "command": "insert_snippet",
@@ -862,7 +894,7 @@
       "match_all": true
     }]
   },
-  // bash variable wrap, modified of above
+  // bash variable wrap
   {
     "keys": ["$"],
     "command": "insert_snippet",
@@ -883,7 +915,7 @@
       "match_all": true
     }]
   },
-  // perl hash wrap, modified of above
+  // perl hash wrap
   {
     "keys": ["%"],
     "command": "insert_snippet",
@@ -904,7 +936,7 @@
       "match_all": true
     }]
   },
-  // perl array wrap, modified of above
+  // perl array wrap
   {
     "keys": ["@"],
     "command": "insert_snippet",
@@ -925,7 +957,7 @@
       "match_all": true
     }]
   },
-  // slash wrap, modified of above
+  // slash wrap
   {
     "keys": ["/"],
     "command": "insert_snippet",
@@ -946,7 +978,7 @@
       "match_all": true
     }]
   },
-  // * wrap, modified of above
+  // * wrap
   {
     "keys": ["*"],
     "command": "insert_snippet",
@@ -967,7 +999,7 @@
       "match_all": true
     }]
   },
-  // _ wrap, modified of above
+  // _ wrap
   {
     "keys": ["_"],
     "command": "insert_snippet",
@@ -989,7 +1021,7 @@
     }]
   },
 
-  // full-line-regex wrap, modified of above
+  // full-line-regex wrap
   {
     "keys": ["^"],
     "command": "insert_snippet",
