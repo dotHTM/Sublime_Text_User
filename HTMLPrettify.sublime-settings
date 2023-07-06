@@ -1,5 +1,12 @@
 {
 
+    "node_path":
+    {
+        "osx": "/opt/homebrew/bin/node"
+    },
+
+
+
 
     "global_file_rules":
     {
@@ -39,6 +46,7 @@
                 "jshintrc",
                 "jsbeautifyrc",
                 "sublime-settings",
+                "sublime-project",
                 "sublime-keymap",
                 "sublime-commands",
                 "sublime-menu"

@@ -1,6 +1,7 @@
 {
-  "cmd": ["prettier", "--parser", "json", "--write", "$file"],
-  "file_regex": "",
+  // "cmd": ["prettier", "--parser", "json", "--write", "$file"],
+  "shell_cmd": "prettier --parser json --write $file",
+  // "file_regex": "",
   "selector": "source.json"
 
   // prettier --parser json --write $file

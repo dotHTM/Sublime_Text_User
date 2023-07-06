@@ -126,13 +126,10 @@
     "target",
   ],
   "font_face": "SFMono-Regular",
-  "font_size": 17,
+  "font_size": 21,
   "highlight_line": true,
   "highlight_modified_tabs": true,
   "ignored_packages": [
-    "EclipseJavaFormatter",
-    "Sync View Scroll",
-    "SyncedSideBar",
     "Vintage",
   ],
   "ignored_words": [
@@ -140,6 +137,8 @@
     "O'Reilly",
     "Papercraft",
     "Repos",
+    "bootstrap3",
+    "html",
     "iname",
     "pagetitle",
     "pbcopy",
@@ -200,4 +199,7 @@
   "index_exclude_patterns": [
     "*.log",
   ],
+
+
+
 }

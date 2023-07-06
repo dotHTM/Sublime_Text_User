@@ -5,6 +5,7 @@
 	"debug": true,
 	"in_process_packages":
 	[
+		"TypeScript",
 	],
 	"installed_packages":
 	[
@@ -51,6 +52,7 @@
 		"PerlTidy",
 		"PICO-8",
 		"PlainTasks",
+		"ProjectEnvironment",
 		"Python 3",
 		"python-black",
 		"PyYapf Python Formatter",
@@ -62,6 +64,8 @@
 		"Selection Evaluator",
 		"SideBarTools",
 		"SqlBeautifier",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
 		"Swift",
 		"Sync View Scroll",
 		"SyncedSideBar",
