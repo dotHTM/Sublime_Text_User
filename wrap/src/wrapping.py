@@ -53,8 +53,8 @@ class Wrapping(NamedTuple):
     @property
     def __name(self) -> str:
         if self.name:
-            return f"Auto pair '{self.name}'"
-        return f"Auto pair ({self.prefix}, {self.suffix})"
+            return f"Wrap '{self.name}'"
+        return f"Wrap ({self.prefix}, {self.suffix})"
 
     def template_hasSelection(self) -> dict:
         return {

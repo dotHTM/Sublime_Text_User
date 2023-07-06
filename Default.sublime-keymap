@@ -1,6 +1,6 @@
 [
   {
-    "comment": "Auto pair 'AppleScript Concat', has selection",
+    "comment": "Wrap 'AppleScript Concat', has selection",
     "keys": [
       "&"
     ],
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'AppleScript Concat', remove 1 left and 1 right",
+    "comment": "Wrap 'AppleScript Concat', remove 1 left and 1 right",
     "keys": [
       "backspace"
     ],
@@ -70,7 +70,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'General, New line', has selection",
+    "comment": "Wrap 'General, New line', has selection",
     "keys": [
       "enter"
     ],
@@ -93,7 +93,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'General, New line', remove 1 left and 1 right",
+    "comment": "Wrap 'General, New line', remove 1 left and 1 right",
     "keys": [
       "backspace"
     ],
@@ -140,7 +140,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'HTML tags', has selection",
+    "comment": "Wrap 'HTML tags', has selection",
     "keys": [
       "<"
     ],
@@ -163,7 +163,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'HTML tags', remove 1 left and 1 right",
+    "comment": "Wrap 'HTML tags', remove 1 left and 1 right",
     "keys": [
       "backspace"
     ],
@@ -210,7 +210,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'Asterisk', has selection",
+    "comment": "Wrap 'Asterisk', has selection",
     "keys": [
       "*"
     ],
@@ -233,7 +233,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'Asterisk', remove 1 left and 1 right",
+    "comment": "Wrap 'Asterisk', remove 1 left and 1 right",
     "keys": [
       "backspace"
     ],
@@ -280,7 +280,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'Underscore', has selection",
+    "comment": "Wrap 'Underscore', has selection",
     "keys": [
       "_"
     ],
@@ -303,7 +303,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'Underscore', remove 1 left and 1 right",
+    "comment": "Wrap 'Underscore', remove 1 left and 1 right",
     "keys": [
       "backspace"
     ],
@@ -350,7 +350,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'Perl String Concat', has selection",
+    "comment": "Wrap 'Perl String Concat', has selection",
     "keys": [
       "."
     ],
@@ -373,7 +373,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'Perl String Concat', remove 1 left and 1 right",
+    "comment": "Wrap 'Perl String Concat', remove 1 left and 1 right",
     "keys": [
       "backspace"
     ],
@@ -420,7 +420,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'Python f-strings double', selection_empty, not mid-word",
+    "comment": "Wrap 'Python f-strings double', selection_empty, not mid-word",
     "keys": [
       "ctrl+f"
     ],
@@ -455,7 +455,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'Python f-strings single', selection_empty, not mid-word",
+    "comment": "Wrap 'Python f-strings single', selection_empty, not mid-word",
     "keys": [
       "ctrl+alt+f"
     ],
@@ -490,7 +490,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'Python String Contat', has selection",
+    "comment": "Wrap 'Python String Contat', has selection",
     "keys": [
       "+"
     ],
@@ -513,7 +513,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'Python String Contat', remove 1 left and 1 right",
+    "comment": "Wrap 'Python String Contat', remove 1 left and 1 right",
     "keys": [
       "backspace"
     ],
@@ -560,7 +560,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'Python Triple Double Quotes', selection_empty, not mid-word",
+    "comment": "Wrap 'Python Triple Double Quotes', selection_empty, not mid-word",
     "keys": [
       "ctrl+'"
     ],
@@ -595,7 +595,7 @@
     ]
   },
   {
-    "comment": "Auto pair 'Python Triple Single Quotes', selection_empty, not mid-word",
+    "comment": "Wrap 'Python Triple Single Quotes', selection_empty, not mid-word",
     "keys": [
       "ctrl+alt+'"
     ],

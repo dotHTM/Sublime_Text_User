@@ -16,7 +16,7 @@ where = ["src"]
 
 
 [project.scripts]
-generate = "generate:main"
+generateKeymap = "generateKeymap:main"
 
 [tool.black]
 line-length = 88
