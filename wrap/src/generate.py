@@ -5,7 +5,7 @@ from typing import Optional, Sequence
 
 import json
 
-from wraps import Wraps
+from wraps import AllWraps
 
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
@@ -17,8 +17,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     print(
         json.dumps(
-            # Wraps.python_triple_double_quotes.wrap(),
-            [e for w in Wraps.MainWraps for e in w.wrap()],
+            [e for w in AllWraps for e in w.wrap()],
             indent=2,
         )
     )

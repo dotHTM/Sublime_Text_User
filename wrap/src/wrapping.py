@@ -15,7 +15,9 @@ class Wrapping(NamedTuple):
     keys: list[str] = []
 
     scope: str = "source,text"
-    wrapOnly: bool = False
+
+    onEmpty: bool = False
+    onSelection: bool = False
 
     @property
     def regexPrefix(self) -> str:
@@ -160,9 +162,11 @@ class Wrapping(NamedTuple):
         }
 
     def wrap(self) -> list[dict]:
-        ret: list[dict] = [self.template_hasSelection()]
-        if not self.wrapOnly:
+        ret: list[dict] = []
+        if self.onEmpty:
             ret.append(self.template_empty())
+        if self.onSelection:
+            ret.append(self.template_hasSelection())
         if self.simple:
             ret.append(self.template_del_LR())
 
