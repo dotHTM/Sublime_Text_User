@@ -18,6 +18,7 @@ class Wrapping(NamedTuple):
 
     onEmpty: bool = False
     onSelection: bool = False
+    enterExit: bool = False
 
     @property
     def regexPrefix(self) -> str:
@@ -119,7 +120,7 @@ class Wrapping(NamedTuple):
     def template_del_LR(self) -> dict:
         return {
             "comment": f"{self.__name}, remove 1 left and 1 right",
-            "keys": ["backspace"],
+            "keys": self.__keys,
             "command": "run_macro_file",
             "args": {"file": "res://Packages/Default/Delete Left Right.sublime-macro"},
             "context": [
@@ -161,6 +162,45 @@ class Wrapping(NamedTuple):
             ],
         }
 
+    def template_enterExit(self) -> dict:
+        return {
+            "comment": f"{self.__name}, enter or exit group",
+            "keys": self.__keys,
+            "command": "move",
+            "args": {"by": "characters", "forward": True},
+            "context": [
+                {
+                    "key": "setting.auto_match_enabled",
+                    "operator": "equal",
+                    "operand": True,
+                },
+                {
+                    "key": "selection_empty",
+                    "operator": "equal",
+                    "operand": True,
+                    "match_all": True,
+                },
+                {
+                    "key": "following_text",
+                    "operator": "regex_contains",
+                    "operand": f"^({self.prefix}|{self.suffix})",
+                    "match_all": True,
+                },
+                {
+                    "key": "selector",
+                    "operator": "not_equal",
+                    "operand": "punctuation.definition.string.begin",
+                    "match_all": True,
+                },
+                {
+                    "key": "eol_selector",
+                    "operator": "not_equal",
+                    "operand": "string.quoted.single - punctuation.definition.string.end",
+                    "match_all": True,
+                },
+            ],
+        }
+
     def wrap(self) -> list[dict]:
         ret: list[dict] = []
         if self.onEmpty:
@@ -169,6 +209,8 @@ class Wrapping(NamedTuple):
             ret.append(self.template_hasSelection())
         if self.simple:
             ret.append(self.template_del_LR())
+        if self.enterExit:
+            ret.append(self.template_enterExit())
 
         return ret
 

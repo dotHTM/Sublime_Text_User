@@ -14,7 +14,17 @@ class Wraps:
         onSelection=True,
     )
 
-    # Web
+    general_space = Wrapping(
+        prefix=" ",
+        suffix=" ",
+        name="General, Space",
+        onSelection=True,
+        enterExit=True,
+    )
+
+    # test
+
+    # <Web>
 
     html_tags = Wrapping(
         prefix="<",
@@ -22,7 +32,9 @@ class Wraps:
         name="HTML tags",
         onSelection=True,
         scope="text.markdown,source.html",
+        enterExit=True,
     )
+
     markdown_underscore = Wrapping(
         prefix="_",
         suffix="_",
@@ -37,6 +49,15 @@ class Wraps:
         onSelection=True,
         scope="text.markdown",
     )
+    markdown_code_block = Wrapping(
+        prefix="```\n",
+        suffix="\n```",
+        keys=["alt+`"],
+        name="Code Block",
+        onEmpty=True,
+        onSelection=True,
+        scope="text.markdown",
+    )
 
     # Perl
 
@@ -47,6 +68,7 @@ class Wraps:
         name="Perl String Concat",
         scope="source.perl",
         onSelection=True,
+        enterExit=True,
     )
 
     # Python
@@ -58,6 +80,7 @@ class Wraps:
         name="Python Triple Single Quotes",
         scope="source.python",
         onEmpty=True,
+        onSelection=True,
     )
 
     python_triple_double_quotes = Wrapping(
@@ -67,6 +90,7 @@ class Wraps:
         name="Python Triple Double Quotes",
         scope="source.python",
         onEmpty=True,
+        onSelection=True,
     )
 
     python_string_contat = Wrapping(
@@ -75,6 +99,7 @@ class Wraps:
         name="Python String Contat",
         scope="source.python",
         onSelection=True,
+        enterExit=True,
     )
     python_f_strings_double = Wrapping(
         prefix='f"',
@@ -83,6 +108,7 @@ class Wraps:
         name="Python f-strings double",
         scope="source.python",
         onEmpty=True,
+        onSelection=True,
     )
     python_f_strings_single = Wrapping(
         prefix="f'",
@@ -91,6 +117,7 @@ class Wraps:
         name="Python f-strings single",
         scope="source.python",
         onEmpty=True,
+        onSelection=True,
     )
 
     # AppleScript
@@ -101,6 +128,7 @@ class Wraps:
         name="AppleScript Concat",
         scope="source.applescript",
         onSelection=True,
+        enterExit=True,
     )
 
 
