@@ -32,6 +32,7 @@
 		"INI",
 		"Insert Nums",
 		"InsertDate",
+		"JsPrettier",
 		"Kimbie Color Scheme",
 		"Liquid",
 		"LoremIpsum",
@@ -43,6 +44,7 @@
 		"LSP-typescript",
 		"Markdown Extended",
 		"Material Color Scheme",
+		"ME LD",
 		"ModernPerl",
 		"Monokai - Spacegray",
 		"Ngx HTML",
@@ -71,7 +73,6 @@
 		"SyncedSideBar",
 		"SysLog",
 		"Table Editor",
-		"Teenage",
 		"Terminal",
 		"TOML",
 		"Tomorrow Color Schemes",
@@ -81,7 +82,10 @@
 		"Virtualenv",
 		"Wrap Plus",
 		"xml2json",
-		"ZipContents",
+
+
+
+    "ZipContents",
 	],
 	"repositories":
 	[

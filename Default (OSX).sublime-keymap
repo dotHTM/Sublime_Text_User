@@ -1,6 +1,12 @@
 [
 
   {
+        "caption": "Scope Hunter: Show Scope Under Cursor(s)",
+        "command": "get_selection_scope",
+    "keys": ["alt+."],
+    },
+
+  {
     "keys": ["alt+f"],
     "command": "lsp_format_document",
   },
