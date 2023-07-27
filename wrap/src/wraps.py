@@ -68,7 +68,6 @@ class Wraps:
         name="Perl String Concat",
         scope="source.perl",
         onSelection=True,
-        enterExit=True,
     )
 
     # Python

@@ -42,9 +42,8 @@
 		"LSP-json",
 		"LSP-pyright",
 		"LSP-typescript",
-		"Markdown Extended",
 		"Material Color Scheme",
-		"ME LD",
+		"MD LD",
 		"ModernPerl",
 		"Monokai - Spacegray",
 		"Ngx HTML",
@@ -55,7 +54,6 @@
 		"PICO-8",
 		"PlainTasks",
 		"ProjectEnvironment",
-		"Python 3",
 		"python-black",
 		"PyYapf Python Formatter",
 		"Random Everything",
@@ -82,10 +80,7 @@
 		"Virtualenv",
 		"Wrap Plus",
 		"xml2json",
-
-
-
-    "ZipContents",
+		"ZipContents",
 	],
 	"repositories":
 	[
