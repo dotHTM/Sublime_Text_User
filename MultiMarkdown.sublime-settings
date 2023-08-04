@@ -1,8 +1,5 @@
 {
     // These settings override both User and Default settings for the MultiMarkdown syntax
-    "wrap_width": 0,
-    "line_numbers": false,
-    "rulers": [0],
     "extensions":
     [
 		"md"

@@ -12,67 +12,68 @@
     "file_exclude_patterns": [
       "./Preferences.sublime-settings",
       "./*.sublime-keymap",
-    ],
+      ],
 
   },
   {
     "name": ".home",
-    "path": "~",
+    "path": "/Users/cramerml",
 
 
     "folder_exclude_patterns": [
       ".Trash*",
-    ],
+      ],
     "binary_file_patterns": [
       ".*/**"
-    ],
+      ],
     "file_include_patterns": [
       ".*",
       ".*/*"
-    ],
+      ],
     "folder_include_patterns": [
       ".*",
       ".*/*"
-    ],
+      ],
   },
   {
-    "name": "Merge Prefs",
-    "path": "~/Library/Application Support/Sublime Merge",
-
-  },
-  {
-    "name": "Browse Packages",
-    "path": "~/Library/Application Support/Sublime Text/Packages",
-    "folder_exclude_patterns": [
-      "User"
-    ],
-  },
-  {
-
-    "path": "~/Library/Application Support/Sublime Text/Installed Packages",
-
-
-  },
-  {
+    /*"name": "Browse Packages",*/
     "path": "/Applications/Sublime Text.app/Contents/MacOS/Packages",
 
-    "name": "Default App Packages",
-  },
+      /*"folder_exclude_patterns":
+      [
+				"User"
+			],*/
+      "name": "Default App Packages",
+    },
   {
-    "name": "merge",
-    "path": "~/Library/Application Support/Sublime Merge/Packages/User",
-
-  },
-  {
+    /*"name": "Browse Packages",*/
     "path": "/Applications/Sublime Merge.app/Contents/MacOS/Packages",
-    "name": "merge - Defaults",
+    /*"folder_exclude_patterns": [
+      "User"
+      ],*/
+      "name": "merge - Defaults",
+    },
+/*{
 
-  },
-  {
-    "path": "~/Applications/Sublime Text.app",
-  },
-  {
-    "path": "~/Documents/config/private_profile",
-  }
-]
+    "path": "/Users/cramerml/Documents/config/private_profile",
+
+
+      /*"name": "merge - Defaults",* /
+    },*/
+/*{
+    "path": "/Users/cramerml/Documents/config/private_profile",
+
+    /*"name": "merge - Defaults",* /
+  },*/
+/*{
+    /*"name": "merge - Defaults",* /
+    "path": "/Users/cramerml/Documents/config/private_profile",
+
+  },*/
+/*{
+    "path": "/Users/cramerml/Documents/config/private_profile",
+    /*"name": "merge - Defaults",* /
+
+  },*/
+  ],
 }
