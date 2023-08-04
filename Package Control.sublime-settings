@@ -43,6 +43,7 @@
 		"Sync View Scroll",
 		"SyncedSideBar",
 		"Table Editor",
+		"Teenage",
 		"Terminal",
 		"TOML",
 		"URLEncode",
@@ -54,5 +55,5 @@
     "https://github.com/dotHTM/Teenage.git",
     "https://github.com/jrappen/sublime-auto-dark.git",
     "https://github.com/mawelborn/ZipContents.git",
-  ],
+	],
 }
