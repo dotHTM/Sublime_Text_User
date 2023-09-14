@@ -1,0 +1,11 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+¯\_(ツ)_/¯
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>xjk</tabTrigger>
+  <description>Shrug emoticon</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text,source</scope>
+</snippet>

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 
 [project]
-name = "pypelines"
-version = "0.0.4"
+name = "wraps"
+version = "0.0.1"
 dependencies = [
     'importlib-metadata; python_version<"3.8"',
 ]

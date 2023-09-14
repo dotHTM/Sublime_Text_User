@@ -58,6 +58,16 @@ class Wraps:
         onSelection=True,
         scope="text.markdown",
     )
+    markdown_code_block = Wrapping(
+        prefix="~",
+        suffix="~",
+        keys=["~"],
+        name="Strike Out",
+        onEmpty=True,
+        onSelection=True,
+        enterExit=True,
+        scope="text.markdown",
+    )
 
     # Perl
 
@@ -71,11 +81,10 @@ class Wraps:
     )
 
     # Python
-
     python_triple_single_quotes = Wrapping(
         prefix="'''",
         suffix="'''",
-        keys=["ctrl+alt+'"],
+        keys=["alt+'"],
         name="Python Triple Single Quotes",
         scope="source.python",
         onEmpty=True,
@@ -85,7 +94,7 @@ class Wraps:
     python_triple_double_quotes = Wrapping(
         prefix='"""',
         suffix='"""',
-        keys=["ctrl+'"],
+        keys=["alt+shift+'"],
         name="Python Triple Double Quotes",
         scope="source.python",
         onEmpty=True,

@@ -30,6 +30,11 @@
     "Nessus",
     "ip",
     "devs",
+    "dockerfile",
+    "mysql",
+    "dev",
+    "crypto",
+    "sha",
   ],
   "always_show_minimap_viewport": true,
   "auto_complete_cycle": true,
@@ -195,9 +200,8 @@
   "draw_white_space": ["all"],
   "wrap_width": 0,
 
+  // "index_exclude_gitignore": false,
 
-
-  "index_exclude_gitignore": true,
   "goto_anything_exclude_gitignore": true,
   "index_exclude_patterns": [
     "*.log",
