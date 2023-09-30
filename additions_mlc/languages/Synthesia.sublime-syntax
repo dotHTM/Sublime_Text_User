@@ -11,4 +11,3 @@ contexts:
       scope: synthesia.number
     - match: \b\w+
       scope: synthesia.word
-

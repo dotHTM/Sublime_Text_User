@@ -1,14 +1,8 @@
 {
-  "cmd": [
-    "md5",
-    "$file"
-  ],
+  "cmd": ["md5", "$file"],
   "variants": [
     {
-      "cmd": [
-        "shasum",
-        "$file"
-      ],
+      "cmd": ["shasum", "$file"],
       "name": "SHA"
     }
   ]

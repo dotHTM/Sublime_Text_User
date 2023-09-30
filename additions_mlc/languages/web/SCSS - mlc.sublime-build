@@ -1,43 +1,32 @@
 {
-    "cmd": ["sass",
-        "--no-cache",
-        "--style=expanded",
-        "$file",
-        "$file_base_name.css",
-    ],
-    "selector": "source.scss",
-    "file_regex": "^[ \t]*(.*)\\s([0-9]*):([0-9]*) ",
+  "cmd": [
+    "sass",
+    "--no-cache",
+    "--style=expanded",
+    "$file",
+    "$file_base_name.css"
+  ],
+  "selector": "source.scss",
+  "file_regex": "^[ \t]*(.*)\\s([0-9]*):([0-9]*) ",
 
-    "variants": [
+  "variants": [
     {
-        "name": "compressed",
-        "cmd": ["sass",
-            "--style=compressed",
-            "$file",
-            "$file_base_name.css",
-        ],
-        "selector": "source.scss",
-        "file_regex": "^[ \t]*(.*)\\s([0-9]*):([0-9]*) ",
+      "name": "compressed",
+      "cmd": ["sass", "--style=compressed", "$file", "$file_base_name.css"],
+      "selector": "source.scss",
+      "file_regex": "^[ \t]*(.*)\\s([0-9]*):([0-9]*) "
     },
     {
-        "name": "source map",
-        "cmd": ["sass",
-            "--style=expanded",
-            "$file",
-            "$file_base_name.css",
-        ],
-        "selector": "source.scss",
-        "file_regex": "^[ \t]*(.*)\\s([0-9]*):([0-9]*) ",
+      "name": "source map",
+      "cmd": ["sass", "--style=expanded", "$file", "$file_base_name.css"],
+      "selector": "source.scss",
+      "file_regex": "^[ \t]*(.*)\\s([0-9]*):([0-9]*) "
     },
     {
-        "name": "watch",
-        "cmd": ["sass",
-            "--style=expanded",
-            "--watch",
-            "$file",
-        ],
-        "selector": "source.scss",
-        "file_regex": "^do not track$",
-    }, ],
-
+      "name": "watch",
+      "cmd": ["sass", "--style=expanded", "--watch", "$file"],
+      "selector": "source.scss",
+      "file_regex": "^do not track$"
+    }
+  ]
 }

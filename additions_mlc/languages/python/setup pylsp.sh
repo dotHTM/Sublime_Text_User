@@ -14,4 +14,3 @@ for i in $pipList; do
   $announcer $i
   pip install --upgrade $i
 done
-

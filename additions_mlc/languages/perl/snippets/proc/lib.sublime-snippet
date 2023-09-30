@@ -33,4 +33,3 @@ ${999:# body...}
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.perl</scope>
 </snippet>
-

@@ -1,8 +1,6 @@
 [
-  {"command": "unfold_all"},
-  {"command": "perl_tidy"},
-  { "command": "fold_by_level",
-    "args": {"level": 1 },
-  },
-  {"command": "save"},
+  { "command": "unfold_all" },
+  { "command": "perl_tidy" },
+  { "command": "fold_by_level", "args": { "level": 1 } },
+  { "command": "save" }
 ]

@@ -51,25 +51,3 @@ done
 
 
 echo "f:$filename l:$start_lineNumber c:$start_columnNumber m:$message"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

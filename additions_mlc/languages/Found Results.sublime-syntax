@@ -19,8 +19,8 @@ contexts:
       scope: purple
       push: bash
 
-  # General case and Plain text:
-    - match: '^/.+:'
+    # General case and Plain text:
+    - match: "^/.+:"
       scope: white
     - match: '^ *\d+:'
       scope: light
@@ -29,11 +29,10 @@ contexts:
     - match: \s
       pop: true
 
-
   bash:
     - clear_scopes: true
     - meta_scope: file.bash
-    - match: '^(?=/)'
+    - match: "^(?=/)"
       pop: true
     - match: '^ *\d+:'
       scope: light
@@ -41,22 +40,21 @@ contexts:
     - match: '^ *\d+(?!=:).'
       scope: dark
       push: bash_lines
-    
+
   bash_lines:
     - clear_scopes: true
     - match: $
       pop: true
-    - match: ''
+    - match: ""
       push: Packages/ShellScript/Shell-Unix-Generic.sublime-syntax
       with_prototype:
-        - match: '$'
+        - match: "$"
           pop: true
-
 
   perl:
     - clear_scopes: true
     - meta_scope: file.perl
-    - match: '^(?=/)'
+    - match: "^(?=/)"
       pop: true
     - match: '^ *\d+:'
       scope: light
@@ -64,14 +62,13 @@ contexts:
     - match: '^ *\d+(?!=:).'
       scope: dark
       push: perl_lines
-    
+
   perl_lines:
     - clear_scopes: true
     - match: $
       pop: true
-    - match: ''
+    - match: ""
       push: Packages/Perl/Perl.sublime-syntax
       with_prototype:
-        - match: '$'
+        - match: "$"
           pop: true
-

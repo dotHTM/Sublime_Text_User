@@ -3,31 +3,30 @@
   "selector": "source.swift",
   "file_regex": "^(.+?):([0-9]+):([0-9]+): (.*)$",
 
-
   "variants": [
     {
       "name": "Optimizations",
       "cmd": ["swift", "-O", "$file"],
-      "file_regex": " in (.+)",
+      "file_regex": " in (.+)"
       // "line_regex": " at ([0-9]+):([0-9]+)",
     },
     {
       "name": "NO Optimizations",
       "cmd": ["swift", "-Onone", "$file"],
-      "file_regex": " in (.+)",
+      "file_regex": " in (.+)"
       // "line_regex": " at ([0-9]+):([0-9]+)",
     },
     {
       "name": "Unchecked Optimizations",
       "cmd": ["swift", "-Ounchecked", "$file"],
-      "file_regex": " in (.+)",
+      "file_regex": " in (.+)"
       // "line_regex": " at ([0-9]+):([0-9]+)",
     },
     {
       "name": "Clean Format",
-      "cmd": ["/usr/local/bin/swiftformat", "--swiftversion","5.1", "$file"],
-      "file_regex": " in (.+)",
+      "cmd": ["/usr/local/bin/swiftformat", "--swiftversion", "5.1", "$file"],
+      "file_regex": " in (.+)"
       // "line_regex": " at ([0-9]+):([0-9]+)",
-    },
-  ],
+    }
+  ]
 }

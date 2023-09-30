@@ -1,19 +1,17 @@
 [
-
   {
-        "caption": "Scope Hunter: Show Scope Under Cursor(s)",
-        "command": "get_selection_scope",
-    "keys": ["alt+."],
-    },
+    "caption": "Scope Hunter: Show Scope Under Cursor(s)",
+    "command": "get_selection_scope",
+    "keys": ["alt+."]
+  },
 
   {
     "keys": ["alt+f"],
-    "command": "lsp_format_document",
+    "command": "lsp_format_document"
   },
 
   { "keys": ["super+shift+t"], "command": "open_terminal" },
   { "keys": ["super+shift+alt+t"], "command": "open_terminal_project_folder" },
-
 
   {
     "keys": ["ctrl+alt+super+up"],
@@ -24,108 +22,96 @@
     "command": "swap_line_down"
   },
 
-
-
-
-
-
-
-
   // //// ////// ////// ////// ////// ////// ////// //////
   // Tidy
 
-  { // python black
+  {
+    // python black
     "command": "black",
     "keys": ["ctrl+t"],
     "context": [
-    {
-      "key": "selector",
-      "operator": "equal",
-      "operand": "source.python"
-    }]
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "source.python"
+      }
+    ]
   },
-  { // perltidy
+  {
+    // perltidy
     "command": "run_macro_file",
-    "args":
-    {
+    "args": {
       "file": "Packages/User/additions_mlc/macros/perltidy.sublime-macro"
     },
     "keys": ["ctrl+t"],
     "context": [
-    {
-      "key": "selector",
-      "operator": "equal",
-      "operand": "source.perl"
-    }]
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "source.perl"
+      }
+    ]
   },
 
-  { // SQLperltidy
-    "args":
-    {
+  {
+    // SQLperltidy
+    "args": {
       "file": "Packages/User/additions_mlc/macros/SQLperlTidy.sublime-macro"
     },
     "command": "run_macro_file",
     "keys": ["ctrl+t"],
     "context": [
-
       {
         "key": "selector",
         "operator": "equal",
         "operand": "source.SQL"
       }
-
     ]
   },
 
-
-
-
-  { // csvtidy
-    "args":
-    {
+  {
+    // csvtidy
+    "args": {
       "file": "Packages/User/additions_mlc/macros/csv_tidy.sublime-macro"
     },
     "command": "run_macro_file",
     "keys": ["ctrl+t"],
     "context": [
-    {
-      "key": "selector",
-      "operator": "equal",
-      "operand": "source.csv"
-    }]
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "source.csv"
+      }
+    ]
   },
   {
     "command": "htmlprettify",
     "keys": ["ctrl+t"],
     "context": [
-    {
-      "key": "selector",
-      "operator": "equal",
-      "operand": "source.json,source.html,source.css,source.javascript"
-    }]
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "source.json,source.html,source.css,source.javascript"
+      }
+    ]
   },
-
 
   // //// ////// ////// ////// ////// ////// ////// //////
 
-
   {
     "command": "lsp_show_diagnostics_panel",
-    "keys": [
-      "ctrl+alt+m"
-    ],
+    "keys": ["ctrl+alt+m"],
     "context": [
-    {
-      "key": "setting.lsp_active"
-    }]
+      {
+        "key": "setting.lsp_active"
+      }
+    ]
   },
 
   {
     "keys": ["primary+alt+m"],
     "command": "noop"
-
   },
-
 
   // Emmet actions
 
@@ -147,36 +133,34 @@
     "keys": ["ctrl+w"],
     "command": "emmet_wrap_with_abbreviation",
     "context": [
-    {
-      "key": "setting.is_widget",
-      "operand": false
-    }]
+      {
+        "key": "setting.is_widget",
+        "operand": false
+      }
+    ]
   },
-
 
   //  //  //  //  //  //
 
   {
     "keys": ["ctrl+shift+w"],
     "command": "wrap_lines",
-    "args":
-    {
+    "args": {
       "width": 80
     },
     "caption": "Wrap paragraph at 80 characters"
   },
-
 
   /************************************************************/
   /* Disable default or plugin keys                           */
   /************************************************************/
   {
     "command": "noop",
-    "keys": ["super+t"],
+    "keys": ["super+t"]
   },
   {
     "keys": ["super+alt+o"],
-    "command": "noop",
+    "command": "noop"
   },
 
   /************************************************************/
@@ -184,13 +168,15 @@
   /************************************************************/
   {
     "command": "toggle_selection_scope",
-    "keys": ["shift+ctrl+o"],
+    "keys": ["shift+ctrl+o"]
   },
-  { // Open in Sublime Merge
+  {
+    // Open in Sublime Merge
     "keys": ["super+alt+z"],
     "command": "sublime_merge_open_repo"
   },
-  { // Match the shortcut in Sublime Merge
+  {
+    // Match the shortcut in Sublime Merge
     "keys": ["super+shift+o"],
     "command": "prompt_select_workspace"
   },
@@ -201,8 +187,7 @@
   {
     "keys": ["super+ctrl+f"],
     "command": "show_panel",
-    "args":
-    {
+    "args": {
       "panel": "find_in_files"
     }
   },
@@ -214,24 +199,21 @@
   {
     "keys": ["super+k", "super+k"],
     "command": "show_overlay",
-    "args":
-    {
+    "args": {
       "overlay": "command_palette"
     }
   },
   // Open the Sublime Text User.sublime-project
   {
     "command": "open_dir",
-    "args":
-    {
+    "args": {
       "dir": "${packages}/User/User.sublime-project"
     },
     "keys": ["super+alt+,"]
   },
   {
     "command": "open_dir",
-    "args":
-    {
+    "args": {
       "dir": "${packages}/User/User.sublime-project"
     },
     "keys": ["super+alt+,"]
@@ -239,24 +221,21 @@
   {
     "keys": ["ctrl+alt+/"],
     "command": "insert_snippet",
-    "args":
-    {
+    "args": {
       "contents": " ### ⁄⁄⁄ ${0:$SELECTION} ⁄⁄⁄ ### "
-    },
+    }
   },
   {
     "keys": ["ctrl+shift+/"],
     "command": "insert_snippet",
-    "args":
-    {
+    "args": {
       "contents": " ### ››› ${0:$SELECTION} ‹‹‹ ### "
-    },
+    }
   },
   {
     "keys": ["super+ctrl+/"],
     "command": "toggle_comment",
-    "args":
-    {
+    "args": {
       "block": true
     },
     "caption": "Toggle Block Comment"
@@ -285,20 +264,18 @@
   //
   {
     "keys": ["ctrl+alt+shift+w"],
-    "command": "clear_bookmarks",
+    "command": "clear_bookmarks"
   },
   //
   // Reindent
   //
-
 
   // plugin overrides
   // Origami
   {
     "keys": ["super+shift+alt+w"],
     "command": "destroy_pane",
-    "args":
-    {
+    "args": {
       "direction": "self"
     },
     "caption": "Current Pane"
@@ -342,39 +319,38 @@
   },
   // Macros
 
-  { // Kind Formatters, those that don't complain when attempted on other types
-    "args":
-    {
+  {
+    // Kind Formatters, those that don't complain when attempted on other types
+    "args": {
       "file": "Packages/User/additions_mlc/macros/kindFormatters.sublime-macro"
     },
     "command": "run_macro_file",
-    "keys": ["shift+ctrl+r"],
+    "keys": ["shift+ctrl+r"]
   },
 
-
-  { // perltidy & fold
-    "args":
-    {
+  {
+    // perltidy & fold
+    "args": {
       "file": "Packages/User/additions_mlc/macros/perltidy_fold.sublime-macro"
     },
     "command": "run_macro_file",
-    "keys": ["alt+ctrl+t"],
+    "keys": ["alt+ctrl+t"]
   },
-  { // foldEverything
-    "args":
-    {
+  {
+    // foldEverything
+    "args": {
       "file": "Packages/User/additions_mlc/macros/foldEverything.sublime-macro"
     },
     "command": "run_macro_file",
     "keys": ["super+k, super+shift+0"]
   },
-  { //figletCommentLine
-    "args":
-    {
+  {
+    //figletCommentLine
+    "args": {
       "file": "Packages/User/additions_mlc/macros/figletCommentLine.sublime-macro"
     },
     "command": "run_macro_file",
-    "keys": ["super+alt+/"],
+    "keys": ["super+alt+/"]
     /**************************************************************************/
     /*                                                                        */
     /*       ad88                        88                                   */
@@ -390,12 +366,11 @@
     /**************************************************************************/
   },
   {
-    "args":
-    {
+    "args": {
       "file": "Packages/User/additions_mlc/macros/wrapComments.sublime-macro"
     },
     "command": "run_macro_file",
-    "keys": ["super+alt+ctrl+/"],
+    "keys": ["super+alt+ctrl+/"]
     // Eiusmod mollit proident incididunt fugiat
     // exercitation occaecat sunt quis minim magna
     // voluptate sint occaecat aliqua tempor eu minim
@@ -428,16 +403,14 @@
   {
     "keys": ["super+alt+w"],
     "command": "toggle_setting",
-    "args":
-    {
+    "args": {
       "setting": "word_wrap"
     }
   },
   {
     "command": "set_setting",
     "keys": ["super+alt+r"],
-    "args":
-    {
+    "args": {
       "setting": "wrap_width",
       "value": 0
     }
@@ -445,8 +418,7 @@
   {
     "command": "set_setting",
     "keys": ["super+ctrl+r"],
-    "args":
-    {
+    "args": {
       "setting": "wrap_width",
       "value": 88
     }
@@ -476,60 +448,64 @@
     "keys": ["super+/"],
     "command": "plain_tasks_complete",
     "context": [
-    {
-      "key": "selector",
-      "operator": "equal",
-      "operand": "text.todo"
-    }]
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "text.todo"
+      }
+    ]
   },
 
   {
     "keys": ["control+d"],
     "command": "plain_tasks_complete",
     "context": [
-    {
-      "key": "selector",
-      "operator": "equal",
-      "operand": "text.todo"
-    }]
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "text.todo"
+      }
+    ]
   },
   {
     "keys": ["control+u"],
     "command": "plain_tasks_open_url",
     "context": [
-    {
-      "key": "selector",
-      "operator": "equal",
-      "operand": "text.todo"
-    }]
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "text.todo"
+      }
+    ]
   },
   {
     "keys": ["super+shift+a"],
     "command": "plain_tasks_archive",
     "context": [
-    {
-      "key": "selector",
-      "operator": "equal",
-      "operand": "text.todo"
-    }]
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "text.todo"
+      }
+    ]
   },
   {
     "keys": ["super+shift+o"],
     "command": "plain_tasks_archive_org",
     "context": [
-    {
-      "key": "selector",
-      "operator": "equal",
-      "operand": "text.todo"
-    }]
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "text.todo"
+      }
+    ]
   },
   // Some handy Layouts
   {
     "command": "set_layout",
     "keys": ["control+shift+f2"],
     "caption": "3 Pane Third bottom",
-    "args":
-    {
+    "args": {
       "cols": [0.0, 0.67, 1.0],
       "rows": [0.0, 0.67, 1.0],
       "cells": [
@@ -542,8 +518,7 @@
     "command": "set_layout",
     "keys": ["control+shift+f3"],
     "caption": "3 Pane Third right",
-    "args":
-    {
+    "args": {
       "cols": [0.0, 0.67, 1.0],
       "rows": [0.0, 0.5, 1.0],
       "cells": [
@@ -557,8 +532,7 @@
     "command": "set_layout",
     "keys": ["control+shift+f4"],
     "caption": "2-3 Pane Third bottom",
-    "args":
-    {
+    "args": {
       "cols": [0.0, 0.33, 0.5, 0.67, 1.0],
       "rows": [0.0, 0.67, 1.0],
       "cells": [
@@ -574,8 +548,7 @@
     "command": "set_layout",
     "keys": ["control+shift+f5"],
     "caption": "5-pane",
-    "args":
-    {
+    "args": {
       "cols": [0.0, 0.33, 0.5, 0.67, 1.0],
       "rows": [0.0, 0.375, 0.5, 0.75, 1.0],
       "cells": [
@@ -591,8 +564,7 @@
     "command": "set_layout",
     "keys": ["control+shift+f6"],
     "caption": "6-pane",
-    "args":
-    {
+    "args": {
       "cols": [0.0, 0.4, 0.5, 0.8, 1.0],
       "rows": [0.0, 0.4, 0.5, 0.8, 1.0],
       "cells": [
@@ -606,39 +578,34 @@
     }
   },
 
+  // //  markdown triple backticks.
 
-
-
-// //  markdown triple backticks.
-
-//   {
-//     "keys": ["ctrl+alt+'"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "```$0```"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": true,
-//       "match_all": true
-//     },
-//     {
-//       "key": "following_text",
-//       "operator": "regex_contains",
-//       "operand": "^(?:\t| |\\)|]|;|\\}|$)",
-//       "match_all": true
-//     }]
-//   },
-
-
+  //   {
+  //     "keys": ["ctrl+alt+'"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "```$0```"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": true,
+  //       "match_all": true
+  //     },
+  //     {
+  //       "key": "following_text",
+  //       "operator": "regex_contains",
+  //       "operand": "^(?:\t| |\\)|]|;|\\}|$)",
+  //       "match_all": true
+  //     }]
+  //   },
 
   // I forget why some of these are set...  Some are re-assertions of the
   // default keymap to re-override plugins that steal them.
@@ -653,12 +620,10 @@
   {
     "keys": ["super+shift+a"],
     "command": "expand_selection",
-    "args":
-    {
+    "args": {
       "to": "tag"
     }
   },
-
 
   /************************************************************************/
   /*                                                                      */
@@ -681,603 +646,587 @@
   /*                                             88                       */
   /************************************************************************/
 
+  // test
 
-
-
-
-// test
-
- {
-        "keys": ["`"],
-        "command": "insert_snippet",
-        "args":
-        {
-            "contents": "`${0:$SELECTION}`"
-        },
-        "context": [
-        {
-            "key": "setting.auto_match_enabled",
-            "operator": "equal",
-            "operand": true
-        },
-        {
-            "key": "selection_empty",
-            "operator": "equal",
-            "operand": false,
-            "match_all": true
-        },
-        {
-            "key": "selector",
-            "operator": "equal",
-            "operand": "text,source",
-            "match_all": true
-        }]
+  {
+    "keys": ["`"],
+    "command": "insert_snippet",
+    "args": {
+      "contents": "`${0:$SELECTION}`"
     },
+    "context": [
+      {
+        "key": "setting.auto_match_enabled",
+        "operator": "equal",
+        "operand": true
+      },
+      {
+        "key": "selection_empty",
+        "operator": "equal",
+        "operand": false,
+        "match_all": true
+      },
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "text,source",
+        "match_all": true
+      }
+    ]
+  },
 
-     {
-        "keys": ["`"],
-        "command": "insert_snippet",
-        "args":
-        {
-            "contents": "`${0:$SELECTION}`"
-        },
-        "context": [
-        {
-            "key": "setting.auto_match_enabled",
-            "operator": "equal",
-            "operand": true
-        },
-        {
-            "key": "selection_empty",
-            "operator": "equal",
-            "operand": true,
-            "match_all": true
-        },
-      ]
+  {
+    "keys": ["`"],
+    "command": "insert_snippet",
+    "args": {
+      "contents": "`${0:$SELECTION}`"
     },
+    "context": [
+      {
+        "key": "setting.auto_match_enabled",
+        "operator": "equal",
+        "operand": true
+      },
+      {
+        "key": "selection_empty",
+        "operator": "equal",
+        "operand": true,
+        "match_all": true
+      }
+    ]
+  }
 
+  //   // markdown triple backticks
+  //   {
+  //     "keys": ["ctrl+alt+'"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "```$0```"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": true,
+  //       "match_all": true
+  //     },
+  //     {
+  //       "key": "following_text",
+  //       "operator": "regex_contains",
+  //       "operand": "^(?:\t| |\\)|]|;|\\}|$)",
+  //       "match_all": true
+  //     }]
+  //   },
 
-//   // markdown triple backticks
-//   {
-//     "keys": ["ctrl+alt+'"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "```$0```"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": true,
-//       "match_all": true
-//     },
-//     {
-//       "key": "following_text",
-//       "operator": "regex_contains",
-//       "operand": "^(?:\t| |\\)|]|;|\\}|$)",
-//       "match_all": true
-//     }]
-//   },
+  // //  Python triple double-quotes.
 
-// //  Python triple double-quotes.
+  //   {
+  //     "keys": ["ctrl+shift+'"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "\"\"\"$0\"\"\""
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": true,
+  //       "match_all": true
+  //     },
+  //     {
+  //       "key": "following_text",
+  //       "operator": "regex_contains",
+  //       "operand": "^(?:\t| |\\)|]|;|\\}|$)",
+  //       "match_all": true
+  //     }]
+  //   },
 
-//   {
-//     "keys": ["ctrl+shift+'"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "\"\"\"$0\"\"\""
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": true,
-//       "match_all": true
-//     },
-//     {
-//       "key": "following_text",
-//       "operator": "regex_contains",
-//       "operand": "^(?:\t| |\\)|]|;|\\}|$)",
-//       "match_all": true
-//     }]
-//   },
+  // //  Python triple quotes.
+  //   {
+  //     "keys": ["ctrl+'"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "'''$0'''"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": true,
+  //       "match_all": true
+  //     },
+  //     {
+  //       "key": "following_text",
+  //       "operator": "regex_contains",
+  //       "operand": "^(?:\t| |\\)|]|;|\\}|$)",
+  //       "match_all": true
+  //     }]
+  //   },
 
-// //  Python triple quotes.
-//   {
-//     "keys": ["ctrl+'"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "'''$0'''"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": true,
-//       "match_all": true
-//     },
-//     {
-//       "key": "following_text",
-//       "operator": "regex_contains",
-//       "operand": "^(?:\t| |\\)|]|;|\\}|$)",
-//       "match_all": true
-//     }]
-//   },
+  //   // Backtick as a quotation charaacter. Credit:
+  //   // https://forum.sublimetext.com/t/recognize-the-character-as-a-type-of-a-quotation/15097/3
+  //   {
+  //     "keys": ["`"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "`$0`"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": true,
+  //       "match_all": true
+  //     },
+  //     {
+  //       "key": "following_text",
+  //       "operator": "regex_contains",
+  //       "operand": "^(?:\t| |\\)|]|;|\\}|$)",
+  //       "match_all": true
+  //     }]
+  //   },
+  //   {
+  //     "keys": ["`"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "`${0:$SELECTION}`"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
+  //   {
+  //     "keys": ["`"],
+  //     "command": "move",
+  //     "args":
+  //     {
+  //       "by": "characters",
+  //       "forward": true
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": true,
+  //       "match_all": true
+  //     },
+  //     {
+  //       "key": "following_text",
+  //       "operator": "regex_contains",
+  //       "operand": "^`",
+  //       "match_all": true
+  //     }]
+  //   },
+  //   {
+  //     "keys": ["backspace"],
+  //     "command": "run_macro_file",
+  //     "args":
+  //     {
+  //       "file": "Packages/Default/Delete Left Right.sublime-macro"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": true,
+  //       "match_all": true
+  //     },
+  //     {
+  //       "key": "preceding_text",
+  //       "operator": "regex_contains",
+  //       "operand": "`$",
+  //       "match_all": true
+  //     },
+  //     {
+  //       "key": "following_text",
+  //       "operator": "regex_contains",
+  //       "operand": "^`",
+  //       "match_all": true
+  //     }]
+  //   },
+  //   // lt-gt wrap
+  //   {
+  //     "keys": ["<"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "<${0:$SELECTION}>"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
 
-//   // Backtick as a quotation charaacter. Credit:
-//   // https://forum.sublimetext.com/t/recognize-the-character-as-a-type-of-a-quotation/15097/3
-//   {
-//     "keys": ["`"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "`$0`"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": true,
-//       "match_all": true
-//     },
-//     {
-//       "key": "following_text",
-//       "operator": "regex_contains",
-//       "operand": "^(?:\t| |\\)|]|;|\\}|$)",
-//       "match_all": true
-//     }]
-//   },
-//   {
-//     "keys": ["`"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "`${0:$SELECTION}`"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
-//   {
-//     "keys": ["`"],
-//     "command": "move",
-//     "args":
-//     {
-//       "by": "characters",
-//       "forward": true
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": true,
-//       "match_all": true
-//     },
-//     {
-//       "key": "following_text",
-//       "operator": "regex_contains",
-//       "operand": "^`",
-//       "match_all": true
-//     }]
-//   },
-//   {
-//     "keys": ["backspace"],
-//     "command": "run_macro_file",
-//     "args":
-//     {
-//       "file": "Packages/Default/Delete Left Right.sublime-macro"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": true,
-//       "match_all": true
-//     },
-//     {
-//       "key": "preceding_text",
-//       "operator": "regex_contains",
-//       "operand": "`$",
-//       "match_all": true
-//     },
-//     {
-//       "key": "following_text",
-//       "operator": "regex_contains",
-//       "operand": "^`",
-//       "match_all": true
-//     }]
-//   },
-//   // lt-gt wrap
-//   {
-//     "keys": ["<"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "<${0:$SELECTION}>"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
+  //     // python f-strings
+  //   {
+  //     "keys": ["ctrl+f"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "f\"{${0:$SELECTION}}\""
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
 
+  //   // space wrap
+  //   {
+  //     "keys": [" "],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": " ${0:$SELECTION} "
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
+  //   // tab shift
+  //   {
+  //     "keys": ["tab"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "\t${0:$SELECTION}"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
+  //   // return wrap
+  //   {
+  //     "keys": ["enter"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "\n${0:$SELECTION}\n"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
+  //   // dot wrap
+  //   {
+  //     "keys": ["."],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": ".${0:$SELECTION}."
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
+  //   // bash variable wrap
+  //   {
+  //     "keys": ["$"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "\\$\\{${0:$SELECTION}\\}"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
+  //   // perl hash wrap
+  //   {
+  //     "keys": ["%"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "%\\{${0:$SELECTION}\\}"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
+  //   // perl array wrap
+  //   {
+  //     "keys": ["@"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "@\\{${0:$SELECTION}\\}"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
+  //   // slash wrap
+  //   {
+  //     "keys": ["/"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "/${0:$SELECTION}/"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
+  //   // * wrap
+  //   {
+  //     "keys": ["*"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "*${0:$SELECTION}*"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
+  //   // _ wrap
+  //   {
+  //     "keys": ["_"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "_${0:$SELECTION}_"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
 
-//     // python f-strings
-//   {
-//     "keys": ["ctrl+f"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "f\"{${0:$SELECTION}}\""
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
+  //   // full-line-regex wrap
+  //   {
+  //     "keys": ["^"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "^${0:$SELECTION}\\$"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "setting.auto_match_enabled",
+  //       "operator": "equal",
+  //       "operand": true
+  //     },
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     }]
+  //   },
 
-
-
-
-//   // space wrap
-//   {
-//     "keys": [" "],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": " ${0:$SELECTION} "
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
-//   // tab shift
-//   {
-//     "keys": ["tab"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "\t${0:$SELECTION}"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
-//   // return wrap
-//   {
-//     "keys": ["enter"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "\n${0:$SELECTION}\n"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
-//   // dot wrap
-//   {
-//     "keys": ["."],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": ".${0:$SELECTION}."
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
-//   // bash variable wrap
-//   {
-//     "keys": ["$"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "\\$\\{${0:$SELECTION}\\}"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
-//   // perl hash wrap
-//   {
-//     "keys": ["%"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "%\\{${0:$SELECTION}\\}"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
-//   // perl array wrap
-//   {
-//     "keys": ["@"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "@\\{${0:$SELECTION}\\}"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
-//   // slash wrap
-//   {
-//     "keys": ["/"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "/${0:$SELECTION}/"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
-//   // * wrap
-//   {
-//     "keys": ["*"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "*${0:$SELECTION}*"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
-//   // _ wrap
-//   {
-//     "keys": ["_"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "_${0:$SELECTION}_"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
-
-//   // full-line-regex wrap
-//   {
-//     "keys": ["^"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "^${0:$SELECTION}\\$"
-//     },
-//     "context": [
-//     {
-//       "key": "setting.auto_match_enabled",
-//       "operator": "equal",
-//       "operand": true
-//     },
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     }]
-//   },
-
-
-
-
-
-//   // Change quotes
-//   {
-//     "keys": ["'"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "'"
-//     },
-//     "context": [
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     },
-//     {
-//       "key": "preceding_text",
-//       "operator": "regex_contains",
-//       "operand": "[\"`']$",
-//       "match_all": true
-//     }]
-//   },
-//   {
-//     "keys": ["`"],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "`"
-//     },
-//     "context": [
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     },
-//     {
-//       "key": "preceding_text",
-//       "operator": "regex_contains",
-//       "operand": "[\"`']$",
-//       "match_all": true
-//     }]
-//   },
-//   {
-//     "keys": ["\""],
-//     "command": "insert_snippet",
-//     "args":
-//     {
-//       "contents": "\""
-//     },
-//     "context": [
-//     {
-//       "key": "selection_empty",
-//       "operator": "equal",
-//       "operand": false,
-//       "match_all": true
-//     },
-//     {
-//       "key": "preceding_text",
-//       "operator": "regex_contains",
-//       "operand": "[\"`']$",
-//       "match_all": true
-//     }]
-//   },
-
-
+  //   // Change quotes
+  //   {
+  //     "keys": ["'"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "'"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     },
+  //     {
+  //       "key": "preceding_text",
+  //       "operator": "regex_contains",
+  //       "operand": "[\"`']$",
+  //       "match_all": true
+  //     }]
+  //   },
+  //   {
+  //     "keys": ["`"],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "`"
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     },
+  //     {
+  //       "key": "preceding_text",
+  //       "operator": "regex_contains",
+  //       "operand": "[\"`']$",
+  //       "match_all": true
+  //     }]
+  //   },
+  //   {
+  //     "keys": ["\""],
+  //     "command": "insert_snippet",
+  //     "args":
+  //     {
+  //       "contents": "\""
+  //     },
+  //     "context": [
+  //     {
+  //       "key": "selection_empty",
+  //       "operator": "equal",
+  //       "operand": false,
+  //       "match_all": true
+  //     },
+  //     {
+  //       "key": "preceding_text",
+  //       "operator": "regex_contains",
+  //       "operand": "[\"`']$",
+  //       "match_all": true
+  //     }]
+  //   },
 ]

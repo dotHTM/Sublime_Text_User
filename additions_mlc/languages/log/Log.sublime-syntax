@@ -7,7 +7,6 @@ scope: text
 
 contexts:
   main:
-
     # IP Address
     - match: '(?=\s|^|\W)\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(?=\s|\b)'
       scope: tx-red
@@ -15,7 +14,7 @@ contexts:
     - match: '\[.*?\]'
       scope: tx-cyan
 
-    - match: '-'
+    - match: "-"
       scope: tx-yellow
 
       # paths
@@ -25,14 +24,13 @@ contexts:
     - match: '\b[\w ]+:'
       scope: tx-green
 
-  # General case and Plain text:
-    - match: '^/.+:'
+    # General case and Plain text:
+    - match: "^/.+:"
       scope: white
     - match: '^ *\d+:'
       scope: light
     - match: '^ *\d+(?!=:).'
       scope: dark
-      
+
     - match: \s
       pop: true
-

@@ -1,15 +1,14 @@
 {
-    "folders":
-    [
-        {
-            "path": "./"
-        },
-    ],
-    "build_systems":[
-        {
-            "name": "Project Build",
-            "cmd": ["env"],
-            // "shell_cmd": "env",
-        }
-    ]
+  "folders": [
+    {
+      "path": "./"
+    }
+  ],
+  "build_systems": [
+    {
+      "name": "Project Build",
+      "cmd": ["env"]
+      // "shell_cmd": "env",
+    }
+  ]
 }

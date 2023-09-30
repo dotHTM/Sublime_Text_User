@@ -41,7 +41,7 @@ sub write_to_files {
     sub write_to_one_file {
         my ( $filename, $buffer ) = @_;
         open( my $FILE_HANDLE, ">", $filename )
-            or croak "Cannot open $filename : $!\n";
+          or croak "Cannot open $filename : $!\n";
         print $FILE_HANDLE $buffer or croak "Cannot write $filename : $!\n";
         return 1;    ## success
     }    ##    write_to_one_file
@@ -102,12 +102,12 @@ my $bracketed_general = <<EOL
 \t\${900:// body ...}
 } // \${100}
 EOL
-    ;
+  ;
 
 my $type_assignment = <<EOL
 {{object}} \${100:{{name}}}{% if explicitType %}\${200/^.+\$/ : /}\${200:{{explicitType}}}{% endif %}\${900/^.+\$/ = /}\${900:{{value}}}
 EOL
-    ;
+  ;
 
 my $function_declaration = <<EOL
 {{object}} {{ name }}(\${800:{{inputs}}}){% if returnType %}\${850/^.+\$/->/}\${850:{{returnType}}}{% endif %}{
@@ -115,12 +115,12 @@ my $function_declaration = <<EOL
 \treturn \\/\\/type.../}{% endif %}
 } // {{ name }}
 EOL
-    ;
+  ;
 
 my $function_invocation = <<EOL
 {{object}}{% if loose_input != 1 %}({% endif %}\${100:{{inputs}}}{% if loose_input != 1 %}){% endif %}{% if closureinput %}\${999/^.+\$/\{/}\${999:{{ closureinput }}}\${999/^.+\$/\}/}{% endif %}
 EOL
-    ;
+  ;
 
 my %snippetHash = (
 
@@ -195,7 +195,7 @@ my %snippetHash = (
         desc         => "Switch Statement",
         template     => $function_invocation,
         closureinput =>
-            "\ncase .\${802:scenario}:\n\t\${803://code...}\ndefault:\n\t\${804://code...}\n",
+"\ncase .\${802:scenario}:\n\t\${803://code...}\ndefault:\n\t\${804://code...}\n",
         inputs => "someInput",
     },
     "case" => {
@@ -238,4 +238,3 @@ select hello from world where foo == bar group by fizz order by buzz desc
 
 
 SQL
-

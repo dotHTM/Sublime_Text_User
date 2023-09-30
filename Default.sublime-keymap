@@ -9,9 +9,7 @@
 [
   {
     "name": "Wrap 'AppleScript Concat', has selection",
-    "keys": [
-      "&"
-    ],
+    "keys": ["&"],
     "command": "insert_snippet",
     "args": {
       "contents": "&${0:$SELECTION}&"
@@ -32,9 +30,7 @@
   },
   {
     "comment": "Wrap 'AppleScript Concat', remove 1 left and 1 right",
-    "keys": [
-      "&"
-    ],
+    "keys": ["&"],
     "command": "run_macro_file",
     "args": {
       "file": "res://Packages/Default/Delete Left Right.sublime-macro"
@@ -79,9 +75,7 @@
   },
   {
     "comment": "Wrap 'AppleScript Concat', enter or exit group",
-    "keys": [
-      "&"
-    ],
+    "keys": ["&"],
     "command": "move",
     "args": {
       "by": "characters",
@@ -121,9 +115,7 @@
   },
   {
     "comment": "Wrap 'General, New line', has selection",
-    "keys": [
-      "enter"
-    ],
+    "keys": ["enter"],
     "command": "insert_snippet",
     "args": {
       "contents": "\n${0:$SELECTION}\n"
@@ -144,9 +136,7 @@
   },
   {
     "comment": "Wrap 'General, New line', remove 1 left and 1 right",
-    "keys": [
-      "enter"
-    ],
+    "keys": ["enter"],
     "command": "run_macro_file",
     "args": {
       "file": "res://Packages/Default/Delete Left Right.sublime-macro"
@@ -191,9 +181,7 @@
   },
   {
     "comment": "Wrap 'General, Space', has selection",
-    "keys": [
-      " "
-    ],
+    "keys": [" "],
     "command": "insert_snippet",
     "args": {
       "contents": " ${0:$SELECTION} "
@@ -214,9 +202,7 @@
   },
   {
     "comment": "Wrap 'General, Space', remove 1 left and 1 right",
-    "keys": [
-      " "
-    ],
+    "keys": [" "],
     "command": "run_macro_file",
     "args": {
       "file": "res://Packages/Default/Delete Left Right.sublime-macro"
@@ -261,9 +247,7 @@
   },
   {
     "comment": "Wrap 'General, Space', enter or exit group",
-    "keys": [
-      " "
-    ],
+    "keys": [" "],
     "command": "move",
     "args": {
       "by": "characters",
@@ -303,9 +287,7 @@
   },
   {
     "comment": "Wrap 'HTML tags', has selection",
-    "keys": [
-      "<"
-    ],
+    "keys": ["<"],
     "command": "insert_snippet",
     "args": {
       "contents": "<${0:$SELECTION}>"
@@ -326,9 +308,7 @@
   },
   {
     "comment": "Wrap 'HTML tags', remove 1 left and 1 right",
-    "keys": [
-      "<"
-    ],
+    "keys": ["<"],
     "command": "run_macro_file",
     "args": {
       "file": "res://Packages/Default/Delete Left Right.sublime-macro"
@@ -373,9 +353,7 @@
   },
   {
     "comment": "Wrap 'HTML tags', enter or exit group",
-    "keys": [
-      "<"
-    ],
+    "keys": ["<"],
     "command": "move",
     "args": {
       "by": "characters",
@@ -415,9 +393,7 @@
   },
   {
     "comment": "Wrap 'Asterisk', has selection",
-    "keys": [
-      "*"
-    ],
+    "keys": ["*"],
     "command": "insert_snippet",
     "args": {
       "contents": "*${0:$SELECTION}*"
@@ -438,9 +414,7 @@
   },
   {
     "comment": "Wrap 'Asterisk', remove 1 left and 1 right",
-    "keys": [
-      "*"
-    ],
+    "keys": ["*"],
     "command": "run_macro_file",
     "args": {
       "file": "res://Packages/Default/Delete Left Right.sublime-macro"
@@ -485,9 +459,7 @@
   },
   {
     "comment": "Wrap 'Strike Out', selection_empty, not mid-word",
-    "keys": [
-      "~"
-    ],
+    "keys": ["~"],
     "command": "insert_snippet",
     "args": {
       "contents": "~$0~"
@@ -520,9 +492,7 @@
   },
   {
     "comment": "Wrap 'Strike Out', has selection",
-    "keys": [
-      "~"
-    ],
+    "keys": ["~"],
     "command": "insert_snippet",
     "args": {
       "contents": "~${0:$SELECTION}~"
@@ -543,9 +513,7 @@
   },
   {
     "comment": "Wrap 'Strike Out', remove 1 left and 1 right",
-    "keys": [
-      "~"
-    ],
+    "keys": ["~"],
     "command": "run_macro_file",
     "args": {
       "file": "res://Packages/Default/Delete Left Right.sublime-macro"
@@ -590,9 +558,7 @@
   },
   {
     "comment": "Wrap 'Strike Out', enter or exit group",
-    "keys": [
-      "~"
-    ],
+    "keys": ["~"],
     "command": "move",
     "args": {
       "by": "characters",
@@ -632,9 +598,7 @@
   },
   {
     "comment": "Wrap 'Underscore', has selection",
-    "keys": [
-      "_"
-    ],
+    "keys": ["_"],
     "command": "insert_snippet",
     "args": {
       "contents": "_${0:$SELECTION}_"
@@ -655,9 +619,7 @@
   },
   {
     "comment": "Wrap 'Underscore', remove 1 left and 1 right",
-    "keys": [
-      "_"
-    ],
+    "keys": ["_"],
     "command": "run_macro_file",
     "args": {
       "file": "res://Packages/Default/Delete Left Right.sublime-macro"
@@ -702,9 +664,7 @@
   },
   {
     "comment": "Wrap 'Perl String Concat', has selection",
-    "keys": [
-      "."
-    ],
+    "keys": ["."],
     "command": "insert_snippet",
     "args": {
       "contents": ".${0:$SELECTION}."
@@ -725,9 +685,7 @@
   },
   {
     "comment": "Wrap 'Perl String Concat', remove 1 left and 1 right",
-    "keys": [
-      "."
-    ],
+    "keys": ["."],
     "command": "run_macro_file",
     "args": {
       "file": "res://Packages/Default/Delete Left Right.sublime-macro"
@@ -772,9 +730,7 @@
   },
   {
     "comment": "Wrap 'Python f-strings double', selection_empty, not mid-word",
-    "keys": [
-      "ctrl+f"
-    ],
+    "keys": ["ctrl+f"],
     "command": "insert_snippet",
     "args": {
       "contents": "f\"$0\""
@@ -807,9 +763,7 @@
   },
   {
     "comment": "Wrap 'Python f-strings double', has selection",
-    "keys": [
-      "ctrl+f"
-    ],
+    "keys": ["ctrl+f"],
     "command": "insert_snippet",
     "args": {
       "contents": "f\"${0:$SELECTION}\""
@@ -830,9 +784,7 @@
   },
   {
     "comment": "Wrap 'Python f-strings single', selection_empty, not mid-word",
-    "keys": [
-      "ctrl+alt+f"
-    ],
+    "keys": ["ctrl+alt+f"],
     "command": "insert_snippet",
     "args": {
       "contents": "f'$0'"
@@ -865,9 +817,7 @@
   },
   {
     "comment": "Wrap 'Python f-strings single', has selection",
-    "keys": [
-      "ctrl+alt+f"
-    ],
+    "keys": ["ctrl+alt+f"],
     "command": "insert_snippet",
     "args": {
       "contents": "f'${0:$SELECTION}'"
@@ -888,9 +838,7 @@
   },
   {
     "comment": "Wrap 'Python String Contat', has selection",
-    "keys": [
-      "+"
-    ],
+    "keys": ["+"],
     "command": "insert_snippet",
     "args": {
       "contents": "+${0:$SELECTION}+"
@@ -911,9 +859,7 @@
   },
   {
     "comment": "Wrap 'Python String Contat', remove 1 left and 1 right",
-    "keys": [
-      "+"
-    ],
+    "keys": ["+"],
     "command": "run_macro_file",
     "args": {
       "file": "res://Packages/Default/Delete Left Right.sublime-macro"
@@ -958,9 +904,7 @@
   },
   {
     "comment": "Wrap 'Python String Contat', enter or exit group",
-    "keys": [
-      "+"
-    ],
+    "keys": ["+"],
     "command": "move",
     "args": {
       "by": "characters",
@@ -1000,9 +944,7 @@
   },
   {
     "comment": "Wrap 'Python Triple Double Quotes', selection_empty, not mid-word",
-    "keys": [
-      "alt+shift+'"
-    ],
+    "keys": ["alt+shift+'"],
     "command": "insert_snippet",
     "args": {
       "contents": "\"\"\"$0\"\"\""
@@ -1035,9 +977,7 @@
   },
   {
     "comment": "Wrap 'Python Triple Double Quotes', has selection",
-    "keys": [
-      "alt+shift+'"
-    ],
+    "keys": ["alt+shift+'"],
     "command": "insert_snippet",
     "args": {
       "contents": "\"\"\"${0:$SELECTION}\"\"\""
@@ -1058,9 +998,7 @@
   },
   {
     "comment": "Wrap 'Python Triple Single Quotes', selection_empty, not mid-word",
-    "keys": [
-      "alt+'"
-    ],
+    "keys": ["alt+'"],
     "command": "insert_snippet",
     "args": {
       "contents": "'''$0'''"
@@ -1093,9 +1031,7 @@
   },
   {
     "comment": "Wrap 'Python Triple Single Quotes', has selection",
-    "keys": [
-      "alt+'"
-    ],
+    "keys": ["alt+'"],
     "command": "insert_snippet",
     "args": {
       "contents": "'''${0:$SELECTION}'''"

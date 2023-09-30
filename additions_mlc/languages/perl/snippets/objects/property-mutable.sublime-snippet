@@ -14,5 +14,3 @@ sub ${100:property} {
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.perl</scope>
 </snippet>
-
-

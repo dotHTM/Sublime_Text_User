@@ -1,43 +1,42 @@
 {
   "folders": [
-  {
-    "name": "MLC, langs, etc",
-    "path": "additions_mlc",
-      "file_exclude_patterns":
-      [
-				"./Preferences.sublime-settings",
-				"./*.sublime-keymap"
-      ],
-    },
-  {
-    "name": "Prefs",
-    "path": ".",
-    },
-  {
-    "path": "~/Library/Application Support/Sublime Text/Packages",
-    "name": "Packages (unzipped)",
-    },
-  {
-    "path": "~/Library/Application Support/Sublime Text/Installed Packages",
-    "name": "Installed Packages (zipped)",
+    {
+      "name": "MLC, langs, etc",
+      "path": "additions_mlc",
+      "file_exclude_patterns": [
+        "./Preferences.sublime-settings",
+        "./*.sublime-keymap"
+      ]
     },
     {
-			"path": "/Applications/Sublime Text.app/Contents/MacOS/Packages",
+      "name": "Prefs",
+      "path": "."
+    },
+    {
+      "path": "~/Library/Application Support/Sublime Text/Packages",
+      "name": "Packages (unzipped)"
+    },
+    {
+      "path": "~/Library/Application Support/Sublime Text/Installed Packages",
+      "name": "Installed Packages (zipped)"
+    },
+    {
+      "path": "/Applications/Sublime Text.app/Contents/MacOS/Packages",
 
-      "name": "Default App Packages (zipped)",
+      "name": "Default App Packages (zipped)"
     },
     {
-			"path": "/Applications/Sublime Merge.app/Contents/MacOS/Packages",
+      "path": "/Applications/Sublime Merge.app/Contents/MacOS/Packages",
 
-      "name": "smerge - Defaults (zipped)",
+      "name": "smerge - Defaults (zipped)"
     },
     {
-			"path": "~/Library/Application Support/Sublime Merge/Packages",
-      "name": "smerge - Packages (unzipped)",
-		},
+      "path": "~/Library/Application Support/Sublime Merge/Packages",
+      "name": "smerge - Packages (unzipped)"
+    },
     {
-			"path": "~/Library/Application Support/Sublime Merge/Installed Packages",
-      "name": "smerge - Installed Packages (zipped)",
-		},
-  ],
+      "path": "~/Library/Application Support/Sublime Merge/Installed Packages",
+      "name": "smerge - Installed Packages (zipped)"
+    }
+  ]
 }

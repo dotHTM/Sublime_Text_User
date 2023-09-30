@@ -1,8 +1,9 @@
 {
   "cmd": ["env"],
   "variants": [
-  {
-    "name": "shell",
-    "shell_cmd": "env | sort",
-  }]
+    {
+      "name": "shell",
+      "shell_cmd": "env | sort"
+    }
+  ]
 }

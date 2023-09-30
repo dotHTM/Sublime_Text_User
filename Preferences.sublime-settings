@@ -34,7 +34,7 @@
     "mysql",
     "dev",
     "crypto",
-    "sha",
+    "sha"
   ],
   "always_show_minimap_viewport": true,
   "auto_complete_cycle": true,
@@ -64,9 +64,8 @@
     "*,"
   ],
   "bold_folder_labels": true,
-  "build_env":
-  {
-    "TERM_PROGRAM": "subl",
+  "build_env": {
+    "TERM_PROGRAM": "subl"
   },
   "color_scheme": "auto",
   "dark_color_scheme": "Teenage Board - Dark.sublime-color-scheme",
@@ -108,7 +107,7 @@
     ".DS_Store",
     ".fuse_hidden*",
     "_*.pm",
-    "desktop.ini",
+    "desktop.ini"
   ],
   "folder_exclude_patterns": [
     ".svn",
@@ -129,17 +128,13 @@
     "datadir",
     "dist",
     "node_modules",
-    "target",
+    "target"
   ],
   "font_face": "SFMono-Regular",
   "font_size": 18,
   "highlight_line": true,
   "highlight_modified_tabs": true,
-  "ignored_packages": [
-    "Debugger",
-    "TypeScript",
-    "Vintage",
-  ],
+  "ignored_packages": ["Vintage"],
   "ignored_words": [
     "1pif",
     "O'Reilly",
@@ -153,41 +148,23 @@
     "sed",
     "sftp",
     "sql",
-    "stache",
+    "stache"
   ],
   "inactive_sheet_dimming": true,
-  "indent_guide_options": [
-    "draw_normal",
-    "draw_active"
-  ],
+  "indent_guide_options": ["draw_normal", "draw_active"],
   "index_files": true,
   "light_color_scheme": "Teenage Screen - Light.sublime-color-scheme",
   "light_theme": "Default.sublime-theme",
   "line_padding_bottom": 2,
   "line_padding_top": 2,
 
-
-  "paths":
-  {
+  "paths": {
     "linux": [],
-    "osx": [
-      "/usr/local/bin/",
-    ],
-    "windows": [],
+    "osx": ["/usr/local/bin/"],
+    "windows": []
   },
-  "perltidy_cmd": [
-    "/usr/local/bin/perltidy"
-  ],
-  "rulers": [
-    0,
-    8,
-    72,
-    80,
-    88,
-    160,
-    240,
-    320
-  ],
+  "perltidy_cmd": ["/usr/local/bin/perltidy"],
+  "rulers": [0, 8, 72, 80, 88, 160, 240, 320],
   "scroll_past_end": true,
   "status_bar_brighter": true,
   "tab_completion": true,
@@ -203,10 +180,5 @@
   // "index_exclude_gitignore": false,
 
   "goto_anything_exclude_gitignore": true,
-  "index_exclude_patterns": [
-    "*.log",
-  ],
-
-
-
+  "index_exclude_patterns": ["*.log"]
 }

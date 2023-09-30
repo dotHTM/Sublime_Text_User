@@ -1,11 +1,3 @@
 {
-  "extensions":
-  [
-    "cgi",
-    "pm",
-    "cgi.*",
-    "pl.*",
-    "pm.*",
-    "pl"
-  ]
+  "extensions": ["cgi", "pm", "cgi.*", "pl.*", "pm.*", "pl"]
 }

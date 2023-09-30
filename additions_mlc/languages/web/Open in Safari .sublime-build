@@ -18,10 +18,10 @@
       "cmd": ["open", "-a", "/Applications/WebKit.app", "$file"],
       "selector": "text.html"
     },
-        {
+    {
       "name": "Marked App",
       "cmd": ["open", "-a", "/Applications/Marked 2.app", "$file"],
       "selector": "text.html"
-    },
+    }
   ]
 }

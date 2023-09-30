@@ -1,17 +1,11 @@
+
+*ca-certs*
+*ca-bundle*
+*ca-list*
+
 insert_date.sublime-settings
-Package Control.merged-ca-bundle
-Package Control.last-run
-oscrypto-ca-bundle.crt
-Package Control.user-ca-bundle
-additions_mlc/private
+
 Package Control.cache
-Color Highlighter
-SublimeLinter
-
-
 Package Control.last-run
-Package Control.ca-list
-Package Control.ca-bundle
-Package Control.system-ca-bundle
-Package Control.cache/
-Package Control.ca-certs/
+
+Emmet.sublime-settings

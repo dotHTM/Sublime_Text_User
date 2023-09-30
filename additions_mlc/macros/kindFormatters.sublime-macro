@@ -1,4 +1,1 @@
-[
-   {"command": "yapf_selection"},
-   {"command": "htmlprettify"}
-]
+[{ "command": "yapf_selection" }, { "command": "htmlprettify" }]

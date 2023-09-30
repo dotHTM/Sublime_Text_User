@@ -31,8 +31,6 @@ contexts:
     - match: '\b([\w\._-]*utexas.edu)\b'
       scope: tx-purple
 
-
-
     # - match: '\[.*?\]'
     #   scope: tx-cyan
 
@@ -56,4 +54,3 @@ contexts:
 
   #   - match: \s
   #     pop: true
-
