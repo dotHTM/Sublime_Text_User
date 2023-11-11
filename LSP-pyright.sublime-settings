@@ -1,0 +1,5 @@
+{
+	"enabled": true,
+
+    "command": ["/opt/homebrew/bin/node", "${server_path}", "--stdio"],
+}
