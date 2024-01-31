@@ -80,6 +80,17 @@ class Wraps:
         onSelection=True,
     )
 
+    # Bash (and perl)
+
+    dollar_variable_read = Wrapping(
+        keys=["$"],
+        prefix="\$\{",
+        suffix="\}",
+        name="Dollar Variable Read",
+        scope="source.perl,source.bash",
+        onSelection=True,
+    )
+
     # Python
     python_triple_single_quotes = Wrapping(
         prefix="'''",

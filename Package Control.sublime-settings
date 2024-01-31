@@ -3,7 +3,8 @@
 
   "bootstrapped": true,
   "debug": true,
-  "in_process_packages": [],
+  "in_process_packages": [
+  ],
   "installed_packages": [
     "Alignment",
     "Case Conversion",
@@ -23,6 +24,7 @@
     "LoremIpsum",
     "LSP",
     "LSP-angular",
+    "LSP-file-watcher-chokidar",
     "LSP-json",
     "LSP-pyright",
     "Origami",
@@ -44,12 +46,12 @@
     "Terminal",
     "TOML",
     "URLEncode",
-    "ZipContents"
+    "ZipContents",
   ],
   "repositories": [
     "https://github.com/dotHTM/random-sublime-text-plugin.git",
     "https://github.com/dotHTM/Teenage.git",
     "https://github.com/jrappen/sublime-auto-dark.git",
     "https://github.com/mawelborn/ZipContents.git"
-  ]
+  ],
 }
