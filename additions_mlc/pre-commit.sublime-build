@@ -1,0 +1,26 @@
+{
+  "cmd": ["pre-commit", "run", "--file", "$file"],
+  "working_dir": "$project_path",
+
+  "variants": [
+  {
+      "name": "black",
+      "cmd": ["pre-commit","run" ,"black", "--file", "$file"],
+      "working_dir": "$project_path",
+      "selector": "source.python",
+    },
+    {
+      "name": "flake8",
+      "cmd": ["pre-commit","run" ,"flake8", "--file", "$file"],
+      "working_dir": "$project_path",
+      "selector": "source.python",
+      "file_regex": "^(?:[^:]+?)([^:/]+):(\\d+):(\\d+): (.*)",
+    },
+    {
+      "name": "ruff",
+      "cmd": ["pre-commit","run" ,"ruff", "--file", "$file"],
+      "working_dir": "$project_path",
+      "selector": "source.python",
+    },
+  ]
+}

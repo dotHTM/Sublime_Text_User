@@ -1,0 +1,11 @@
+{
+  "cmd": ["ruff", "check", "$file"],
+  "selector": "source.python",
+  "variants": [
+    {
+      "name": "fix",
+      "cmd": ["ruff", "check", "--fix", "$file"],
+      "selector": "source.python",
+    },
+  ]
+}

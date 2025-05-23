@@ -1,4 +1,18 @@
 [
+  /// /// /// ///   /// /// /// ///   /// /// /// /// 
+  
+    { "keys": ["f3"], "command": "next_bookmark" },
+  { "keys": ["f1"], "command": "prev_bookmark" },
+  { "keys": ["f2"], "command": "toggle_bookmark", "args": {"toggle_line": true } },
+  { "keys": ["shift+f2"], "command": "clear_bookmarks" },
+  { "keys": ["alt+f3"], "command": "select_all_bookmarks" },
+  
+  
+  /// /// /// ///   /// /// /// ///   /// /// /// /// 
+  
+  
+  
+
   {
     "caption": "Scope Hunter: Show Scope Under Cursor(s)",
     "command": "get_selection_scope",
@@ -25,18 +39,20 @@
   // //// ////// ////// ////// ////// ////// ////// //////
   // Tidy
 
-  {
-    // python black
-    "command": "black",
-    "keys": ["ctrl+t"],
-    "context": [
-      {
-        "key": "selector",
-        "operator": "equal",
-        "operand": "source.python"
-      }
-    ]
-  },
+{ "keys": ["ctrl+t"], "command": "build", "args": {"name":"black"} },
+
+  // {
+  //   // python black
+  //   "command": "black",
+  //   "keys": ["ctrl+t"],
+  //   "context": [
+  //     {
+  //       "key": "selector",
+  //       "operator": "equal",
+  //       "operand": "source.python"
+  //     }
+  //   ]
+  // },
   {
     // perltidy
     "command": "run_macro_file",
@@ -56,15 +72,15 @@
   {
     // SQLperltidy
     "args": {
-      "file": "Packages/User/additions_mlc/macros/SQLperlTidy.sublime-macro"
+      "file": "Packages/User/additions_mlc/macros/SQLpython.sublime-macro"
     },
     "command": "run_macro_file",
-    "keys": ["ctrl+t"],
+    "keys": ["alt+t"],
     "context": [
       {
         "key": "selector",
         "operator": "equal",
-        "operand": "source.SQL"
+        "operand": "source.python source.SQL"
       }
     ]
   },

@@ -1,0 +1,5 @@
+{
+  "cmd": ["flake8", "$file"],
+  "selector": "source.python",
+  "file_regex": "^(?:[^:]+?)([^:/]+):(\\d+):(\\d+): (.*)",
+}
