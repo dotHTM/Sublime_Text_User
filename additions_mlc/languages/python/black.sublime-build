@@ -1,4 +1,6 @@
 {
   "cmd": ["black", "$file"],
   "selector": "source.python",
+  "file_regex": "^(?:[^:]+?):(?:[^:]+?)([^:/]+): (?:[^:]+): (\\d+):(\\d+): .*", // Works sorta? Black errors out of the "standard order"
 }
+
