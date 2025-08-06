@@ -3,5 +3,6 @@
   "extensions": ["md"],
   "tab_size": 2,
   "draw_white_space": ["all"],
+  "wrap_width": 60,
   "translate_tabs_to_spaces": true
 }

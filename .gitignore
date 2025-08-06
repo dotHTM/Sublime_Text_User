@@ -9,3 +9,5 @@ Package Control.cache
 Package Control.last-run
 
 Emmet.sublime-settings
+
+*.sqlite
